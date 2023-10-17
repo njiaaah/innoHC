@@ -317,7 +317,7 @@ section {
     background-color: var(--clr-primary-green);
     position: absolute;
     bottom: 0;
-    padding: 36px 36px;
+    padding: 36px clamp(.5rem, 1.75vw, 2rem);
 }
 
 #section-hero-complex-banner-wrap {
@@ -342,7 +342,7 @@ section {
 }
 
 .hero-complex-wrap {
-    gap: clamp(1.125rem, -0.6429rem + 3.9286vw, 2.5rem);
+    gap: clamp(.15rem, .25rem + .55vw, 2.5rem);
 }
 
 .hero-complex-wrap > div {
@@ -350,7 +350,7 @@ section {
 }
 
 .hero-complex-wrap > div img {
-    height: clamp(1rem, 1rem + 1.5vw, 2.25rem);
+    height: clamp(1rem, 1rem + 1.75vw, 2.25rem);
 }
 
 
@@ -358,9 +358,14 @@ section {
     font-size: clamp(0.5rem, 0.4rem + 0.5vw, 0.875rem);
     color: var(--clr-greyscale-0);
     max-width: 20ch;
+    width: fit-content;
     min-width: 5ch;
     text-wrap: balance;
     /* white-space: nowrap; */
+}
+
+.hero-complex-wrap div:nth-of-type(2) span {
+    width: 23ch;
 }
 
 
@@ -588,6 +593,7 @@ section {
 
     #section-hero-complex-banner {
         bottom: -15%;
+        padding: 32px;
     }
 
     #section-hero-promo-banner {
@@ -619,7 +625,7 @@ section {
 
 /* 540px */
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 560px) {
 
         /* delete after */
         body::after {
@@ -666,6 +672,7 @@ section {
 
     .hero-complex-wrap {
         flex-direction: column;
+        gap: .5rem;
     }
 
     #section-hero-complex-banner-wrap h1 span {
