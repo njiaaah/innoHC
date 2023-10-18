@@ -54,6 +54,20 @@ document.addEventListener('DOMContentLoaded',function(){
         
     }
 
+    // SCROLLERS
+
+    
+    const scroller01 = document.querySelector('#scroller01')
+    const scroller01controls = document.querySelector('.section-advantages-contols').children
+
+    scroller01.addEventListener('scroll', ()=>{
+        let scroller01steps = 5
+        currentScroll = parseInt((scroller01.scrollLeft / (scroller01.scrollWidth - scroller01.clientWidth) - 0.1) * scroller01steps)
+        for (let i = 0; i < scroller01controls.length; i++) {
+            scroller01controls[i].classList.remove('current-scroll')
+        }
+        scroller01controls[currentScroll].classList.add('current-scroll')
+    })
 
 })
         
