@@ -56,18 +56,40 @@ document.addEventListener('DOMContentLoaded',function(){
 
     // SCROLLERS
 
-    
+    // scroller - элемент который скролится с классами horizontal-scroller, snaps-inline
+    // controls - массив с кнопками для управления данного скрола
+
+    function updateScrollerControls(scroller, controls) {
+        currentScroll = parseInt((scroller.scrollLeft / (scroller.scrollWidth - scroller.clientWidth) - 0.1) * controls.length)
+        for (let i = 0; i < controls.length; i++) {
+            controls[i].classList.remove('current-scroll')
+        }
+        controls[currentScroll].classList.add('current-scroll')
+    }
+
+    // btnIndex - порядковый номер кнопки по которой было кликнуто
+    function clickScrollerControls(scroller,controls, btnIndex) {
+        let offsetLeft = (btnIndex / (controls.length - 1)) * (scroller.scrollWidth - scroller.clientWidth)
+        scroller.scrollTo({
+            left: offsetLeft,
+            behavior: 'smooth'
+        })
+    }
+
+    // section advantages - scroller 1
+
     const scroller01 = document.querySelector('#scroller01')
     const scroller01controls = document.querySelector('.section-advantages-contols').children
 
     scroller01.addEventListener('scroll', ()=>{
-        let scroller01steps = 5
-        currentScroll = parseInt((scroller01.scrollLeft / (scroller01.scrollWidth - scroller01.clientWidth) - 0.1) * scroller01steps)
-        for (let i = 0; i < scroller01controls.length; i++) {
-            scroller01controls[i].classList.remove('current-scroll')
-        }
-        scroller01controls[currentScroll].classList.add('current-scroll')
+        updateScrollerControls(scroller01, scroller01controls)
     })
+
+    for (let i = 0; i < scroller01controls.length; i++) {
+        scroller01controls[i].addEventListener('click',()=>{
+            clickScrollerControls(scroller01, scroller01controls ,i)
+        })
+    }
 
 })
         
