@@ -783,6 +783,12 @@ section {
         background-image: url('../img/loc_map_1.webp');
         background-size: cover;
         transition: transform .25s ease;
+        cursor: grab;
+    }
+
+    /* vajno? */
+    .section-location-map:focus {
+        cursor: grabbing !important;
     }
 
     .section-location-map-wrap-container {
@@ -870,46 +876,54 @@ section {
         filter: brightness(0) invert(77%) sepia(89%) saturate(966%) hue-rotate(0deg) brightness(106%) contrast(104%);
     }
 
-    #section-location-map-01 .section-location-map-con:nth-of-type(1) {
+    .section-location-map .section-location-map-con:nth-of-type(1) {
         top: 5%;
         left: 47%;
     }
 
-    #section-location-map-01 .section-location-map-con:nth-of-type(2) {
+    .section-location-map .section-location-map-con:nth-of-type(2) {
         top: 62%;
         left: 62%;
     }
 
-    #section-location-map-01 .section-location-map-con:nth-of-type(3) {
+    .section-location-map .section-location-map-con:nth-of-type(3) {
         top: 62%;
         left: 50%;
         
     }
 
-    #section-location-map-01 .section-location-map-con:nth-of-type(4) {
+    .section-location-map .section-location-map-con:nth-of-type(4) {
         top: 85%;
         left: 64%;
     }
 
-    #section-location-map-01 .section-location-map-con:nth-of-type(5) {
+    .section-location-map .section-location-map-con:nth-of-type(5) {
         top: 60%;
         left: 44%;
     }
 
-    #section-location-map-01 .section-location-map-con:nth-of-type(6) {
+    .section-location-map .section-location-map-con:nth-of-type(6) {
         top: 35%;
         left: 90%;
     }
 
-    #section-location-map-01 .section-location-map-con:nth-of-type(7) {
+    .section-location-map .section-location-map-con:nth-of-type(7) {
         top: 44%;
         left: 48%;
     }
 
-    #section-location-map-01 .section-location-map-con:nth-of-type(8) {
+    .section-location-map .section-location-map-con:nth-of-type(8) {
         top: 18%;
         left: 87%;
     }
+
+
+
+
+
+
+
+
 
 
 
@@ -919,7 +933,12 @@ section {
     /* for map only */
     /* hopefully */
 
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 720px) {
+            /* delete after */
+    body::after {
+    content: '720px';
+    }
+
 
     }
 
@@ -1105,7 +1124,51 @@ section {
         margin-bottom: 2.5rem;
         width: 100%;
     }
+
+    /* section location grid */
     
+    .section-location-content-item {
+        grid-template-columns: .9fr .9fr 1.2fr
+    }
+
+    /* adress */
+    .seciton-location-item-adress {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    /* paragraph */
+    .section-location-item-text {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+    }
+
+    /* 2 tiles with nearby objects */
+    .seciton-location-item-around-wrap {
+        flex-direction: row;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+    /* them size */
+    .section-location-around-item {
+        height: 184px;
+        width: 200px;
+    }
+
+    /* MAP */
+    .section-location-map-wrap-container {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+
+        width: 98vw;
+        transform: translate(-4vw);
+    }
+
+
 
 }
 
@@ -1287,6 +1350,48 @@ section {
         padding-right: 480px;   
     }
     
+
+    /* section location grid */
+    
+    .section-location-content-item {
+        grid-template-columns: 1fr;
+    }
+
+    /* adress */
+    .seciton-location-item-adress {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+    }
+
+    /* paragraph */
+    .section-location-item-text {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+    }
+
+    /* 2 tiles with nearby objects */
+    .seciton-location-item-around-wrap {
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+    }
+    /* them size */
+    .section-location-around-item {
+        width: 100%;
+        height: 230px;
+    }
+
+    .section-location-around-item > span {
+        font-size: 1.25rem;
+    }
+
+    /* MAP */
+    .section-location-map-wrap-container {
+        display: none;
+    }
 
 
 
