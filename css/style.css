@@ -10,6 +10,7 @@ body {
     --clr-primary-green: #009640;
     --clr-primary-darkgreen: #00652b;
     --clr-primary-yellow: #ffed00;
+    --clr-darkblue: #3D4452;
     --clr-greyscale-0: #ffffff;
     --clr-greyscale-4: #cecece;
     --clr-greyscale-6: #9d9d9d;
@@ -227,6 +228,7 @@ section {
     display: grid;
     place-items: center;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .section-wrap {
@@ -242,9 +244,9 @@ section {
     background: url("../img/hero-bg.webp");
     background-size: cover;
     background-position: 25% 0%;
-    overflow-y: visible;
     position: relative;
     margin-bottom: 7rem;
+    overflow: visible;
 }
 
 
@@ -566,7 +568,7 @@ section {
 .section-housing-complex-info {
     width: clamp(14.375rem, 13.1892rem + 3.5135vw, 16rem);
     background-color: var(--clr-greyscale-0);
-    top: clamp(0rem, -9.5rem + 14.8438vw, 2.375rem);
+    top: clamp(.75rem, -9.5rem + 14.8438vw, 2.375rem);
     right: clamp(0rem, -7.5rem + 11.7188vw, 1.875rem);
 }
 
@@ -607,12 +609,319 @@ section {
 }
 
 
+/* SECTION LOCATION */
+
+.section-location  {
+    margin-top: clamp(2.875rem, 1.4211rem + 4.4737vw, 5rem);
+}
+
+.section-location-label-group label {
+    padding-bottom: .75rem;
+    
+}
+
+
+.section-location-tab {
+    display: none;
+}
+
+.horizontalscroll {
+    overflow-x: scroll;
+    width: 96vw;
+}
+
+.horizontalscroll::-webkit-scrollbar {
+    position: absolute;
+}
+
+
+.section-location-wrap h2 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.section-location-tab-wrap {
+    display: flex;
+    gap: 1rem;
+    padding-right: 725px;   
+}
+
+
+.section-location-tab-wrap::-webkit-scrollbar {
+    position: absolute;
+}
+
+
+.section-location-tab-wrap span {
+    padding-bottom: .75rem;
+    color: var(--clr-greyscale-6);
+    font-size: clamp(1rem, 0.8393rem + 0.3571vw, 1.125rem);
+    white-space: nowrap;
+}
+
+.section-location-tab-selected {
+    color: var(--clr-primary-green) !important;
+    border-bottom: 2px solid var(--clr-primary-green);
+}
+
+.section-location-tab-wrap br{
+    display: none;
+}
+
+    /* section location content grid */
+
+.seciton-location-item-adress {
+    display: flex;
+    gap: .75rem;
+}
+
+.seciton-location-item-adress > div > span {
+    font-size: clamp(1rem, 0.25rem + 1.25vw, 1.25rem);
+    color: var(--clr-darkblue);
+}
+
+.section-loc-map-point {
+    height: clamp(1.8225rem, 1.4805rem + 1.71vw, 2.25rem);
+    aspect-ratio: 1;
+}
+
+.section-location-item-text p {
+    font-size: clamp(0.875rem, 0.5536rem + 0.7143vw, 1.125rem);
+}
+
+.section-location-content-item {
+    display: grid;
+    grid-template-columns: 26% 70%;
+    column-gap: clamp(1rem, -0.2857rem + 2.8571vw, 2rem);
+    row-gap: 1rem;
+}
+
+.seciton-location-item-around-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, -0.2857rem + 2.8571vw, 2rem);
+    font-weight: 400;
+}
+
+.section-location-around-item {
+    padding: 1rem;
+    width: 100%;
+    height: 50%;
+    background-color: #3D4452;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.section-location-around-item > div {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: var(--clr-primary-red);
+    width: fit-content;
+}
+
+.section-location-around-item > div > div {
+    background-color: var(--clr-primary-green);
+    padding: .45rem .5rem .2rem .5rem;
+}
+
+.section-location-around-item > div > span {
+    color: var(--clr-greyscale-0);
+    padding: 0 .75rem;
+}
+
+#loc-item-00 {
+    background-image: url(../img/loc_around_1.webp);
+}
+
+#loc-item-01 {
+    background-image: url(../img/loc_around_2.webp);
+}
+
+#loc-item-10 {
+    background-image: url(../img/loc_around_3.webp);
+}
+
+#loc-item-11 {
+    background-image: url(../img/loc_around_4.webp);
+}
+
+#loc-item-20 {
+    background-image: url(../img/loc_around_5.webp);
+}
+
+#loc-item-21 {
+    background-image: url(../img/loc_around_6.webp);
+}
+
+.section-location-around-item > span {
+    color: var(--clr-greyscale-0);
+    font-size: clamp(0.875rem, 0.3929rem + 1.0714vw, 1.25rem);
+}
+
+    /* map */
+
+    .section-location-map-wrap {
+        overflow: scroll;
+        /* width: clamp(25rem, -9.7143rem + 77.1429vw, 52rem);; */
+        height: clamp(28.125rem, 24.1071rem + 8.9286vw, 31.25rem);
+        position: relative;
+    }
+
+    .section-location-map-wrap::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section-location-map {
+        width: 800px;
+        height: 500px;
+        transform: scale(1);
+        transform-origin: center center;
+        display: block;
+        background-image: url('../img/loc_map_1.webp');
+        background-size: cover;
+        transition: transform .25s ease;
+    }
+
+    .section-location-map-wrap-container {
+        position: relative;
+    }
+
+    .section-location-legend-wrap {
+        position: absolute;
+        padding:  clamp(0.5rem, -0.7857rem + 2.8571vw, 1.5rem) clamp(0.5rem, -0.7857rem + 2.8571vw, 1.5rem);
+        background-color: var(--clr-primary-green);
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .section-location-map-legend {
+        margin-bottom: 1rem;
+    }
+
+    .section-location-legend-wrap .btn {
+        background-color: var(--clr-primary-green);
+        outline: 1px solid var(--clr-greyscale-0);
+        display: block;
+        margin-top: 1rem;
+        width: fit-content;
+        padding: 0.5rem 1.5rem;
+        color: var(--clr-greyscale-0);
+    }
+
+    .section-location-map-legend li {
+        display: flex;
+        place-items: center;
+        gap: .75rem;
+        color: yellow;
+    }
+
+    .section-location-legend-wrap .btn,
+    .section-location-map-legend li span {
+        font-size: clamp(0.5rem, 0.375rem + 0.625vw, 0.875rem);
+    }
+
+    .section-location-map-zoom-wrap {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        bottom: 1.5rem;
+        right: 1rem;
+        z-index: 2;
+    }
+
+    .section-location-map-zoom-wrap > span {
+        width: 64px;
+        aspect-ratio: 1;
+        background-color: var(--clr-primary-red);
+        position: relative;
+    }
+
+    .section-location-map-zoom-wrap > span > span {
+        display: block;
+        background-color: var(--clr-greyscale-0);
+        height: 2px;
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .section-location-map-zoom-wrap > span:nth-of-type(2) > span:nth-of-type(2) {
+        transform: translate(-50%, -50%) rotate(90deg);
+        transform-origin: center, center;
+    }
+
+    .section-location-map-con {
+        position: absolute;
+        z-index: 1;
+        background-color: var(--clr-primary-green);
+        padding: .25rem .25rem .0rem .25rem;
+        top: 20%;
+        left: 80%;
+
+    }
+
+    .section-location-map-con img {
+        filter: brightness(0) invert(77%) sepia(89%) saturate(966%) hue-rotate(0deg) brightness(106%) contrast(104%);
+    }
+
+    #section-location-map-01 .section-location-map-con:nth-of-type(1) {
+        top: 5%;
+        left: 47%;
+    }
+
+    #section-location-map-01 .section-location-map-con:nth-of-type(2) {
+        top: 62%;
+        left: 62%;
+    }
+
+    #section-location-map-01 .section-location-map-con:nth-of-type(3) {
+        top: 62%;
+        left: 50%;
+        
+    }
+
+    #section-location-map-01 .section-location-map-con:nth-of-type(4) {
+        top: 85%;
+        left: 64%;
+    }
+
+    #section-location-map-01 .section-location-map-con:nth-of-type(5) {
+        top: 60%;
+        left: 44%;
+    }
+
+    #section-location-map-01 .section-location-map-con:nth-of-type(6) {
+        top: 35%;
+        left: 90%;
+    }
+
+    #section-location-map-01 .section-location-map-con:nth-of-type(7) {
+        top: 44%;
+        left: 48%;
+    }
+
+    #section-location-map-01 .section-location-map-con:nth-of-type(8) {
+        top: 18%;
+        left: 87%;
+    }
 
 
 
 
 
+    /* 960px */
+    /* for map only */
+    /* hopefully */
 
+    @media only screen and (max-width: 960px) {
+
+    }
 
 
 
@@ -725,6 +1034,7 @@ section {
         display: flex;
         place-items: center;
         opacity: .6;
+        white-space: nowrap;
     }
 
     .nav-soon + span {
@@ -751,8 +1061,12 @@ section {
     #section-hero-complex-banner-wrap {
         flex-wrap: wrap;
         gap: 1rem;
+        position: unset;
+        z-index: 1;
         
     }
+
+    
 
     #section-hero-complex-banner {
         bottom: -15%;
@@ -963,6 +1277,16 @@ section {
         margin-bottom: 13rem;
     }
 
+    /* SECTION LOCATION */
+
+    .section-location-tab-wrap br{
+        display: block;
+    }
+
+    .section-location-tab-wrap {
+        padding-right: 480px;   
+    }
+    
 
 
 

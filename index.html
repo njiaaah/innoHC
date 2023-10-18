@@ -6,7 +6,8 @@
     <title>Тайтл</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="lib/horizontaldrag.js"></script>
+    <script src="lib/jquery.js"></script>
 </head>
 <body>
 
@@ -263,22 +264,312 @@
 
     </section>
 
-    <!--  -->
+    <!-- SECTION LOCATION -->
 
     <section class="section-location">
-        <h2>РАСПОЛОЖЕНИЕ</h2>
+        
+        <div class="section-location-wrap section-wrap">
 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+            <h2>РАСПОЛОЖЕНИЕ</h2>
+
+            <div class="horizontalscroll dragscroll">
+
+                <div class="section-location-tab-wrap" >
+
+                    <span class="uc cp section-location-tab-selected ">Транспортная <br > доступность</span>
+    
+                    <span class="uc cp">Академическая <br> среда</span>
+    
+                    <span class="uc cp">В окружении <br> парков</span>
+    
+                </div>
+
+            </div>
+
+            <div class="section-location-content-wrap">
+
+                <!-- tab 1 -->
+                <div class="section-location-content-item">
+
+                    <div class="seciton-location-item-adress">
+                        <img class="section-loc-map-point" src="icons/loc_map_point.svg" alt="">
+                        <div><span>МОСКВА, <br>МИЧУРИНСКИЙ <br>ПРОСПЕКТ,45</span></div>
+                    </div>
+
+                    <div class="section-location-item-text">
+                        <p>Район Раменки выбирают осознанно за идеальное сочетание престижности локации и транспортной доступности. Иметь возможность быстро попасть на деловой завтрак или встречу с друзьями в центре города — доступная реальность для жителей ЖК «Инноватор».</p>
+                    </div>
+
+                    <div class="seciton-location-item-around-wrap">
+
+                        <div class="section-location-around-item" id="loc-item-00">
+
+                            <span class="uc">Станция метро<br>и БКЛ<br>  «Мичуринский <br>проспект»</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_pedestrian.svg" alt=""></div>
+                                <span class="uc">1 минута</span>
+                            </div>
+                        </div>
+
+                        <div class="section-location-around-item" id="loc-item-01">
+
+                            <span class="uc">Станция метро<br>и БКЛ<br>  «Мичуринский <br>проспект»</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_car.svg" alt=""></div>
+                                <span class="uc">1 минута</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="section-location-map-wrap-container">
+
+                        <div class="section-location-legend-wrap">
+
+                            <ul class="section-location-map-legend">
+                                <li><img src="icons/map/Education.svg" alt=""><span>Образование</span></li>
+                                <li><img src="icons/map/Medicine.svg" alt=""><span>Медицина</span></li>
+                                <li><img src="icons/map/Sport.svg" alt=""><span>Спорт</span></li>
+                                <li><img src="icons/map/Supermarket.svg" alt=""><span>Торговые центры</span></li>
+                                <li><img src="icons/map/Park.svg" alt=""><span>Парки</span></li>
+                                <li><img src="icons/map/Culture.svg" alt=""><span>Культура</span></li>
+                                <li><img src="icons/map/Shop.svg" alt=""><span>Маuазины</span></li>
+                                <li><img src="icons/map/Cafe.svg" alt=""><span>Кафе и рестораны</span></li>
+                                <li><img src="icons/map/Spa.svg" alt=""><span>Салоны красоты</span></li>
+                            </ul>
+
+                            <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
+                        </div>
+
+                        <div class="section-location-map-zoom-wrap">
+
+                            <span class="cp map-zoom-out-btn"><span></span></span>
+
+                            <span class="cp map-zoom-in-btn">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="section-location-map-wrap dragscroll">
+
+
+
+
+                            <div class="section-location-map" data-scale="1" id="section-location-map-01">
+                                
+                                <span class="section-location-map-con"><img src="icons/map/Shop.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Culture.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Sport.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Park.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Cafe.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Spa.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Education.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Supermarket.svg" alt=""></span>
+                                
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+                <!-- tab 2 not visible by default-->
+                <div class="section-location-content-item" style="display: none;">
+
+                    <div class="seciton-location-item-adress">
+                        <img class="section-loc-map-point" src="icons/loc_map_point.svg" alt="">
+                        <div><span>МОСКВА, <br>МИЧУРИНСКИЙ <br>ПРОСПЕКТ,45</span></div>
+                    </div>
+
+                    <div class="section-location-item-text">
+                        <p>ЖК «Инноватор» находится в избранном академическом окружении: совсем рядом МГУ им. М.В. Ломоносова, МГИМО, РАНХИГС, РУДН. Станьте признанным инноватором и реализуйте свой профессиональный потенциал, выбрав любой из самых престижных вузов страны.</p>
+                    </div>
+
+                    <div class="seciton-location-item-around-wrap">
+
+                        <div class="section-location-around-item" id="loc-item-10">
+
+                            <span class="uc">Станция метро<br>и БКЛ<br>  «Мичуринский <br>проспект»</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_car.svg" alt=""></div>
+                                <span class="uc">1 минута</span>
+                            </div>
+                        </div>
+
+                        <div class="section-location-around-item" id="loc-item-11">
+
+                            <span class="uc">Станция метро<br>и БКЛ<br>  «Мичуринский <br>проспект»</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_car.svg" alt=""></div>
+                                <span class="uc">1 минута</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="section-location-map-wrap-container">
+
+                        <div class="section-location-legend-wrap">
+
+                            <ul class="section-location-map-legend">
+                                <li><img src="icons/map/Education.svg" alt=""><span>Образование</span></li>
+                                <li><img src="icons/map/Medicine.svg" alt=""><span>Медицина</span></li>
+                                <li><img src="icons/map/Sport.svg" alt=""><span>Спорт</span></li>
+                                <li><img src="icons/map/Supermarket.svg" alt=""><span>Торговые центры</span></li>
+                                <li><img src="icons/map/Park.svg" alt=""><span>Парки</span></li>
+                                <li><img src="icons/map/Culture.svg" alt=""><span>Культура</span></li>
+                                <li><img src="icons/map/Shop.svg" alt=""><span>Маuазины</span></li>
+                                <li><img src="icons/map/Cafe.svg" alt=""><span>Кафе и рестораны</span></li>
+                                <li><img src="icons/map/Spa.svg" alt=""><span>Салоны красоты</span></li>
+                            </ul>
+
+                            <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
+                        </div>
+
+                        <div class="section-location-map-zoom-wrap">
+
+                            <span class="cp map-zoom-out-btn"><span></span></span>
+
+                            <span class="cp map-zoom-in-btn">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="section-location-map-wrap dragscroll">
+
+
+
+
+                            <div class="section-location-map" data-scale="1" id="section-location-map-01">
+                                
+                                <span class="section-location-map-con"><img src="icons/map/Shop.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Culture.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Sport.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Park.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Cafe.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Spa.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Education.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Supermarket.svg" alt=""></span>
+                                
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+                <!-- tab 3 not visible by default-->
+                <div class="section-location-content-item" style="display: none;">
+
+                    <div class="seciton-location-item-adress">
+                        <img class="section-loc-map-point" src="icons/loc_map_point.svg" alt="">
+                        <div><span>МОСКВА, <br>МИЧУРИНСКИЙ <br>ПРОСПЕКТ,45</span></div>
+                    </div>
+
+                    <div class="section-location-item-text">
+                        <p>Жилой комплекс «Инноватор» расположен в одном из самых престижных и экологичных округов Москвы (ЗАО), в окружении природно-парковых зон: Парка им. 50-летия Октября, Парка Олимпийской деревни, Матвеевского леса и долины реки Раменки.</p>
+                    </div>
+
+                    <div class="seciton-location-item-around-wrap">
+
+                        <div class="section-location-around-item" id="loc-item-20">
+
+                            <span class="uc">Долина<br>реки<br>  раменки</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_pedestrian.svg" alt=""></div>
+                                <span class="uc">10 минут</span>
+                            </div>
+                        </div>
+
+                        <div class="section-location-around-item" id="loc-item-21">
+
+                            <span class="uc">Парк<br>олимпийской<br>деревни</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_pedestrian.svg" alt=""></div>
+                                <span class="uc">5 минут</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="section-location-map-wrap-container">
+
+                        <div class="section-location-legend-wrap">
+
+                            <ul class="section-location-map-legend">
+                                <li><img src="icons/map/Education.svg" alt=""><span>Образование</span></li>
+                                <li><img src="icons/map/Medicine.svg" alt=""><span>Медицина</span></li>
+                                <li><img src="icons/map/Sport.svg" alt=""><span>Спорт</span></li>
+                                <li><img src="icons/map/Supermarket.svg" alt=""><span>Торговые центры</span></li>
+                                <li><img src="icons/map/Park.svg" alt=""><span>Парки</span></li>
+                                <li><img src="icons/map/Culture.svg" alt=""><span>Культура</span></li>
+                                <li><img src="icons/map/Shop.svg" alt=""><span>Маuазины</span></li>
+                                <li><img src="icons/map/Cafe.svg" alt=""><span>Кафе и рестораны</span></li>
+                                <li><img src="icons/map/Spa.svg" alt=""><span>Салоны красоты</span></li>
+                            </ul>
+
+                            <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
+                        </div>
+
+                        <div class="section-location-map-zoom-wrap">
+
+                            <span class="cp map-zoom-out-btn"><span></span></span>
+
+                            <span class="cp map-zoom-in-btn">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="section-location-map-wrap dragscroll">
+
+
+
+
+                            <div class="section-location-map" data-scale="1" id="section-location-map-01">
+                                
+                                <span class="section-location-map-con"><img src="icons/map/Shop.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Culture.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Sport.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Park.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Cafe.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Spa.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Education.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Supermarket.svg" alt=""></span>
+                                
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
     </section>
 
     <section class="section-advantages"></section>
@@ -303,7 +594,26 @@
 
     <section class="section-promo"></section>
 
+    <!-- delete me after :( -->
+    <p>        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga? Blanditiis qui facilis, velit ab distinctio accusantium ut ex consequatur soluta nulla maxime at consectetur deleniti architecto quisquam esse eaque.</p>
+    <!--  -->
+
     <footer></footer>
- 
+
+    
+
+
+
+    <script src="script/script.js"></script>
 </body>
 </html>
