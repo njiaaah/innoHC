@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded',function(){
     // section RARE FORMATS item-01 - scroller 2
 
     const scroller02 = document.querySelector('#scroller02')
-    const scroller02controls = document.querySelector('.section-rare-formats-contols').children
+    const scroller02controls = document.querySelector('.rare-controls-0').children
 
     scroller02.addEventListener('scroll', ()=>{
         updateScrollerControls(scroller02, scroller02controls)
