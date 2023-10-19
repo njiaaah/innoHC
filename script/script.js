@@ -43,12 +43,32 @@ document.addEventListener('DOMContentLoaded',function(){
             for (let x = 0; x < sectionLocTabs.length; x++) {
 
                 // hide and apply bottom border to selected tab btn
+                // do not change *location* when copying
                 sectionLocTabsBtns[x].classList.remove('section-location-tab-selected')
                 sectionLocTabsBtns[i].classList.add('section-location-tab-selected')
 
                 // hide and show needed tab
                 sectionLocTabs[x].style.display = 'none'
                 sectionLocTabs[i].style.display = 'grid'
+            }
+        })
+        
+    }
+
+    // section rare tabs
+
+    const sectionRareTabsBtns = document.querySelector('.section-rare-formats-tab-wrap').children
+    const sectionRareTabs = document.querySelectorAll('.section-rare-formats-content-item')
+
+    for (let i = 0; i < sectionRareTabs.length; i++) {
+        sectionRareTabsBtns[i].addEventListener('click',()=>{
+            for (let x = 0; x < sectionRareTabs.length; x++) {
+
+                sectionRareTabsBtns[x].classList.remove('section-location-tab-selected')
+                sectionRareTabsBtns[i].classList.add('section-location-tab-selected')
+                
+                sectionRareTabs[x].style.display = 'none'
+                sectionRareTabs[i].style.display = 'flex'
             }
         })
         
@@ -76,7 +96,7 @@ document.addEventListener('DOMContentLoaded',function(){
         })
     }
 
-    // section advantages - scroller 1
+    // section ADVANTAGES - scroller 1
 
     const scroller01 = document.querySelector('#scroller01')
     const scroller01controls = document.querySelector('.section-advantages-contols').children
@@ -88,6 +108,21 @@ document.addEventListener('DOMContentLoaded',function(){
     for (let i = 0; i < scroller01controls.length; i++) {
         scroller01controls[i].addEventListener('click',()=>{
             clickScrollerControls(scroller01, scroller01controls ,i)
+        })
+    }
+
+    // section RARE FORMATS item-01 - scroller 2
+
+    const scroller02 = document.querySelector('#scroller02')
+    const scroller02controls = document.querySelector('.section-rare-formats-contols').children
+
+    scroller02.addEventListener('scroll', ()=>{
+        updateScrollerControls(scroller02, scroller02controls)
+    })
+
+    for (let i = 0; i < scroller02controls.length; i++) {
+        scroller02controls[i].addEventListener('click',()=>{
+            clickScrollerControls(scroller02, scroller02controls ,i)
         })
     }
 
