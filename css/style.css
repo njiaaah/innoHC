@@ -1023,9 +1023,15 @@ section {
     /* takie dela */
     /* scrollbar fix */
     @-moz-document url-prefix() {
-        .section-advantages-contols {
+        .horizontal-scroller-contols {
             margin-top: 1.5rem !important;
         }
+
+        .section-location-content-item {
+            margin-top: 1rem;
+        }
+
+
     }
 
     /* section rare formats */
