@@ -126,6 +126,26 @@ document.addEventListener('DOMContentLoaded',function(){
         })
     }
 
+
+    // FORM
+
+    // hide label if input value =/= empty
+
+    const formLabels = document.querySelectorAll('.form-label')
+    const formInputs = document.querySelectorAll('.form-input')
+
+    for (let i = 0; i < formInputs.length; i++) {
+        
+        formInputs[i].addEventListener('focusout',()=>{
+            if(formInputs[i].value) {
+                formLabels[i].style.opacity = '0'
+            } else formLabels[i].style.opacity = '1'
+
+            formInputs[i].value
+        })
+        
+    }
+
 })
         
 

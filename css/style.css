@@ -12,6 +12,7 @@ body {
     --clr-primary-yellow: #ffed00;
     --clr-darkblue: #3D4452;
     --clr-greyscale-0: #ffffff;
+    --clr-greyscale-1: #202020;
     --clr-greyscale-2: #eaeaea;
     --clr-greyscale-4: #cecece;
     --clr-greyscale-6: #9d9d9d;
@@ -58,7 +59,7 @@ body {
 }
 
 .cp {
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .fc {
@@ -85,6 +86,7 @@ h1,h2,h3, .uc {
     color: white;
     padding: .75rem 1rem;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .btn-green {
@@ -1060,6 +1062,7 @@ section {
 
     .section-rare-formats-p-btn-wrap p {
         max-width: 30ch;
+        color: var(--clr-greyscale-8);
     }
 
     .section-rare-formats-p-btn-wrap .btn {
@@ -1119,7 +1122,6 @@ section {
 
 
     .section-format-absolute-fruit {
-        /* outline: 1px solid red; */
         width: 500px;
         height: 600px;
         position: absolute;
@@ -1154,12 +1156,105 @@ section {
         transform: rotate(16.75deg) translateY(-10px);
     }
 
+    /* section rare format */
+
     /* hide fruit */
     @media only screen and (max-width: 1100px) {
         .section-format-absolute-fruit{display: none;}
     }
- 
 
+
+    /* section CALLBACK */
+
+    .section-callback h2 {
+        font-size: clamp(1.5rem, 0.8571rem + 1.4286vw, 2rem);
+        margin-top: 3.375rem;
+        color: var(--clr-primary-green);
+        margin-bottom: 1.3125rem;
+    }
+
+    .section-callback-wrap {
+        width: clamp(26.625rem, -13.6564rem + 89.5143vw, 60rem);
+       
+    }
+ 
+    .section-callback-form-wrap {
+        padding: clamp(2.5rem, 1.375rem + 2.5vw, 3.375rem);
+        background-color: var(--clr-primary-yellow);
+        position: relative;
+    }
+
+    .section-callback-form-wrap form {
+        width: fit-content;
+        display: flex;
+        gap: .5rem;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .section-callback-form-wrap form input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid var(--clr-greyscale-1) ;
+        font-size: 1.125rem;
+        padding: 0.5rem 1rem;
+        padding-left: 0;
+    }
+
+    .section-callback-form-wrap form input:focus {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid var(--clr-greyscale-1) ;
+    }
+
+    .section-callback-form-wrap form .btn {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: .5rem;
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+        background-color: var(--clr-primary-green);
+    }
+
+    .section-callback-form-wrap form label {
+        transition: transform .35s ease, opacity .2s ease;
+        transform-origin: 0 50%;
+        cursor: text;
+    }
+
+    .section-callback-form-wrap form input:nth-of-type(1):focus ~ label:nth-of-type(1), 
+    .section-callback-form-wrap form input:nth-of-type(2):focus ~ label:nth-of-type(2) {
+        transform: translateY(-4rem) scale(.75) !important;
+        opacity: .75;
+        cursor: default;
+        }
+
+    .section-callback-form-wrap form label:nth-of-type(-n+2) {
+        transform: translateY(-2.5rem);
+    }
+
+    .section-callback-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-callback-wrap span {
+        font-size: 14px;
+        color: var(--clr-greyscale-6);
+        margin-top: .5rem;
+    }
+
+    .section-callback-image {
+        position: absolute;
+        width: clamp(5rem, -10.5263rem + 64.1579vw, 40rem);
+        height: 120%;
+        bottom: 0;
+        right: clamp(-9.375rem, -21.4286rem + 26.7857vw, 0rem);
+        background-image: url('../img/callback-banner-720.webp');
+        background-size: cover;
+        background-position: center 0;
+        overflow: visible;        
+    }
 
 
 
@@ -1399,6 +1494,45 @@ section {
     }
 
     /* section rare */
+
+    /* section callback */
+
+    .section-callback-wrap h2 {
+        max-width: 12ch;
+    }
+
+    .section-callback-image {
+        width: 30%;
+        height: 30%;
+        bottom: 100%;
+        right: 5%;
+    }
+
+    .section-callback-wrap {
+        width: var(--content-width);
+    }
+
+    .section-callback-form-wrap {
+        padding-inline: 1.5rem;
+    }
+
+    #callback-form {
+        width: 100%;
+    }
+
+    #callback-form label:nth-of-type(-n+2),
+    #callback-form input  {
+        color: var(--clr-primary-green);
+    }
+
+    #callback-form input {
+        border-bottom: 1px solid var(--clr-primary-green);
+    }
+
+    #callback-form .btn {
+        place-items: center;
+        justify-content: center;
+    }
 
 
 
@@ -1658,6 +1792,7 @@ section {
         background-position: 50% 50%;
     }
 
+    /* section rare */
 
 }
 
