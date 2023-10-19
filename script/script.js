@@ -159,8 +159,6 @@ document.addEventListener('DOMContentLoaded',function(){
             if(formInputs[i].value) {
                 formLabels[i].style.opacity = '0'
             } else formLabels[i].style.opacity = '1'
-
-            formInputs[i].value
         })
         
     }
