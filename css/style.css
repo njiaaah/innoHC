@@ -1031,7 +1031,8 @@ section {
         }
 
         .section-location-content-item,
-        .section-rare-formats-content-item {
+        .section-rare-formats-content-item,
+        .section-landscaping-content-item {
             margin-top: 1rem;
         }
 
@@ -1251,11 +1252,288 @@ section {
         height: 120%;
         bottom: 0;
         right: clamp(-9.375rem, -21.4286rem + 26.7857vw, 0rem);
-        background-image: url('../img/callback-banner-720.webp');
+        background-image: url('../img/callback-banner-720-ups.webp');
         background-size: cover;
         background-position: center 0;
         overflow: visible;        
     }
+
+    /* section landscaping */
+
+    .section-landscaping {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .section-landscaping-wrap {
+        margin-top: 5rem;
+        width: var(--content-width);
+    }
+
+    .section-landscaping-item-flex-wrap {
+        display: flex; 
+        gap: clamp(1rem, -1.3684rem + 4.2105vw, 2rem);   
+    }
+
+    .section-landscaping-big-image {
+        height: 33rem;
+        width: 100%;
+        background-image: url('../img/Blago_1.webp');
+        background-position: center center;
+        background-size: cover;
+        padding: 2rem;
+        position: relative;
+    }
+
+    .section-landscaping-big-image > span {
+        font-size: clamp(1.5rem, 1.3429rem + 0.5514vw, 2rem);
+        color: var(--clr-greyscale-0);
+        bottom: 2rem;
+        position: absolute;
+        width: 15ch;
+    }
+
+    .section-landscaping-item-inner-grid {
+        display: grid;
+        grid-template-columns: 176px 80px 176px;
+        gap: 1rem;
+        position: relative;
+    }
+
+
+
+    .section-landscaping-item-inner-grid > div:nth-of-type(1) {
+        grid-column-start: 1;
+        grid-column-end: 0;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .section-landscaping-item-inner-grid > div:nth-of-type(2) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .section-landscaping-item-inner-grid > div:nth-of-type(3) {
+        grid-column-end: 3;
+        grid-column-start: 1;
+    }
+
+
+    .section-landscaping-item-inner-grid > div:nth-of-type(4) {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .section-landscaping-item-inner-grid > * {
+        background-color: var(--clr-primary-green);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        /* overflow: hidden; */
+        position: relative;
+    }
+
+    .section-landscaping-item-inner-grid > div:nth-of-type(2)::after, 
+    .section-landscaping-item-inner-grid > div:nth-of-type(3)::after, 
+    .section-landscaping-item-inner-grid > div:nth-of-type(2)::before, 
+    .section-landscaping-item-inner-grid > div:nth-of-type(3)::before {
+        content: '';
+    }   
+
+    .section-landscaping-item-inner-grid > div::before {
+        width: 270px;
+        height: 1px;
+        right: -24px;
+        background-color: var(--clr-primary-yellow);
+        position: absolute;
+        transform: rotate(-73deg);
+        top: 50%;
+        z-index: 4;
+    }
+    .section-landscaping-item-inner-grid > div::after {
+        width: 150px;
+        height: 200px;
+        background-image: url('../img/fruit_61.webp');
+        position: absolute;
+        background-size: cover;
+        right: -8px;
+    }
+
+    .section-landscaping-item-inner-grid > div:nth-of-type(3)::after {
+        background-image: url('../img/fruit_62.webp');
+        right: -30px;
+        z-index: 1;
+        width: 130px;
+        height: 185px;
+        bottom: 20px;
+    }
+    .section-landscaping-item-inner-grid > div:nth-of-type(3)::before {
+        right: -71px;
+        transform: rotate(-73.5deg);
+    }
+
+    .section-landscaping-item-inner-grid > * > * {
+        max-width: 12ch;
+        display: inline-block;
+        font-weight: 400 !important;
+        color: var(--clr-greyscale-0);
+
+    }
+
+    .section-landscaping-item-inner-grid > * > h4 {
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+    }
+
+    .section-landscaping-item-inner-grid > * > span {
+        font-size: 0.875rem;
+    }
+
+    .section-landscaping-item-inner-grid > *:nth-of-type(3) > span {
+        font-size: 0.875rem;
+        max-width: 18ch;
+    }
+
+    .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(3)::after {
+        background-image: url('../img/fruit_64.webp');
+        right: -37px;
+    }
+    .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(2)::after {
+        background-image: url('../img/fruit_63.webp');
+        right: -54px;
+    }
+
+    .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(2)::before {
+        right: -76px;
+        top: 50%;       
+        width: 290px ; 
+    }
+
+    .section-landscaping-content-item:nth-of-type(3) .section-landscaping-big-image {
+        background-image: url('../img/Ingineer_1.webp');
+    }
+
+    .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(2) {
+        padding-block: 1rem;
+    }
+
+    .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(2) h4 {
+        font-size: 13px !important;
+        max-width: 21ch;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/* 900px */
+
+@media only screen and (max-width: 900px) {
+
+    /* delete after */
+    body::after {
+        content: '900px';
+    }
+
+    .section-landscaping-item-inner-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 244px;
+    }
+
+    .section-landscaping-item-inner-grid > * {
+        width: 244px;
+        height: 120px;
+        gap: 0.45rem;
+    }
+
+    .section-landscaping-item-inner-grid > * > h4 {
+        font-size: 1.0125rem !important;
+        max-width: 100%;
+    }
+
+    .section-landscaping-item-inner-grid > * > span {
+        font-size: 0.7875rem !important;
+        max-width: 100%;
+
+    }
+
+    .section-landscaping-item-inner-grid > *:nth-of-type(2) > span {
+        max-width: 12ch;
+    }
+
+    .section-landscaping-item-inner-grid > *:nth-of-type(3) > span {
+        max-width: 20ch;
+    }
+    .section-landscaping-item-inner-grid > *:nth-of-type(3) > span > br {
+        display: none;
+    }
+
+    .section-landscaping-item-inner-grid > *:nth-of-type(3) > h4 {
+        max-width: 15ch;
+    }
+
+    .section-landscaping-item-inner-grid > *:nth-of-type(2) > h4 {
+        max-width: 16ch;
+    }
+    
+    .section-landscaping-item-inner-grid > *:nth-of-type(2) > h4 br {
+        display: block;
+    }
+
+    .section-landscaping-item-inner-grid > div:nth-of-type(2)::after, 
+    .section-landscaping-item-inner-grid > div:nth-of-type(3)::after, 
+    .section-landscaping-item-inner-grid > div:nth-of-type(2)::before, 
+    .section-landscaping-item-inner-grid > div:nth-of-type(3)::before {
+        content: none;
+    }   
+
+    .section-landscaping-item-inner-grid::after {
+        content: '';
+        position: absolute;
+        width: 115px;
+        height: 230px;
+        display: block;
+        right: -30px;
+        top: 27%;
+        background-image: url('../img/fruit_6.webp');
+        background-size: cover;
+    }
+
+    .section-landscaping-big-image {
+        width: 100vw;
+        transform: translateX(-4vw) scaleX(1.05);
+    }
+
+    .section-landscaping-big-image > span {
+        font-size: clamp(1.25rem, 0.7438rem + 1.5vw, 1.5875rem);
+    }
+
+
+    .section-landscaping-item-flex-wrap {
+        gap: 0;
+        
+    }
+
+    
+}
+
 
 
 
@@ -1552,13 +1830,13 @@ section {
 
 
 
-/* 540px */
+/* 560px */
 
 @media only screen and (max-width: 560px) {
 
         /* delete after */
         body::after {
-            content: '540px';
+            content: '560px';
         }
         /* --------------- */
 
@@ -1794,6 +2072,30 @@ section {
     }
 
     /* section rare */
+
+    /* section lanscaping and engineering*/
+
+    .section-landscaping-item-flex-wrap {
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+    .section-landscaping-big-image > span {
+        font-size: clamp(1.375rem, 0.4659rem + 4.5455vw, 2rem);
+    }
+    .section-landscaping-item-inner-grid > * {
+        width: var(--content-width);
+    }
+    .section-landscaping-item-inner-grid > * > h4 {
+        max-width: 20ch;
+    }
+
+    .section-landscaping-item-inner-grid::after {
+        transform: scale(1.75);
+        left: clamp(12.5rem, 1.5909rem + 54.5455vw, 20rem);;
+        width: 130px;
+        background-image: url('../img/fruit_6_320.webp');
+    }
 
 }
 
