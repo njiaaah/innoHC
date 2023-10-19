@@ -130,6 +130,7 @@ document.addEventListener('DOMContentLoaded',function(){
         })
     }
 
+ 
     // section RARE FORMATS item-01 - scroller 2
 
     const scroller02 = document.querySelector('#scroller02')
@@ -145,6 +146,21 @@ document.addEventListener('DOMContentLoaded',function(){
         })
     }
 
+   // section stock - scroller 3
+
+   const scroller03 = document.querySelector('#scroller03')
+   const scroller03controls = document.querySelector('.section-stock-contols').children
+
+   scroller03.addEventListener('scroll', ()=>{
+       updateScrollerControls(scroller03, scroller03controls)
+   })
+
+   for (let i = 0; i < scroller03controls.length; i++) {
+       scroller03controls[i].addEventListener('click',()=>{
+           clickScrollerControls(scroller03, scroller03controls ,i)
+       })
+   }
+   
 
     // FORM
 
