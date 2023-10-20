@@ -93,6 +93,25 @@ document.addEventListener('DOMContentLoaded',function(){
         
     }
 
+    // section landscaping and engineering tabs
+
+    const sectionHowTabsBtns = document.querySelector('.section-htb-tap-wrap').children
+    const sectionHowTabs = document.querySelectorAll('.section-htb-tab-item')
+
+    for (let i = 0; i < sectionHowTabs.length; i++) {
+        sectionHowTabsBtns[i].addEventListener('click',()=>{
+            for (let x = 0; x < sectionLandTabs.length; x++) {
+
+                sectionHowTabsBtns[x].classList.remove('section-location-tab-selected')
+                sectionHowTabsBtns[i].classList.add('section-location-tab-selected')
+                
+                sectionHowTabs[x].style.display = 'none'
+                sectionHowTabs[i].style.display = 'block'
+            }
+        })
+        
+    }
+
     // SCROLLERS
 
     // scroller - элемент который скролится с классами horizontal-scroller, snaps-inline
