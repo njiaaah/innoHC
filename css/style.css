@@ -1029,24 +1029,12 @@ section {
 
 /* scroller controls */
 
-    .horizontal-scroller-controls {
-        display: flex;
-        gap: 0.75rem;
-    }
-
-    .horizontal-scroller-controls > span {
-        display: block;
-        width: 20px;
-        height: 2px;
-        border: 1px solid rgba(255, 255, 255, 0);
-        background-color: var(--clr-greyscale-4);
-        transition: all .4s;
-.horizontal-scroller-contols {
+.horizontal-scroller-controls {
     display: flex;
     gap: 0.75rem;
 }
 
-.horizontal-scroller-contols > span {
+.horizontal-scroller-controls > span {
     display: block;
     width: 20px;
     height: 2px;
@@ -1060,7 +1048,7 @@ section {
     background-color: var(--clr-primary-green) !important;
 }
 
-.section-advantages-contols {
+.section-advantages-controls {
     margin-block: .5rem 1rem;
     margin-left: clamp(0rem, -3.8571rem + 8.5714vw, 3rem);
 }
@@ -1068,7 +1056,7 @@ section {
 /* takie dela */
 /* scrollbar fix */
 @-moz-document url-prefix() {
-    .horizontal-scroller-contols {
+    .horizontal-scroller-controls {
         margin-top: 1.5rem !important;
     }
 
@@ -2932,5 +2920,3 @@ footer {
 }
 
 }
-
-    }
