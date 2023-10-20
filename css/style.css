@@ -2651,6 +2651,7 @@ body {
 
 .section-construction-progress {
     margin-top: 7rem;
+    overflow: hidden;
 }
 
 .section-construction-progress-container {
@@ -2658,6 +2659,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
+    overflow-x: auto;
+    width: 100%;
 }
 
 .section-construction-progress-card {
