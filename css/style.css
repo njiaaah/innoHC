@@ -999,12 +999,12 @@ section {
 
     /* scroller controls */
 
-    .horizontal-scroller-contols {
+    .horizontal-scroller-controls {
         display: flex;
         gap: 0.75rem;
     }
 
-    .horizontal-scroller-contols > span {
+    .horizontal-scroller-controls > span {
         display: block;
         width: 20px;
         height: 2px;
@@ -1018,7 +1018,7 @@ section {
         background-color: var(--clr-primary-green) !important;
     }
 
-    .section-advantages-contols {
+    .section-advantages-controls {
         margin-block: .5rem 1rem;
         margin-left: clamp(0rem, -3.8571rem + 8.5714vw, 3rem);
     }
@@ -1026,7 +1026,7 @@ section {
     /* takie dela */
     /* scrollbar fix */
     @-moz-document url-prefix() {
-        .horizontal-scroller-contols {
+        .horizontal-scroller-controls {
             margin-top: 1.5rem !important;
         }
 
@@ -1813,6 +1813,28 @@ section {
         justify-content: center;
     }
 
+    /* section construction progress */
+
+    .section-construction-progress-container {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .section-construction-progress-container div:nth-of-type(n+7) {
+        display: none !important;
+    }
+
+    .section-construction-progress-card img {
+        max-width: 12rem;
+    }
+
+    .section-construction-progress-container button {
+        max-width: 5.5rem;
+    }
+   
+    .section-construction-progress-container button span {
+        font-size: 0.7rem;
+        text-wrap: nowrap;
+    }
 
     /*section stock */
 
@@ -2128,6 +2150,29 @@ section {
     }
 
 
+    /* section construction progress */
+
+    .section-construction-progress-container {
+        display: grid !important;
+        grid-auto-flow: column !important;
+        gap: 1rem;
+        overflow-x: auto !important;
+    }
+
+    .section-construction-progress  {
+        place-items: flex-start;
+        padding-left: 2rem;
+    }
+
+    .section-construction-progress-controls {
+        display: flex !important;
+        margin-top: 2rem;
+    }
+
+    .section-construction-progress > button {
+        display: none !important;
+    }
+
     /*section stock */
 
     .section-stock {
@@ -2238,11 +2283,84 @@ body {
     --content-width: clamp(17rem, -1.9rem + 94vw, 40rem);
     --fs-heading: 28px;
 }
+}
 
 /* SECTION HERO */
 
 
+/* SECTION CONSTRUCTION PROGRESS */
 
+.section-construction-progress {
+    margin-top: 7rem;
+}
+
+.section-construction-progress-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.section-construction-progress-card {
+    display: grid;
+    gap: 1rem;
+}
+
+.section-construction-progress-card div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-construction-progress-card button {
+    background-color: var(--clr-primary-green);
+    border: none;
+    display: flex;
+    place-items: center;
+    gap: 0.3rem;
+    justify-content: space-between;
+    height: clamp(2rem, 10rem, 1rem);
+    color: white;
+    padding: 0 0.7rem;
+    cursor: pointer;
+}
+
+.section-construction-progress-card p, span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+
+.section-construction-progress-card h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+}
+
+.section-construction-progress-controls {
+    display: none;
+}
+
+.section-construction-progress > button {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    color: var(--clr-primary-darkgreen);
+    padding: 0.5rem 0.8rem;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    border: 2px solid var(--clr-primary-green);
+    cursor: pointer;
+}
+
+.section-construction-progress > button span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    font-family: Geologica;
 }
 
 /* SECTION STOCK */

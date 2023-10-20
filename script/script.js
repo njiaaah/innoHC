@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded',function(){
     // section ADVANTAGES - scroller 1
 
     const scroller01 = document.querySelector('#scroller01')
-    const scroller01controls = document.querySelector('.section-advantages-contols').children
+    const scroller01controls = document.querySelector('.section-advantages-controls').children
 
     scroller01.addEventListener('scroll', ()=>{
         updateScrollerControls(scroller01, scroller01controls)
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded',function(){
    // section stock - scroller 3
 
    const scroller03 = document.querySelector('#scroller03')
-   const scroller03controls = document.querySelector('.section-stock-contols').children
+   const scroller03controls = document.querySelector('.section-stock-controls').children
 
    scroller03.addEventListener('scroll', ()=>{
        updateScrollerControls(scroller03, scroller03controls)
@@ -158,6 +158,21 @@ document.addEventListener('DOMContentLoaded',function(){
    for (let i = 0; i < scroller03controls.length; i++) {
        scroller03controls[i].addEventListener('click',()=>{
            clickScrollerControls(scroller03, scroller03controls ,i)
+       })
+   }
+
+   // section construction progress - scroller 4
+
+   const scroller04 = document.querySelector('#scroller04')
+   const scroller04controls = document.querySelector('.section-construction-progress-controls').children
+
+   scroller04.addEventListener('scroll', ()=>{
+       updateScrollerControls(scroller04, scroller04controls)
+   })
+
+   for (let i = 0; i < scroller04controls.length; i++) {
+       scroller04controls[i].addEventListener('click',()=>{
+           clickScrollerControls(scroller04, scroller04controls ,i)
        })
    }
    
