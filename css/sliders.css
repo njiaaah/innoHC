@@ -1,0 +1,76 @@
+
+/* SLIDER ITSELF */
+
+.noUi-handle:after, .noUi-handle:before {
+    content: none;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: clamp(0.9rem, 0.7714rem + 0.2857vw, 1rem);
+    height: clamp(0.9rem, 0.7714rem + 0.2857vw, 1rem);
+    transform: rotate(45deg);
+    background-color: var(--clr-primary-red);
+    cursor: pointer;
+}
+
+.noUi-handle {
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+}
+
+.noUi-target {
+    background:linear-gradient(180deg, var(--clr-primary-red) 1px, var(--clr-primary-red) 2px, rgba(0,0,0,0) 2px);;
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+}
+
+.noUi-horizontal {
+    height: 3px;
+    overflow-y: visible;
+}
+
+.noUi-connect {
+    background-color: var(--clr-primary-darkred);
+    /* background-color: green; */
+    height: 3px;
+    transform: scaleY(2);
+}
+
+
+/* SLIDER OUTER STYLING */
+
+.slider-wrap > span {
+    color: var(--clr-primary-green);
+    font-size: clamp(1rem, 0.8679rem + 0.3214vw, 1.125rem);
+}
+
+.slider-wrap > div > span {
+    font-size: clamp(0.75rem, 0.5893rem + 0.3571vw, 0.875rem);
+    color: var(--clr-primary-red);
+}
+
+.slider-val-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-wrap .slider {
+    margin: 1rem 0
+}
+
+.slider-wrap span {
+    white-space: nowrap;
+}
+
+/* от и до {.slider-addition-from-to} */
+
+.slider-addition-from-to > div > span::before {
+    content: 'от';
+    margin-right: .25rem;
+}
+
+.slider-addition-from-to > div > span:last-of-type::before {
+    content: 'до' !important;
+}
