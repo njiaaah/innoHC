@@ -1732,7 +1732,8 @@ section {
 .section-how-to-buy {
     background-color: var(--clr-primary-green);
     padding: 4rem 0;
-    overflow-x: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .section-htb-tap-wrap span {
@@ -1745,18 +1746,6 @@ section {
     border-bottom:2px solid var(--clr-primary-yellow) !important;
 }
 
-.section-htb-info h2,
-.section-htb-info,
-.section-htb-info .section-location-tab-wrap {
-    width: fit-content;
-}
-
-.section-htb-info .section-location-tab-wrap {
-    width: fit-content;
-    width: 0px;
-}
-
-
 .section-htb-info p {
     color: var(--clr-greyscale-0);
     font-weight: 400;
@@ -1766,24 +1755,31 @@ section {
     font-size: var(--fs-16-18);
 }
 
-.section-htb-info::after {
+.section-htb-info h2,
+.section-htb-info .section-heading-tabs {
+    width: fit-content;
+}
+
+.section-htb-info .section-heading-tabs {
+    padding-right: 0;
+}
+.section-htb-info {
+    outline: 1px solid red;
+    width: fit-content;
+}
+
+/* .section-htb-wrap::after {
     content: '';
+    width: 425px;
+    aspect-ratio: 0.8;
     position: absolute;
-    width: 450px;
-    width: 225px;
-
-    height: 550px;
-    height: 250px;
-
+    right: 0rem;
+    top: -20%;
     display: block;
-    left: 700px;
-    left: 425px;
-
-    bottom: -100px;
-
     background-image: url('../img/fruit_3.webp');
     background-size: cover;
-}
+
+} */
 
 
 
