@@ -27,6 +27,7 @@ body {
     --content-320: 17rem;
 
     --fs-12-14: clamp(0.75rem, 0.5893rem + 0.3571vw, 0.875rem);
+    --fs-16-18: clamp(1rem, 0.8393rem + 0.3571vw, 1.125rem);
 
     display: grid;
     place-items: center;
@@ -1726,6 +1727,63 @@ section {
 
     }
 
+/* SECTION HOW TO BUY */
+
+.section-how-to-buy {
+    background-color: var(--clr-primary-green);
+    padding: 4rem 0;
+    overflow-x: visible;
+}
+
+.section-htb-tap-wrap span {
+    color: var(--clr-greyscale-0);
+    padding: 1rem 0;
+}
+
+.section-htb-tap-wrap .section-location-tab-selected {
+    color: var(--clr-primary-yellow) !important;
+    border-bottom:2px solid var(--clr-primary-yellow) !important;
+}
+
+.section-htb-info h2,
+.section-htb-info,
+.section-htb-info .section-location-tab-wrap {
+    width: fit-content;
+}
+
+.section-htb-info .section-location-tab-wrap {
+    width: fit-content;
+    width: 0px;
+}
+
+
+.section-htb-info p {
+    color: var(--clr-greyscale-0);
+    font-weight: 400;
+    line-height: 125%;
+    width: clamp(24.6875rem, 11.4286rem + 29.4643vw, 35rem);
+    margin: 2rem 0;
+    font-size: var(--fs-16-18);
+}
+
+.section-htb-info::after {
+    content: '';
+    position: absolute;
+    width: 450px;
+    width: 225px;
+
+    height: 550px;
+    height: 250px;
+
+    display: block;
+    left: 700px;
+    left: 425px;
+
+    bottom: -100px;
+
+    background-image: url('../img/fruit_3.webp');
+    background-size: cover;
+}
 
 
 
