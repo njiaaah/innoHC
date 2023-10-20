@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded',function(){
     // section ADVANTAGES - scroller 1
 
     const scroller01 = document.querySelector('#scroller01')
-    const scroller01controls = document.querySelector('.section-advantages-controls').children
+    const scroller01controls = document.querySelector('.section-advantages-contols').children
 
     scroller01.addEventListener('scroll', ()=>{
         updateScrollerControls(scroller01, scroller01controls)
@@ -130,7 +130,6 @@ document.addEventListener('DOMContentLoaded',function(){
         })
     }
 
- 
     // section RARE FORMATS item-01 - scroller 2
 
     const scroller02 = document.querySelector('#scroller02')
@@ -146,7 +145,7 @@ document.addEventListener('DOMContentLoaded',function(){
         })
     }
 
-   // section stock - scroller 3
+       // section stock - scroller 3
 
    const scroller03 = document.querySelector('#scroller03')
    const scroller03controls = document.querySelector('.section-stock-controls').children
@@ -175,7 +174,7 @@ document.addEventListener('DOMContentLoaded',function(){
            clickScrollerControls(scroller04, scroller04controls ,i)
        })
    }
-   
+
 
     // FORM
 
