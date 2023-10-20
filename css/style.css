@@ -994,6 +994,7 @@ section {
     font-size: 20px;
     color: var(--clr-greyscale-0);
     width: 10ch;
+    line-height: 100%;
 }
 
 .section-advantages-scroller > div:nth-of-type(1) {background-image: url('../img/Advantage_1.webp');}
@@ -1321,6 +1322,7 @@ section {
     bottom: 2rem;
     position: absolute;
     width: 15ch;
+    line-height: 110%;
 }
 
 .section-landscaping-item-inner-grid {
@@ -1838,6 +1840,7 @@ section {
 
     .section-landscaping-big-image > span {
         font-size: clamp(1.25rem, 0.7438rem + 1.5vw, 1.5875rem);
+        
     }
 
 
