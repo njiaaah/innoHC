@@ -1,0 +1,122 @@
+.back-to-main-btn {
+    margin: 1rem 0;
+    color: var(--clr-primary-green);
+    display: flex;
+    place-items: center;
+    gap: .5rem;
+    width: fit-content;
+    padding: .25rem;
+    transition: transform .1s ease;
+}
+
+.back-to-main-btn:hover {
+    transform: scale(1.05);
+}
+
+.back-to-main-btn img {
+    transform: scaleX(-1);
+}
+
+.section-policy ol > li {
+    list-style-type: decimal;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+}
+
+.section-policy ol {
+    margin-block-start: 2rem;
+}
+
+.section-policy h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: var(--clr-greyscale-8);
+}
+
+.section-policy h2 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    font-weight: 700;
+    color: var(--clr-greyscale-6);
+}
+
+.section-policy li::marker, .section-policy h3 {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--clr-greyscale-8);
+}
+
+
+.section-policy ul > li {
+    list-style-type: disc;
+    margin: 1rem 0 0 4rem;
+    line-height: 150%;
+    padding: .5rem 0;
+    font-size: 22px;
+    font-weight: 300;
+
+} 
+
+.section-policy p {
+    margin-top: 1rem;
+    line-height: 150%;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.section-policy table {
+    margin: 1rem 0;
+}
+
+.section-policy thead tr th,
+.section-policy table tr td,
+.section-policy table tr td li {
+    font-size: 18px ;
+    font-weight: 300 ;
+}
+
+.section-policy thead tr th:first-of-type,
+.section-policy table tr td:first-of-type {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.section-policy table tr,
+.section-policy table th,
+.section-policy table td
+ {
+    outline: 1px solid var(--clr-greyscale-6);
+    padding: .75rem;
+}
+
+@media only screen and (max-width: 560px) {
+
+    .section-policy li::marker, .section-policy h3 {
+        font-size: 1.35rem;
+    }
+
+    ul > li {
+        font-size: 1rem !important;
+    } 
+
+    .section-policy p {
+        font-size: 1.125rem;
+    }
+
+    .section-policy thead tr th,
+    .section-policy table tr td,
+    .section-policy table tr td li {
+    font-size: 0.875rem ;
+    }
+
+    .section-policy thead tr th:first-of-type,
+    .section-policy table tr td:first-of-type {
+        font-size: 0.875rem !important;
+    }
+
+}
+
+p::first-letter {
+    
+    margin-left: 1rem;
+}

@@ -21,7 +21,8 @@ body {
     --clr-greyscale-8: #353535;
     --clr-section-bg: rgb(255, 255, 255);
     --clr-mobile-menu-bg: #F2F4F8;
-
+    --clr-primary-btn-hover: #FFA564;
+    --clr-primary-btn-focus: #AD8E62;
     --content-1280: 70rem;
     --content-720: 40rem;
     --content-320: 17rem;
@@ -57,6 +58,7 @@ body {
     width: var(--content-width);
     overflow-y: visible;
     position: relative;
+
 }
 
 .full-bleed {
@@ -94,6 +96,10 @@ h1,h2,h3, .uc {
     font-size: 1rem;
     cursor: pointer;
     font-family: 'Geologica', sans-serif;
+    transition: all .5s ease-in-out,background-color .15s ease;
+    display: flex;
+    gap: .5rem;
+    place-items: center;
 }
 
 .btn-green {
@@ -101,6 +107,16 @@ h1,h2,h3, .uc {
     background-color: var(--clr-primary-green);
     border: none;
 }
+
+.btn-green:hover {
+    background-color: var(--clr-primary-btn-hover);
+}
+
+.btn-green:focus {
+    background-color: var(--clr-primary-btn-focus);
+    outline: 3px solid var(--clr-primary-btn-hover);
+}
+
 
 .btn-green-brdr {
     background: none;
@@ -172,7 +188,8 @@ header {
     position: fixed;
     top: 0;
     overflow-y: visible;
-    z-index: 10;
+    z-index: 5;
+    box-shadow: 5px 6px 9px 5px #D2D2D226;
 }
 
 
@@ -292,7 +309,7 @@ section {
     background-size: cover;
     background-position: 25% 0%;
     position: relative;
-    margin-bottom: 7rem;
+    margin-bottom: 0;
     overflow: visible;
 }
 
@@ -431,12 +448,16 @@ section {
 
 #section-hero-additional-menu {
     box-shadow: 5px 6px 9px 5px #D2D2D226;
+    background-color: var(--clr-greyscale-0);
     width: 100%;
     display: grid;
     place-items: center;
     position: absolute;
     top: 100%;
     height: 60px;
+    position: sticky;
+    top: 60px;
+    z-index: 4;
 }
 
 #section-hero-additional-menu-wrap {
@@ -488,6 +509,10 @@ section {
 }
 
     /* SECTION HOUSING COMPLEX */
+
+.section-housing-complex {
+    margin-top: 5rem;
+}
 
 .section-housing-complex-wrap {
     width: var(--content-width);
@@ -1243,11 +1268,6 @@ section {
 
 .section-callback-form-wrap form .btn {
     margin-top: 1.5rem;
-    display: flex;
-    gap: .5rem;
-    font-size: 1rem;
-    padding: 0.75rem 1rem;
-    background-color: var(--clr-primary-green);
 }
 
 .section-callback-form-wrap form label {
@@ -2118,6 +2138,10 @@ overflow-x: visible;
 
     /* SECTION HOUSING COMPLES */
 
+    .section-housing-complex {
+        margin-top: 7rem;
+    }
+
     .section-housing-complex-wrap {
         width: 100%;
     }
@@ -2403,6 +2427,10 @@ overflow-x: visible;
 
 
     /* SECTION HOUSING COMPLEX */
+
+    .section-housing-complex {
+        margin-top: -1rem;
+    }
 
     .section-housing-complex-360 img {
         display: none;
