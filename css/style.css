@@ -1052,8 +1052,8 @@ section {
     scroll-snap-type: inline mandatory ;
 }
 
-.snaps-inline > * {
-    scroll-snap-align: start;
+.dragscroll > * {
+    scroll-snap-align: start;  
 }
 
 /* scroller controls */

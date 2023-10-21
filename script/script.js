@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded',function(){
     // controls - массив с кнопками для управления данного скрола
 
     function updateScrollerControls(scroller, controls) {
-        currentScroll = parseInt((scroller.scrollLeft / (scroller.scrollWidth - scroller.clientWidth) - 0.1) * controls.length)
+        currentScroll = parseInt((scroller.scrollLeft / (scroller.scrollWidth - scroller.clientWidth) - 0.01) * controls.length)
         for (let i = 0; i < controls.length; i++) {
             controls[i].classList.remove('current-scroll')
         }
@@ -242,7 +242,43 @@ document.addEventListener('DOMContentLoaded',function(){
         
     }
 
+
+    // DRAGSCROLL FIX FOR INLINE SPAN
+
+    const allScrolls = document.querySelectorAll('.snaps-inline') 
+    let isMouseDown = false
+
+    for (let i = 0; i < allScrolls.length; i++) {
+        allScrolls[i].addEventListener('mousedown', ()=>{
+            allScrolls[i].classList.remove('snaps-inline')
+            isMouseDown = true
+        })
+
+        allScrolls[i].addEventListener('mouseleave',  ()=>{
+            allScrolls[i].classList.add('snaps-inline')
+            isMouseDown = false
+        })
+
+        allScrolls[i].addEventListener('mouseup',  ()=>{
+            // privet ya rostislav i ya izobretal snaps-inline zanogo 2 chasa
+                scrollGap = window.getComputedStyle(allScrolls[i]).rowGap
+                console.log(scrollGap)
+                allScrolls[i].scrollTo({
+                    left: Math.round(allScrolls[i].scrollLeft / allScrolls[i].firstElementChild.offsetWidth ) * allScrolls[i].firstElementChild.offsetWidth + parseInt(scrollGap), 
+                    behavior: 'smooth'
+                })
+                setTimeout(function(){
+                    if(!isMouseDown) {
+                    allScrolls[i].classList.add('snaps-inline')
+                    } 
+                }, 200)
+           
+           
+            isMouseDown = false
+            
+        })
+        
+    }
+
 })
         
-
-
