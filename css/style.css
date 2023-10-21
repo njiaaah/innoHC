@@ -23,6 +23,9 @@ body {
     --clr-mobile-menu-bg: #F2F4F8;
     --clr-primary-btn-hover: #FFA564;
     --clr-primary-btn-focus: #AD8E62;
+    --clr-news-p: #1D1D1B;
+
+
     --content-1280: 70rem;
     --content-720: 40rem;
     --content-320: 17rem;
@@ -805,11 +808,11 @@ section {
 }
 
 #loc-item-00 {
-    background-image: url(../img/loc_around_1.webp);
+    background-image: url(../img/location/image-card-1.webp);
 }
 
 #loc-item-01 {
-    background-image: url(../img/loc_around_2.webp);
+    background-image: url(../img/location/image-card-2.webp);
 }
 
 #loc-item-10 {
@@ -1006,7 +1009,6 @@ section {
 .section-advantages-scroller > div {
     width: clamp(14rem, 11.4286rem + 5.7143vw, 16rem);
     height: clamp(20.25rem, 17.3571rem + 6.4286vw, 22.5rem);
-    background-color: var(--clr-darkblue);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1020,7 +1022,7 @@ section {
     font-size: 20px;
     color: var(--clr-greyscale-0);
     width: 10ch;
-    line-height: 100%;
+    line-height: 1.5rem;
 }
 
 .section-advantages-scroller > div:nth-of-type(1) {background-image: url('../img/Advantage_1.webp');}
@@ -1077,7 +1079,6 @@ section {
 
 .section-advantages-contols {
     margin-block: .5rem 1rem;
-    margin-left: clamp(0rem, -3.8571rem + 8.5714vw, 3rem);
 }
 
 /* takie dela */
@@ -1220,6 +1221,16 @@ section {
 /* hide fruit */
 @media only screen and (max-width: 1100px) {
     .section-format-absolute-fruit{display: none;}
+}
+
+@media only screen and (max-width: 756px) {
+    #section-hero-promo-banner {
+       width: 30vw;
+    }
+
+    #section-hero-promo-banner > div span {
+        text-wrap: nowrap;
+    }
 }
 
 
@@ -1728,6 +1739,10 @@ section {
         .section-filter-heading-wrap h2 {
             border: none;
         }
+
+        .section-news-card {
+            width: 55rem !important;
+        }
     }
 
     /* go fullscreen at 620px */
@@ -1743,6 +1758,10 @@ section {
         
         .section-filter-params-wrap > div:nth-child(6) {
             justify-content: flex-start;
+        }
+
+        .section-news-card {
+            width: 30rem !important;
         }
 
     }
@@ -1971,7 +1990,26 @@ overflow-x: visible;
     }
     
 
+    .section-construction-progress-card button {
+        max-width: 5.2rem !important;
+    }
+
+    .section-construction-progress-card  button span {
+        font-size: 0.5rem !important;
+    }
     
+    .section-construction-progress-card h5 {
+        font-size: 0.9rem !important;
+    }
+
+    .section-news-card {
+        width: 40rem !important;
+    }
+
+    .section-news-card div div:first-of-type img {
+        height: 24rem !important;
+        width: 50vw !important;  
+    }
 }
 
 
@@ -2265,7 +2303,19 @@ overflow-x: visible;
         display: block;
     }
 
+    /* section news*/
+
+    .section-news-card {
+        max-width: 37rem;
+    }
+
+    .section-news-card div div:first-of-type img {
+        height: 26rem !important;
+        width: 60rem !important;  
+    }
+
     /* section construction progress */
+
     .section-construction-progress-container {
         grid-template-columns: 1fr 1fr 1fr !important;
     }
@@ -2286,6 +2336,12 @@ overflow-x: visible;
         font-size: 0.7rem;
         text-wrap: nowrap;
     }
+
+    .section-construction-progress-card h5 {
+        font-size: 1rem !important;
+    }
+
+    
 
 
     /*section stock */
@@ -2651,6 +2707,112 @@ overflow-x: visible;
         width: var(--content-width);
     }
 
+    /* section formats */
+
+    .section-formats {
+        width: 100% !important;
+        place-items: start;
+    }
+
+    .section-formats-card {
+        background-size: 56vw !important;
+        height: 70vw !important;
+        width: 100% !important;
+        margin: 1vw 0!important;
+    }
+
+    .section-formats div {
+        width: 100% !important;
+    }
+
+    .section-formats h2 {
+        padding: 0 1.5rem;
+        width: 90%;
+    }
+
+    .section-formats-card span {
+        background-color: var(--clr-primary-red);
+    }
+
+    .section-formats-container {
+        display: grid !important;
+        grid-auto-flow: row;
+        width: 100% !important;
+        gap: 0 !important;
+    }
+
+    .section-format-controls {
+        display: none;
+    }
+
+        /* section news */
+
+    .section-news-card > div:nth-of-type(2) {
+        grid-template-columns: none !important;
+    }
+
+    .section-formats-card {
+        width: 100% !important;
+    }
+
+    .section-news-container {
+        overflow-x: visible;
+    }
+
+    .section-news-container > div:nth-of-type(n+2) {
+        display: none;
+    }
+
+    .section-news {
+        place-items: start;
+        overflow: hidden;
+        padding: 3rem 0 5rem 0 !important;
+    }
+
+    .section-news-card div div:first-of-type img {
+        max-width: 90vw !important;
+        max-height: 70vw !important;
+        margin-left: 5vw;
+    }
+
+
+    .section-news-card > div:first-of-type h3 {
+        font-family: Geologica;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.02em;  
+    }
+
+    .section-news-card > div:first-of-type {
+        width: 18rem;
+        margin: 2rem 2rem 1rem 1.5rem !important;
+    }
+
+    .section-news-card > div:nth-of-type(2) > div:nth-of-type(2) {
+        max-width: 95vw;
+        margin-left: 5vw;
+    }
+
+    .section-news-card p {
+        font-size: 16px !important;
+    }
+
+    .section-news-card > div:nth-of-type(2) {
+        gap: 1rem !important;
+    }
+
+    .section-news-card a {
+        margin-bottom: 2rem;
+    }  
+
+    .section-news-card-controls {
+        display: none;
+    }
+
+    .section-news > div:last-of-type {
+        display: none !important;
+    }
         /* section construction progress */
 
     .section-construction-progress-container {
@@ -2674,6 +2836,13 @@ overflow-x: visible;
         display: none !important;
     }
 
+    .section-construction-progress-card div {
+        overflow: visible !important;
+    }
+
+    .section-construction-progress-card  button span {
+        font-size: 0.7rem !important;
+    }
     
     /*section stock */
 
@@ -2688,6 +2857,10 @@ overflow-x: visible;
 
     .section-stock-scroller button {
         margin-bottom: 3rem;
+    }
+
+    .section-news h2 {
+        margin-left: 5vw;
     }
 
 
@@ -2791,12 +2964,182 @@ body {
 
 }
 
+/* section formats */
+
+.section-formats {
+    margin: 3rem 0;
+}
+.section-formats-card {
+    background-color: var(--clr-primary-red);
+    background-size: 14.3rem;
+    background-repeat: no-repeat;
+    background-position: 101%;
+    width: 28.5rem;
+    height: 15rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.formats-bg1 {
+    background-image: url(/img/formats/formats-1.webp);
+}
+
+.formats-bg2 {
+    background-image: url(/img/formats/formats-2.webp);
+}
+
+.formats-bg3 {
+    background-image: url(/img/formats/formats-3.webp);
+}
+
+.section-formats-card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 6rem;
+    height: 100%;
+    margin: 0.2rem 0 1rem 1.5rem;
+}
+
+.section-formats-card h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: var(--clr-greyscale-0);
+    display: inline-block;
+    height: 2rem;
+}
+
+.section-formats-card span {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: 0em;
+    display: inline-block;
+    color: var(--clr-greyscale-0);
+    border: 1px solid var(--clr-greyscale-0);
+    max-width: 10rem;
+    text-wrap: nowrap;
+    text-align: center;
+    padding: 0.4rem 0;
+}
+
+.section-formats-container {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* section gallery */
+
+.section-gallery h2 {
+    margin: 2rem 0 1.5rem 0;
+}
+
+/* section news*/
+
+.section-news {
+    padding-top: 2rem;
+    background-color: var(--clr-greyscale-2);
+    padding: 5rem 0 3rem 0;
+}
+
+.section-news-container {
+    margin-top: 2rem;
+}
+
+.section-news-card {
+    display: grid;
+    background-color: white;
+    width: 60rem;
+    margin-bottom: 2rem;
+}
+
+.section-news-card > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 2.5rem;
+}
+
+.section-news-card img {
+    max-width: 100%;
+    display: block;
+}
+
+.section-news-card > div:first-of-type span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: var(--clr-greyscale-4);
+}
+
+.section-news-card h3 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+    color: var(--clr-primary-green);
+}
+
+.section-news-card p {
+    font-size: clamp(1.1rem, 0.5893rem + 0.3571vw, 0.875rem);
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:var(--clr-news-p);
+    margin-right: 2rem;
+}
+
+.section-news-card > div:first-of-type {
+    margin: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.section-news-card a {
+    display: flex;
+    gap: 0.5rem;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--clr-primary-green);
+    margin-top: 3rem;
+}
+
+.section-news-card-controls {
+    align-self: start;
+}
+
+.section-news > div:last-of-type  {
+    display: flex;
+    place-items: center;
+    gap: 0.5rem;
+    background-color: var(--clr-greyscale-2);
+    border: 2px solid var(--clr-primary-green);
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.section-news > div:last-of-type button {
+    background-color: none;
+    border: none;
+    font-family: Geologica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--clr-primary-green);
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
 /* SECTION CONSTRUCTION PROGRESS */
 
 .section-construction-progress {
     margin-top: 7rem;
-    overflow: hidden;
 }
 
 .section-construction-progress-container {
@@ -2804,13 +3147,27 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
-    overflow-x: auto;
-    width: 100%;
 }
 
 .section-construction-progress-card {
     display: grid;
     gap: 1rem;
+}
+
+.section-construction-progress-card div > img {
+    max-width: 18rem;
+    overflow: hidden;
+}
+
+.section-construction-progress-card  button img {
+    size: 20rem;
+    overflow: hidden;
+}
+
+.section-construction-progress-card  button span {
+    text-wrap: nowrap;
+    font-size: 0.8rem;
+    font-family: Geologica;
 }
 
 .section-construction-progress-card div:nth-of-type(2) {
@@ -2825,21 +3182,27 @@ body {
     place-items: center;
     gap: 0.3rem;
     justify-content: space-between;
-    height: clamp(2rem, 10rem, 1rem);
+    max-height: clamp(2rem, 10rem, 1rem);
+    padding: 0 0.7vw;
     color: white;
-    padding: 0 0.7rem;
     cursor: pointer;
+    overflow: hidden;
+    max-width: 6.5rem;
+}
+
+.section-construction-progress-card div {
+    overflow: hidden;
 }
 
 .section-construction-progress-card p, span {
-    font-size: 14px;
+    font-size: var(--fs-12-14);
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
 }
 
 .section-construction-progress-card h5 {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.02em;
