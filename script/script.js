@@ -255,29 +255,31 @@ document.addEventListener('DOMContentLoaded',function(){
         })
 
         allScrolls[i].addEventListener('mouseleave',  ()=>{
-            allScrolls[i].classList.add('snaps-inline')
+            scrollAndSnap(allScrolls[i])
             isMouseDown = false
         })
 
         allScrolls[i].addEventListener('mouseup',  ()=>{
-            // privet ya rostislav i ya izobretal snaps-inline zanogo 2 chasa
-                scrollGap = window.getComputedStyle(allScrolls[i]).rowGap
-                console.log(scrollGap)
-                allScrolls[i].scrollTo({
-                    left: Math.round(allScrolls[i].scrollLeft / allScrolls[i].firstElementChild.offsetWidth ) * allScrolls[i].firstElementChild.offsetWidth + parseInt(scrollGap), 
-                    behavior: 'smooth'
-                })
-                setTimeout(function(){
-                    if(!isMouseDown) {
-                    allScrolls[i].classList.add('snaps-inline')
-                    } 
-                }, 200)
-           
-           
+            
+            scrollAndSnap(allScrolls[i])
             isMouseDown = false
             
         })
         
+    }
+
+    function scrollAndSnap(element) {
+        // privet ya rostislav i ya izobretal snaps-inline zanogo 2 chasa
+        let scrollGap = window.getComputedStyle(element).rowGap
+        element.scrollTo({
+            left: Math.round(element.scrollLeft / element.firstElementChild.offsetWidth ) * element.firstElementChild.offsetWidth + Math.round(element.scrollLeft /element.firstElementChild.offsetWidth ) * parseInt(scrollGap) - 1, 
+            behavior: 'smooth'
+        })
+        setTimeout(function(){
+            if(!isMouseDown) {
+            element.classList.add('snaps-inline')
+            } 
+        }, 250)
     }
 
 })
