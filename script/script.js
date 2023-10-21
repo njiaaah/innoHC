@@ -175,6 +175,36 @@ document.addEventListener('DOMContentLoaded',function(){
        })
    }
 
+   // section news - scroller 5
+
+   const scroller05 = document.querySelector('#scroller05')
+   const scroller05controls = document.querySelector('.section-news-card-controls').children
+
+   scroller05.addEventListener('scroll', ()=>{
+       updateScrollerControls(scroller05, scroller05controls)
+   })
+
+   for (let i = 0; i < scroller05controls.length; i++) {
+       scroller05controls[i].addEventListener('click',()=>{
+           clickScrollerControls(scroller05, scroller05controls ,i)
+       })
+   }
+
+   // section formats - scroller 6
+
+   const scroller06 = document.querySelector('#scroller06')
+   const scroller06controls = document.querySelector('.section-format-controls').children
+
+   scroller06.addEventListener('scroll', ()=>{
+       updateScrollerControls(scroller06, scroller06controls)
+   })
+
+   for (let i = 0; i < scroller06controls.length; i++) {
+       scroller06controls[i].addEventListener('click',()=>{
+           clickScrollerControls(scroller06, scroller06controls ,i)
+       })
+   }
+
 
     // FORM
 
