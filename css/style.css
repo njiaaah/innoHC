@@ -1815,7 +1815,7 @@ section {
     display: flex;
     place-items: center;
     gap: 10rem;
-overflow-x: visible;
+    overflow-x: visible;
 }
 
 .section-htb-fruit-wrap {
@@ -1831,9 +1831,11 @@ overflow-x: visible;
     /* outline: 2px solid purple; */
     height: 115%;
     /* aspect-ratio: 1; */
-    width: 350%;
+    width: 25rem;
     background-repeat: no-repeat;
     background-image: url('../img/fruit_3.webp');
+    background-size: 27rem;
+    background-position: 1rem;
     
 }
 .section-htb-fruit-wrap .line-overflow {
@@ -1846,7 +1848,7 @@ overflow-x: visible;
     width: 1000px;
     height: 2px;
     background-color: white;
-    transform: translate(-470px, -100px) rotate(107deg);
+    transform: translate(-470px, -100px) rotate(106.8deg);
 }
 
 
@@ -1987,6 +1989,11 @@ overflow-x: visible;
     
     .section-htb-fruit-wrap .line-overflow span {
         transform: translate(-470px, -95px) translateX(clamp(-0.9375rem, -8.4375rem + 16.6667vw, 0.9375rem)) rotate(107deg);
+        left:1vw;
+    }
+
+    .section-htb-wrap {
+        gap: 17vw;
     }
     
 
