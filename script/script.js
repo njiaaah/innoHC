@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
     for (let i = 0; i < sectionHowTabs.length; i++) {
         sectionHowTabsBtns[i].addEventListener('click',()=>{
-            if (sectionHowFruit.style.display == "none") {
+            if (sectionHowFruit.style.display == "none" && window.screen.width > 560) {
 
                 sectionHowFruit.style.display = "block"
                 sectionHowToBuy.style.height = "100%"
