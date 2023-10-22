@@ -2319,6 +2319,12 @@ section {
         display: block;
     }
 
+    /* gallery */
+
+    .section-gallery-card img {
+        width: 30rem !important;
+    }
+
     /* section news*/
 
     .section-news-card {
@@ -2763,6 +2769,12 @@ section {
 
     .section-format-controls {
         display: none;
+    }
+
+    /* gallery */
+
+    .section-gallery-card img {
+        width: 15rem !important;
     }
 
         /* section news */

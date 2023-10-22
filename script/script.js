@@ -74,6 +74,28 @@ document.addEventListener('DOMContentLoaded',function(){
         
     }
 
+    // section gallery
+
+    const sectionGalleryTabsBtns = document.querySelector('.section-gallery-formats-tab-wrap').children
+    const sectionGalleryTabs = document.querySelectorAll('.section-gallery-card')
+    const sectionGalleryControls = document.querySelector('.section-gallery-card-controls').children
+
+    for (let i = 0; i < sectionGalleryTabs.length; i++) {
+        sectionGalleryTabsBtns[i].addEventListener('click',()=>{
+            for (let x = 0; x < sectionGalleryTabs.length; x++) {
+
+                sectionGalleryTabsBtns[x].classList.remove('section-location-tab-selected')
+                sectionGalleryTabsBtns[i].classList.add('section-location-tab-selected')
+                
+                sectionGalleryTabs[x].style.display = 'none'
+                sectionGalleryTabs[i].style.display = 'flex'
+                sectionGalleryControls[3].classList.remove('current-scroll')
+                sectionGalleryControls[0].classList.add('current-scroll')
+            }
+        })
+        
+    }
+
     // section landscaping and engineering tabs
 
     const sectionLandTabsBtns = document.querySelector('.section-landscaping-tap-wrap').children
@@ -236,6 +258,57 @@ document.addEventListener('DOMContentLoaded',function(){
    for (let i = 0; i < scroller07controls.length; i++) {
        scroller07controls[i].addEventListener('click',()=>{
            clickScrollerControls(scroller07, scroller07controls ,i)
+       })
+   }
+
+   const scroller08 = document.querySelector('#scroller08')
+   const scroller08controls = document.querySelector('.section-gallery-card-controls').children
+
+   scroller08.addEventListener('scroll', ()=>{
+       updateScrollerControls(scroller08, scroller08controls)
+   })
+
+   for (let i = 0; i < scroller08controls.length; i++) {
+       scroller08controls[i].addEventListener('click',()=>{
+           clickScrollerControls(scroller08, scroller08controls ,i)
+       })
+   }
+
+   const scroller09 = document.querySelector('#scroller09')
+   const scroller09controls = document.querySelector('.section-gallery-card-controls').children
+
+   scroller09.addEventListener('scroll', ()=>{
+       updateScrollerControls(scroller09, scroller08controls)
+   })
+
+   for (let i = 0; i < scroller09controls.length; i++) {
+       scroller09controls[i].addEventListener('click',()=>{
+           clickScrollerControls(scroller09, scroller09controls ,i)
+       })
+   }
+
+   const scroller10 = document.querySelector('#scroller10')
+   const scroller10controls = document.querySelector('.section-gallery-card-controls').children
+
+   scroller10.addEventListener('scroll', ()=>{
+       updateScrollerControls(scroller10, scroller10controls)
+   })
+
+   for (let i = 0; i < scroller10controls.length; i++) {
+       scroller10controls[i].addEventListener('click',()=>{
+           clickScrollerControls(scroller10, scroller10controls ,i)
+       })
+   }
+   const scroller11 = document.querySelector('#scroller11')
+   const scroller11controls = document.querySelector('.section-gallery-card-controls').children
+
+   scroller11.addEventListener('scroll', ()=>{
+       updateScrollerControls(scroller11, scroller11controls)
+   })
+
+   for (let i = 0; i < scroller11controls.length; i++) {
+       scroller11controls[i].addEventListener('click',()=>{
+           clickScrollerControls(scroller11, scroller11controls ,i)
        })
    }
 
