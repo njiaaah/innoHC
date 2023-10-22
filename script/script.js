@@ -89,6 +89,8 @@ document.addEventListener('DOMContentLoaded',function(){
                 
                 sectionGalleryTabs[x].style.display = 'none'
                 sectionGalleryTabs[i].style.display = 'flex'
+                sectionGalleryControls[1].classList.remove('current-scroll')
+                sectionGalleryControls[2].classList.remove('current-scroll')
                 sectionGalleryControls[3].classList.remove('current-scroll')
                 sectionGalleryControls[0].classList.add('current-scroll')
             }
