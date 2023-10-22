@@ -3038,8 +3038,22 @@ body {
 
 /* section gallery */
 
+.section-gallery {
+    margin-bottom: 4rem;
+}
+
 .section-gallery h2 {
     margin: 2rem 0 1.5rem 0;
+}
+
+.section-gallery-card {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.section-gallery-card img {
+    width: 40rem;
 }
 
 /* section news*/
@@ -3273,6 +3287,7 @@ body {
     font-weight: 400;
     color: var(--clr-primary-green);
     text-align: left;
+    white-space: pre-line;
 }
 
 .section-stock-scroller button {
