@@ -1976,20 +1976,20 @@ section {
 
 
     .section-htb-fruit-wrap {
-        transform: translateX(-20px);
         transform: translateX(clamp(-10.9375rem, -33.8816rem + 40.7895vw, -1.25rem));
         overflow-x: visible;
+        width: 14px;
     }
     
     .section-htb-fruit-wrap .htb-fruit {
-        height: 115%;
-        width: 450%;
-        transform: scale(0.5);
+        height: 100%;
+        aspect-ratio: 1;
+        transform: scale(0.5) translateX(29px);
         transform-origin: 14% 50%;
     }
     
     .section-htb-fruit-wrap .line-overflow span {
-        transform: translate(-470px, -95px) translateX(clamp(-0.9375rem, -8.4375rem + 16.6667vw, 0.9375rem)) rotate(107deg);
+        transform: translate(-470px, -90px)  rotate(107deg);
         left:1vw;
     }
 
