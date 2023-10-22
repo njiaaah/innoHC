@@ -1816,7 +1816,7 @@ section {
     display: flex;
     place-items: center;
     gap: 10rem;
-overflow-x: visible;
+    overflow-x: visible;
 }
 
 .section-htb-fruit-wrap {
@@ -1832,9 +1832,11 @@ overflow-x: visible;
     /* outline: 2px solid purple; */
     height: 115%;
     /* aspect-ratio: 1; */
-    width: 350%;
+    width: 25rem;
     background-repeat: no-repeat;
     background-image: url('../img/fruit_3.webp');
+    background-size: 27rem;
+    background-position: 1rem;
     
 }
 .section-htb-fruit-wrap .line-overflow {
@@ -1847,7 +1849,7 @@ overflow-x: visible;
     width: 1000px;
     height: 2px;
     background-color: white;
-    transform: translate(-470px, -100px) rotate(107deg);
+    transform: translate(-470px, -100px) rotate(106.8deg);
 }
 
 
@@ -1988,6 +1990,11 @@ overflow-x: visible;
     
     .section-htb-fruit-wrap .line-overflow span {
         transform: translate(-470px, -95px) translateX(clamp(-0.9375rem, -8.4375rem + 16.6667vw, 0.9375rem)) rotate(107deg);
+        left:1vw;
+    }
+
+    .section-htb-wrap {
+        gap: 17vw;
     }
     
 
@@ -2008,8 +2015,16 @@ overflow-x: visible;
     }
 
     .section-news-card div div:first-of-type img {
-        height: 24rem !important;
+        height: 18rem !important;
         width: 50vw !important;  
+    }
+
+    .section-news-card p {
+        font-size: 12px !important;
+    }
+
+    .section-news-card a {
+        margin-top: 2rem !important;
     }
 }
 
@@ -2311,8 +2326,12 @@ overflow-x: visible;
     }
 
     .section-news-card div div:first-of-type img {
-        height: 26rem !important;
+        height: 18rem !important;
         width: 60rem !important;  
+    }
+
+    .section-news-card p {
+        font-size: 12px !important;
     }
 
     /* section construction progress */
@@ -3026,14 +3045,27 @@ body {
 }
 
 .section-formats-container {
-    overflow-x: hidden;
     width: 100%;
 }
 
 /* section gallery */
 
+.section-gallery {
+    margin-bottom: 4rem;
+}
+
 .section-gallery h2 {
     margin: 2rem 0 1.5rem 0;
+}
+
+.section-gallery-card {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.section-gallery-card img {
+    width: 40rem;
 }
 
 /* section news*/
@@ -3267,6 +3299,7 @@ body {
     font-weight: 400;
     color: var(--clr-primary-green);
     text-align: left;
+    white-space: pre-line;
 }
 
 .section-stock-scroller button {

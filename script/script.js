@@ -224,6 +224,21 @@ document.addEventListener('DOMContentLoaded',function(){
        })
    }
 
+   // section gallery - scroller 7
+
+   const scroller07 = document.querySelector('#scroller07')
+   const scroller07controls = document.querySelector('.section-gallery-card-controls').children
+
+   scroller07.addEventListener('scroll', ()=>{
+       updateScrollerControls(scroller07, scroller07controls)
+   })
+
+   for (let i = 0; i < scroller07controls.length; i++) {
+       scroller07controls[i].addEventListener('click',()=>{
+           clickScrollerControls(scroller07, scroller07controls ,i)
+       })
+   }
+
 
     // FORM
 
