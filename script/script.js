@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded',function(){
     // controls - массив с кнопками для управления данного скрола
 
     function updateScrollerControls(scroller, controls) {
-        currentScroll = parseInt((scroller.scrollLeft / (scroller.scrollWidth - scroller.clientWidth) - 0.1) * controls.length)
+        currentScroll = parseInt((scroller.scrollLeft / (scroller.scrollWidth - scroller.clientWidth) - 0.01) * controls.length)
         for (let i = 0; i < controls.length; i++) {
             controls[i].classList.remove('current-scroll')
         }
@@ -242,7 +242,45 @@ document.addEventListener('DOMContentLoaded',function(){
         
     }
 
+
+    // DRAGSCROLL FIX FOR INLINE SPAN
+
+    const allScrolls = document.querySelectorAll('.snaps-inline') 
+    let isMouseDown = false
+
+    for (let i = 0; i < allScrolls.length; i++) {
+        allScrolls[i].addEventListener('mousedown', ()=>{
+            allScrolls[i].classList.remove('snaps-inline')
+            isMouseDown = true
+        })
+
+        allScrolls[i].addEventListener('mouseleave',  ()=>{
+            scrollAndSnap(allScrolls[i])
+            isMouseDown = false
+        })
+
+        allScrolls[i].addEventListener('mouseup',  ()=>{
+            
+            scrollAndSnap(allScrolls[i])
+            isMouseDown = false
+            
+        })
+        
+    }
+
+    function scrollAndSnap(element) {
+        // privet ya rostislav i ya izobretal snaps-inline zanogo 2 chasa
+        let scrollGap = window.getComputedStyle(element).rowGap
+        element.scrollTo({
+            left: Math.round(element.scrollLeft / element.firstElementChild.offsetWidth ) * element.firstElementChild.offsetWidth + Math.round(element.scrollLeft /element.firstElementChild.offsetWidth ) * parseInt(scrollGap) - 1, 
+            behavior: 'smooth'
+        })
+        setTimeout(function(){
+            if(!isMouseDown) {
+            element.classList.add('snaps-inline')
+            } 
+        }, 250)
+    }
+
 })
         
-
-
