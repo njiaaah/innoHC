@@ -251,17 +251,20 @@ document.addEventListener('DOMContentLoaded',function(){
     for (let i = 0; i < allScrolls.length; i++) {
         allScrolls[i].addEventListener('mousedown', ()=>{
             allScrolls[i].classList.remove('snaps-inline')
+            allScrolls[i].style.cursor = 'grabbing'
             isMouseDown = true
         })
 
         allScrolls[i].addEventListener('mouseleave',  ()=>{
+            allScrolls[i].style.cursor = 'grab'
             scrollAndSnap(allScrolls[i])
             isMouseDown = false
         })
 
         allScrolls[i].addEventListener('mouseup',  ()=>{
-            
+            allScrolls[i].style.cursor = 'grab'
             scrollAndSnap(allScrolls[i])
+            
             isMouseDown = false
             
         })
@@ -269,6 +272,7 @@ document.addEventListener('DOMContentLoaded',function(){
     }
 
     function scrollAndSnap(element) {
+        
         // privet ya rostislav i ya izobretal snaps-inline zanogo 2 chasa
         let scrollGap = window.getComputedStyle(element).rowGap
         element.scrollTo({

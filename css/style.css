@@ -1050,6 +1050,7 @@ section {
 
 .snaps-inline {
     scroll-snap-type: inline mandatory ;
+    cursor: grab;
 }
 
 .dragscroll > * {
