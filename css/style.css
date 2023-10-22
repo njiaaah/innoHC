@@ -2335,6 +2335,13 @@ section {
         max-width: 37rem;
     }
 
+    .section-news-card button {
+        align-items: center;
+    }
+    .section-news {
+        place-items: start;
+    }
+
     .section-news-card div div:first-of-type img {
         height: 18rem !important;
         width: 60rem !important;  
@@ -2342,6 +2349,15 @@ section {
 
     .section-news-card p {
         font-size: 12px !important;
+    }
+
+    .section-news > div:last-of-type {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-news-wrap {
+        width: 100vw !important;
     }
 
     /* section how to buy */
