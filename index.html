@@ -1196,7 +1196,7 @@
     </section>
 
 
-    <section class="section-how-to-buy">
+    <section class="section-how-to-buy" style="height: 500px;">
 
         <div class="section-htb-wrap section-wrap">
 
@@ -1222,25 +1222,254 @@
 
                 </div>
 
-                <div class="section-htb-tab-item" style="display: none;">
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos possimus veritatis dolorem, autem consequatur itaque est 
-                        <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, saepe! Quibusdam eveniet error, 
-                        voluptas illum voluptatibus ab. Quaerat, ab provident!
-                        <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, saepe! Quibusdam eveniet error,
-                    </p>
-
+                <div class="mainipot-ipotcalc section-htb-tab-item" style="display: none;">
+                    <div class="section-wrap">
+                    <div class="concalc-ipot">
+                        <div class="contcalc-ipot">
+                        <div class="calcleft-ipot">
+                            <div class="calcin-ipot">
+                                <label>Социальная программа</label>
+                                <div onclick=cosprog() class="butsrc-cur">
+                                    <button id="cosprog-but">Базовая программа</button>
+                                    <img id="cosimg" src="img/calc/arrow.svg" alt="">
+                                </div>
+                                <div id="cosprog-info" style="display: none;">
+                                    <ul>
+                                    <li>Базовая программа<span>✔</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+            
+                            <div class="calcin-ipot">
+                                <label>Стоимость недвижимости</label>
+                                <div>
+                                    <input value="5 000 000" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="11">
+                                    <span>₽</span>
+                                </div>
+                            </div>
+                            
+                            <div class="firstb-ipot">
+                                <label>Первоначальный взнос</label>
+                                <div class="firstb-ipot-info">
+                                <div>
+                                    <input value="899 999 99" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="11">
+                                    <span>₽</span>
+                                </div>
+                                <div>
+                                    <input value="15" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="2">
+                                    <span>%</span>
+                                </div>
+                                </div>
+                            </div>
+            
+                            <div class="calcin-ipot">
+                                <label>Срок кредита</label>
+                                <div>
+                                    <input value="20" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="2">
+                                    <span>Лет</span>
+                                </div>
+                            </div>
+            
+                            <div class="calcin-ipot">
+                                <label>Зарплатная карта</label>
+                                <div onclick=debcard() class="butsrc-cur">
+                                    <button>Не выбрано</button>
+                                    <img id="imgdebcard" src="img/calc/arrow.svg" alt="">
+                                </div>
+                                <div id="debcard-info" style="display: none;">
+                                <ul>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк<span>✔</span></li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                </ul>
+                                </div>
+                            </div>
+            
+                            <div class="lowpr-ipot">
+                                <input type="checkbox" onclick="banknt_found()">
+                                <span>Снизить ставку</span>
+                                <div>?
+                                    <span>Тут текст наводки</span>
+                                </div>
+                            </div>
+                          </div>
+                  
+                        <div class="givip-ipot">
+                            <span>Сумма кредита</span>
+                            <div>
+                                <span>999 999 999</span>
+                                <span>₽</span>
+                            </div>
+                            <button>Хочу ипотеку</button>
+                            
+                        </div>
+            
+                        </div>
+            
+                        <div class="concalright-ipot">
+            
+                            <div class="rigrate-ipot">
+                                <div>
+                                <span>?</span>
+                                <span>Узнайте свой кредитный рейтинг</span>
+                                </div>
+                            </div>
+            
+                            <div id="bank-offer-all" style="display: block;">
+            
+                            <div class="banright-ipot">
+                                <div class="rightfi-ipot" id="togg-infban">
+                                    <div>
+                                    <img src="img/calc/bank.jpg" alt="">
+                                    </div>
+                                    <div class="upbanright-ipot">
+                                        <label>Такой вот банк крутой</label>
+                                        <div class="upbaninfo-ipot">
+                                            <span>От 999999р/месяц</span>
+                                            <span>до 20 лет</span>
+                                            <span>от 15%</span>
+                                        </div>
+                                        <div>
+                                            <span>68% одобрений</span>
+                                            </div>
+                                    </div>
+                                    <div>
+                                    <img id="imgban-ipot" src="img/calc/arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            
+                                <div id="toggl-cont">
+                                
+                                    <ul class="licred-ipot">
+                                         
+                                            <li>
+                                                <span>
+                                                    Сумма кредита
+                                                </span>
+                                                <span>
+                                                    300 000 - 15 000 000 ₽
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    Срок кредита
+                                                </span>
+                                                <span>
+                                                    1 - 20 лет
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    Возраст заемщика
+                                                </span>
+                                                <span>
+                                                    21 -70 лет
+                                                </span>
+                                            </li>
+                                            
+                                            
+                                                <li>
+                                                    <span>
+                                                        Стаж на последнем месте работы
+                                                    </span>
+                                                    <span>
+                                                        от 6 месяцев
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        Общий стаж
+                                                    </span>
+                                                    <span>
+                                                        от 6 месяцев
+                                                    </span>
+                                                </li>
+                                            
+                                    </ul>
+                                
+            
+                                <div class="btnban-ipot">
+                                    <div>
+                                        <button onclick="toggle_offer()">Показать <span>2</span> программы</button>
+                                    </div>
+                                    <div>
+                                        <button>На страницу банка</button>
+                                        <button>Заполнить анкету</button>
+                                    </div>
+                                </div>
+            
+                            <div id="toggle-offer-content" style="display: none;">
+                                <div class="hidinfban-ipot">
+                                    <div>
+                                        <span>Коммерческая недвижимость (при электронной регистрации и при оплате кредита с карты СНГБ)</span>
+                                    </div>
+                                    <div>
+                                        <span>Приобретение коммерческой недвижимости</span>
+                                    </div>
+                                    <div>
+                                        <span>от 199 183 р/мес.</span>
+                                        <span>до 20 лет</span>
+                                        <span>от 15.15%</span>
+                                    </div>
+                                    <div>
+                                        <span>68% одобрений</span>
+                                    </div>
+                                </div>
+            
+                                <div class="hidinfban-ipot">
+                                    <div>
+                                        <span>Коммерческая недвижимость (при электронной регистрации и при оплате кредита с карты СНГБ)</span>
+                                    </div>
+                                    <div>
+                                        <span>Приобретение коммерческой недвижимости</span>
+                                    </div>
+                                    <div>
+                                        <span>от 199 183 р/мес.</span>
+                                        <span>до 20 лет</span>
+                                        <span>от 15.15%</span>
+                                    </div>
+                                    <div>
+                                        <span>68% одобрений</span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                                </div>
+            
+                            </div>
+            
+                            </div>
+                            <div class="notfound-bank" id="banknotfound-ipot" style="display: none;" >
+                                <div>
+                                    <img src="img/calc/bank.jpg" alt="">
+                                </div>
+                                <div>
+                                    <span>Банки не найдены</span>
+                                    <span>Попробуйте сократить количество фильтров поиска</span>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
                 </div>
+            </div>
 
 
 
                 
             </div>
 
-            <div class="section-htb-fruit-wrap">
+            <div class="section-htb-fruit-wrap" style="display: block;">
 
                 <div class="htb-fruit"></div>
 
@@ -1753,6 +1982,8 @@
         </div>
 
     </footer>
+
+    
 
 
 

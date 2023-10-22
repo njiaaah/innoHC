@@ -121,6 +121,8 @@ document.addEventListener('DOMContentLoaded',function(){
 
     const sectionHowTabsBtns = document.querySelector('.section-htb-tap-wrap').children
     const sectionHowTabs = document.querySelectorAll('.section-htb-tab-item')
+    const sectionHowFruit = document.querySelector('.section-htb-fruit-wrap')
+    const sectionHowToBuy = document.querySelector('.section-how-to-buy')
 
     for (let i = 0; i < sectionHowTabs.length; i++) {
         sectionHowTabsBtns[i].addEventListener('click',()=>{
@@ -131,6 +133,22 @@ document.addEventListener('DOMContentLoaded',function(){
                 
                 sectionHowTabs[x].style.display = 'none'
                 sectionHowTabs[i].style.display = 'block'
+               
+            }
+        })
+        
+    }
+
+    for (let i = 0; i < sectionHowTabs.length; i++) {
+        sectionHowTabsBtns[i].addEventListener('click',()=>{
+            if (sectionHowFruit.style.display == "none") {
+
+                sectionHowFruit.style.display = "block"
+                sectionHowToBuy.style.height = "100%"
+            }
+            else {
+                sectionHowFruit.style.display = "none"
+                sectionHowToBuy.style.height = "100%"
             }
         })
         
@@ -378,3 +396,78 @@ document.addEventListener('DOMContentLoaded',function(){
 
 })
         
+//calculator
+
+var cos = document.getElementById('cosprog-info')
+var cosimg = document.getElementById('cosimg')
+var deb = document.getElementById('debcard-info')
+var debimg = document.getElementById('imgdebcard')
+var togofcontent = document.getElementById('toggle-offer-content')
+var ntfound_bank = document.getElementById('banknotfound-ipot')
+var bank_offres = document.getElementById('bank-offer-all')
+
+function cosprog() {
+    if (cos.style.display == "grid") {
+        cos.style.display = "none"
+        cosimg.classList.remove("arrow-up");
+    }
+    else {
+        cos.style.display = "grid"
+        cosimg.classList.add("arrow-up");
+    }
+
+}
+
+function debcard() {
+    if (deb.style.display == "grid") {
+        deb.style.display = "none"
+        debimg.classList.remove("arrow-up");
+    }
+    else {
+        deb.style.display = "grid"
+        debimg.classList.add("arrow-up");
+    }
+
+}
+
+function toggle_offer() {
+    if (togofcontent.style.display == "block") {
+        togofcontent.style.display = "none"
+    }
+    else {
+        togofcontent.style.display = "block"
+    }
+
+}
+
+function banknt_found() {
+    if (ntfound_bank.style.display == "none") {
+        bank_offres.style.display = "none"
+        ntfound_bank.style.display = "grid"
+    }
+    else {
+        bank_offres.style.display = "block"
+        ntfound_bank.style.display = "none"
+    }
+
+}
+
+
+
+$('#toggl-cont').slideToggle(0)
+let scalecount = 1
+
+$('#togg-infban').click(function(){
+    $('#toggl-cont').slideToggle(500)
+   
+    if (scalecount==1) {
+    scalecount = -1;
+    $('#imgban-ipot').css("transform", "scaleY(" + scalecount + ")")
+    
+    }
+    else {
+        scalecount = 1;  
+    $('#imgban-ipot').css("transform", "scaleY(" + scalecount + ")");
+      
+    }
+})
