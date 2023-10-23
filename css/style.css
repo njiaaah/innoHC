@@ -3002,9 +3002,26 @@ section {
     /* gallery */
 
     .section-gallery-card img {
-        width: 15rem !important;
+        width: 17rem !important;
+        height: 15rem;
     }
 
+    .section-gallery {
+        place-content: start;
+   
+    }
+
+    .section-gallery > div:first-of-type  h2{
+        margin-left: 5vw;
+    }
+
+    .section-gallery > div:first-of-type div {
+        margin-left: 5vw;
+    }
+
+    .section-gallery-container {
+        width: 100vw;
+    }
         /* section news */
 
     .section-news-card > div:nth-of-type(2) {
