@@ -2372,6 +2372,12 @@ section {
 
     .concalc-ipot  {
         grid-template-columns: none !important;
+        place-content: center;
+    }
+
+    .contcalc-ipot {
+        display: grid;
+        place-content: center;
     }
     
     .btnban-ipot {
@@ -2380,6 +2386,28 @@ section {
     
     .btnban-ipot div:last-of-type {
         flex-direction: column !important;
+    }
+
+    .calcin-ipot div:first-of-type {
+        width: 70vw;
+    }
+
+    .calcin-ipot div:nth-of-type(2) ul {
+        width: 75vw !important;
+    }
+
+    .firstb-ipot-info {
+        display: grid !important;
+        width: 70vw;
+    }
+
+    .licred-ipot {
+        display: grid !important;
+        width: 65vw;
+    }
+
+    .upbaninfo-ipot {
+        gap: 0.5rem !important;
     }
 
     /* section news*/
