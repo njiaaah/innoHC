@@ -3047,7 +3047,12 @@ section {
 
     .section-gallery-card img {
         width: 17rem !important;
-        height: 15rem;
+        height: 15rem !important;
+    }
+
+    .section-gallery-formats-tab-wrap {
+        gap: 0.5rem;
+        width: 100vw;
     }
 
     .section-gallery {
@@ -3367,6 +3372,7 @@ body {
 
 .section-gallery-card img {
     width: 40rem;
+    height: 25rem;
 }
 
 /* section news*/
