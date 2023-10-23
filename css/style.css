@@ -2952,10 +2952,13 @@ section {
     .section-formats h2 {
         padding: 0 1.5rem;
         width: 90%;
+        margin-block: 2rem .5rem;
     }
+    
 
     .section-formats-card span {
         background-color: var(--clr-primary-red);
+        margin-bottom: 1rem;
     }
 
     .section-formats-container {
