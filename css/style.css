@@ -1739,8 +1739,8 @@ section {
 
 .section-filter-results {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
+    grid-template-columns: repeat(4, 25%);
+    width: var(--content-width);
 }
 
 .secion-filter-results-card {
