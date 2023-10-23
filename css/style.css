@@ -100,7 +100,7 @@ h1,h2,h3, .uc {
     color: white;
     padding: .75rem 1rem;
     font-size: 1rem;
-    cursor: pointer;
+    cursor: pointer !important;
     font-family: 'Geologica', sans-serif;
     transition: all .5s ease-in-out,background-color .15s ease;
     display: flex;
