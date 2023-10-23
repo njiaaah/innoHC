@@ -512,7 +512,7 @@ const mybutton = document.getElementById("topbutton");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 && window.innerWidth > 720) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 && window.innerWidth > 200) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none"

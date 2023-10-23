@@ -39,6 +39,35 @@ body {
     padding-top: 60px;
 }
 
+ /* button up */
+ 
+ #topbutton {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--clr-primary-green);
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    animation: move 0.7s linear;
+ }
+
+@keyframes  move {
+    0% {
+        bottom: -88px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
 body::after {
     content:none !important
 }
@@ -464,7 +493,7 @@ section {
     height: 60px;
     position: sticky;
     top: 60px;
-    z-index: 4;
+    z-index: 5;
 }
 
 #section-hero-additional-menu-wrap {
@@ -693,7 +722,10 @@ section {
 .section-location  {
     /* margin-top: clamp(2.875rem, 1.4211rem + 4.4737vw, 5rem); */
     padding-top: 2rem;
+}
 
+.section-location-content-wrap {
+     margin-top: 1.5rem;
 }
 
 .section-location-label-group label {
@@ -1377,6 +1409,7 @@ section {
     display: grid;
     grid-template-columns: 176px 80px 176px;
     grid-template-columns: 2.2fr 1fr 2.2fr;
+    grid-template-rows: 268px 240px;
     gap: 1rem;
     position: relative;
     width: var(--content-width);
@@ -1429,7 +1462,7 @@ section {
 }   
 
 .section-landscaping-item-inner-grid > div::before {
-    width: 270px;
+    width: 250px;
     height: 1px;
     right: -24px;
     background-color: var(--clr-primary-yellow);
@@ -1445,6 +1478,43 @@ section {
     position: absolute;
     background-size: cover;
     right: -8px;
+}
+
+.section-landscaping-content-item:nth-of-type(2) .section-landscaping-item-inner-grid > div:nth-of-type(2)::before  {
+    transform: translateX(30px) rotate(-73deg);
+}
+
+.section-landscaping-content-item:nth-of-type(2) .section-landscaping-item-inner-grid > div:nth-of-type(2)::after  {
+    transform: translate(10.5px, 35px) scale(.85) !important; 
+   
+}
+
+.section-landscaping-content-item:nth-of-type(2) .section-landscaping-item-inner-grid > div:nth-of-type(3)::before  {
+    /* display: none; */
+    transform: translateX(-11px) rotate(-73deg);
+}
+
+.section-landscaping-content-item:nth-of-type(2) .section-landscaping-item-inner-grid > div:nth-of-type(3)::after  {
+    /* display: none; */
+   transform: translate(0px) !important;
+}
+
+.section-landscaping-item-inner-grid:nth-of-type(2) > div:nth-of-type(2):before {
+    width: 280px !important;
+    transform: translateX(-2px) rotate(-73deg);
+}
+
+.section-landscaping-item-inner-grid:nth-of-type(2) > div:nth-of-type(2)::after {
+    transform: translateX(20px) !important;
+}
+
+.section-landscaping-item-inner-grid:nth-of-type(2) > div:nth-of-type(3):before {
+    transform: translateX(-5px) rotate(-73deg);
+}
+
+.section-landscaping-item-inner-grid:nth-of-type(2) > div:nth-of-type(3)::after {
+    transform: translateX(5px) !important;
+
 }
 
 .section-landscaping-item-inner-grid > div:nth-of-type(3)::after {
@@ -1471,6 +1541,15 @@ section {
 .section-landscaping-item-inner-grid > * > h4 {
     font-size: 1.125rem;
     line-height: 1.25rem;
+    
+}
+
+.section-landscaping-item-inner-grid > div:nth-of-type(3) > h4 {
+    max-width: 14ch;
+}
+
+.section-landscaping-item-inner-grid > div:nth-of-type(1) > span {
+   max-width: 20ch;
 }
 
 .section-landscaping-item-inner-grid > * > span {
@@ -1493,12 +1572,13 @@ section {
 .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(2)::after {
     background-image: url('../img/fruits/fruit_63.webp');
     right: -54px;
+    transform: translate(17px, 30px) scale(1.25) rotate(.5deg);
 }
 
 .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(2)::before {
-    right: -76px;
+    right: -94px;
     top: 50%;       
-    width: 290px ; 
+    width: 298px ; 
 }
 
 .section-landscaping-content-item:nth-of-type(3) .section-landscaping-big-image {
@@ -1510,9 +1590,19 @@ section {
 }
 
 .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(2) h4 {
-    font-size: 13px !important;
-    max-width: 21ch;
+    max-width: 12ch;
+    font-size: 18px ;
+    font-size: 15px ;
+    font-size: clamp(0.9375rem, -0.75rem + 3vw, 1.125rem) !important;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
+.section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(1) span {
+    max-width: 14ch;
+}
+
 
 
 /* section filter */
@@ -1572,7 +1662,13 @@ section {
     height: 100%;
 }
 
+.filter-show-more > span:last-of-type {
+    display: none;
+}
 
+.filter-show-more > span:first-of-type {
+    display: flex;
+}
 
 
 
@@ -1627,7 +1723,14 @@ section {
     place-items: center;
     width: 100%;
     width: var(--content-width);
+}
 
+.filter-button-wrap {
+    width: 100%;
+    display: grid;
+    margin-top: 2.75rem;
+    margin-bottom: .5rem;
+    place-items: center;
 }
 
 .section-filter-results-container .btn {
@@ -1755,8 +1858,8 @@ section {
 
         .section-filter-results {
             grid-template-columns: repeat(3, 1fr);
-            width: 98vw;
-            transform: translateX(-5vw) scaleX(1.01);
+            width: 100vw;
+            transform: translateX(-6vw) scaleX(1.01);
         }
 
         .section-filter-results > div:nth-of-type(4) {
@@ -1820,12 +1923,16 @@ section {
 
 .section-htb-info p {
     color: var(--clr-greyscale-0);
-    font-weight: 400;
-    line-height: 125%;
-    width: clamp(24.6875rem, 11.4286rem + 29.4643vw, 35rem) ;
+    width: clamp(24.6875rem, 11.4286rem + 29.4643vw, 15rem) ;
+    /* width: 110% ; */
     margin: 2rem 0 0 0;
-    font-size: var(--fs-16-18);
-    font-size: 1.125rem;
+    font-family: Geologica;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-wrap: balance;
 }
 
 .section-htb-info h2,
@@ -1853,7 +1960,7 @@ section {
     width: 100%;
     height: 100%;
     transform: translateX(-20px);
-    transform: translateX(clamp(-10.9375rem, -33.8816rem + 40.7895vw, -1.25rem));
+    transform: translateX(clamp(3.125rem, -19.0789rem + 39.4737vw, 12.5rem)) translateX(clamp(-10.9375rem, -33.8816rem + 40.7895vw, -1.25rem));
     overflow-x: visible;
 }
 
@@ -1926,25 +2033,32 @@ section {
     .section-landscaping-item-inner-grid {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
         width: 244px;
+        position: relative;
+
     }
 
     .section-landscaping-item-inner-grid > * {
         width: 244px;
         height: 120px;
         gap: 0.45rem;
+        padding: 12px 16px;
     }
 
     .section-landscaping-item-inner-grid > * > h4 {
-        font-size: 1.0125rem !important;
         max-width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.02em;
     }
 
     .section-landscaping-item-inner-grid > * > span {
-        font-size: 0.7875rem !important;
         max-width: 100%;
-
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+       
     }
 
     .section-landscaping-item-inner-grid > *:nth-of-type(2) > span {
@@ -1969,6 +2083,9 @@ section {
     .section-landscaping-item-inner-grid > *:nth-of-type(2) > h4 br {
         display: block;
     }
+    .section-landscaping-item-inner-grid > * br {
+        display: block !important;
+    }
 
     .section-landscaping-item-inner-grid > div:nth-of-type(2)::after, 
     .section-landscaping-item-inner-grid > div:nth-of-type(3)::after, 
@@ -1983,7 +2100,11 @@ section {
         width: 115px;
         height: 230px;
         display: block;
-        right: -46px;
+        right: 0;
+        /* right: clamp(-2.3125rem, -2.589rem + -2.3529vw, -2.8125rem) !important; */
+        transform: scale(1.15) translateX(35px);
+        transform: scale(1.15) translateX(27px);
+        transform: scale(1.15) translateX(clamp(1.6875rem, -0.3125rem + 4.4444vw, 2.1875rem));
         top: 27%;
         background-image: url('../img/fruits/fruit_6.webp');
         background-size: cover;
@@ -1991,7 +2112,7 @@ section {
 
     .section-landscaping-big-image {
         width: 100vw;
-        transform: translateX(-4vw) scaleX(1.05);
+        transform: translateX(-4vw) scaleX(1.07);
     }
 
     .section-landscaping-big-image > span {
@@ -2005,8 +2126,17 @@ section {
         
     }
 
+    /* seciton how to buy */
+
     .section-how-to-buy {
         overflow: hidden;
+    }
+
+    .section-htb-info p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
     }
 
 
@@ -2016,10 +2146,12 @@ section {
     }
     
     .section-htb-fruit-wrap .htb-fruit {
-        height: 100%;
-        aspect-ratio: 1;
-        transform: scale(0.5) translateX(30px);
-        transform-origin: 14% 50%;
+        height: 800px;
+        width: 500px;
+        background-image: url('../img/fruits/fruit_3_720.webp');
+        transform: scale(.7) translate(-125px, -200px) rotate(.5deg);
+        transform-origin: center center;
+
     }
 
     
@@ -2028,7 +2160,8 @@ section {
         height: 100%;
         display: block;
         position: absolute;
-        top: 0;
+        top: -10px;
+        right: 252px;
     }
     
     .section-htb-fruit-wrap .line-overflow span {
@@ -2039,12 +2172,20 @@ section {
         background-color: white;
         transform: translate(82px, -15px) rotate(17deg) ;
     }
+
+    .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(2) h4 {
+        font-size: 14px !important;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        max-width: 80%;
+    }
     
-
-
     .section-htb-wrap {
         gap: 17vw;
     }
+
+    /* section construction */
     
 
     .section-construction-progress-card button {
@@ -2089,6 +2230,7 @@ section {
 
 @media only screen and (max-width: 720px) {
 
+
     /* delete after */
     body::after {
         content: '720px';
@@ -2101,7 +2243,7 @@ section {
     }
 
     #topbutton {
-        display: none !important;
+        /* display: none !important; */
     }
 
         /* HEADER */
@@ -2277,6 +2419,10 @@ section {
     .section-location-content-item {
         grid-template-columns: .9fr .9fr 1.2fr
     }
+
+    .section-location-content-wrap {
+        margin-top: 1.875rem;
+   }
 
     /* adress */
     .seciton-location-item-adress {
@@ -2715,6 +2861,10 @@ section {
     .section-heading-tabs {
         padding-right: 480px;   
     }
+
+    .section-location-content-wrap {
+        margin-top: 2rem;
+   }
     
 
     /* section location grid */
@@ -2854,13 +3004,24 @@ section {
     .section-landscaping-item-inner-grid > * > h4 {
         max-width: 20ch;
     }
+    .section-landscaping-item-inner-grid {
+        gap: 0.25rem;
+    }
 
     .section-landscaping-item-inner-grid::after {
-        transform: scale(1.55);
+        /* transform: scale(1.55); */
         left: none;
-        right: clamp(-2.5rem, -7.0455rem + 22.7273vw, 0.625rem);
-        width: 130px;
+        right: -30px;
+        top: 17%;
+        width: 152px;
+        height: 256px;
+        transform: scale(1);
         background-image: url('../img/fruits/fruit_6_320.webp');
+    }
+
+    .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(2) h4 {
+        max-width: 8          0%;
+        font-size: 14px !important;
     }
 
     /* section FILTER results */
@@ -2868,6 +3029,8 @@ section {
     .section-filter-heading-wrap .section-heading-tabs {
         margin-top: 0;
     }
+
+    
 
     .section-filter-results {
         grid-template-columns:  100%;
@@ -2880,6 +3043,19 @@ section {
     .section-filter-results > div:nth-of-type(4) {
         display: none;
     }
+
+    .filter-show-more > span:first-of-type {
+        display: none;
+    }
+
+    .filter-show-more > span:last-of-type {
+        display: flex;
+    }
+
+    .filter-show-more > img {
+        transform: rotate(90deg);
+    }
+
 
     /* section how to buy */
 
@@ -4375,31 +4551,5 @@ footer {
         gap: 1rem;
     }
 
- /* button up */
- 
- #topbutton {
-    display: none;
-    position: fixed;
-    bottom: 220px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: var(--clr-primary-green);
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    animation: move 0.7s linear;
- }
 
- @keyframes  move {
-    0% {
-        bottom: -88px;
-    }
-    100% {
-        bottom: 220px;
-    }
-}
+
