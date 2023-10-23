@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 sectionLandTabsBtns[i].classList.add('section-location-tab-selected')
                 
                 sectionLandTabs[x].style.display = 'none'
-                sectionLandTabs[i].style.display = 'grid'
+                sectionLandTabs[i].style.display = 'block'
             }
         })
         

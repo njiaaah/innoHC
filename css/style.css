@@ -788,7 +788,6 @@ section {
     padding: 1rem;
     width: 100%;
     height: 50%;
-    background-color: #3D4452;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1156,12 +1155,15 @@ section {
     gap: 0;
 }
 
+.price span {
+    font-size: 1em;
+}
+
 #scroller02 > div,
 #scroller02-1 > div,
 #scroller02-2 > div {
     width: clamp(19.5rem, 8.5832rem + 24.2596vw, 30rem);
     height: clamp(17.4375rem, 14.7054rem + 6.0714vw, 19.5625rem);
-    background-color: #3D4452;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1373,6 +1375,7 @@ section {
 .section-landscaping-item-inner-grid {
     display: grid;
     grid-template-columns: 176px 80px 176px;
+    grid-template-columns: 2.2fr 1fr 2.2fr;
     gap: 1rem;
     position: relative;
     width: var(--content-width);
@@ -1660,8 +1663,11 @@ section {
     font-weight: 700;
 }
 
-.secion-filter-results-card > span:nth-of-type(2) {
+.secion-filter-results-card > span:nth-of-type(2),
+.secion-filter-results-card > span:nth-of-type(2) span {
     color: var(--clr-darkgreygreen);
+    color: #124147;
+    font-weight: 700;
 }
 
 .secion-filter-results-card .price {
@@ -1747,7 +1753,7 @@ section {
         .section-filter-results {
             grid-template-columns: repeat(3, 1fr);
             width: 99vw;
-            transform: translateX(-6vw) scaleX(1.01);
+            transform: translateX(-6vw) scaleX(1.04);
         }
 
         .section-filter-results > div:nth-of-type(4) {
@@ -1974,7 +1980,7 @@ section {
         width: 115px;
         height: 230px;
         display: block;
-        right: -30px;
+        right: -46px;
         top: 27%;
         background-image: url('../img/fruits/fruit_6.webp');
         background-size: cover;
@@ -2849,7 +2855,7 @@ section {
     }
 
     .section-landscaping-item-inner-grid {
-        width: var(--content-width);
+        width: 100%;
     }
     .section-landscaping-item-inner-grid > * {
         width: var(--content-width);
