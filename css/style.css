@@ -2819,8 +2819,7 @@ section {
 
     .section-heading-tabs > span > span{
         display: block;
-        padding-bottom: 0;
-        /* outline: 111px solid red !important; */
+        padding-block: 1px;
     }
 
     .section-location-tab-selected > span {
