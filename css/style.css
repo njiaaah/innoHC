@@ -1157,6 +1157,7 @@ section {
 
 .price span {
     font-size: 1em;
+
 }
 
 #scroller02 > div,
@@ -1625,6 +1626,7 @@ section {
     display: grid;
     place-items: center;
     width: 100%;
+    width: var(--content-width);
 
 }
 
@@ -1673,6 +1675,7 @@ section {
 .secion-filter-results-card .price {
     font-size: 2rem;
     color: var(--clr-primary-darkgreen);
+    white-space: nowrap;
 }
 
 .secion-filter-results-card .result-card-scheme-container {
@@ -1752,8 +1755,8 @@ section {
 
         .section-filter-results {
             grid-template-columns: repeat(3, 1fr);
-            width: 99vw;
-            transform: translateX(-6vw) scaleX(1.04);
+            width: 98vw;
+            transform: translateX(-5vw) scaleX(1.01);
         }
 
         .section-filter-results > div:nth-of-type(4) {
