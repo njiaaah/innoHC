@@ -1656,7 +1656,7 @@ section {
     color: var(--clr-darkgreygreen);
 }
 
-.secion-filter-results-card price {
+.secion-filter-results-card .price {
     font-size: 2rem;
     color: var(--clr-primary-darkgreen);
 }
