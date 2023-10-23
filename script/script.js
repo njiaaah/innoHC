@@ -147,7 +147,6 @@ document.addEventListener('DOMContentLoaded',function(){
 
     updateSize();
     window.addEventListener("resize", updateSize);
-    console.log(widthOutput)
 
     const sectionHowCalc = document.querySelector('.mainipot-ipotcalc')
 

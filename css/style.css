@@ -9,7 +9,6 @@ html {
 
 body {
     font-family: 'Geologica', sans-serif;
-
     --clr-primary-red: #d51317;
     --clr-primary-darkred: #AC0F12;
     --clr-primary-green: #009640;
@@ -29,20 +28,19 @@ body {
     --clr-primary-btn-hover: #FFA564;
     --clr-primary-btn-focus: #AD8E62;
     --clr-news-p: #1D1D1B;
-
-
     --content-1280: 70rem;
     --content-720: 40rem;
     --content-320: 17rem;
-
     --fs-12-14: clamp(0.75rem, 0.5893rem + 0.3571vw, 0.875rem);
     --fs-16-18: clamp(1rem, 0.8393rem + 0.3571vw, 1.125rem);
-
     display: grid;
     place-items: center;
-
     /* for fixed header */
     padding-top: 60px;
+}
+
+body::after {
+    content:none !important
 }
 
 /* hidescrollbar */
