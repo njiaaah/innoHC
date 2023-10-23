@@ -2083,7 +2083,9 @@ section {
         --fs-heading: 32px;
     }
 
-
+    #topbutton {
+        display: none !important;
+    }
 
         /* HEADER */
 
@@ -2407,6 +2409,7 @@ section {
 
     .section-htb-fruit-wrap {
         transform: translateX(-140px);
+        display:  block;
     }
 
     /* section construction progress */
@@ -3565,6 +3568,12 @@ footer {
     display: none;
 }
 
+.footer-top-menu-list-items div:last-of-type li a {
+    display: flex;
+    place-items: center;
+    gap: 0.5rem;
+}
+
 /* calculator */
 
 /*@media screen and (max-width: 576px) {
@@ -3617,6 +3626,7 @@ footer {
     .concalc-ipot {
         display: grid; 
         grid-template-columns: 1fr 2fr;
+        
     }
     
     .calcleft-ipot {
@@ -4165,7 +4175,7 @@ footer {
     box-shadow: 0px 4px 4px 0px #00000040;
     animation: move 0.7s linear;
  }
- 
+
  @keyframes  move {
     0% {
         bottom: -88px;

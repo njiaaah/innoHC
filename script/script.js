@@ -139,20 +139,54 @@ document.addEventListener('DOMContentLoaded',function(){
         
     }
 
+    var widthOutput;
+
+    function updateSize() {
+    widthOutput = window.innerWidth;
+    }
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    console.log(widthOutput)
+
+    const sectionHowCalc = document.querySelector('.mainipot-ipotcalc')
+
     for (let i = 0; i < sectionHowTabs.length; i++) {
         sectionHowTabsBtns[i].addEventListener('click',()=>{
-            if (sectionHowFruit.style.display == "none" && window.screen.width > 560) {
+            if (sectionHowCalc.style.display == "block") {
+
+                sectionHowFruit.style.display = "none"
+                sectionHowToBuy.style.height = "100%"
+            }
+            else if (sectionHowFruit.style.display == "none" &&  widthOutput >= 560) {
 
                 sectionHowFruit.style.display = "block"
                 sectionHowToBuy.style.height = "100%"
             }
-            else {
+            else if (sectionHowCalc.style.display == "none" && widthOutput <= 560 ) {
                 sectionHowFruit.style.display = "none"
                 sectionHowToBuy.style.height = "100%"
             }
-        })
-        
+            else  {
+                sectionHowFruit.style.display = "none"
+                sectionHowToBuy.style.height = "100%"
+            }
+        })  
     }
+
+    function fruithidden(n) {
+        if ( widthOutput <= 560 ) {
+            sectionHowFruit.style.display = "none"
+        }
+
+        else if (sectionHowCalc.style.display == "none" && sectionHowFruit.style.display == "none") {
+            sectionHowFruit.style.display = "block"
+        }
+      }
+ 
+      var n = window.matchMedia("(max-width: 560px)")
+      fruithidden(n)   
+      n.addListener(fruithidden)
 
     // SCROLLERS
 
@@ -479,7 +513,7 @@ const mybutton = document.getElementById("topbutton");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 && window.innerWidth > 720) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none"
