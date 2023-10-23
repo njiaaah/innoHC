@@ -1102,7 +1102,7 @@ section {
     .section-location-content-item,
     .section-rare-formats-content-item,
     .section-landscaping-content-item {
-        margin-top: 1rem;
+        margin-top: .75rem;
     }
 
 
@@ -1338,7 +1338,9 @@ section {
     width: 100%;
     overflow: hidden;
 }
-
+.section-landscaping-tap-wrap {
+    padding-block: 1.5rem .5rem;
+}
 .section-landscaping-wrap {
     margin-top: 5rem;
     width: var(--content-width);
@@ -1476,6 +1478,10 @@ section {
     max-width: 18ch;
 }
 
+.section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(3) {
+    position: relative;
+}
+
 .section-landscaping-content-item:nth-of-type(3) .section-landscaping-item-inner-grid > div:nth-of-type(3)::after {
     background-image: url('../img/fruits/fruit_64.webp');
     right: -37px;
@@ -1561,6 +1567,10 @@ section {
     grid-row-start: 1;
     height: 100%;
 }
+
+
+
+
 
 .section-filter-checkbox-flex-wrap {
     display: flex;
@@ -2580,6 +2590,15 @@ section {
 
     /* SECTION HOUSING COMPLEX */
 
+    .section-housing-complex-table-item:first-of-type span:last-of-type,
+    .section-housing-complex-table-item:first-of-type span:last-of-type .dn {
+        display: inline !important;
+    }
+
+    .section-housing-complex-table-item:first-of-type span:first-of-type {
+        display: none;
+    }
+
     .section-housing-complex {
         margin-top: -1rem;
     }
@@ -2689,15 +2708,26 @@ section {
     .section-location-item-text {
         grid-column-start: 1;
         grid-column-end: 1;
-        grid-row-start: 2;
+        grid-row-start: 3;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: var(--clr-greyscale-8);
+        font-weight: 300;
+        text-wrap: balance;
     }
+
+    .section-location-item-text p {
+        text-wrap: balance;
+    }
+
 
     /* 2 tiles with nearby objects */
     .seciton-location-item-around-wrap {
         flex-direction: column;
         grid-column-start: 1;
         grid-column-end: 1;
-        grid-row-start: 3;
+        grid-row-start: 2;
+
     }
     /* them size */
     .section-location-around-item {
@@ -2715,6 +2745,10 @@ section {
     }
 
     /* section advantages scroller */
+
+    .section-advantages {
+        margin-top: 0;
+    }
 
     .section-advantages-scroller {
         width: 99vw;
@@ -2749,7 +2783,33 @@ section {
 
     /* section rare */
 
+    .section-heading-tabs > span {
+        line-height: 1.2rem;
+    }
+
+    .section-heading-tabs br {
+        display: block !important;
+    }
+
+    .section-heading-tabs > span > span{
+        display: block;
+        padding-bottom: 0;
+        /* outline: 111px solid red !important; */
+    }
+
+    .section-location-tab-selected > span {
+        color: var(--clr-primary-green) !important
+    }
+
+    .section-rare-formats-p-btn-wrap .btn {
+        margin-top: .5rem;
+    }
+
     /* section lanscaping and engineering*/
+
+    .section-landscaping-tap-wrap  {
+        padding-block: 1.5rem 1rem;
+    }
 
     .section-landscaping-item-flex-wrap {
         flex-direction: column;
@@ -2780,6 +2840,10 @@ section {
 
     /* section FILTER results */
 
+    .section-filter-heading-wrap .section-heading-tabs {
+        margin-top: 0;
+    }
+
     .section-filter-results {
         grid-template-columns:  100%;
         width: 100%;
@@ -2809,7 +2873,37 @@ section {
         width: var(--content-width);
     }
 
+    /* section callback */
+
+    .section-callback h2 {
+        font-size: 1rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    #callback-form label:nth-of-type(-n+2), #callback-form input {
+        font-size: 0.875rem;
+        margin-bottom: .5rem;
+    }
+
+    .section-callback-wrap span {
+        font-size: 0.625rem;
+        line-height: 130%;
+        text-wrap: balance;
+    }
+
+    .section-callback-form-wrap form {
+        gap: 0rem;
+    }
+
+    #callback-form .btn {
+        margin-top: .5rem;
+    }
+
     /* section formats */
+
+    .section-rare-formats-tab-wrap > span:first-of-type > span{
+        display: block !important;
+    }
 
     .section-formats {
         width: 100% !important;
@@ -2845,6 +2939,27 @@ section {
 
     .section-format-controls {
         display: none;
+    }
+
+    /* filter */
+
+    .section-filter-toggle-label {
+        display: flex !important;
+        place-items: center;
+        background-color: var(--clr-primary-green);
+        color: var(--clr-greyscale-0);
+        width: fit-content;
+        padding: 0.9063rem 1.5rem 1.0313rem 1rem ;
+        gap: .5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .section-filter-params-wrap {
+        display: none !important;
+    }
+    
+    #toggleFilter:checked + .section-filter-params-wrap {
+        display: flex !important;
     }
 
     /* gallery */
