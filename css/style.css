@@ -3260,11 +3260,20 @@ section {
     }
 
     .section-news-container {
-        overflow-x: visible;
+        overflow-x: scroll;
+    }
+
+    .section-news-card {
+        width: 100vw !important;
     }
 
     .section-news-container > div:nth-of-type(n+2) {
-        display: none;
+        /* display: none; */
+        display: grid;
+    }
+    
+    .section-gallery-card-controls {
+        margin-left: 1rem;
     }
 
     .section-news {
@@ -3346,6 +3355,10 @@ section {
 
     .section-construction-progress-card  button span {
         font-size: 0.7rem !important;
+    }
+
+    .section-construction-progress .section-wrap {
+        width: var(--content-width);
     }
     
     /*section stock */
