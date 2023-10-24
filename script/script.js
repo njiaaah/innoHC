@@ -427,6 +427,20 @@ document.addEventListener('DOMContentLoaded',function(){
         }, 250)
     }
 
+    // close mobile menu on item click
+
+    const mobileNavList = document.querySelector('.nav-mobile-list').children
+    const mobileToggleChb = document.getElementById('header-menu-checkbox')
+
+    for (let i = 0; i < mobileNavList.length; i++) {
+       
+        mobileNavList[i].addEventListener('click', ()=>{
+            if(mobileToggleChb.checked) {
+                mobileToggleChb.checked = false
+            }
+        })
+    
+    }
 })
         
 //calculator
