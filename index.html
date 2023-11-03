@@ -1,2147 +1,2027 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тайтл</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="lib/nouislider.min.css" />
-    <link rel="stylesheet" href="css/sliders.css" />
-    <link rel="stylesheet" href="css/timurbranch.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/nouislider.min.css">
+    <link rel="stylesheet" href="css/sliders.css">
+    <link rel="stylesheet" href="css/timurbranch.css">
     <script src="lib/horizontaldrag.js"></script>
     <script src="lib/jquery.js"></script>
     <script src="lib/nouislider.min.js"></script>
-  </head>
-  <body style="overflow-x: hidden">
-    <!--button up-->
 
-    <button onclick="topscroll()" id="topbutton" title="В начало!">
-      <img
-        src="icons/button_up.svg"
-        alt=""
-        style="transform: translateY(-6px)"
-      />
-    </button>
+</head>
+<body style="overflow-x: hidden;">
+
+    <!--button up-->
+    
+    <button onclick="topscroll()" id="topbutton" title="В начало!"><img src="icons/button_up.svg" alt="" style="transform: translateY(-6px);"></button>
 
     <header>
-      <div id="header-wrap">
-        <a href="" class="header-logo">
-          <img src="icons/header_logo.svg" alt="" />
-        </a>
 
-        <nav id="nav-desktop">
-          <ul>
-            <li><a href="#promo" class="nav-contrast">АКЦИИ</a></li>
-            <li><a href="#">КОМАНДА ПРОЕКТА</a></li>
-            <li><a href="#">ГЕНПЛАН</a></li>
-            <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-          </ul>
-        </nav>
+        <div id="header-wrap">
 
-        <input type="checkbox" name="menu-toggle" id="header-menu-checkbox" />
+            <a href="" class="header-logo">
+                <img src="icons/header_logo.svg" alt="">
+            </a>
 
-        <nav id="nav-mobile" class="full-bleed">
-          <ul class="nav-mobile-list">
-            <li><a href="#" class="nav-menu-a">О ПРОЕКТЕ</a></li>
-            <li><a href="#lovation" class="nav-menu-a">РАСПОЛОЖЕНИЕ</a></li>
-            <li>
-              <a href="#" class="nav-menu-a">КУПИТЬ</a>
-              <ul>
-                <li><a href="#filter">> КВАРТИРУ</a></li>
-                <li>
-                  <a href="" class="nav-soon">> МАШИНОМЕСТО</a
-                  ><span>скоро</span>
-                </li>
-                <li>
-                  <a href="" class="nav-soon">> КЛАДОВКУ</a><span>скоро</span>
-                </li>
-                <li>
-                  <a href="" class="nav-soon">> КОММЕРЧЕСКОЕ ПОМЕЩЕНИЕ</a
-                  ><span>скоро</span>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-          </ul>
-        </nav>
+            <nav id="nav-desktop">
+                <ul>
+                    <li><a href="#promo" class="nav-contrast">АКЦИИ</a></li>
+                    <li><a href="#">КОМАНДА ПРОЕКТА</a></li>
+                    <li><a href="#">ГЕНПЛАН</a></li>
+                    <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
 
-        <div class="header-icon-wrap">
-          <a href="#" id="header-star">
-            <img src="icons/header_star.svg" alt="" />
-          </a>
+            <input type="checkbox" name="menu-toggle" id="header-menu-checkbox">
 
-          <a id="header-phone" href="tel:+74954897748">+7 495 489-77-48</a>
+            <nav id="nav-mobile" class="full-bleed">
+                <ul class="nav-mobile-list">
+                    <li><a href="#" class="nav-menu-a">О ПРОЕКТЕ</a></li>
+                    <li><a href="#lovation" class="nav-menu-a">РАСПОЛОЖЕНИЕ</a></li>
+                    <li>
+                        <a href="#" class="nav-menu-a">КУПИТЬ</a>
+                        <ul>
+                            <li><a href="#filter">> КВАРТИРУ</a></li>
+                            <li><a href="" class="nav-soon">> МАШИНОМЕСТО</a><span>скоро</span></li>
+                            <li><a href="" class="nav-soon">> КЛАДОВКУ</a><span>скоро</span></li>
+                            <li><a href="" class="nav-soon">> КОММЕРЧЕСКОЕ ПОМЕЩЕНИЕ</a><span>скоро</span></li>
+                        </ul>
+                    </li>
+                    <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
 
-          <a href="#" id="header-call" class="header-icon">
-            <img src="icons/header_call.svg" alt="" />
-          </a>
+            <div class="header-icon-wrap">
 
-          <a href="#" id="header-comment" class="header-icon">
-            <img src="icons/header_comment.svg" alt="" />
-          </a>
+                <a href="#" id="header-star">
+                    <img src="icons/header_star.svg" alt="">
+                </a>
+        
+                <a id="header-phone" href="tel:+74954897748">+7 495 489-77-48</a>
 
-          <label
-            for="header-menu-checkbox"
-            class="cp"
-            id="header-menu-checkbox-label"
-          >
-          </label>
+                <a href="#" id="header-call" class="header-icon">
+                    <img src="icons/header_call.svg" alt="">
+                </a>
+        
+                <a href="#"  id="header-comment" class="header-icon">
+                    <img src="icons/header_comment.svg" alt="">
+                </a>
+                
+                <label for="header-menu-checkbox" class="cp" id="header-menu-checkbox-label"> 
+
+                </label>
+
+            </div>
+
         </div>
-      </div>
+
     </header>
 
     <!-- SECTION HERO -->
 
     <section id="section-hero">
-      <div class="section-wrap fc">
-        <div id="section-hero-info-wrap">
-          <span>Выгода при покупке квартиры до 30 октября</span>
 
-          <h2>
-            Инновационный<br />
-            стиль жизни
-          </h2>
+        <div class="section-wrap fc">
 
-          <div>
-            <span class="uc">от 304 000 руб/м</span>
-            <a href="#" class="uc btn btn-green">Выбрать квартиру</a>
-          </div>
+            <div id="section-hero-info-wrap">
+
+                <span>Выгода при покупке квартиры до 30 октября</span>
+
+                <h2>Инновационный<br> стиль жизни</h2>
+                
+                <div>
+                    <span class="uc">от 304 000 руб/м</span>
+                    <a href="#" class="uc btn btn-green">Выбрать квартиру</a>
+                </div>
+
+            </div>
+
+            <a href="#" id="section-hero-promo-banner">
+
+                <span>Акция</span>
+
+                <span>ВЫГОДА В ОКТЯБРЕ 2 МЛН РУБЛЕЙ</span>
+
+                <div class="fc">
+                    <span>Узнать подробности</span><img src="icons/arrow-right.svg" alt="">
+                </div>
+
+                </a>
+
+
+
         </div>
 
-        <a href="#" id="section-hero-promo-banner">
-          <span>Акция</span>
+        
 
-          <span>ВЫГОДА В ОКТЯБРЕ 2 МЛН РУБЛЕЙ</span>
+        <div id="section-hero-complex-banner" class="fc">
 
-          <div class="fc">
-            <span>Узнать подробности</span
-            ><img src="icons/arrow-right.svg" alt="" />
-          </div>
-        </a>
-      </div>
+            <div id="section-hero-complex-banner-wrap" class="fc">
 
-      <div id="section-hero-complex-banner" class="fc">
-        <div id="section-hero-complex-banner-wrap" class="fc">
-          <h1>
-            <span>ЖИЛОЙ КОМПЛЕКС</span><br />
-            ИННОВАТОР
-          </h1>
+                <h1><span>ЖИЛОЙ КОМПЛЕКС</span><br> ИННОВАТОР</h1>
 
-          <div class="hero-complex-wrap fc">
-            <div class="fc">
-              <img src="icons/hero_sale.svg" alt="" />
-              <span> Стоимость <br />от 10млн руб. </span>
+                <div class="hero-complex-wrap fc">
+
+                    <div class="fc">
+                        <img src="icons/hero_sale.svg" alt="">
+                        <span> Стоимость <br>от 10млн руб. </span>
+                    </div>
+    
+                    <div class="fc">
+                        <img src="icons/hero_metro.svg" alt="">
+                        <span> Станция метро «Мичуринский проспект»</span>
+                    </div>
+    
+                    <div class="fc">
+                        <img src="icons/hero_navigation.svg" alt="">
+                        <span> г. Москва, район Раменки, Мичуринский пр-т,  45 </span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="fc">
-              <img src="icons/hero_metro.svg" alt="" />
-              <span> Станция метро «Мичуринский проспект»</span>
-            </div>
-
-            <div class="fc">
-              <img src="icons/hero_navigation.svg" alt="" />
-              <span> г. Москва, район Раменки, Мичуринский пр-т, 45 </span>
-            </div>
-          </div>
         </div>
-      </div>
+
     </section>
 
     <nav id="section-hero-additional-menu">
-      <div id="section-hero-additional-menu-wrap">
-        <ul>
-          <li class="tab-underline"><a href="#location">РАСПОЛОЖЕНИЕ</a></li>
-          <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
-          <li><a href="#landscaping">БЛАГОУСТРОЙСТВО</a></li>
-          <li><a href="#filter">КВАРТИРЫ</a></li>
-          <li><a href="#rare-formats">РЕДКИЕ ФОРМАТЫ</a></li>
-          <li><a href="#how-to-buy">КАК КУПИТЬ</a></li>
-        </ul>
 
-        <a href="#" class="uc btn btn-red">Выбрать квартиру</a>
-      </div>
+        <div id="section-hero-additional-menu-wrap">
+
+            <ul>
+                <li class="tab-underline"><a href="#location">РАСПОЛОЖЕНИЕ</a></li>
+                <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#landscaping">БЛАГОУСТРОЙСТВО</a></li>
+                <li><a href="#filter">КВАРТИРЫ</a></li>
+                <li><a href="#rare-formats">РЕДКИЕ ФОРМАТЫ</a></li>
+                <li><a href="#how-to-buy">КАК КУПИТЬ</a></li>
+            </ul>
+
+            <a href="#" class="uc btn btn-red">Выбрать квартиру</a>
+
+        </div>
+        
     </nav>
 
     <!-- SECTION HOUSING COMPLEX -->
 
     <section class="section-housing-complex">
-      <div class="section-housing-complex-wrap">
-        <a href="" class="section-housing-complex-360"
-          ><img src="icons/hc_360.svg" alt=""
-        /></a>
 
-        <div class="section-hc-circle gc cp"><span>A</span></div>
+        <div class="section-housing-complex-wrap">
 
-        <div class="section-hc-circle gc cp"><span>B</span></div>
+            <a href="" class="section-housing-complex-360"><img src="icons/hc_360.svg" alt=""></a>
 
-        <div class="section-housing-complex-tower">
-          <h3>ЖК «Инноватор»</h3>
+            <div class="section-hc-circle gc cp"><span>A</span></div>
 
-          <ul>
-            <li><span>Студии</span><span>от 5,32 млн ₽</span></li>
-            <li><span>2-комн.</span><span>от 36,32 млн ₽</span></li>
-            <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
-            <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
-            <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
-          </ul>
+            <div class="section-hc-circle gc cp"><span>B</span></div>
 
-          <a href="#" class="uc btn">подробнее</a>
+            <div class="section-housing-complex-tower">
+
+                <h3>ЖК «Инноватор»</h3>
+
+                <ul>
+                    <li><span>Студии</span><span>от 5,32 млн ₽</span></li>
+                    <li><span>2-комн.</span><span>от 36,32 млн ₽</span></li>
+                    <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
+                    <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
+                    <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
+                </ul>
+
+                <a href="#" class="uc btn">подробнее</a>
+
+            </div>
+
+            <div class="section-housing-complex-info">
+
+                
+
+                <div class="section-hc-info-heading fc"> <span>Без отделки</span> <h4>БАШНЯ А</h4></div>
+
+                <div class="section-hc-list-wrap">
+                    <div class="section-hc-circle gc cp"><span>+</span></div>
+                    <ul>
+                        <li><span>Студии</span><span>от 5,32 млн ₽</span></li>
+                        <li><span>2-комн.</span><span>от 36,32 млн ₽</span></li>
+                        <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
+                        <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
+                        <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
+                    </ul>
+                </div>
+
+
+
+                <a href="#" class="uc btn">ВЫБРАТЬ КВАРТИРУ</a>
+
+
+            </div>
+
+        </div>
+        
+
+        <div class="section-housing-complex-table">
+
+            <div class="section-housing-complex-table-item">
+                <div>1кв. 2024</div>
+                <span>Одна очередь строительства</span>
+                <span class="dn">ввод <br class="dn"> в эксплуатацию</span>
+            </div>   
+
+            <div class="section-housing-complex-table-item">
+                <div>Бизнес</div>
+                <span>класс ЖК</span>
+            </div>   
+
+            <div class="section-housing-complex-table-item">
+                <div>2</div>
+                <span>башни</span>
+            </div>   
+
+            <div class="section-housing-complex-table-item">
+                <div>28</div>
+                <span>этажей</span>
+            </div>   
+
+            <div class="section-housing-complex-table-item">
+                <div>587</div>
+                <span>квартир</span>
+            </div>   
+
+            <div class="section-housing-complex-table-item">
+                <div>236</div>
+                <span>машиномест</span>
+            </div>   
+
+            <div class="section-housing-complex-table-item">
+                <div>3,1-4,5</div>
+                <span>высота потолков</span>
+            </div>   
+
+            <div class="section-housing-complex-table-item">
+                <div>Монолит</div>
+                <span>материал стен</span>
+            </div>   
+
         </div>
 
-        <div class="section-housing-complex-info">
-          <div class="section-hc-info-heading fc">
-            <span>Без отделки</span>
-            <h4>БАШНЯ А</h4>
-          </div>
-
-          <div class="section-hc-list-wrap">
-            <div class="section-hc-circle gc cp"><span>+</span></div>
-            <ul>
-              <li><span>Студии</span><span>от 5,32 млн ₽</span></li>
-              <li><span>2-комн.</span><span>от 36,32 млн ₽</span></li>
-              <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
-              <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
-              <li><span>2-комн.</span><span>от 22,32 млн ₽</span></li>
-            </ul>
-          </div>
-
-          <a href="#" class="uc btn">ВЫБРАТЬ КВАРТИРУ</a>
-        </div>
-      </div>
-
-      <div class="section-housing-complex-table">
-        <div class="section-housing-complex-table-item">
-          <div>1кв. 2024</div>
-          <span>Одна очередь строительства</span>
-          <span class="dn"
-            >ввод <br class="dn" />
-            в эксплуатацию</span
-          >
-        </div>
-
-        <div class="section-housing-complex-table-item">
-          <div>Бизнес</div>
-          <span>класс ЖК</span>
-        </div>
-
-        <div class="section-housing-complex-table-item">
-          <div>2</div>
-          <span>башни</span>
-        </div>
-
-        <div class="section-housing-complex-table-item">
-          <div>28</div>
-          <span>этажей</span>
-        </div>
-
-        <div class="section-housing-complex-table-item">
-          <div>587</div>
-          <span>квартир</span>
-        </div>
-
-        <div class="section-housing-complex-table-item">
-          <div>236</div>
-          <span>машиномест</span>
-        </div>
-
-        <div class="section-housing-complex-table-item">
-          <div>3,1-4,5</div>
-          <span>высота потолков</span>
-        </div>
-
-        <div class="section-housing-complex-table-item">
-          <div>Монолит</div>
-          <span>материал стен</span>
-        </div>
-      </div>
     </section>
 
     <!-- SECTION LOCATION -->
 
     <section class="section-location" id="location">
-      <div class="section-location-wrap section-wrap">
-        <h2>РАСПОЛОЖЕНИЕ</h2>
+        
+        <div class="section-location-wrap section-wrap">
 
-        <div class="horizontalscroll dragscroll hsb">
-          <div class="section-location-tab-wrap section-heading-tabs">
-            <span class="uc cp section-location-tab-selected"
-              >Транспортная <br />
-              доступность</span
-            >
+            <h2>РАСПОЛОЖЕНИЕ</h2>
 
-            <span class="uc cp"
-              >Академическая <br />
-              среда</span
-            >
+            <div class="horizontalscroll dragscroll hsb">
 
-            <span class="uc cp"
-              >В окружении <br />
-              парков</span
-            >
-          </div>
+                <div class="section-location-tab-wrap section-heading-tabs" >
+
+                    <span class="uc cp section-location-tab-selected ">Транспортная <br > доступность</span>
+    
+                    <span class="uc cp">Академическая <br> среда</span>
+    
+                    <span class="uc cp">В окружении <br> парков</span>
+    
+                </div>
+
+            </div>
+
+            <div class="section-location-content-wrap">
+
+                <!-- tab 1 -->
+                <div class="section-location-content-item">
+
+                    <div class="seciton-location-item-adress">
+                        <img class="section-loc-map-point" src="icons/loc_map_point.svg" alt="">
+                        <div><span>МОСКВА, <br>МИЧУРИНСКИЙ <br>ПРОСПЕКТ,45</span></div>
+                    </div>
+
+                    <div class="section-location-item-text">
+                        <p>Район Раменки выбирают осознанно за идеальное сочетание престижности локации и транспортной доступности. Иметь возможность быстро попасть на деловой завтрак или встречу с друзьями в центре города — доступная реальность для жителей ЖК «Инноватор».</p>
+                    </div>
+
+                    <div class="seciton-location-item-around-wrap">
+
+                        <div class="section-location-around-item" id="loc-item-00">
+
+                            <span class="uc">Станция метро<br>и БКЛ<br>  «Мичуринский <br>проспект»</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_pedestrian.svg" alt=""></div>
+                                <span class="uc">1 минута</span>
+                            </div>
+                        </div>
+
+                        <div class="section-location-around-item" id="loc-item-01">
+
+                            <span class="uc">Садовое<br>кольцо</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_car.svg" alt=""></div>
+                                <span class="uc">15 минут</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="section-location-map-wrap-container">
+
+                        <div class="section-location-legend-wrap">
+
+                            <ul class="section-location-map-legend">
+                                <li><img src="icons/map/Education.svg" alt=""><span>Образование</span></li>
+                                <li><img src="icons/map/Medicine.svg" alt=""><span>Медицина</span></li>
+                                <li><img src="icons/map/Sport.svg" alt=""><span>Спорт</span></li>
+                                <li><img src="icons/map/Supermarket.svg" alt=""><span>Торговые центры</span></li>
+                                <li><img src="icons/map/Park.svg" alt=""><span>Парки</span></li>
+                                <li><img src="icons/map/Culture.svg" alt=""><span>Культура</span></li>
+                                <li><img src="icons/map/Shop.svg" alt=""><span>Магазины</span></li>
+                                <li><img src="icons/map/Cafe.svg" alt=""><span>Кафе и рестораны</span></li>
+                                <li><img src="icons/map/Spa.svg" alt=""><span>Салоны красоты</span></li>
+                            </ul>
+
+                            <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
+                        </div>
+
+                        <div class="section-location-map-zoom-wrap">
+
+                            <span class="cp map-zoom-out-btn"><span></span></span>
+
+                            <span class="cp map-zoom-in-btn">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="section-location-map-wrap dragscroll hsb">
+
+
+
+
+                            <div class="section-location-map" data-scale="1" id="section-location-map-01">
+                                
+                                <span class="section-location-map-con"><img src="icons/map/Shop.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Culture.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Sport.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Park.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Cafe.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Spa.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Education.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Supermarket.svg" alt=""></span>
+                                
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+                <!-- tab 2 not visible by default-->
+                <div class="section-location-content-item" style="display: none;">
+
+                    <div class="seciton-location-item-adress">
+                        <img class="section-loc-map-point" src="icons/loc_map_point.svg" alt="">
+                        <div><span>МОСКВА, <br>МИЧУРИНСКИЙ <br>ПРОСПЕКТ,45</span></div>
+                    </div>
+
+                    <div class="section-location-item-text">
+                        <p>ЖК «Инноватор» находится в избранном академическом окружении: совсем рядом МГУ им. М.В. Ломоносова, МГИМО, РАНХИГС, РУДН. Станьте признанным инноватором и реализуйте свой профессиональный потенциал, выбрав любой из самых престижных вузов страны.</p>
+                    </div>
+
+                    <div class="seciton-location-item-around-wrap">
+
+                        <div class="section-location-around-item" id="loc-item-10">
+
+                            <span class="uc">МГУ</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_car.svg" alt=""></div>
+                                <span class="uc">10 минут</span>
+                            </div>
+                        </div>
+
+                        <div class="section-location-around-item" id="loc-item-11">
+
+                            <span class="uc">МГИМО</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_car.svg" alt=""></div>
+                                <span class="uc">15 минут</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="section-location-map-wrap-container">
+
+                        <div class="section-location-legend-wrap">
+
+                            <ul class="section-location-map-legend">
+                                <li><img src="icons/map/Education.svg" alt=""><span>Образование</span></li>
+                                <li><img src="icons/map/Medicine.svg" alt=""><span>Медицина</span></li>
+                                <li><img src="icons/map/Sport.svg" alt=""><span>Спорт</span></li>
+                                <li><img src="icons/map/Supermarket.svg" alt=""><span>Торговые центры</span></li>
+                                <li><img src="icons/map/Park.svg" alt=""><span>Парки</span></li>
+                                <li><img src="icons/map/Culture.svg" alt=""><span>Культура</span></li>
+                                <li><img src="icons/map/Shop.svg" alt=""><span>Магазины</span></li>
+                                <li><img src="icons/map/Cafe.svg" alt=""><span>Кафе и рестораны</span></li>
+                                <li><img src="icons/map/Spa.svg" alt=""><span>Салоны красоты</span></li>
+                            </ul>
+
+                            <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
+                        </div>
+
+                        <div class="section-location-map-zoom-wrap">
+
+                            <span class="cp map-zoom-out-btn"><span></span></span>
+
+                            <span class="cp map-zoom-in-btn">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="section-location-map-wrap dragscroll">
+
+
+
+
+                            <div class="section-location-map" data-scale="1" id="section-location-map-02">
+                                
+                                <span class="section-location-map-con"><img src="icons/map/Shop.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Culture.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Sport.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Park.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Cafe.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Spa.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Education.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Supermarket.svg" alt=""></span>
+                                
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+                <!-- tab 3 not visible by default-->
+                <div class="section-location-content-item" style="display: none;">
+
+                    <div class="seciton-location-item-adress">
+                        <img class="section-loc-map-point" src="icons/loc_map_point.svg" alt="">
+                        <div><span>МОСКВА, <br>МИЧУРИНСКИЙ <br>ПРОСПЕКТ,45</span></div>
+                    </div>
+
+                    <div class="section-location-item-text">
+                        <p>Жилой комплекс «Инноватор» расположен в одном из самых престижных и экологичных округов Москвы (ЗАО), в окружении природно-парковых зон: Парка им. 50-летия Октября, Парка Олимпийской деревни, Матвеевского леса и долины реки Раменки.</p>
+                    </div>
+
+                    <div class="seciton-location-item-around-wrap">
+
+                        <div class="section-location-around-item" id="loc-item-20">
+
+                            <span class="uc">Долина<br>реки<br>  раменки</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_pedestrian.svg" alt=""></div>
+                                <span class="uc">10 минут</span>
+                            </div>
+                        </div>
+
+                        <div class="section-location-around-item" id="loc-item-21">
+
+                            <span class="uc">Парк<br>олимпийской<br>деревни</span>
+
+                            <div class="fc">
+                                <div><img src="icons/loc_pedestrian.svg" alt=""></div>
+                                <span class="uc">5 минут</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="section-location-map-wrap-container">
+
+                        <div class="section-location-legend-wrap">
+
+                            <ul class="section-location-map-legend">
+                                <li><img src="icons/map/Education.svg" alt=""><span>Образование</span></li>
+                                <li><img src="icons/map/Medicine.svg" alt=""><span>Медицина</span></li>
+                                <li><img src="icons/map/Sport.svg" alt=""><span>Спорт</span></li>
+                                <li><img src="icons/map/Supermarket.svg" alt=""><span>Торговые центры</span></li>
+                                <li><img src="icons/map/Park.svg" alt=""><span>Парки</span></li>
+                                <li><img src="icons/map/Culture.svg" alt=""><span>Культура</span></li>
+                                <li><img src="icons/map/Shop.svg" alt=""><span>Магазины</span></li>
+                                <li><img src="icons/map/Cafe.svg" alt=""><span>Кафе и рестораны</span></li>
+                                <li><img src="icons/map/Spa.svg" alt=""><span>Салоны красоты</span></li>
+                            </ul>
+
+                            <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
+                        </div>
+
+                        <div class="section-location-map-zoom-wrap">
+
+                            <span class="cp map-zoom-out-btn"><span></span></span>
+
+                            <span class="cp map-zoom-in-btn">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="section-location-map-wrap dragscroll">
+
+
+
+
+                            <div class="section-location-map" data-scale="1" id="section-location-map-03">
+                                
+                                <span class="section-location-map-con"><img src="icons/map/Shop.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Culture.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Sport.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Park.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Cafe.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Spa.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Education.svg" alt=""></span>
+                                <span class="section-location-map-con"><img src="icons/map/Supermarket.svg" alt=""></span>
+                                
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="section-location-content-wrap">
-          <!-- tab 1 -->
-          <div class="section-location-content-item">
-            <div class="seciton-location-item-adress">
-              <img
-                class="section-loc-map-point"
-                src="icons/loc_map_point.svg"
-                alt=""
-              />
-              <div>
-                <span>МОСКВА, <br />МИЧУРИНСКИЙ <br />ПРОСПЕКТ,45</span>
-              </div>
-            </div>
 
-            <div class="section-location-item-text">
-              <p>
-                Район Раменки выбирают осознанно за идеальное сочетание
-                престижности локации и транспортной доступности. Иметь
-                возможность быстро попасть на деловой завтрак или встречу с
-                друзьями в центре города — доступная реальность для жителей
-                ЖК «Инноватор».
-              </p>
-            </div>
-
-            <div class="seciton-location-item-around-wrap">
-              <div class="section-location-around-item" id="loc-item-00">
-                <span class="uc"
-                  >Станция метро<br />и БКЛ<br />
-                  «Мичуринский <br />проспект»</span
-                >
-
-                <div class="fc">
-                  <div><img src="icons/loc_pedestrian.svg" alt="" /></div>
-                  <span class="uc">1 минута</span>
-                </div>
-              </div>
-
-              <div class="section-location-around-item" id="loc-item-01">
-                <span class="uc">Садовое<br />кольцо</span>
-
-                <div class="fc">
-                  <div><img src="icons/loc_car.svg" alt="" /></div>
-                  <span class="uc">15 минут</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-location-map-wrap-container">
-              <div class="section-location-legend-wrap">
-                <ul class="section-location-map-legend">
-                  <li>
-                    <img src="icons/map/Education.svg" alt="" /><span
-                      >Образование</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Medicine.svg" alt="" /><span
-                      >Медицина</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Sport.svg" alt="" /><span>Спорт</span>
-                  </li>
-                  <li>
-                    <img src="icons/map/Supermarket.svg" alt="" /><span
-                      >Торговые центры</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Park.svg" alt="" /><span>Парки</span>
-                  </li>
-                  <li>
-                    <img src="icons/map/Culture.svg" alt="" /><span
-                      >Культура</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Shop.svg" alt="" /><span>Магазины</span>
-                  </li>
-                  <li>
-                    <img src="icons/map/Cafe.svg" alt="" /><span
-                      >Кафе и рестораны</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Spa.svg" alt="" /><span
-                      >Салоны красоты</span
-                    >
-                  </li>
-                </ul>
-
-                <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
-              </div>
-
-              <div class="section-location-map-zoom-wrap">
-                <span class="cp map-zoom-out-btn"><span></span></span>
-
-                <span class="cp map-zoom-in-btn">
-                  <span></span>
-                  <span></span>
-                </span>
-              </div>
-
-              <div class="section-location-map-wrap dragscroll hsb">
-                <div
-                  class="section-location-map"
-                  data-scale="1"
-                  id="section-location-map-01"
-                >
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Shop.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Culture.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Sport.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Park.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Cafe.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Spa.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Education.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Supermarket.svg" alt=""
-                  /></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tab 2 not visible by default-->
-          <div class="section-location-content-item" style="display: none">
-            <div class="seciton-location-item-adress">
-              <img
-                class="section-loc-map-point"
-                src="icons/loc_map_point.svg"
-                alt=""
-              />
-              <div>
-                <span>МОСКВА, <br />МИЧУРИНСКИЙ <br />ПРОСПЕКТ,45</span>
-              </div>
-            </div>
-
-            <div class="section-location-item-text">
-              <p>
-                ЖК «Инноватор» находится в избранном академическом окружении:
-                совсем рядом МГУ им. М.В. Ломоносова, МГИМО, РАНХИГС, РУДН.
-                Станьте признанным инноватором и реализуйте свой
-                профессиональный потенциал, выбрав любой из самых престижных
-                вузов страны.
-              </p>
-            </div>
-
-            <div class="seciton-location-item-around-wrap">
-              <div class="section-location-around-item" id="loc-item-10">
-                <span class="uc">МГУ</span>
-
-                <div class="fc">
-                  <div><img src="icons/loc_car.svg" alt="" /></div>
-                  <span class="uc">10 минут</span>
-                </div>
-              </div>
-
-              <div class="section-location-around-item" id="loc-item-11">
-                <span class="uc">МГИМО</span>
-
-                <div class="fc">
-                  <div><img src="icons/loc_car.svg" alt="" /></div>
-                  <span class="uc">15 минут</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-location-map-wrap-container">
-              <div class="section-location-legend-wrap">
-                <ul class="section-location-map-legend">
-                  <li>
-                    <img src="icons/map/Education.svg" alt="" /><span
-                      >Образование</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Medicine.svg" alt="" /><span
-                      >Медицина</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Sport.svg" alt="" /><span>Спорт</span>
-                  </li>
-                  <li>
-                    <img src="icons/map/Supermarket.svg" alt="" /><span
-                      >Торговые центры</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Park.svg" alt="" /><span>Парки</span>
-                  </li>
-                  <li>
-                    <img src="icons/map/Culture.svg" alt="" /><span
-                      >Культура</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Shop.svg" alt="" /><span>Магазины</span>
-                  </li>
-                  <li>
-                    <img src="icons/map/Cafe.svg" alt="" /><span
-                      >Кафе и рестораны</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Spa.svg" alt="" /><span
-                      >Салоны красоты</span
-                    >
-                  </li>
-                </ul>
-
-                <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
-              </div>
-
-              <div class="section-location-map-zoom-wrap">
-                <span class="cp map-zoom-out-btn"><span></span></span>
-
-                <span class="cp map-zoom-in-btn">
-                  <span></span>
-                  <span></span>
-                </span>
-              </div>
-
-              <div class="section-location-map-wrap dragscroll">
-                <div
-                  class="section-location-map"
-                  data-scale="1"
-                  id="section-location-map-02"
-                >
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Shop.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Culture.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Sport.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Park.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Cafe.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Spa.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Education.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Supermarket.svg" alt=""
-                  /></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tab 3 not visible by default-->
-          <div class="section-location-content-item" style="display: none">
-            <div class="seciton-location-item-adress">
-              <img
-                class="section-loc-map-point"
-                src="icons/loc_map_point.svg"
-                alt=""
-              />
-              <div>
-                <span>МОСКВА, <br />МИЧУРИНСКИЙ <br />ПРОСПЕКТ,45</span>
-              </div>
-            </div>
-
-            <div class="section-location-item-text">
-              <p>
-                Жилой комплекс «Инноватор» расположен в одном из самых
-                престижных и экологичных округов Москвы (ЗАО), в окружении
-                природно-парковых зон: Парка им. 50-летия Октября, Парка
-                Олимпийской деревни, Матвеевского леса и долины реки Раменки.
-              </p>
-            </div>
-
-            <div class="seciton-location-item-around-wrap">
-              <div class="section-location-around-item" id="loc-item-20">
-                <span class="uc"
-                  >Долина<br />реки<br />
-                  раменки</span
-                >
-
-                <div class="fc">
-                  <div><img src="icons/loc_pedestrian.svg" alt="" /></div>
-                  <span class="uc">10 минут</span>
-                </div>
-              </div>
-
-              <div class="section-location-around-item" id="loc-item-21">
-                <span class="uc">Парк<br />олимпийской<br />деревни</span>
-
-                <div class="fc">
-                  <div><img src="icons/loc_pedestrian.svg" alt="" /></div>
-                  <span class="uc">5 минут</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-location-map-wrap-container">
-              <div class="section-location-legend-wrap">
-                <ul class="section-location-map-legend">
-                  <li>
-                    <img src="icons/map/Education.svg" alt="" /><span
-                      >Образование</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Medicine.svg" alt="" /><span
-                      >Медицина</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Sport.svg" alt="" /><span>Спорт</span>
-                  </li>
-                  <li>
-                    <img src="icons/map/Supermarket.svg" alt="" /><span
-                      >Торговые центры</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Park.svg" alt="" /><span>Парки</span>
-                  </li>
-                  <li>
-                    <img src="icons/map/Culture.svg" alt="" /><span
-                      >Культура</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Shop.svg" alt="" /><span>Магазины</span>
-                  </li>
-                  <li>
-                    <img src="icons/map/Cafe.svg" alt="" /><span
-                      >Кафе и рестораны</span
-                    >
-                  </li>
-                  <li>
-                    <img src="icons/map/Spa.svg" alt="" /><span
-                      >Салоны красоты</span
-                    >
-                  </li>
-                </ul>
-
-                <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
-              </div>
-
-              <div class="section-location-map-zoom-wrap">
-                <span class="cp map-zoom-out-btn"><span></span></span>
-
-                <span class="cp map-zoom-in-btn">
-                  <span></span>
-                  <span></span>
-                </span>
-              </div>
-
-              <div class="section-location-map-wrap dragscroll">
-                <div
-                  class="section-location-map"
-                  data-scale="1"
-                  id="section-location-map-03"
-                >
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Shop.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Culture.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Sport.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Park.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Cafe.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Spa.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Education.svg" alt=""
-                  /></span>
-                  <span class="section-location-map-con"
-                    ><img src="icons/map/Supermarket.svg" alt=""
-                  /></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- SECTION ADVANTAGES -->
 
     <section class="section-advantages" id="advantages">
-      <div class="section-wrap">
-        <h2>ПРЕИМУЩЕСТВА ПРОЕКТА</h2>
-      </div>
 
-      <div class="section-wrap">
-        <div
-          class="section-advantages-scroller horizontal-scroller dragscroll snaps-inline snaps-inline-wh hsb"
-          id="scroller01"
-        >
-          <div><span class="uc">Одна очередь строительства</span></div>
-          <div><span class="uc">Престижный район Раменки</span></div>
-          <div><span class="uc">Идеальная транспортная доступность</span></div>
-          <div><span class="uc">Центр академической элиты</span></div>
-          <div><span class="uc">В окружении природно- парковых зон</span></div>
-          <div><span class="uc">Сочная архитектура от бюро спич</span></div>
+        <div class="section-wrap">
+
+            <h2>ПРЕИМУЩЕСТВА ПРОЕКТА</h2>
+
         </div>
 
-        <div class="section-advantages-contols horizontal-scroller-contols">
-          <span class="current-scroll cp"></span>
-          <span class="cp"></span>
-          <span class="cp"></span>
-          <span class="cp"></span>
-          <span class="cp"></span>
+        <div class="section-wrap">
+
+            <div class="section-advantages-scroller horizontal-scroller dragscroll snaps-inline snaps-inline-wh hsb" id="scroller01">
+
+                <div><span class="uc">Одна очередь строительства</span></div>
+                <div><span class="uc">Престижный район Раменки</span></div>
+                <div><span class="uc">Идеальная транспортная доступность</span></div>
+                <div><span class="uc">Центр академической элиты</span></div>
+                <div><span class="uc">В окружении природно- парковых зон</span></div>
+                <div><span class="uc">Сочная архитектура от бюро спич</span></div>
+
+            </div>
+
+            <div class="section-advantages-contols horizontal-scroller-contols">
+                <span class="current-scroll cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+            </div>
+            
         </div>
-      </div>
+
+        
+
     </section>
 
     <!-- SECTION RARE FORMATS -->
 
     <section class="section-rare-formats" id="rare-formats">
-      <div class="section-wrap">
-        <h2>Редкие форматы</h2>
 
-        <div class="horizontalscroll dragscroll hsb">
-          <div class="section-rare-formats-tab-wrap section-heading-tabs">
-            <span class="uc cp section-location-tab-selected"
-              ><span style="display: none">квартиры-</span>Студии
-            </span>
+        <div class="section-wrap">
 
-            <span class="uc cp"
-              >Квартиры <br style="display: none" />с мастер-спальнями</span
-            >
+            <h2>Редкие форматы</h2>
 
-            <span class="uc cp"
-              >5-Комнатные <br style="display: none" />
-              пентхаусы</span
-            >
-          </div>
+            <div class="horizontalscroll dragscroll hsb">
+
+                <div class="section-rare-formats-tab-wrap section-heading-tabs" >
+
+                    <span class="uc cp section-location-tab-selected "><span style="display: none;">квартиры-</span>Студии  </span>
+    
+                    <span class="uc cp">Квартиры <br style="display: none;">с мастер-спальнями</span>
+    
+                    <span class="uc cp" >5-Комнатные <br style="display: none;"> пентхаусы</span>
+    
+                </div>
+
+            </div>
+
+            <div class="section-rare-formats-content-wrap">
+
+                <!-- tab 1 -->
+                <div class="section-rare-formats-content-item">
+                    
+                    <div class="section-rare-slider-wrap">
+
+                        <div class="section-rare-scroller horizontal-scroller dragscroll snaps-inline snaps-inline-wh hsb" id="scroller02">
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                        </div>
+
+
+                        <div class="section-rare-formats-contols rare-controls-0 horizontal-scroller-contols">
+                            <span class="current-scroll cp"></span>
+                            <span class="cp"></span>
+                            <span class="cp"></span>
+                            <span class="cp"></span>
+                            <span class="cp"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="section-rare-formats-p-btn-wrap">
+
+                        <p>В жилом комплексе «Инноватор» спроектированы функциональные квартиры-студии.</p>
+
+                        <a href="#" class="btn uc">Посмотреть студии</a>
+                
+                    </div>
+
+                    <div class="section-format-absolute-fruit rare-fruit-01"></div>
+                
+                </div>
+
+                <!-- tab 2 -->
+                <div style="display: none;" class="section-rare-formats-content-item">
+                    
+                    <div class="section-rare-slider-wrap">
+
+                        <div class="section-rare-scroller horizontal-scroller dragscroll snaps-inline hsb" id="scroller02-1">
+
+                            <div></div>
+                            <div></div>
+
+                        </div>
+
+                        <div class="section-rare-formats-contols rare-controls-1 horizontal-scroller-contols" style="opacity: 0;">
+                            <span class="current-scroll cp"></span>
+                            <span class="cp"></span>
+                            <span class="cp"></span>
+                            <span class="cp"></span>
+                            <span class="cp"></span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="section-rare-formats-p-btn-wrap">
+
+                        <p>В жилом комплексе «Инноватор» спроектированы функциональные квартиры-студии.</p>
+
+                        <a href="#" class="btn uc">Посмотреть квартиры</a>
+                
+                    </div>
+
+                    <div class="section-format-absolute-fruit rare-fruit-02" ></div>
+                
+                </div>
+
+                <!-- tab 3 -->
+                <div style="display: none;" class="section-rare-formats-content-item">
+                    
+                    <div class="section-rare-slider-wrap">
+
+                        <div class="section-rare-scroller horizontal-scroller dragscroll snaps-inline hsb" id="scroller02-2">
+
+                            <div></div>
+                            <div></div>
+
+                        </div>
+
+                        <div class="section-rare-formats-contols rare-controls-2 horizontal-scroller-contols" style="opacity: 0;">
+                            <span class="current-scroll cp"></span>
+                            <span class="cp"></span>
+                            <span class="cp"></span>
+                            <span class="cp"></span>
+                            <span class="cp"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="section-rare-formats-p-btn-wrap">
+
+                        <p>В жилом комплексе «Инноватор» спроектированы функциональные квартиры-студии.</p>
+
+                        <a href="#" class="btn uc">Посмотреть квартиры</a>
+                
+                    </div>
+
+                    <div class="section-format-absolute-fruit rare-fruit-03"></div>
+                
+                </div>
+
+            </div>
+
+
         </div>
 
-        <div class="section-rare-formats-content-wrap">
-          <!-- tab 1 -->
-          <div class="section-rare-formats-content-item">
-            <div class="section-rare-slider-wrap">
-              <div
-                class="section-rare-scroller horizontal-scroller dragscroll snaps-inline snaps-inline-wh hsb"
-                id="scroller02"
-              >
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-
-              <div
-                class="section-rare-formats-contols rare-controls-0 horizontal-scroller-contols"
-              >
-                <span class="current-scroll cp"></span>
-                <span class="cp"></span>
-                <span class="cp"></span>
-                <span class="cp"></span>
-                <span class="cp"></span>
-              </div>
-            </div>
-
-            <div class="section-rare-formats-p-btn-wrap">
-              <p>
-                В жилом комплексе «Инноватор» спроектированы функциональные
-                квартиры-студии.
-              </p>
-
-              <a href="#" class="btn uc">Посмотреть студии</a>
-            </div>
-
-            <div class="section-format-absolute-fruit rare-fruit-01"></div>
-          </div>
-
-          <!-- tab 2 -->
-          <div style="display: none" class="section-rare-formats-content-item">
-            <div class="section-rare-slider-wrap">
-              <div
-                class="section-rare-scroller horizontal-scroller dragscroll snaps-inline hsb"
-                id="scroller02-1"
-              >
-                <div></div>
-                <div></div>
-              </div>
-
-              <div
-                class="section-rare-formats-contols rare-controls-1 horizontal-scroller-contols"
-                style="opacity: 0"
-              >
-                <span class="current-scroll cp"></span>
-                <span class="cp"></span>
-                <span class="cp"></span>
-                <span class="cp"></span>
-                <span class="cp"></span>
-              </div>
-            </div>
-
-            <div class="section-rare-formats-p-btn-wrap">
-              <p>
-                В жилом комплексе «Инноватор» спроектированы функциональные
-                квартиры-студии.
-              </p>
-
-              <a href="#" class="btn uc">Посмотреть квартиры</a>
-            </div>
-
-            <div class="section-format-absolute-fruit rare-fruit-02"></div>
-          </div>
-
-          <!-- tab 3 -->
-          <div style="display: none" class="section-rare-formats-content-item">
-            <div class="section-rare-slider-wrap">
-              <div
-                class="section-rare-scroller horizontal-scroller dragscroll snaps-inline hsb"
-                id="scroller02-2"
-              >
-                <div></div>
-                <div></div>
-              </div>
-
-              <div
-                class="section-rare-formats-contols rare-controls-2 horizontal-scroller-contols"
-                style="opacity: 0"
-              >
-                <span class="current-scroll cp"></span>
-                <span class="cp"></span>
-                <span class="cp"></span>
-                <span class="cp"></span>
-                <span class="cp"></span>
-              </div>
-            </div>
-
-            <div class="section-rare-formats-p-btn-wrap">
-              <p>
-                В жилом комплексе «Инноватор» спроектированы функциональные
-                квартиры-студии.
-              </p>
-
-              <a href="#" class="btn uc">Посмотреть квартиры</a>
-            </div>
-
-            <div class="section-format-absolute-fruit rare-fruit-03"></div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- SECTION CALLBACK  -->
 
     <section class="section-callback">
-      <!-- specific width -->
-      <div class="section-callback-wrap">
-        <h2>ХОТИТЕ УЗНАТЬ ПОДРОБНЕЕ?</h2>
 
-        <div class="section-callback-form-wrap">
-          <form id="callback-form">
-            <input type="text" id="cb-name" name="cb-name" class="form-input" />
+        <!-- specific width -->
+        <div class="section-callback-wrap">
 
-            <label for="cb-name" class="form-label">Ваше имя</label>
+            <h2>ХОТИТЕ УЗНАТЬ ПОДРОБНЕЕ?</h2>
 
-            <input
-              type="tel"
-              id="cb-phone"
-              name="cb-phone"
-              class="form-input"
-            />
+            <div class="section-callback-form-wrap">
 
-            <label for="cb-phone" class="form-label">Телефон</label>
+                <form id="callback-form">
 
-            <label for="cb-submit" class="btn uc cp btn-green"
-              >Перезвоните мне <img src="icons/arrow-right.svg" alt=""
-            /></label>
+                    <input type="text" id="cb-name" name="cb-name" class="form-input">
 
-            <input
-              style="display: none"
-              type="submit"
-              class=""
-              id="cb-submit"
-            />
-          </form>
+                    <label for="cb-name" class="form-label">Ваше имя</label>
+    
+                    <input type="tel" id="cb-phone" name="cb-phone" class="form-input">
 
-          <div class="section-callback-image"></div>
+                    <label for="cb-phone" class="form-label">Телефон</label>
+
+                    <label for="cb-submit" class="btn uc cp btn-green">Перезвоните мне <img src="icons/arrow-right.svg" alt=""></label>
+    
+                    <input style="display: none;" type="submit" class="" id="cb-submit">
+
+                </form>
+
+                <div class="section-callback-image"></div>
+
+            </div>
+
+
+
+            <span>Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</span>
+
         </div>
 
-        <span
-          >Нажимая на кнопку, вы даёте согласие на обработку персональных данных
-          и соглашаетесь с политикой конфиденциальности</span
-        >
-      </div>
     </section>
 
     <!-- section LANDSCAPING -->
 
     <section class="section-landscaping" id="landscaping">
-      <div class="section-wrap section-landscaping-wrap">
-        <h2>Благоустройство и инженерия</h2>
 
-        <div class="horizontalscroll dragscroll hsb">
-          <div
-            class="section-location-tab-wrap section-heading-tabs section-landscaping-tap-wrap"
-          >
-            <span class="uc cp section-location-tab-selected">
-              <span class="dn">Инновационное </span>Благоустройство</span
-            >
+        <div class="section-wrap section-landscaping-wrap">
 
-            <span class="uc cp">Передовая <br class="dn" />инженерия</span>
-          </div>
+            <h2>Благоустройство и инженерия</h2>
+
+            <div class="horizontalscroll dragscroll hsb">
+
+                <div class="section-location-tab-wrap section-heading-tabs section-landscaping-tap-wrap" >
+
+                    <span class="uc cp section-location-tab-selected ">  <span class="dn">Инновационное </span>Благоустройство</span>
+    
+                    <span class="uc cp">Передовая <br class="dn">инженерия</span>
+
+                </div>
+
+            </div>
+
+            <!-- tab 1 -->
+
+            <div style="display: block;" class="section-landscaping-content-item">
+                
+                <div class="section-landscaping-item-flex-wrap">
+
+                    <div class="section-landscaping-big-image">
+                        <span class="uc">Благоустроенное приватное пространство от imperial garden</span>
+                    </div>
+
+                    <div class="section-landscaping-item-inner-grid">
+
+                        <div>
+                            <h4>Площадки workout <br> и детский игровой маршрут</h4>
+                            <span>в приватном саду <br> на стилобате</span>
+                        </div>
+                        <div>
+                            <h4>Двухуровневый <br style="display: none;">паркинг и кладовые</h4>
+                            <span>с доступом <br>на скоростных лифтах</span>
+                        </div>
+                        <div>
+                            <h4>Стильные лобби <br style="display: none;">от Blank Architects</h4>
+                            <span>с представительным ресепшн, зоной ожидания, <br>санузлами и колясочными</span>
+                        </div>
+                        <div>
+                            <h4>Помещения для ухода за питомцами</h4>
+                            <span>в пространстве <br style="display: none;">  лобби</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- tab 2 -->
+
+            <div style="display: none;" class="section-landscaping-content-item">
+                
+                <div class="section-landscaping-item-flex-wrap">
+
+                    <div class="section-landscaping-big-image">
+                        <span class="uc">Цельностеклянные фасады с элементами из моллированного стекла</span>
+                    </div>
+
+                    <div class="section-landscaping-item-inner-grid">
+
+                        <div>
+                            <h4>Увеличенная площадь остакления</h4>
+                            <span>для максимальной освещенности комнат</span>
+                        </div>
+                        <div>
+                            <h4>Центральная система кондиционирования и механическая притирочно- вытяжная вентиляция</h4>
+                            <span></span>
+                        </div>
+                        <div>
+                            <h4>Система <br>«Умный дом»</h4>
+                            <span>с доступом из мобильного приложения</span>
+                        </div>
+                        
+                        <div>
+                            <h4>Комплексная система безопасности­</h4>
+                            <span>с видео- <br> наблюдением</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- tab 1 -->
-
-        <div style="display: block" class="section-landscaping-content-item">
-          <div class="section-landscaping-item-flex-wrap">
-            <div class="section-landscaping-big-image">
-              <span class="uc"
-                >Благоустроенное приватное пространство от imperial garden</span
-              >
-            </div>
-
-            <div class="section-landscaping-item-inner-grid">
-              <div>
-                <h4>
-                  Площадки workout <br />
-                  и детский игровой маршрут
-                </h4>
-                <span
-                  >в приватном саду <br />
-                  на стилобате</span
-                >
-              </div>
-              <div>
-                <h4>
-                  Двухуровневый <br style="display: none" />паркинг и кладовые
-                </h4>
-                <span>с доступом <br />на скоростных лифтах</span>
-              </div>
-              <div>
-                <h4>
-                  Стильные лобби <br style="display: none" />от Blank Architects
-                </h4>
-                <span
-                  >с представительным ресепшн, зоной ожидания, <br />санузлами и
-                  колясочными</span
-                >
-              </div>
-              <div>
-                <h4>Помещения для ухода за питомцами</h4>
-                <span
-                  >в пространстве <br style="display: none" />
-                  лобби</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- tab 2 -->
-
-        <div style="display: none" class="section-landscaping-content-item">
-          <div class="section-landscaping-item-flex-wrap">
-            <div class="section-landscaping-big-image">
-              <span class="uc"
-                >Цельностеклянные фасады с элементами из моллированного
-                стекла</span
-              >
-            </div>
-
-            <div class="section-landscaping-item-inner-grid">
-              <div>
-                <h4>Увеличенная площадь остакления</h4>
-                <span>для максимальной освещенности комнат</span>
-              </div>
-              <div>
-                <h4>
-                  Центральная система кондиционирования и механическая
-                  притирочно- вытяжная вентиляция
-                </h4>
-                <span></span>
-              </div>
-              <div>
-                <h4>Система <br />«Умный дом»</h4>
-                <span>с доступом из мобильного приложения</span>
-              </div>
-
-              <div>
-                <h4>Комплексная система безопасности­</h4>
-                <span
-                  >с видео- <br />
-                  наблюдением</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- SECTION FILTER -->
 
     <section class="section-filter" id="filter">
-      <div class="section-filter-wrap section-wrap">
-        <div class="section-filter-heading-wrap">
-          <h2>Выбрать квартиру</h2>
 
-          <div class="horizontalscroll dragscroll hsb">
-            <div
-              class="section-location-tab-wrap section-heading-tabs section-landscaping-tap-wrap"
-            >
-              <span class="uc cp">Машиноместо</span>
+        <div class="section-filter-wrap section-wrap">
 
-              <span class="uc cp">Кладовые</span>
+            <div class="section-filter-heading-wrap">
 
-              <span class="uc cp">Коммерческие помещения</span>
+                <h2>Выбрать квартиру</h2>
+
+                <div class="horizontalscroll dragscroll hsb">
+
+                    <div class="section-location-tab-wrap section-heading-tabs section-landscaping-tap-wrap" >
+    
+                        <span class="uc cp">Машиноместо</span>
+        
+                        <span class="uc cp">Кладовые</span>
+
+                        <span class="uc cp">Коммерческие помещения</span>
+    
+                    </div>
+    
+                </div>
+
+                
+
             </div>
-          </div>
+
+            <label for="toggleFilter" class="dn btn-green section-filter-toggle-label cp"><img src="icons/Filter.svg" alt="">ФИЛЬТР</label>
+
+            <input type="checkbox" name="toggleFilter" class="dn" id="toggleFilter">
+
+            <div class="section-filter-params-wrap">
+
+                    
+                <div class="slider-wrap section-filter-params-item">
+                            
+                    <span>Общая стоимость (₽)</span>
+                    <div id="sectionFilterPriceSlider01" class="slider"></div>
+                    <div class="slider-val-wrap">
+                        <span id="sectionFilterPriceSlider01-lower" class="slider-val"></span>
+                        <span id="sectionFilterPriceSlider01-upper" class="slider-val"></span>
+                    </div>
+
+                </div>
+                    
+                <div class="slider-wrap section-filter-params-item">
+                            
+                    <span>Общая площадь (м2)</span>
+                    <div id="sectionFilterSquareSlider02" class="slider"></div>
+                    <div class="slider-val-wrap">
+                        <span id="sectionFilterSquareSlider02-lower" class="slider-val"></span>
+                        <span id="sectionFilterSquareSlider02-upper" class="slider-val"></span>
+                    </div>
+
+                </div>
+                    
+                <div class="slider-wrap slider-addition-from-to section-filter-params-item">
+                            
+                    <span>Этаж</span>
+                    <div id="sectionFilterFloorSlider03" class="slider"></div>
+                    <div class="slider-val-wrap">
+                        <span id="sectionFilterFloorSlider03-lower" class="slider-val"></span>
+                        <span id="sectionFilterFloorSlider03-upper" class="slider-val"></span>
+                    </div>
+
+                </div>
+
+                <div class="section-filter-checkbox-container section-filter-params-item">
+
+                    <span>Башня</span>
+
+                    <div class="section-filter-checkbox-flex-wrap section-filter-house">
+
+                        <input type="checkbox" id="filterChk-House01">
+                        <label for="filterChk-House01"><span>A</span></label>
+    
+                        <input type="checkbox" id="filterChk-House02">
+                        <label for="filterChk-House02"><span>B</span></label>
+    
+                    </div>
+
+                </div>
+
+                <div class="section-filter-checkbox-container section-filter-params-item">
+
+                    <span>Количество комнат</span>
+
+                    <div class="section-filter-checkbox-flex-wrap section-filter-rooms">
+
+                        <input type="checkbox" id="filterChk-Rooms01">
+                        <label for="filterChk-Rooms01"><span>C</span></label>
+    
+                        <input type="checkbox" id="filterChk-Rooms02">
+                        <label for="filterChk-Rooms02"><span>2</span></label>
+    
+                        <input type="checkbox" id="filterChk-Rooms03">
+                        <label for="filterChk-Rooms03"><span>3</span></label>
+    
+                        <input type="checkbox" id="filterChk-Rooms04">
+                        <label for="filterChk-Rooms04"><span>4</span></label>
+    
+                        <input type="checkbox" id="filterChk-Rooms05">
+                        <label for="filterChk-Rooms05"><span>5</span></label>
+    
+                    </div>
+
+                </div>
+
+
+                <div class="section-filter-reset-wrap fc cp">
+
+                    <span>Сбросить фильтр</span> <img src="icons/filter_close.svg" alt="">
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="section-filter-results-container">
+
+                <div class="section-filter-results">
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    
+
+
+                </div>
+
+
+ 
+
+
+            </div>
+
+            <div class="filter-button-wrap">
+                    
+                <button class="btn uc btn-green-brdr filter-show-more">
+                    <span>Показать&nbsp<span id="somePlaceholderId"> 141 </span>&nbspквартиру</span>
+                    <span>Показать Еще</span>
+                     <img src="icons/arrow-right-green.svg" alt="">
+                    </button>
+
+            </div>
+
+            
+
+
         </div>
 
-        <label
-          for="toggleFilter"
-          class="dn btn-green section-filter-toggle-label cp"
-          ><img src="icons/Filter.svg" alt="" />ФИЛЬТР</label
-        >
 
-        <input
-          type="checkbox"
-          name="toggleFilter"
-          class="dn"
-          id="toggleFilter"
-        />
-
-        <div class="section-filter-params-wrap">
-          <div class="slider-wrap section-filter-params-item">
-            <span>Общая стоимость (₽)</span>
-            <div id="sectionFilterPriceSlider01" class="slider"></div>
-            <div class="slider-val-wrap">
-              <span
-                id="sectionFilterPriceSlider01-lower"
-                class="slider-val"
-              ></span>
-              <span
-                id="sectionFilterPriceSlider01-upper"
-                class="slider-val"
-              ></span>
-            </div>
-          </div>
-
-          <div class="slider-wrap section-filter-params-item">
-            <span>Общая площадь (м2)</span>
-            <div id="sectionFilterSquareSlider02" class="slider"></div>
-            <div class="slider-val-wrap">
-              <span
-                id="sectionFilterSquareSlider02-lower"
-                class="slider-val"
-              ></span>
-              <span
-                id="sectionFilterSquareSlider02-upper"
-                class="slider-val"
-              ></span>
-            </div>
-          </div>
-
-          <div
-            class="slider-wrap slider-addition-from-to section-filter-params-item"
-          >
-            <span>Этаж</span>
-            <div id="sectionFilterFloorSlider03" class="slider"></div>
-            <div class="slider-val-wrap">
-              <span
-                id="sectionFilterFloorSlider03-lower"
-                class="slider-val"
-              ></span>
-              <span
-                id="sectionFilterFloorSlider03-upper"
-                class="slider-val"
-              ></span>
-            </div>
-          </div>
-
-          <div
-            class="section-filter-checkbox-container section-filter-params-item"
-          >
-            <span>Башня</span>
-
-            <div class="section-filter-checkbox-flex-wrap section-filter-house">
-              <input type="checkbox" id="filterChk-House01" />
-              <label for="filterChk-House01"><span>A</span></label>
-
-              <input type="checkbox" id="filterChk-House02" />
-              <label for="filterChk-House02"><span>B</span></label>
-            </div>
-          </div>
-
-          <div
-            class="section-filter-checkbox-container section-filter-params-item"
-          >
-            <span>Количество комнат</span>
-
-            <div class="section-filter-checkbox-flex-wrap section-filter-rooms">
-              <input type="checkbox" id="filterChk-Rooms01" />
-              <label for="filterChk-Rooms01"><span>C</span></label>
-
-              <input type="checkbox" id="filterChk-Rooms02" />
-              <label for="filterChk-Rooms02"><span>2</span></label>
-
-              <input type="checkbox" id="filterChk-Rooms03" />
-              <label for="filterChk-Rooms03"><span>3</span></label>
-
-              <input type="checkbox" id="filterChk-Rooms04" />
-              <label for="filterChk-Rooms04"><span>4</span></label>
-
-              <input type="checkbox" id="filterChk-Rooms05" />
-              <label for="filterChk-Rooms05"><span>5</span></label>
-            </div>
-          </div>
-
-          <div class="section-filter-reset-wrap fc cp">
-            <span>Сбросить фильтр</span>
-            <img src="icons/filter_close.svg" alt="" />
-          </div>
-        </div>
-
-        <div class="section-filter-results-container">
-          <div class="section-filter-results">
-            <div class="secion-filter-results-card">
-              <div class="result-card-favorite-icon">
-                <img src="icons/filter_favorite.svg" alt="" />
-              </div>
-
-              <span>№218</span> <br />
-
-              <span> <span>3к-квартира, </span><span>150м</span></span> <br />
-
-              <div class="price">6 500 600 <span>₽</span></div>
-
-              <div class="result-card-scheme-container">
-                <div class="result-card-scheme-wrap">
-                  <img src="icons/filter_compas.svg" alt="" />
-
-                  <img src="img/filter_appart_scheme.webp" alt="" />
-
-                  <span class="uc">Мичуринский про-т</span>
-                  <span class="uc">Проезд 7526</span>
-                </div>
-              </div>
-
-              <div class="result-card-tower-floor-wrap">
-                <span>Башня А</span>
-                <span>18 / 24 этаж</span>
-              </div>
-
-              <div class="filter-item-btn-wrap">
-                <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
-              </div>
-            </div>
-
-            <div class="secion-filter-results-card">
-              <div class="result-card-favorite-icon">
-                <img src="icons/filter_favorite.svg" alt="" />
-              </div>
-
-              <span>№218</span> <br />
-
-              <span> <span>3к-квартира, </span><span>150м</span></span> <br />
-
-              <div class="price">6 500 600 <span>₽</span></div>
-
-              <div class="result-card-scheme-container">
-                <div class="result-card-scheme-wrap">
-                  <img src="icons/filter_compas.svg" alt="" />
-
-                  <img src="img/filter_appart_scheme.webp" alt="" />
-
-                  <span class="uc">Мичуринский про-т</span>
-                  <span class="uc">Проезд 7526</span>
-                </div>
-              </div>
-
-              <div class="result-card-tower-floor-wrap">
-                <span>Башня А</span>
-                <span>18 / 24 этаж</span>
-              </div>
-
-              <div class="filter-item-btn-wrap">
-                <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
-              </div>
-            </div>
-
-            <div class="secion-filter-results-card">
-              <div class="result-card-favorite-icon">
-                <img src="icons/filter_favorite.svg" alt="" />
-              </div>
-
-              <span>№218</span> <br />
-
-              <span> <span>3к-квартира, </span><span>150м</span></span> <br />
-
-              <div class="price">6 500 600 <span>₽</span></div>
-
-              <div class="result-card-scheme-container">
-                <div class="result-card-scheme-wrap">
-                  <img src="icons/filter_compas.svg" alt="" />
-
-                  <img src="img/filter_appart_scheme.webp" alt="" />
-
-                  <span class="uc">Мичуринский про-т</span>
-                  <span class="uc">Проезд 7526</span>
-                </div>
-              </div>
-
-              <div class="result-card-tower-floor-wrap">
-                <span>Башня А</span>
-                <span>18 / 24 этаж</span>
-              </div>
-
-              <div class="filter-item-btn-wrap">
-                <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
-              </div>
-            </div>
-
-            <div class="secion-filter-results-card">
-              <div class="result-card-favorite-icon">
-                <img src="icons/filter_favorite.svg" alt="" />
-              </div>
-
-              <span>№218</span> <br />
-
-              <span> <span>3к-квартира, </span><span>150м</span></span> <br />
-
-              <div class="price">6 500 600 <span>₽</span></div>
-
-              <div class="result-card-scheme-container">
-                <div class="result-card-scheme-wrap">
-                  <img src="icons/filter_compas.svg" alt="" />
-
-                  <img src="img/filter_appart_scheme.webp" alt="" />
-
-                  <span class="uc">Мичуринский про-т</span>
-                  <span class="uc">Проезд 7526</span>
-                </div>
-              </div>
-
-              <div class="result-card-tower-floor-wrap">
-                <span>Башня А</span>
-                <span>18 / 24 этаж</span>
-              </div>
-
-              <div class="filter-item-btn-wrap">
-                <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="filter-button-wrap">
-          <button class="btn uc btn-green-brdr filter-show-more">
-            <span
-              >Показать&nbsp<span id="somePlaceholderId"> 141 </span
-              >&nbspквартиру</span
-            >
-            <span>Показать Еще</span>
-            <img src="icons/arrow-right-green.svg" alt="" />
-          </button>
-        </div>
-      </div>
     </section>
 
+
     <section class="section-how-to-buy" id="how-to-buy">
-      <div class="section-htb-wrap section-wrap">
-        <div class="section-htb-info">
-          <h2>Как купить</h2>
 
-          <div
-            class="section-location-tab-wrap section-heading-tabs section-htb-tap-wrap"
-          >
-            <span class="uc cp section-location-tab-selected">100% оплата</span>
+        <div class="section-htb-wrap section-wrap">
 
-            <span class="uc cp">Ипотека</span>
-          </div>
+            <div class="section-htb-info">
 
-          <div class="section-htb-tab-item">
-            <p>
-              Квартиру в жилом комплексе Интеллигент можно приобрести за
-              безналичный расчет. <br /><br />
-              Для этого достаточно обратиться в офис продаж и выбрать
-              интересующую вас квартиру <br /><br />
-              Необходимо время для принятия решения? Тогда вы можете
-              забронировать понравившийся вариант, чтобы спокойно все взвесить.
-              Срок бронирования - до 5 рабочих дней.
-            </p>
-          </div>
+                <h2>Как купить</h2>
 
-          <div
-            class="mainipot-ipotcalc section-htb-tab-item"
-            style="display: none"
-          >
-            <div class="section-wrap">
-              <div class="concalc-ipot">
-                <div class="contcalc-ipot">
-                  <div class="calcleft-ipot">
-                    <div class="calcin-ipot">
-                      <label>Социальная программа</label>
-                      <div onclick="cosprog()" class="butsrc-cur">
-                        <button id="cosprog-but">Базовая программа</button>
-                        <img id="cosimg" src="img/calc/arrow.svg" alt="" />
-                      </div>
-                      <div id="cosprog-info" style="display: none">
-                        <ul>
-                          <li>Базовая программа<span>✔</span></li>
-                        </ul>
-                      </div>
-                    </div>
+                <div class="section-location-tab-wrap section-heading-tabs section-htb-tap-wrap" >
 
-                    <div class="calcin-ipot">
-                      <label>Стоимость недвижимости</label>
-                      <div>
-                        <input
-                          value="5 000 000"
-                          type="text"
-                          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
-                          maxlength="11"
-                        />
-                        <span>₽</span>
-                      </div>
-                    </div>
+                    <span class="uc cp section-location-tab-selected ">100% оплата</span>
+    
+                    <span class="uc cp">Ипотека</span>
 
-                    <div class="firstb-ipot">
-                      <label>Первоначальный взнос</label>
-                      <div class="firstb-ipot-info">
-                        <div>
-                          <input
-                            value="899 999 99"
-                            type="text"
-                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
-                            maxlength="11"
-                          />
-                          <span>₽</span>
-                        </div>
-                        <div>
-                          <input
-                            value="15"
-                            type="text"
-                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
-                            maxlength="2"
-                          />
-                          <span>%</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="calcin-ipot">
-                      <label>Срок кредита</label>
-                      <div>
-                        <input
-                          value="20"
-                          type="text"
-                          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
-                          maxlength="2"
-                        />
-                        <span>Лет</span>
-                      </div>
-                    </div>
-
-                    <div class="calcin-ipot">
-                      <label>Зарплатная карта</label>
-                      <div onclick="debcard()" class="butsrc-cur">
-                        <button>Не выбрано</button>
-                        <img id="imgdebcard" src="img/calc/arrow.svg" alt="" />
-                      </div>
-                      <div id="debcard-info" style="display: none">
-                        <ul>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк<span>✔</span></li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                          <li>Какой то банк</li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="lowpr-ipot">
-                      <input type="checkbox" onclick="banknt_found()" />
-                      <span>Снизить ставку</span>
-                      <div>
-                        ?
-                        <span>Тут текст наводки</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="givip-ipot">
-                    <span>Сумма кредита</span>
-                    <div>
-                      <span>999 999 999</span>
-                      <span>₽</span>
-                    </div>
-                    <button>Хочу ипотеку</button>
-                  </div>
                 </div>
 
-                <div class="concalright-ipot">
-                  <div class="rigrate-ipot">
-                    <div>
-                      <span>?</span>
-                      <span>Узнайте свой кредитный рейтинг</span>
-                    </div>
-                  </div>
+                <div class="section-htb-tab-item">
 
-                  <div id="bank-offer-all" style="display: block">
-                    <div class="banright-ipot">
-                      <div class="rightfi-ipot" id="togg-infban">
-                        <div>
-                          <img src="img/calc/bank.webp" alt="" />
-                        </div>
-                        <div class="upbanright-ipot">
-                          <label>Такой вот банк крутой</label>
-                          <div class="upbaninfo-ipot">
-                            <span>От 999999р/месяц</span>
-                            <span>до 20 лет</span>
-                            <span>от 15%</span>
-                          </div>
-                          <div>
-                            <span>68% одобрений</span>
-                          </div>
-                        </div>
-                        <div>
-                          <img
-                            id="imgban-ipot"
-                            src="img/calc/arrow.svg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
+                    <p>
+                        Квартиру в жилом комплексе Интеллигент можно приобрести за безналичный расчет. <br><br>
+                        Для этого достаточно обратиться в офис продаж и выбрать интересующую вас квартиру <br><br>
+                        Необходимо время для принятия решения? Тогда вы можете забронировать понравившийся вариант, чтобы спокойно все взвесить. Срок бронирования - до 5 рабочих дней.
+                    </p>
 
-                      <div id="toggl-cont">
-                        <ul class="licred-ipot">
-                          <li>
-                            <span> Сумма кредита </span>
-                            <span> 300 000 - 15 000 000 ₽ </span>
-                          </li>
-                          <li>
-                            <span> Срок кредита </span>
-                            <span> 1 - 20 лет </span>
-                          </li>
-                          <li>
-                            <span> Возраст заемщика </span>
-                            <span> 21 -70 лет </span>
-                          </li>
-
-                          <li>
-                            <span> Стаж на последнем месте работы </span>
-                            <span> от 6 месяцев </span>
-                          </li>
-                          <li>
-                            <span> Общий стаж </span>
-                            <span> от 6 месяцев </span>
-                          </li>
-                        </ul>
-
-                        <div class="btnban-ipot">
-                          <div>
-                            <button onclick="toggle_offer()">
-                              Показать <span>2</span> программы
-                            </button>
-                          </div>
-                          <div>
-                            <button>На страницу банка</button>
-                            <button>Заполнить анкету</button>
-                          </div>
-                        </div>
-
-                        <div id="toggle-offer-content" style="display: none">
-                          <div class="hidinfban-ipot">
-                            <div>
-                              <span
-                                >Коммерческая недвижимость (при электронной
-                                регистрации и при оплате кредита с карты
-                                СНГБ)</span
-                              >
-                            </div>
-                            <div>
-                              <span
-                                >Приобретение коммерческой недвижимости</span
-                              >
-                            </div>
-                            <div>
-                              <span>от 199 183 р/мес.</span>
-                              <span>до 20 лет</span>
-                              <span>от 15.15%</span>
-                            </div>
-                            <div>
-                              <span>68% одобрений</span>
-                            </div>
-                          </div>
-
-                          <div class="hidinfban-ipot">
-                            <div>
-                              <span
-                                >Коммерческая недвижимость (при электронной
-                                регистрации и при оплате кредита с карты
-                                СНГБ)</span
-                              >
-                            </div>
-                            <div>
-                              <span
-                                >Приобретение коммерческой недвижимости</span
-                              >
-                            </div>
-                            <div>
-                              <span>от 199 183 р/мес.</span>
-                              <span>до 20 лет</span>
-                              <span>от 15.15%</span>
-                            </div>
-                            <div>
-                              <span>68% одобрений</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="notfound-bank"
-                    id="banknotfound-ipot"
-                    style="display: none"
-                  >
-                    <div>
-                      <img src="img/calc/bank.webp" alt="" />
-                    </div>
-                    <div>
-                      <span>Банки не найдены</span>
-                      <span
-                        >Попробуйте сократить количество фильтров поиска</span
-                      >
-                    </div>
-                  </div>
                 </div>
-              </div>
+
+                <div class="mainipot-ipotcalc section-htb-tab-item" style="display: none;">
+                    <div class="section-wrap">
+                    <div class="concalc-ipot">
+                        <div class="contcalc-ipot">
+                        <div class="calcleft-ipot">
+                            <div class="calcin-ipot">
+                                <label>Социальная программа</label>
+                                <div onclick=cosprog() class="butsrc-cur">
+                                    <button id="cosprog-but">Базовая программа</button>
+                                    <img id="cosimg" src="img/calc/arrow.svg" alt="">
+                                </div>
+                                <div id="cosprog-info" style="display: none;">
+                                    <ul>
+                                    <li>Базовая программа<span>✔</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+            
+                            <div class="calcin-ipot">
+                                <label>Стоимость недвижимости</label>
+                                <div>
+                                    <input value="5 000 000" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="11">
+                                    <span>₽</span>
+                                </div>
+                            </div>
+                            
+                            <div class="firstb-ipot">
+                                <label>Первоначальный взнос</label>
+                                <div class="firstb-ipot-info">
+                                <div>
+                                    <input value="899 999 99" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="11">
+                                    <span>₽</span>
+                                </div>
+                                <div>
+                                    <input value="15" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="2">
+                                    <span>%</span>
+                                </div>
+                                </div>
+                            </div>
+            
+                            <div class="calcin-ipot">
+                                <label>Срок кредита</label>
+                                <div>
+                                    <input value="20" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="2">
+                                    <span>Лет</span>
+                                </div>
+                            </div>
+            
+                            <div class="calcin-ipot">
+                                <label>Зарплатная карта</label>
+                                <div onclick=debcard() class="butsrc-cur">
+                                    <button>Не выбрано</button>
+                                    <img id="imgdebcard" src="img/calc/arrow.svg" alt="">
+                                </div>
+                                <div id="debcard-info" style="display: none;">
+                                <ul>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк<span>✔</span></li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                    <li>Какой то банк</li>
+                                </ul>
+                                </div>
+                            </div>
+            
+                            <div class="lowpr-ipot">
+                                <input type="checkbox" onclick="banknt_found()">
+                                <span>Снизить ставку</span>
+                                <div>?
+                                    <span>Тут текст наводки</span>
+                                </div>
+                            </div>
+                          </div>
+                  
+                        <div class="givip-ipot">
+                            <span>Сумма кредита</span>
+                            <div>
+                                <span>999 999 999</span>
+                                <span>₽</span>
+                            </div>
+                            <button>Хочу ипотеку</button>
+                            
+                        </div>
+            
+                        </div>
+            
+                        <div class="concalright-ipot">
+            
+                            <div class="rigrate-ipot">
+                                <div>
+                                <span>?</span>
+                                <span>Узнайте свой кредитный рейтинг</span>
+                                </div>
+                            </div>
+            
+                            <div id="bank-offer-all" style="display: block;">
+            
+                            <div class="banright-ipot">
+                                <div class="rightfi-ipot" id="togg-infban">
+                                    <div>
+                                    <img src="img/calc/bank.webp" alt="">
+                                    </div>
+                                    <div class="upbanright-ipot">
+                                        <label>Такой вот банк крутой</label>
+                                        <div class="upbaninfo-ipot">
+                                            <span>От 999999р/месяц</span>
+                                            <span>до 20 лет</span>
+                                            <span>от 15%</span>
+                                        </div>
+                                        <div>
+                                            <span>68% одобрений</span>
+                                            </div>
+                                    </div>
+                                    <div>
+                                    <img id="imgban-ipot" src="img/calc/arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            
+                                <div id="toggl-cont">
+                                
+                                    <ul class="licred-ipot">
+                                         
+                                            <li>
+                                                <span>
+                                                    Сумма кредита
+                                                </span>
+                                                <span>
+                                                    300 000 - 15 000 000 ₽
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    Срок кредита
+                                                </span>
+                                                <span>
+                                                    1 - 20 лет
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    Возраст заемщика
+                                                </span>
+                                                <span>
+                                                    21 -70 лет
+                                                </span>
+                                            </li>
+                                            
+                                            
+                                                <li>
+                                                    <span>
+                                                        Стаж на последнем месте работы
+                                                    </span>
+                                                    <span>
+                                                        от 6 месяцев
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        Общий стаж
+                                                    </span>
+                                                    <span>
+                                                        от 6 месяцев
+                                                    </span>
+                                                </li>
+                                            
+                                    </ul>
+                                
+            
+                                <div class="btnban-ipot">
+                                    <div>
+                                        <button onclick="toggle_offer()">Показать <span>2</span> программы</button>
+                                    </div>
+                                    <div>
+                                        <button>На страницу банка</button>
+                                        <button>Заполнить анкету</button>
+                                    </div>
+                                </div>
+            
+                            <div id="toggle-offer-content" style="display: none;">
+                                <div class="hidinfban-ipot">
+                                    <div>
+                                        <span>Коммерческая недвижимость (при электронной регистрации и при оплате кредита с карты СНГБ)</span>
+                                    </div>
+                                    <div>
+                                        <span>Приобретение коммерческой недвижимости</span>
+                                    </div>
+                                    <div>
+                                        <span>от 199 183 р/мес.</span>
+                                        <span>до 20 лет</span>
+                                        <span>от 15.15%</span>
+                                    </div>
+                                    <div>
+                                        <span>68% одобрений</span>
+                                    </div>
+                                </div>
+            
+                                <div class="hidinfban-ipot">
+                                    <div>
+                                        <span>Коммерческая недвижимость (при электронной регистрации и при оплате кредита с карты СНГБ)</span>
+                                    </div>
+                                    <div>
+                                        <span>Приобретение коммерческой недвижимости</span>
+                                    </div>
+                                    <div>
+                                        <span>от 199 183 р/мес.</span>
+                                        <span>до 20 лет</span>
+                                        <span>от 15.15%</span>
+                                    </div>
+                                    <div>
+                                        <span>68% одобрений</span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                                </div>
+            
+                            </div>
+            
+                            </div>
+                            <div class="notfound-bank" id="banknotfound-ipot" style="display: none;" >
+                                <div>
+                                    <img src="img/calc/bank.webp" alt="">
+                                </div>
+                                <div>
+                                    <span>Банки не найдены</span>
+                                    <span>Попробуйте сократить количество фильтров поиска</span>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
+
+
+                
+            </div>
+
+            <div class="section-htb-fruit-wrap">
+
+                <div class="htb-fruit"></div>
+
+                <div class="line-overflow">
+                    <span></span>
+                </div>
+
+            </div>
+
+
+
         </div>
 
-        <div class="section-htb-fruit-wrap">
-          <div class="htb-fruit"></div>
-
-          <div class="line-overflow">
-            <span></span>
-          </div>
-        </div>
-      </div>
     </section>
     <!--SECTION FORMATS-->
 
     <section class="section-formats">
-      <div class="section-wrap">
-        <h2>Все форматы недвижимости</h2>
-      </div>
 
-      <div class="section-wrap">
-        <div
-          class="section-formats-container horizontal-scroller dragscroll snaps-inline hsb"
-          id="scroller06"
-        >
-          <div class="section-formats-card formats-bg1">
-            <div>
-              <h4>КЛАДОВЫЕ</h4>
-              <span>Скоро в продаже</span>
-            </div>
-          </div>
-          <div class="section-formats-card formats-bg2">
-            <div>
-              <h4>ПАРКОВОЧНЫЕ<br />МЕСТА</h4>
-              <span>Скоро в продаже</span>
-            </div>
-          </div>
-          <div class="section-formats-card formats-bg3">
-            <div>
-              <h4>КОММЕРЧЕСКАЯ<br />НЕДВИЖИМОСТЬ</h4>
-              <span>Скоро в продаже</span>
-            </div>
-          </div>
+        <div class="section-wrap">
+
+            <h2>Все форматы недвижимости</h2>
         </div>
 
-        <div class="section-format-controls horizontal-scroller-contols">
-          <span class="current-scroll cp"></span>
-          <span class="cp"></span>
-          <span class="cp"></span>
+        <div class="section-wrap">
+            <div class="section-formats-container horizontal-scroller dragscroll snaps-inline hsb" id="scroller06">
+                <div class="section-formats-card formats-bg1">
+                    <div>
+                    <h4>КЛАДОВЫЕ</h4>
+                    <span>Скоро в продаже</span>
+                    </div>
+                </div>
+                <div class="section-formats-card formats-bg2">
+                    <div>
+                    <h4>ПАРКОВОЧНЫЕ<br>МЕСТА</h4>
+                    <span>Скоро в продаже</span>
+                    </div>
+                </div>
+                <div class="section-formats-card formats-bg3">
+                    <div>
+                    <h4>КОММЕРЧЕСКАЯ<br>НЕДВИЖИМОСТЬ</h4>
+                    <span>Скоро в продаже</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-format-controls horizontal-scroller-contols">
+                <span class="current-scroll cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+            </div>
+
         </div>
-      </div>
+
     </section>
 
     <!--SECTION GALLERY-->
 
     <section class="section-gallery" id="gallery">
-      <div class="section-wrap">
-        <h2>ГАЛЕРЕЯ</h2>
 
-        <div
-          class="section-heading-tabs section-gallery-formats-tab-wrap horizontal-scroller dragscroll snaps-inline hsb section-heading-tabs"
-        >
-          <span class="uc cp section-location-tab-selected">Архитектура</span>
-          <span class="uc cp">Благоустройство</span>
-          <span class="uc cp">Лобби БАШНИ А</span>
-          <span class="uc cp">Лобби БАШНИ Б</span>
-          <span class="uc cp">Офис продаж</span>
-        </div>
-      </div>
+        <div class="section-wrap">
 
-      <div class="section-wrap">
-        <div class="section-gallery-container">
-          <div
-            class="section-gallery-card horizontal-scroller dragscroll snaps-inline hsb"
-            id="scroller07"
-          >
-            <div>
-              <img src="img/gallery/g_1_arch.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_2_arch.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_3_arch.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_4_arch.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_5_arch.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_6_arch.webp" alt="" />
-            </div>
-          </div>
+            <h2>ГАЛЕРЕЯ</h2>
 
-          <div
-            class="section-gallery-card horizontal-scroller dragscroll snaps-inline hsb"
-            id="scroller08"
-            style="display: none"
-          >
-            <div>
-              <img src="img/gallery/g_1_blag.webp" alt="" />
+            <div class="section-heading-tabs section-gallery-formats-tab-wrap horizontal-scroller dragscroll snaps-inline hsb section-heading-tabs">
+                <span class="uc cp section-location-tab-selected">Архитектура</span>
+                <span class="uc cp">Благоустройство</span>
+                <span class="uc cp">Лобби БАШНИ А</span>
+                <span class="uc cp">Лобби БАШНИ Б</span>
+                <span class="uc cp">Офис продаж</span>
             </div>
-            <div>
-              <img src="img/gallery/g_2_blag.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_3_blag.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_4_blag.webp" alt="" />
-            </div>
-          </div>
 
-          <div
-            class="section-gallery-card horizontal-scroller dragscroll snaps-inline hsb"
-            id="scroller09"
-            style="display: none"
-          >
-            <div>
-              <img src="img/gallery/g_1_lob_a.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_2_lob_a.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_3_lob_a.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_4_lob_a.webp" alt="" />
-            </div>
-          </div>
-
-          <div
-            class="section-gallery-card horizontal-scroller dragscroll snaps-inline hsb"
-            id="scroller10"
-            style="display: none"
-          >
-            <div>
-              <img src="img/gallery/g_1_lob_b.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_2_lob_b.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_3_lob_b.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_4_lob_b.webp" alt="" />
-            </div>
-          </div>
-
-          <div
-            class="section-gallery-card horizontal-scroller dragscroll snaps-inline hsb"
-            id="scroller11"
-            style="display: none"
-          >
-            <div>
-              <img src="img/gallery/g_1_office.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_2_office.webp" alt="" />
-            </div>
-            <div>
-              <img src="img/gallery/g_3_office.webp" alt="" />
-            </div>
-          </div>
         </div>
 
-        <div class="section-gallery-card-controls horizontal-scroller-contols">
-          <span class="current-scroll cp"></span>
-          <span class="cp"></span>
-          <span class="cp"></span>
-          <span class="cp"></span>
+        <div class="section-wrap">
+            <div class="section-gallery-container" >
+                <div class="section-gallery-card  horizontal-scroller dragscroll snaps-inline hsb" id="scroller07">    
+                    <div>
+                        <img src="img/gallery/g_1_arch.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_2_arch.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_3_arch.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_4_arch.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_5_arch.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_6_arch.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="section-gallery-card  horizontal-scroller dragscroll snaps-inline hsb" id="scroller08" style="display: none;">    
+                    <div>
+                        <img src="img/gallery/g_1_blag.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_2_blag.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_3_blag.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_4_blag.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="section-gallery-card  horizontal-scroller dragscroll snaps-inline hsb" id="scroller09" style="display: none;">    
+                    <div>
+                        <img src="img/gallery/g_1_lob_a.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_2_lob_a.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_3_lob_a.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_4_lob_a.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="section-gallery-card  horizontal-scroller dragscroll snaps-inline hsb" id="scroller10" style="display: none;">    
+                    <div>
+                        <img src="img/gallery/g_1_lob_b.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_2_lob_b.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_3_lob_b.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_4_lob_b.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="section-gallery-card  horizontal-scroller dragscroll snaps-inline hsb" id="scroller11" style="display: none;">    
+                    <div>
+                        <img src="img/gallery/g_1_office.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_2_office.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="img/gallery/g_3_office.webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-gallery-card-controls horizontal-scroller-contols">
+                <span class="current-scroll cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+            </div>
+
         </div>
-      </div>
+
     </section>
 
     <!-- SECTION NEWS-->
 
     <section class="section-news" id="news">
-      <div class="section-wrap">
-        <h2>Новости ПРОЕКТА</h2>
-      </div>
 
-      <div class="section-wrap section-news-wrap">
-        <div
-          class="section-news-container horizontal-scroller dragscroll snaps-inline hsb"
-          id="scroller05"
-        >
-          <div class="section-news-card">
-            <div>
-              <span>2 февраля 2023</span>
-              <h3>
-                будущим жителям будет доступен ещё<br />
-                один мост
-              </h3>
-            </div>
-            <div>
-              <div>
-                <img src="img/news/news-photo.webp" alt="" />
-              </div>
-              <div>
-                <div>
-                  <p>
-                    ​Велопешеходный мост через Яузу рядом с МГТУ им. Баумана
-                    введут в следующем году, сообщил руководитель Департамента
-                    строительства Москвы Рафик Загрутдинов.<br /><br />
-                    Он отметил, что мэр столицы Сергей Собянин поставил задачу
-                    синхронизировать сроки сдачи в эксплуатацию здания общежития
-                    университета и велопешеходного моста.
-                  </p>
-                </div>
-                <a href="#">
-                  <span>Подробнее</span>
-                  <img src="icons/arrow-right-1.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="section-news-card">
-            <div>
-              <span>2 февраля 2023</span>
-              <h3>
-                будущим жителям будет доступен ещё<br />
-                один мост
-              </h3>
-            </div>
-            <div>
-              <div>
-                <img src="img/news/news-photo.webp" alt="" />
-              </div>
-              <div>
-                <div>
-                  <p>
-                    ​Велопешеходный мост через Яузу рядом с МГТУ им. Баумана
-                    введут в следующем году, сообщил руководитель Департамента
-                    строительства Москвы Рафик Загрутдинов.<br /><br />
-                    Он отметил, что мэр столицы Сергей Собянин поставил задачу
-                    синхронизировать сроки сдачи в эксплуатацию здания общежития
-                    университета и велопешеходного моста.
-                  </p>
-                </div>
-                <a href="#">
-                  <span>Подробнее</span>
-                  <img src="icons/arrow-right-1.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="section-wrap">
+
+            <h2>Новости ПРОЕКТА</h2>
+
         </div>
 
-        <div class="section-news-card-controls horizontal-scroller-contols">
-          <span class="current-scroll cp"></span>
-          <span class="cp"></span>
-        </div>
-      </div>
+        <div class="section-wrap section-news-wrap">
 
-      <div>
-        <button>все новости</button>
-        <img src="icons/arrow-right-1.svg" alt="" />
-      </div>
+            <div class="section-news-container horizontal-scroller dragscroll snaps-inline hsb" id="scroller05">
+                <div class="section-news-card">
+                    <div>
+                        <span>2 февраля 2023</span>
+                        <h3>будущим жителям будет доступен ещё<br> один мост</h3>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="img/news/news-photo.webp" alt="">
+                        </div>
+                        <div>
+                            <div>
+                                <p>​Велопешеходный мост через Яузу рядом с МГТУ им. Баумана введут в следующем году, сообщил руководитель Департамента строительства Москвы Рафик Загрутдинов.<br><br>
+                                    Он отметил, что мэр столицы Сергей Собянин поставил задачу синхронизировать сроки сдачи в эксплуатацию здания общежития университета и велопешеходного моста.</p>
+                            </div>
+                            <a href="#">
+                                <span>Подробнее</span>
+                                <img src="icons/arrow-right-1.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-news-card">
+                    <div>
+                        <span>2 февраля 2023</span>
+                        <h3>будущим жителям будет доступен ещё<br> один мост</h3>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="img/news/news-photo.webp" alt="">
+                        </div>
+                        <div>
+                            <div>
+                                <p>​Велопешеходный мост через Яузу рядом с МГТУ им. Баумана введут в следующем году, сообщил руководитель Департамента строительства Москвы Рафик Загрутдинов.<br><br>
+                                    Он отметил, что мэр столицы Сергей Собянин поставил задачу синхронизировать сроки сдачи в эксплуатацию здания общежития университета и велопешеходного моста.</p>
+                            </div>
+                            <a href="#">
+                                <span>Подробнее</span>
+                                <img src="icons/arrow-right-1.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-news-card-controls horizontal-scroller-contols">
+                <span class="current-scroll cp"></span>
+                <span class="cp"></span>
+            </div>
+            
+        </div>
+
+        <div>
+            <button>все новости</button>
+            <img src="icons/arrow-right-1.svg" alt="">
+        </div>
+
     </section>
     <!-- SECTION CONTRUCTION PROGRESS -->
 
     <section class="section-construction-progress" id="progress">
-      <div class="section-wrap">
-        <h2>ход строительства</h2>
-      </div>
-      <div class="section-wrap">
-        <div
-          class="section-construction-progress-container snaps-inline hsb"
-          id="scroller04"
-        >
-          <div class="section-construction-progress-card">
-            <div>
-              <img src="img/const-prog.webp" alt="" />
-            </div>
-            <div>
-              <div>
-                <p>2023</p>
-                <h5>Cентябрь</h5>
-              </div>
-              <div>
-                <button>
-                  <span>20 фото</span>
-                  <img src="icons/arrow-left.svg" alt="" />
-                </button>
-              </div>
-            </div>
-            <span>Обновлено 20.10.2023</span>
-          </div>
-          <div class="section-construction-progress-card">
-            <div>
-              <img src="img/const-prog.webp" alt="" />
-            </div>
-            <div>
-              <div>
-                <p>2023</p>
-                <h5>Cентябрь</h5>
-              </div>
-              <button>
-                <span>20 фото</span>
-                <img src="icons/arrow-left.svg" alt="" />
-              </button>
-            </div>
-            <span>Обновлено 20.10.2023</span>
-          </div>
-          <div class="section-construction-progress-card">
-            <div>
-              <img src="img/const-prog.webp" alt="" />
-            </div>
-            <div>
-              <div>
-                <p>2023</p>
-                <h5>Cентябрь</h5>
-              </div>
-              <button>
-                <span>20 фото</span>
-                <img src="icons/arrow-left.svg" alt="" />
-              </button>
-            </div>
-            <span>Обновлено 20.10.2023</span>
-          </div>
-          <div class="section-construction-progress-card">
-            <div>
-              <img src="img/const-prog.webp" alt="" />
-            </div>
-            <div>
-              <div>
-                <p>2023</p>
-                <h5>Cентябрь</h5>
-              </div>
-              <button>
-                <span>20 фото</span>
-                <img src="icons/arrow-left.svg" alt="" />
-              </button>
-            </div>
-            <span>Обновлено 20.10.2023</span>
-          </div>
-          <div class="section-construction-progress-card">
-            <div>
-              <img src="img/const-prog.webp" alt="" />
-            </div>
-            <div>
-              <div>
-                <p>2023</p>
-                <h5>Cентябрь</h5>
-              </div>
-              <button>
-                <span>20 фото</span>
-                <img src="icons/arrow-left.svg" alt="" />
-              </button>
-            </div>
-            <span>Обновлено 20.10.2023</span>
-          </div>
-          <div class="section-construction-progress-card">
-            <div>
-              <img src="img/const-prog.webp" alt="" />
-            </div>
-            <div>
-              <div>
-                <p>2023</p>
-                <h5>Cентябрь</h5>
-              </div>
-              <button>
-                <span>20 фото</span>
-                <img src="icons/arrow-left.svg" alt="" />
-              </button>
-            </div>
-            <span>Обновлено 20.10.2023</span>
-          </div>
-          <div class="section-construction-progress-card">
-            <div>
-              <img src="img/const-prog.webp" alt="" />
-            </div>
-            <div>
-              <div>
-                <p>2023</p>
-                <h5>Cентябрь</h5>
-              </div>
-              <button>
-                <span>20 фото</span>
-                <img src="icons/arrow-left.svg" alt="" />
-              </button>
-            </div>
-            <span>Обновлено 20.10.2023</span>
-          </div>
-          <div class="section-construction-progress-card">
-            <div>
-              <img src="img/const-prog.webp" alt="" />
-            </div>
-            <div>
-              <div>
-                <p>2023</p>
-                <h5>Cентябрь</h5>
-              </div>
-              <button>
-                <span>20 фото</span>
-                <img src="icons/arrow-left.svg" alt="" />
-              </button>
-            </div>
-            <span>Обновлено 20.10.2023</span>
-          </div>
+
+        <div class="section-wrap">
+
+            <h2>ход строительства</h2>
+
         </div>
-      </div>
+        <div class="section-wrap">
+        <div class="section-construction-progress-container snaps-inline hsb" id="scroller04">
+            <div class="section-construction-progress-card">
+                <div>
+                    <img src="img/const-prog.webp" alt="">
+                </div>
+                <div>
+                    <div>
+                        <p>2023</p>
+                        <h5>Cентябрь</h5>
+                    </div>
+                    <div>
+                    <button>
+                        <span>20 фото</span>
+                        <img src="icons/arrow-left.svg" alt="">
+                    </button>
+                    </div>
+                </div>
+                <span>Обновлено 20.10.2023</span>
+            </div>
+            <div class="section-construction-progress-card">
+                <div>
+                    <img src="img/const-prog.webp" alt="">
+                </div>
+                <div>
+                    <div>
+                        <p>2023</p>
+                        <h5>Cентябрь</h5>
+                    </div>
+                    <button>
+                        <span>20 фото</span>
+                        <img src="icons/arrow-left.svg" alt="">
+                    </button>
+                </div>
+                <span>Обновлено 20.10.2023</span>
+            </div>
+            <div class="section-construction-progress-card">
+                <div>
+                    <img src="img/const-prog.webp" alt="">
+                </div>
+                <div>
+                    <div>
+                        <p>2023</p>
+                        <h5>Cентябрь</h5>
+                    </div>
+                    <button>
+                        <span>20 фото</span>
+                        <img src="icons/arrow-left.svg" alt="">
+                    </button>
+                </div>
+                <span>Обновлено 20.10.2023</span>
+            </div>
+            <div class="section-construction-progress-card">
+                <div>
+                    <img src="img/const-prog.webp" alt="">
+                </div>
+                <div>
+                    <div>
+                        <p>2023</p>
+                        <h5>Cентябрь</h5>
+                    </div>
+                    <button>
+                        <span>20 фото</span>
+                        <img src="icons/arrow-left.svg" alt="">
+                    </button>
+                </div>
+                <span>Обновлено 20.10.2023</span>
+            </div>
+            <div class="section-construction-progress-card">
+                <div>
+                    <img src="img/const-prog.webp" alt="">
+                </div>
+                <div>
+                    <div>
+                        <p>2023</p>
+                        <h5>Cентябрь</h5>
+                    </div>
+                    <button>
+                        <span>20 фото</span>
+                        <img src="icons/arrow-left.svg" alt="">
+                    </button>
+                </div>
+                <span>Обновлено 20.10.2023</span>
+            </div>
+            <div class="section-construction-progress-card">
+                <div>
+                    <img src="img/const-prog.webp" alt="">
+                </div>
+                <div>
+                    <div>
+                        <p>2023</p>
+                        <h5>Cентябрь</h5>
+                    </div>
+                    <button>
+                        <span>20 фото</span>
+                        <img src="icons/arrow-left.svg" alt="">
+                    </button>
+                </div>
+                <span>Обновлено 20.10.2023</span>
+            </div>
+            <div class="section-construction-progress-card">
+                <div>
+                    <img src="img/const-prog.webp" alt="">
+                </div>
+                <div>
+                    <div>
+                        <p>2023</p>
+                        <h5>Cентябрь</h5>
+                    </div>
+                    <button>
+                        <span>20 фото</span>
+                        <img src="icons/arrow-left.svg" alt="">
+                    </button>
+                </div>
+                <span>Обновлено 20.10.2023</span>
+            </div>
+            <div class="section-construction-progress-card">
+                <div>
+                    <img src="img/const-prog.webp" alt="">
+                </div>
+                <div>
+                    <div>
+                        <p>2023</p>
+                        <h5>Cентябрь</h5>
+                    </div>
+                    <button>
+                        <span>20 фото</span>
+                        <img src="icons/arrow-left.svg" alt="">
+                    </button>
+                </div>
+                <span>Обновлено 20.10.2023</span>
+            </div>
+        </div>
+        </div>
 
-      <div
-        class="section-construction-progress-controls horizontal-scroller-contols"
-      >
-        <span class="current-scroll cp"></span>
-        <span class="cp"></span>
-        <span class="cp"></span>
-        <span class="cp"></span>
-        <span class="cp"></span>
-        <span class="cp"></span>
-      </div>
+        <div class="section-construction-progress-controls horizontal-scroller-contols">
+            <span class="current-scroll cp"></span>
+            <span class="cp"></span>
+            <span class="cp"></span>
+            <span class="cp"></span>
+            <span class="cp"></span>
+            <span class="cp"></span>
+        </div>
 
-      <button>
-        <span>ПОДРОБНЕЕ</span>
-        <img src="icons/arrow-right-1.svg" alt="" />
-      </button>
+        <button>
+            <span>ПОДРОБНЕЕ</span>
+            <img src="icons/arrow-right-1.svg" alt="">
+        </button>
+
     </section>
 
     <!-- SECTION STOCK -->
 
-    <section class="section-stock" id="promo">
-      <div class="section-wrap">
-        <h2>АКЦИИ</h2>
-      </div>
+    <section class="section-stock" id="promo"> 
 
-      <div class="section-wrap">
-        <div
-          class="section-stock-scroller horizontal-scroller dragscroll snaps-inline hsb"
-          id="scroller03"
-        >
-          <div>
-            <div>
-              <span>2 февраля 2023</span>
-              <h3>Выгода до 2 млн руб.</h3>
-            </div>
+        <div class="section-wrap">
 
-            <p>
-              Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн
-              рублей
-            </p>
-            <button>Забронировать</button>
-          </div>
-          <div>
-            <div>
-              <span>2 февраля 2023</span>
-              <h3>Выгода до 2 млн руб.</h3>
-            </div>
+            <h2>АКЦИИ</h2>
 
-            <p>
-              Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн
-              рублей
-            </p>
-            <button>Забронировать</button>
-          </div>
-          <div>
-            <div>
-              <span>2 февраля 2023</span>
-              <h3>Выгода до 2 млн руб.</h3>
-            </div>
-
-            <p>
-              Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн
-              рублей
-            </p>
-            <button>Забронировать</button>
-          </div>
         </div>
 
-        <div class="section-stock-controls horizontal-scroller-contols">
-          <span class="current-scroll cp"></span>
-          <span class="cp"></span>
-          <span class="cp"></span>
+        <div class="section-wrap">
+
+            <div class="section-stock-scroller horizontal-scroller dragscroll snaps-inline hsb" id="scroller03">
+                <div>
+                    <div>
+                        <span>2 февраля 2023</span>
+                        <h3>Выгода 
+                            до 2 млн руб.</h3>
+                        </div>
+
+                    <p>Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей</p>
+                    <button>Забронировать</button>
+                </div>
+                <div>
+                    <div>
+                        <span>2 февраля 2023</span>
+                        <h3>Выгода 
+                            до 2 млн руб.</h3>
+                        </div>
+
+                    <p>Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей</p>
+                    <button>Забронировать</button>
+                </div>
+                <div>
+                    <div>
+                        <span>2 февраля 2023</span>
+                        <h3>Выгода 
+                            до 2 млн руб.</h3>
+                        </div>
+
+                    <p>Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей</p>
+                    <button>Забронировать</button>
+                </div>
+            </div>
+            
+            <div class="section-stock-controls horizontal-scroller-contols">
+                <span class="current-scroll cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+            </div>
+
         </div>
-      </div>
+
     </section>
 
     <!-- FOOTER START-->
 
     <footer>
-      <div class="footer-mobile-logo">
-        <img src="icons/logo_mobile.svg" alt="" />
-      </div>
-      <div class="footer-top-menu">
-        <div class="footer-top-contacts">
-          <div>
-            <a href="tel:+74951048648"> 7 495 104 86 48</a>
-          </div>
-          <div>
-            <a href="#"><img src="icons/vk.svg" alt="" /></a>
-            <a href="#"><img src="icons/telegram.svg" alt="" /></a>
-          </div>
+        <div class="footer-mobile-logo">
+            <img src="icons/logo_mobile.svg" alt="">
         </div>
-        <div class="footer-top-menu-list-items">
-          <div>
-            <ul>
-              <li><a href="#">О ПРОЕКТЕ</a></li>
-              <li><a href="#location">РАСПОЛОЖЕНИЕ</a></li>
-              <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
-              <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
-              <li><a href="#news">ВСЕ НОВОСТИ ПРОЕКТА</a></li>
-              <li><a href="#">КОНТАКТЫ</a></li>
-              <li><a href="#">ДОКУМЕНТЫ</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="#filter"
-                  ><img src="icons/right.svg" alt="" /><span
-                    >ВЫБРАТЬ КВАРТИРУ</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="icons/right.svg" alt="" /><span
-                    class="footer-incoming"
-                    >ВЫБРАТЬ МАШИНОМЕСТО</span
-                  ><span class="footer-incoming-soon"> СКОРО</span></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="icons/right.svg" alt="" /><span
-                    class="footer-incoming"
-                    >ВЫБРАТЬ КЛАДОВУЮ</span
-                  ><span class="footer-incoming-soon"> СКОРО</span></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="icons/document-download.svg" alt="" /><span
-                    >ПРЕЗЕНТАЦИЯ О ПРОЕКТЕ</span
-                  ></a
-                >
-              </li>
-            </ul>
-            <span><a href="#">> КВАРТИРЫ НА ГЕНПЛАНЕ</a></span>
-            <span><a href="#">> КВАРТИРЫ ПО ПАРАМЕТРАМ</a></span>
-            <div>
-              <input type="text" />
-              <img src="icons/zoom_in.svg" alt="" />
+        <div class="footer-top-menu">
+            <div class="footer-top-contacts">
+                <div>
+                    <a href="tel:+74951048648"> 7 495 104 86 48</a>
+                </div>
+                <div>
+                    <a href="#"><img src="icons/vk.svg" alt=""></a>
+                    <a href="#"><img src="icons/telegram.svg" alt=""></a>
+                </div>
             </div>
-          </div>
+            <div class="footer-top-menu-list-items">
+                <div>
+                    <ul>
+                        <li><a href="#">О ПРОЕКТЕ</a></li>
+                        <li><a href="#location">РАСПОЛОЖЕНИЕ</a></li>
+                        <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+                        <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
+                        <li><a href="#news">ВСЕ  НОВОСТИ ПРОЕКТА</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                        <li><a href="#">ДОКУМЕНТЫ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#filter"><img src="icons/right.svg" alt=""><span>ВЫБРАТЬ КВАРТИРУ</span></a></li>
+                        <li><a href="#"><img src="icons/right.svg" alt=""><span class="footer-incoming">ВЫБРАТЬ МАШИНОМЕСТО</span><span class="footer-incoming-soon"> СКОРО</span></a></li>
+                        <li><a href="#"><img src="icons/right.svg" alt=""><span class="footer-incoming">ВЫБРАТЬ КЛАДОВУЮ</span><span class="footer-incoming-soon"> СКОРО</span></a></li>
+                        <li><a href="#"><img src="icons/document-download.svg" alt=""><span>ПРЕЗЕНТАЦИЯ О ПРОЕКТЕ</span></a></li>
+                    </ul>
+                    <span><a href="#">> КВАРТИРЫ НА ГЕНПЛАНЕ</a></span>
+                    <span><a href="#">> КВАРТИРЫ ПО ПАРАМЕТРАМ</a></span>
+                    <div>
+                        <input type="text">
+                        <img src="icons/zoom_in.svg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="footer-log-info">
-        <div>
-          <img src="icons/logo_foot.svg" alt="" />
+        <div class="footer-log-info">
+            <div>
+                <img src="icons/logo_foot.svg" alt="">
+            </div>
+            <div>
+                <span>Информация на данном сайте носит исключительно информационный характер и ни при каких обстоятельствах не является публичной офертой, определяемой положениями статьи 437 Гражданского Кодекса Российской Федерации. Раскрытие Застройщиком информации, предусмотренной Федеральным законом от 30.12.2004 №214-ФЗ, осуществляется на сайте Наш.ДОМ.РФ.</span>
+            </div>
         </div>
-        <div>
-          <span
-            >Информация на данном сайте носит исключительно информационный
-            характер и ни при каких обстоятельствах не является публичной
-            офертой, определяемой положениями статьи 437 Гражданского Кодекса
-            Российской Федерации. Раскрытие Застройщиком информации,
-            предусмотренной Федеральным законом от 30.12.2004 №214-ФЗ,
-            осуществляется на сайте Наш.ДОМ.РФ.</span
-          >
-        </div>
-      </div>
 
-      <div class="footer-copyright">
-        <div>
-          <div>
-            <a href="#"
-              ><img src="icons/right.svg" alt="" /><span>ВСЕ ПРОЕКТЫ</span></a
-            >
-          </div>
+        <div class="footer-copyright">
+            <div>
+            <div>
+                    <a href="#"><img src="icons/right.svg" alt=""><span>ВСЕ ПРОЕКТЫ</span></a>
+                </div>
+            </div>
+            <div>
+                <span>Copyright © 2023</span>
+                <span><a href="privacy.html">Политика конфиденциальности</a></span>
+            </div>    
         </div>
-        <div>
-          <span>Copyright © 2023</span>
-          <span><a href="privacy.html">Политика конфиденциальности</a></span>
-        </div>
-      </div>
+
     </footer>
+
+    
+
+
 
     <script src="script/script.js"></script>
     <script src="script/timurbranch.js"></script>
     <script src="script/sliders.js"></script>
-  </body>
+</body>
 </html>
