@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайтл</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/nouislider.min.css">
+    <link rel="stylesheet" href="css/sliders.css">
+    <link rel="stylesheet" href="css/catalogue.css">
+    <script src="lib/horizontaldrag.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/nouislider.min.js"></script>
+
+</head>
+<body style="overflow-x: hidden;">
+
+    <!--button up-->
+    
+    <button onclick="topscroll()" id="topbutton" title="В начало!"><img src="icons/button_up.svg" alt="" style="transform: translateY(-6px);"></button>
+
+    <header>
+
+        <div id="header-wrap">
+
+            <a href="" class="header-logo">
+                <img src="icons/header_logo.svg" alt="">
+            </a>
+
+            <nav id="nav-desktop">
+                <ul>
+                    <li><a href="#promo" class="nav-contrast">АКЦИИ</a></li>
+                    <li><a href="#">КОМАНДА ПРОЕКТА</a></li>
+                    <li><a href="#">ГЕНПЛАН</a></li>
+                    <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <input type="checkbox" name="menu-toggle" id="header-menu-checkbox">
+
+            <nav id="nav-mobile" class="full-bleed">
+                <ul class="nav-mobile-list">
+                    <li><a href="#" class="nav-menu-a">О ПРОЕКТЕ</a></li>
+                    <li><a href="#lovation" class="nav-menu-a">РАСПОЛОЖЕНИЕ</a></li>
+                    <li>
+                        <a href="#" class="nav-menu-a">КУПИТЬ</a>
+                        <ul>
+                            <li><a href="#filter">> КВАРТИРУ</a></li>
+                            <li><a href="" class="nav-soon">> МАШИНОМЕСТО</a><span>скоро</span></li>
+                            <li><a href="" class="nav-soon">> КЛАДОВКУ</a><span>скоро</span></li>
+                            <li><a href="" class="nav-soon">> КОММЕРЧЕСКОЕ ПОМЕЩЕНИЕ</a><span>скоро</span></li>
+                        </ul>
+                    </li>
+                    <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icon-wrap">
+
+                <a href="#" id="header-star">
+                    <img src="icons/header_star.svg" alt="">
+                </a>
+        
+                <a id="header-phone" href="tel:+74954897748">+7 495 489-77-48</a>
+
+                <a href="#" id="header-call" class="header-icon">
+                    <img src="icons/header_call.svg" alt="">
+                </a>
+        
+                <a href="#"  id="header-comment" class="header-icon">
+                    <img src="icons/header_comment.svg" alt="">
+                </a>
+                
+                <label for="header-menu-checkbox" class="cp" id="header-menu-checkbox-label"> 
+
+                </label>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav id="section-hero-additional-menu">
+
+        <div id="section-hero-additional-menu-wrap">
+
+            <ul>
+                <li class="tab-underline"><a href="#location">РАСПОЛОЖЕНИЕ</a></li>
+                <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#landscaping">БЛАГОУСТРОЙСТВО</a></li>
+                <li><a href="#filter">КВАРТИРЫ</a></li>
+                <li><a href="#rare-formats">РЕДКИЕ ФОРМАТЫ</a></li>
+                <li><a href="#how-to-buy">КАК КУПИТЬ</a></li>
+            </ul>
+
+            <a href="#" class="uc btn btn-red">Выбрать квартиру</a>
+
+        </div>
+        
+    </nav>
+
+    <!-- SECTION FILTER -->
+
+    <section class="section-filter section-filter-catalogue" id="filter">
+
+        <a href=""><img src="icons/arrow-right-green.svg" alt="">Вернуться на главную</a>
+
+        
+
+        <div class="section-filter-wrap section-wrap">
+
+            <div class=""><label for="cataloguePlanSwitch"></label></div>
+
+            <div class="section-filter-heading-wrap">
+
+                <h2>Квартиры</h2>
+
+                <div class="">
+
+                    <div class="section-location-tab-wrap section-heading-tabs section-landscaping-tap-wrap" >
+    
+                        <span class="uc cp">Машиноместа</span>
+        
+                        <span class="uc cp">Кладовые</span>
+
+                        <span class="uc cp">Коммерческие помещения</span>
+    
+                    </div>
+    2.3125rem
+                </div>
+
+                
+                <label id="catalogue-switch-label" for="cataloguePlanSwitch"> На плане башни <div><span></span></div> </label>
+                
+
+            </div>
+
+           
+
+            <label for="toggleFilter" class="dn btn-green section-filter-toggle-label cp"><img src="icons/Filter.svg" alt="">ФИЛЬТР</label>
+
+            <input type="checkbox" name="catalogue" id="cataloguePlanSwitch">
+
+            <input type="checkbox" name="toggleFilter" class="dn" id="toggleFilter">
+
+            <div class="section-filter-params-wrap">
+
+                    
+                <div class="slider-wrap section-filter-params-item">
+                            
+                    <span>Общая стоимость (₽)</span>
+                    <div id="sectionFilterPriceSlider01" class="slider"></div>
+                    <div class="slider-val-wrap">
+                        <span id="sectionFilterPriceSlider01-lower" class="slider-val"></span>
+                        <span id="sectionFilterPriceSlider01-upper" class="slider-val"></span>
+                    </div>
+
+                </div>
+                    
+                <div class="slider-wrap section-filter-params-item">
+                            
+                    <span>Общая площадь (м2)</span>
+                    <div id="sectionFilterSquareSlider02" class="slider"></div>
+                    <div class="slider-val-wrap">
+                        <span id="sectionFilterSquareSlider02-lower" class="slider-val"></span>
+                        <span id="sectionFilterSquareSlider02-upper" class="slider-val"></span>
+                    </div>
+
+                </div>
+                    
+                <div class="slider-wrap slider-addition-from-to section-filter-params-item">
+                            
+                    <span>Этаж</span>
+                    <div id="sectionFilterFloorSlider03" class="slider"></div>
+                    <div class="slider-val-wrap">
+                        <span id="sectionFilterFloorSlider03-lower" class="slider-val"></span>
+                        <span id="sectionFilterFloorSlider03-upper" class="slider-val"></span>
+                    </div>
+
+                </div>
+
+                <div class="section-filter-reset-wrap fc cp">
+
+                    <span>Сбросить фильтр</span> <img src="icons/filter_close.svg" alt="">
+
+                </div>
+
+
+
+
+
+            </div>
+
+              <div class="section-filter-params-wrap section-filter-params-wrap-catalogue">
+
+
+                <div class="section-filter-checkbox-container section-filter-params-item">
+
+                    <span>Башня</span>
+
+                    <div class="section-filter-checkbox-flex-wrap section-filter-house">
+
+                        <input type="checkbox" id="filterChk-House01">
+                        <label for="filterChk-House01"><span>A</span></label>
+    
+                        <input type="checkbox" id="filterChk-House02">
+                        <label for="filterChk-House02"><span>B</span></label>
+    
+                    </div>
+
+                </div>
+
+                <div class="section-filter-checkbox-container section-filter-params-item">
+
+                    <span>Количество комнат</span>
+
+                    <div class="section-filter-checkbox-flex-wrap section-filter-rooms">
+
+                        <input type="checkbox" id="filterChk-Rooms01">
+                        <label for="filterChk-Rooms01"><span>C</span></label>
+    
+                        <input type="checkbox" id="filterChk-Rooms02">
+                        <label for="filterChk-Rooms02"><span>2</span></label>
+    
+                        <input type="checkbox" id="filterChk-Rooms03">
+                        <label for="filterChk-Rooms03"><span>3</span></label>
+    
+                        <input type="checkbox" id="filterChk-Rooms04">
+                        <label for="filterChk-Rooms04"><span>4</span></label>
+    
+                        <input type="checkbox" id="filterChk-Rooms05">
+                        <label for="filterChk-Rooms05"><span>5</span></label>
+    
+                    </div>
+
+                </div>
+
+                <input type="checkbox" id="filterPromoCkb">
+
+                <label class="btn-red btn" for="filterPromoCkb">Акция</label>
+
+
+
+
+
+
+
+            </div>
+
+            <div class="section-filter-results-sort">
+
+                <span>Сортировать по</span>
+
+                <input type="radio" name="sort" id="catalogueFilterSortByPrice">
+
+                <label for="catalogueFilterSortByPrice"><span>цене</span><img src="icons/sort-amount-up.svg" alt=""></label>
+                  
+                <input type="radio" name="sort" id="catalogueFilterSortByRooms">
+
+                <label for="catalogueFilterSortByRooms"><span>комнатности</span><img src="icons/sort-amount-up.svg" alt=""></label>
+
+                <input type="radio" name="sort" id="catalogueFilterSortBySquare">
+
+                <label for="catalogueFilterSortBySquare"><span>площади</span><img src="icons/sort-amount-up.svg" alt=""></label>
+
+            </div>
+
+            <div class="section-filter-results-container">
+
+
+
+                <div class="section-filter-results">
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    <div class="secion-filter-results-card">
+
+                        <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
+    
+                        <span>№218</span> <br>
+    
+                        <span> <span>3к-квартира, </span><span>150м</span></span> <br>
+    
+                        <div class="price">6 500 600 <span>₽</span></div>
+    
+                        <div class="result-card-scheme-container">
+
+                            <div class="result-card-scheme-wrap">
+
+                                <img src="icons/filter_compas.svg" alt="">
+    
+                                <img src="img/filter_appart_scheme.webp" alt="">
+
+                                <span class="uc">Мичуринский про-т</span>
+                                <span class="uc">Проезд 7526</span>
+
+                            </div>
+    
+                        </div>
+    
+                        <div class="result-card-tower-floor-wrap">
+    
+                            <span>Башня А</span>
+                            <span>18 / 24 этаж</span>
+
+                            
+    
+                        </div>
+
+                        <div class="filter-item-btn-wrap">
+
+                            <button class="btn btn-green">ЗАБРОНИРОВАТЬ</button>
+
+                        </div>
+    
+                        
+    
+                    </div>
+
+                    
+
+
+                </div>
+
+
+ 
+
+
+            </div>
+
+            <div class="filter-button-wrap">
+                    
+                <button class="btn uc btn-green-brdr filter-show-more">
+                    <span>Показать&nbsp<span id="somePlaceholderId"> 141 </span>&nbspквартиру</span>
+                    <span>Показать Еще</span>
+                     <img src="icons/arrow-right-green.svg" alt="">
+                    </button>
+
+            </div>
+
+            
+
+
+        </div>
+
+        <div></div>
+
+
+    </section>
+    <!-- SECTION CALLBACK  -->
+
+    <section class="section-callback">
+
+        <!-- specific width -->
+        <div class="section-callback-wrap">
+
+            <h2>ХОТИТЕ УЗНАТЬ ПОДРОБНЕЕ?</h2>
+
+            <div class="section-callback-form-wrap">
+
+                <form id="callback-form">
+
+                    <input type="text" id="cb-name" name="cb-name" class="form-input">
+
+                    <label for="cb-name" class="form-label">Ваше имя</label>
+    
+                    <input type="tel" id="cb-phone" name="cb-phone" class="form-input">
+
+                    <label for="cb-phone" class="form-label">Телефон</label>
+
+                    <label for="cb-submit" class="btn uc cp btn-green">Перезвоните мне <img src="icons/arrow-right.svg" alt=""></label>
+    
+                    <input style="display: none;" type="submit" class="" id="cb-submit">
+
+                </form>
+
+                <div class="section-callback-image"></div>
+
+            </div>
+
+
+
+            <span>Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECTION STOCK -->
+
+    <section class="section-stock" id="promo"> 
+
+        <div class="section-wrap">
+
+            <h2>АКЦИИ</h2>
+
+        </div>
+
+        <div class="section-wrap">
+
+            <div class="section-stock-scroller horizontal-scroller dragscroll snaps-inline hsb" id="scroller03">
+                <div>
+                    <div>
+                        <span>2 февраля 2023</span>
+                        <h3>Выгода 
+                            до 2 млн руб.</h3>
+                        </div>
+
+                    <p>Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей</p>
+                    <button>Забронировать</button>
+                </div>
+                <div>
+                    <div>
+                        <span>2 февраля 2023</span>
+                        <h3>Выгода 
+                            до 2 млн руб.</h3>
+                        </div>
+
+                    <p>Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей</p>
+                    <button>Забронировать</button>
+                </div>
+                <div>
+                    <div>
+                        <span>2 февраля 2023</span>
+                        <h3>Выгода 
+                            до 2 млн руб.</h3>
+                        </div>
+
+                    <p>Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей</p>
+                    <button>Забронировать</button>
+                </div>
+            </div>
+            
+            <div class="section-stock-controls horizontal-scroller-contols">
+                <span class="current-scroll cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER START-->
+
+    <footer>
+        <div class="footer-mobile-logo">
+            <img src="icons/logo_mobile.svg" alt="">
+        </div>
+        <div class="footer-top-menu">
+            <div class="footer-top-contacts">
+                <div>
+                    <a href="tel:+74951048648"> 7 495 104 86 48</a>
+                </div>
+                <div>
+                    <a href="#"><img src="icons/vk.svg" alt=""></a>
+                    <a href="#"><img src="icons/telegram.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-top-menu-list-items">
+                <div>
+                    <ul>
+                        <li><a href="#">О ПРОЕКТЕ</a></li>
+                        <li><a href="#location">РАСПОЛОЖЕНИЕ</a></li>
+                        <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+                        <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
+                        <li><a href="#news">ВСЕ  НОВОСТИ ПРОЕКТА</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                        <li><a href="#">ДОКУМЕНТЫ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#filter"><img src="icons/right.svg" alt=""><span>ВЫБРАТЬ КВАРТИРУ</span></a></li>
+                        <li><a href="#"><img src="icons/right.svg" alt=""><span class="footer-incoming">ВЫБРАТЬ МАШИНОМЕСТО</span><span class="footer-incoming-soon"> СКОРО</span></a></li>
+                        <li><a href="#"><img src="icons/right.svg" alt=""><span class="footer-incoming">ВЫБРАТЬ КЛАДОВУЮ</span><span class="footer-incoming-soon"> СКОРО</span></a></li>
+                        <li><a href="#"><img src="icons/document-download.svg" alt=""><span>ПРЕЗЕНТАЦИЯ О ПРОЕКТЕ</span></a></li>
+                    </ul>
+                    <span><a href="#">> КВАРТИРЫ НА ГЕНПЛАНЕ</a></span>
+                    <span><a href="#">> КВАРТИРЫ ПО ПАРАМЕТРАМ</a></span>
+                    <div>
+                        <input type="text">
+                        <img src="icons/zoom_in.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-log-info">
+            <div>
+                <img src="icons/logo_foot.svg" alt="">
+            </div>
+            <div>
+                <span>Информация на данном сайте носит исключительно информационный характер и ни при каких обстоятельствах не является публичной офертой, определяемой положениями статьи 437 Гражданского Кодекса Российской Федерации. Раскрытие Застройщиком информации, предусмотренной Федеральным законом от 30.12.2004 №214-ФЗ, осуществляется на сайте Наш.ДОМ.РФ.</span>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div>
+            <div>
+                    <a href="#"><img src="icons/right.svg" alt=""><span>ВСЕ ПРОЕКТЫ</span></a>
+                </div>
+            </div>
+            <div>
+                <span>Copyright © 2023</span>
+                <span><a href="privacy.html">Политика конфиденциальности</a></span>
+            </div>    
+        </div>
+
+    </footer>
+
+    
+
+
+
+    <script src="script/script.js"></script>
+    <script src="script/timurbranch.js"></script>
+    <script src="script/sliders.js"></script>
+</body>
+</html>
