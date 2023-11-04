@@ -5,6 +5,10 @@
     font-weight: 300;
 }
 
+.section-filter {
+    padding-top: 1.125rem ;
+}
+
 
 /* SECTION FILTER */
 
@@ -17,6 +21,7 @@
     color: var(--clr-primary-green);
     gap: .5rem;
     width: var(--content-width);
+    margin-bottom: 2.3rem;
 }
 
 .section-filter-catalogue > a > img {
@@ -35,6 +40,26 @@
 #cataloguePlanSwitch:checked ~ .section-filter-results-sort,  
 #cataloguePlanSwitch:checked ~ .filter-button-wrap {  
     display: none;
+}
+
+.section-filter-tower-plan-container {
+    display: none;
+    gap: 2.375rem;
+    margin: 2.875rem 0 0 0;
+}
+
+#cataloguePlanSwitch:checked ~ .section-filter-tower-plan-container {
+    display: flex;
+}
+
+.section-filter-plan-tiles-wrap::after {
+    content: 'БАШНЯ А';
+    position: absolute;
+    bottom: -40px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+
 }
 
 .section-filter-results-sort {
@@ -147,7 +172,7 @@
     border-radius: 20px;
     outline: 1px solid var(--clr-greyscale-6);
     position: relative;
-    transition: all 500ms ease;
+    transition: all 250ms ease;
     /* padding: 3.75px 5.23px; */
 }
 
@@ -161,7 +186,7 @@
     position: absolute;
     top: calc(calc(100% - calc(var(--_width)))/2);
     left: 5px;
-    transition: all 400ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 
@@ -177,17 +202,71 @@
     display: none;
 }
 
-.section-filter-wrap:has(#cataloguePlanSwitch:checked) #catalogue-switch-label > div {
+#cataloguePlanSwitch:checked ~ #catalogue-switch-label > div {
     outline: 1px solid var(--clr-primary-green);
     justify-content: end;
 }
 
-.section-filter-wrap:has(#cataloguePlanSwitch:checked) #catalogue-switch-label > div span {
+#cataloguePlanSwitch:checked ~ #catalogue-switch-label > div span {
     background-color: var(--clr-primary-green);
     left: calc(100% - calc(var(--_width) + 5px));
 
 }
 
+
+/* filter tile set thingy */
+
+.section-filter-tower-item-wrap {
+    display: flex;
+    align-items: start;
+    gap: 1.25rem;
+    justify-content: start;
+}
+
+
+.section-filter-plan-tiles-wrap {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 4px;
+}
+
+.section-filter-plan-tiles-wrap span {
+    outline: 1px solid var(--clr-greyscale-8);
+    display: block;
+    width: 18px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: relative;
+    font-size: .75rem;
+}
+
+.section-filter-plan-tiles-wrap span:nth-child(12n+13),
+.section-filter-plan-tiles-wrap span:nth-child(1) {
+    outline: none;
+}
+
+.section-filter-plan-tiles-wrap span::after {
+    width: 100%;
+    aspect-ratio: 1;
+    position: absolute;
+    inset: 50%;
+    translate: -50% -50% ;
+    color: var(--clr-greyscale-8);
+}
+
+.section-filter-plan-tiles-wrap span:nth-child(12n+5),
+.section-filter-plan-tiles-wrap span:nth-child(12n+6) {
+    color: rgba(0, 255, 0, 0);
+}
+
+.section-filter-plan-tiles-wrap span:nth-child(12n+5)::after {
+    content: '1';
+}
+
+.section-filter-plan-tiles-wrap span:nth-child(12n+6)::after {
+    content: 'C';
+    font-family: Trebuchet MS;
+}
 
 
 
