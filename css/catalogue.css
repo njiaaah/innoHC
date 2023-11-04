@@ -55,7 +55,7 @@
 .section-filter-plan-tiles-wrap::after {
     content: 'БАШНЯ А';
     position: absolute;
-    bottom: -40px;
+    bottom: -40px; 
     font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: 0.02em;
