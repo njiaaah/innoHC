@@ -31,6 +31,7 @@
             <nav id="nav-desktop">
                 <ul>
                     <li><a href="#promo" class="nav-contrast">АКЦИИ</a></li>
+                    <li><a href="#">关于项目</a></li>
                     <li><a href="#">КОМАНДА ПРОЕКТА</a></li>
                     <li><a href="#">ГЕНПЛАН</a></li>
                     <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
@@ -64,7 +65,7 @@
                     <img src="icons/header_star.svg" alt="">
                 </a>
         
-                <a id="header-phone" href="tel:+74954897748">+7 495 489-77-48</a>
+                <!-- <a id="header-phone" href="tel:+74954897748">+7 495 489-77-48</a> -->
 
                 <a href="#" id="header-call" class="header-icon">
                     <img src="icons/header_call.svg" alt="">
@@ -97,7 +98,7 @@
                 <li><a href="#how-to-buy">КАК КУПИТЬ</a></li>
             </ul>
 
-            <a href="#" class="uc btn btn-red">Выбрать квартиру</a>
+            <a href="#" class="uc btn btn-green">Выбрать квартиру</a>
 
         </div>
         
@@ -143,7 +144,7 @@
 
             <label for="toggleFilter" class="dn btn-green section-filter-toggle-label cp"><img src="icons/Filter.svg" alt="">ФИЛЬТР</label>
 
-            <input type="checkbox" name="catalogue" id="cataloguePlanSwitch" checked >
+            <input type="checkbox" name="catalogue" id="cataloguePlanSwitch" checked>
 
             <label id="catalogue-switch-label" for="cataloguePlanSwitch"> На плане башни <div><span></span></div> </label>
 
@@ -185,11 +186,7 @@
 
                 </div>
 
-                <div class="section-filter-reset-wrap fc cp">
 
-                    <span>Сбросить фильтр</span> <img src="icons/filter_close.svg" alt="">
-
-                </div>
 
 
 
@@ -245,39 +242,70 @@
 
                 <label class="btn-red btn" for="filterPromoCkb">Акция</label>
 
+                <div class="section-filter-reset-wrap fc cp">
+
+                    <span>Сбросить фильтр</span> <img src="icons/filter-close-closs-devided.svg" alt="">
+
+                </div>
 
 
 
 
 
 
-            </div>
-
-            <div class="section-filter-results-sort">
-
-                <span>Сортировать по</span>
-
-                <input type="radio" name="sort" id="catalogueFilterSortByPrice">
-
-                <label for="catalogueFilterSortByPrice"><span>цене</span><img src="icons/sort-amount-up.svg" alt=""></label>
-                  
-                <input type="radio" name="sort" id="catalogueFilterSortByRooms">
-
-                <label for="catalogueFilterSortByRooms"><span>комнатности</span><img src="icons/sort-amount-up.svg" alt=""></label>
-
-                <input type="radio" name="sort" id="catalogueFilterSortBySquare">
-
-                <label for="catalogueFilterSortBySquare"><span>площади</span><img src="icons/sort-amount-up.svg" alt=""></label>
 
             </div>
 
+            <div class="filter-sort-result-head-wrap">
+
+                <div class="filter-sort-dropdown">
+
+                    <input type="radio" name="filerSortList" id="filerSortList01" checked>
+                    <input type="radio" name="filerSortList" id="filerSortList02">
+                    <input type="radio" name="filerSortList" id="filerSortList03">
+                    <input type="radio" name="filerSortList" id="filerSortList04">
+    
+                    <input type="checkbox" id="filter-sort-dropdown-toggle">
+    
+                    <div class="filterSortListHeadingDesktop">
+                        <input type="checkbox" id="filterSortListHeadingCkb">
+                        <label for="filterSortListHeadingCkb"></label>
+    
+                        <span>Сначала дешевле</span>
+                        <span>Сначала дороже</span>
+                        <span>Сначала c большой площадью</span>
+                        <span>Сначала с меньшей площадью</span>
+    
+                        <label for="filter-sort-dropdown-toggle"><img src="icons/filter_dropdown_arrow.svg" alt=""></label>
+    
+                    </div>
+    
+                    <div style="display: none;" class="filterSortListHeadingMobile">
+                    </div >
+    
+                    <label for=""></label>
+    
+                    <ul>
+                        <li><label for="filerSortList01">Сначала дешевле <div><span></span></div></label></li>
+                        <li><label for="filerSortList02">Сначала дороже <div><span></span></div></label></li>
+                        <li><label for="filerSortList03">Сначала c большой площадью <div><span></span></div></label></li>
+                        <li><label for="filerSortList04">Сначала с меньшей площадью <div><span></span></div></label></li>
+                    </ul>
+                </div>
+    
+                <div> Найдена <span>141 квартира</span></div>
+            </div>
+
+
+ 
+ 
             <div class="section-filter-results-container">
 
 
 
                 <div class="section-filter-results">
 
-                    <div class="secion-filter-results-card">
+                    <div class="secion-filter-results-card card-with-promo">
 
                         <div class="result-card-favorite-icon"><img src="icons/filter_favorite.svg" alt=""></div>
     
@@ -817,19 +845,13 @@
 
             </div>
 
-            <div class="filter-button-wrap">
-                    
-                <button class="btn uc btn-green-brdr filter-show-more">
-                    <span>Показать&nbsp<span id="somePlaceholderId"> 141 </span>&nbspквартиру</span>
-                    <span>Показать Еще</span>
-                     <img src="icons/arrow-right-green.svg" alt="">
-                    </button>
 
-            </div>
 
             <!-- TOWER PLAN TOGGLE CONTENT -->
 
             <div class="section-filter-tower-plan-container">
+
+
 
                 <div class="section-filter-tower-item-wrap">
 
@@ -1003,8 +1025,9 @@
     
                     </div>
 
-                    <div class="section-filter-tower-side-above">
-
+                    <div class="section-filter-tower-side-below">
+                        <!--  -->
+                        <div></div>
                     </div>
 
                 </div>
@@ -1015,18 +1038,30 @@
 
             </div>
 
+
+            
+        <div class="filter-button-wrap">
+                    
+            <button class="btn uc btn-green-brdr filter-show-more">
+                <span>Показать&nbsp<span id="somePlaceholderId"> 141 </span>&nbspквартиру</span>
+                <span>Показать Еще</span>
+                 <img src="icons/arrow-right-green.svg" alt="">
+                </button>
+
+        </div>
+
             
 
 
         </div>
 
-        <div></div>
 
 
     </section>
     <!-- SECTION CALLBACK  -->
 
     <section class="section-callback">
+
 
         <!-- specific width -->
         <div class="section-callback-wrap">

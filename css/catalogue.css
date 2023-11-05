@@ -1,3 +1,8 @@
+label {
+    cursor: pointer;
+}
+
+
 /* HEADER */
 
 #section-hero-additional-menu-wrap li a {
@@ -5,10 +10,21 @@
     font-weight: 300;
 }
 
-.section-filter {
-    padding-top: 1.125rem ;
+.header-logo img {
+    width: 50px;
+    height: 50px;
 }
 
+
+
+.section-filter {
+    padding-top: 1.125rem ;
+    padding-bottom: 3.4375rem;
+}
+
+.tab-underline::after {
+    bottom: -2px;
+}
 
 /* SECTION FILTER */
 
@@ -37,9 +53,47 @@
 
 #cataloguePlanSwitch:checked ~ .section-filter-params-wrap,  
 #cataloguePlanSwitch:checked ~ .section-filter-results-container,  
-#cataloguePlanSwitch:checked ~ .section-filter-results-sort,  
+#cataloguePlanSwitch:checked ~ .section-filter-results-sort, 
+#cataloguePlanSwitch:checked ~ .filter-sort-result-head-wrap, 
 #cataloguePlanSwitch:checked ~ .filter-button-wrap {  
     display: none;
+}
+
+.filter-button-wrap {
+    height: 1px;
+    width: var(--content-width);
+    position: absolute;
+    bottom: -40px;
+    z-index: 6;
+}
+
+.section-callback {
+    overflow-x: visible;
+    position: relative;
+}
+
+.section-filter-tower-side-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+}
+
+.section-filter-tower-side-below {   
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    align-items: center;
+}
+
+.section-filter-tower-side-below div {
+    display: block;
+    width: 235px;
+    height: 200px;
+    background-image: url('../img/filter/filer-scheme.webp');
+    background-size: cover;
+    background-position: center center;
 }
 
 .section-filter-tower-plan-container {
@@ -55,11 +109,16 @@
 .section-filter-plan-tiles-wrap::after {
     content: 'БАШНЯ А';
     position: absolute;
-    bottom: -40px; 
+    bottom: -10px; 
     font-size: 1.3rem;
     font-weight: 400;
+    transform: translateX(80% );
     letter-spacing: 0.02em;
+    color: var(--clr-darkgreygreen);
+}
 
+.section-filter-tower-item-wrap:nth-of-type(2) > div:after{
+    content: 'БАШНЯ Б';
 }
 
 .section-filter-results-sort {
@@ -97,17 +156,19 @@
 }
 
 .section-filter-params-wrap {
-    /* place-items: center end; */
     grid-template-columns: repeat(2, clamp(12.5rem, 8rem + 10vw, 16rem)) 1fr 1fr
 }
 
-.section-filter-params-wrap > div:nth-child(4) {
-    grid-row-start: 1 !important;
-    grid-row-end: 1 !important;
-    grid-column-start: 4 !important;
-    grid-column-end: 4 !important;
-    height: 100%;
+.section-filter-reset-wrap {
+    width: 100%;
+    margin-bottom: 0.5rem;
     filter: invert(65%) sepia(0%) saturate(35%) hue-rotate(274deg) brightness(99%) contrast(82%); 
+    transition: transform 250ms ease;
+}
+
+.section-filter-reset-wrap:hover {
+    cursor: pointer;
+    transform: translateX(-10px) scale(1.05);
 }
 
 .section-filter-params-wrap-catalogue {
@@ -213,6 +274,253 @@
 
 }
 
+.card-with-promo {
+    outline: 2px solid var(--clr-primary-red);
+    outline-offset: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+.secion-filter-results-card .price {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.4375rem;
+    margin-top: 0.625rem;
+    letter-spacing: 2%;
+    width: fit-content;
+}
+
+.card-with-promo .price {
+    position: relative;
+   
+}
+
+.card-with-promo .price::after {
+    content: 'Акция';
+    color: var(--clr-greyscale-0);
+    background-color: var(--clr-primary-red);
+    left: calc(100% + 10px);
+    border-radius: 4px;
+    font-size: 0.4375rem;
+    font-weight: 400;
+    line-height: 0.5rem;
+    position: absolute;
+    padding: 0.375rem 0.8125rem;
+}
+
+/* sort drop list */
+
+    /* hiding inputs */
+
+    .filter-sort-dropdown input {
+        display: none;
+    }
+
+.filter-sort-result-head-wrap {
+    display: flex;
+    place-items: center;
+    align-items: center;
+    gap: 3.75rem;
+    margin-block: 2.625rem 1.125rem;
+}
+
+.filter-sort-result-head-wrap > div:last-of-type {
+    height: 100%;
+    display: block;
+}
+
+.filter-sort-result-head-wrap > div:last-of-type,
+.filter-sort-result-head-wrap > div:last-of-type span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--clr-greyscale-6);
+}
+
+.filter-sort-dropdown {
+    outline: 1px solid var(--clr-greyscale-4);
+    display: block;
+    user-select: none;
+
+    background-color: var(--clr-greyscale-0);
+    position: relative;
+    border-radius: 6px;
+    padding: 0.5rem 0.625rem;
+    width: 281px;
+    position: relative;
+}
+
+
+.filter-sort-dropdown > ul {
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: -1px;
+    z-index: 5;
+    width: calc(100% + 2px);
+    /* height: fit-content; */
+    background-color: var(--clr-greyscale-0);
+    padding: 30px 12px !important;
+    border: 1px solid var(--clr-greyscale-4);
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    animation: dropdownlist;
+    animation-duration: 350ms;
+    box-shadow: 5px 6px 9px 0px #D2D2D226;
+
+}
+
+@keyframes dropdownlist {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100% {
+
+    }
+}
+
+.filterSortListHeadingDesktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.filterSortListHeadingDesktop > span {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.4375rem;
+    color: var(--clr-greyscale-6);
+    display: none;
+    white-space: nowrap;
+    width: 180px;
+}
+
+.filterSortListHeadingDesktop > label:last-child {
+    display: flex;
+    align-items: center;
+}
+
+#filter-sort-dropdown-toggle:checked ~ ul {
+    display: block;
+}
+
+.filterSortListHeadingDesktop label:last-of-type img {
+    transition: transform 250ms ease;
+}
+
+#filter-sort-dropdown-toggle:checked ~ .filterSortListHeadingDesktop label:last-of-type img {
+    transform: translateX(1px) rotate(180deg);
+}
+
+.filter-sort-dropdown ul li {
+    /* border-top: 1px solid var(--clr-greyscale-6); */
+    position: relative;
+    background-color: var(--clr-greyscale-0);
+}
+
+.filter-sort-dropdown ul {
+    padding: 30px 0;
+}
+
+.filter-sort-dropdown ul li::after {
+    content: '';
+    width: 100%;
+    height: .5px;
+    display: block;
+    position: absolute;
+    background-color: var(--clr-greyscale-6);
+    /* outline: 2px solid red; */
+    top: -1px;
+    right: 0px;
+}
+
+.filter-sort-dropdown ul label {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--clr-greyscale-6);
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    padding: 10px 0;
+}
+
+.filter-sort-dropdown ul label > div {
+    width: 1.25rem;
+    aspect-ratio: 1;
+    outline: 1px solid var(--clr-greyscale-6);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+
+}
+
+.filter-sort-dropdown ul label > div span {
+    transition: background-color 250ms ease;
+}
+
+@keyframes pop {
+    15% {
+        scale: 1.1;
+    }
+}
+
+
+#filerSortList01:checked ~ ul li:nth-of-type(1) label > div,
+#filerSortList02:checked ~ ul li:nth-of-type(2) label > div,
+#filerSortList03:checked ~ ul li:nth-of-type(3) label > div,
+#filerSortList04:checked ~ ul li:nth-of-type(4) label > div
+ {
+    outline: 2px solid var(--clr-primary-green);
+    animation: pop;
+    animation-duration: 250ms;
+}
+
+#filerSortList01:checked ~ ul li:nth-of-type(1) label  span,
+#filerSortList02:checked ~ ul li:nth-of-type(2) label span,
+#filerSortList03:checked ~ ul li:nth-of-type(3) label span,
+#filerSortList04:checked ~ ul li:nth-of-type(4) label span
+ {
+    width: 13px;
+    aspect-ratio: 1;
+    background-color: var(--clr-primary-darkgreen);
+    border-radius: 15px;
+}
+
+
+
+#filerSortList01:checked ~ .filterSortListHeadingDesktop span:nth-of-type(1),
+#filerSortList02:checked ~ .filterSortListHeadingDesktop span:nth-of-type(2),
+#filerSortList03:checked ~ .filterSortListHeadingDesktop span:nth-of-type(3),
+#filerSortList04:checked ~ .filterSortListHeadingDesktop span:nth-of-type(4) {
+    display: block;
+}
+
+#filerSortList03:checked ~ .filterSortListHeadingDesktop span:nth-of-type(3),
+#filerSortList04:checked ~ .filterSortListHeadingDesktop span:nth-of-type(4) {
+    max-width: 15ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.filterSortListHeadingDesktop > label:first-of-type {
+    background-image: url('../icons/sort-circle-arrows.svg');
+    width: 42px;
+    aspect-ratio: 1;
+    background-position: center center;
+    background-size: cover;
+}
+
+#filterSortListHeadingCkb:checked + label {
+    width: 42px;
+    background-image: url('../icons/sort-circle-arrows-filled.svg');
+}
+
 
 /* filter tile set thingy */
 
@@ -238,6 +546,21 @@
     text-align: center;
     position: relative;
     font-size: .75rem;
+    transition: scale 350ms ease, color 150ms ease, background-color 150ms ease;
+}
+
+.section-filter-plan-tiles-wrap span:hover {
+    cursor: pointer;
+    scale: 2;
+    background-color: var(--clr-primary-green);
+    outline: 1px solid var(--clr-greyscale-0);
+    color: var(--clr-greyscale-0);
+    position: relative;
+    z-index: 2;
+}
+
+.section-filter-plan-tiles-wrap span:hover::after {
+    color: var(--clr-greyscale-0);
 }
 
 .section-filter-plan-tiles-wrap span:nth-child(12n+13),
@@ -268,6 +591,14 @@
     font-family: Trebuchet MS;
 }
 
+#catalogue-switch-label {
+    width: 210px;
+    right: 0;
+}
+
+.section-filter-catalogue {
+    overflow-x: visible;
+}
 
 
 
@@ -315,5 +646,14 @@
 @media only screen and (max-width: 720px) {
     .section-filter-catalogue > a {
         display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 560px) {
+    .header-logo img {
+        height: 2.3125rem;
+        width: 2.3125rem;
     }
 }
