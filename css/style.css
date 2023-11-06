@@ -3214,7 +3214,7 @@ section {
     }
     
     .section-filter-params-wrap {
-        display: none !important;
+        display: none;
     }
     
     #toggleFilter:checked + .section-filter-params-wrap {
