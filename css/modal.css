@@ -1,0 +1,170 @@
+.modal {
+    position: fixed;
+    width: 542px;
+    width: 426px;
+    width: clamp(26.625rem, 17.3036rem + 20.7143vw, 33.875rem);
+    height: 280px;
+    inset: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 25;
+    border: none;
+    padding: 2.625rem 2rem;
+    overflow: visible;
+    background-color: var(--clr-greyscale-2);
+    animation: modal;
+    animation-duration: 650ms;
+    transform-origin: start start;
+    animation-timing-function: ease;
+}
+
+@keyframes modal {
+    0% {
+        scale: 0;
+        opacity: .5;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.modal-close-btn {
+    top: -24px;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 30;
+}
+
+.modal-outer-text {
+    position: absolute;
+    width: 60ch;
+    bottom: -2.225rem;
+    left: 0;
+    color: var(--clr-greyscale-2);
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.8125rem;
+    text-align: start;
+
+}
+
+.modal form {
+    width: 215px;
+    height: fit-content;
+    margin-top: .5rem;
+}
+
+.modal form .btn {
+    white-space: nowrap;
+    padding: 10px 14px;
+    margin-top: 2.3469rem;
+}
+
+.modal input {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 7px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--clr-greyscale-6);
+    font-family: Geologica;
+    background: none;
+}
+
+
+.modal input::placeholder {
+    font-family: Geologica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.modal .modal-heading {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-greyscale-8);
+}
+
+.modal .modal-towers-img {
+    position: absolute;
+    display: block;
+    width: 300px;
+    width: 210px;
+    width: clamp(13.125rem, 5.8929rem + 16.0714vw, 17.95rem);
+    height: 310px;
+    height: 240px;
+    height: clamp(15rem, 9.375rem + 12.5vw, 19.375rem);
+    right: 0;
+    right: -40px;
+    right: clamp(-2.5rem, -5.7143rem + 7.1429vw, .2rem);
+    bottom: 0;
+    background-image: url('../img/callback/callback-banner-720-ups.webp');
+    background-size: cover;
+}
+
+.modal-success-content {
+    display: block;
+    margin-top: 56px;
+    margin-top: 31px;
+    margin-top: clamp(1.9375rem, -0.0714rem + 4.4643vw, 3.5rem);
+}
+
+.modal-success-content span {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.4375rem;
+    text-align: left;
+    color:var(--clr-primary-green);
+    margin-top: 1.375rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 560px) {
+    .modal .modal-towers-img {
+        display: none;
+    }
+
+    .modal {
+        width: var(--content-width);
+        padding: 1.75rem 1.5rem 2.875rem 1.5rem ;
+        height: fit-content;
+    }
+
+    .modal form {
+        width: 100%;
+    }
+
+    .modal form input:nth-of-type(2) ,
+    .modal form input:nth-of-type(1) {
+        margin-top: 1rem;
+    }
+
+    .modal form .btn {
+        margin-top: 1.8125rem;
+    }
+    .modal-outer-text {
+        width: 38ch;
+        bottom: -2.8rem;
+    }
+
+    .modal .btn-green {
+        display: flex;
+        justify-content: center;
+    }
+}

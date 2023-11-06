@@ -9,12 +9,56 @@
     <link rel="stylesheet" href="lib/nouislider.min.css">
     <link rel="stylesheet" href="css/sliders.css">
     <link rel="stylesheet" href="css/timurbranch.css">
+    <link rel="stylesheet" href="css/modal.css">
     <script src="lib/horizontaldrag.js"></script>
     <script src="lib/jquery.js"></script>
     <script src="lib/nouislider.min.js"></script>
 
 </head>
 <body style="overflow-x: hidden;">
+
+    <!-- pop-ups -->
+
+    <!-- modal with form -->
+
+    <dialog class="modal" id="modalForm">
+
+        <span class="modal-close-btn"><img src="icons/modal-close.svg" alt=""></span>
+
+        <span class="modal-outer-text">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</span>
+
+        <span class="modal-heading">Запись на встречу</span>
+
+        <span class="modal-towers-img"></span>
+
+        <form action="" method="dialog">
+
+            <input type="text" placeholder="Представьтесь, пожалуйста">
+
+            <input type="tel" placeholder="Ваш телефон">
+
+            <input type="submit" class="dn" id="modal-form-submit">
+
+            <label for="modal-form-submit" class="modal-open-success btn btn-green uc cp">перезвоните мне <img src="icons/arrow-right.svg" alt=""></label>
+
+        </form>
+
+    </dialog>
+
+    <!-- modal2 - success  -->
+
+    <dialog close class="modal" id="modalSuccess">
+
+        <span class="modal-close-btn"><img src="icons/modal-close.svg" alt=""></span>
+
+        <span class="modal-outer-text">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</span>
+
+        <span class="modal-towers-img"></span>
+
+        <span class="modal-success-content"> <img src="icons/modal-success-check.svg" alt=""><br><span>Заявка успешно <br> отправлена!</span> </span>
+
+    </dialog>
+
 
     <!--button up-->
     
@@ -2023,5 +2067,6 @@
     <script src="script/script.js"></script>
     <script src="script/timurbranch.js"></script>
     <script src="script/sliders.js"></script>
+    <script src="script/modal.js"></script>
 </body>
 </html>
