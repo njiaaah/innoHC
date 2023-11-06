@@ -1,0 +1,10 @@
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.780273" y="0.793701" width="28" height="28" fill="#009640"/>
+<rect width="24" height="24" transform="translate(2.78027 2.7937)" fill="#009640"/>
+<circle cx="2.5" cy="2.5" r="2.5" transform="matrix(-1 0 0 1 11.7803 18.2937)" stroke="#FFED00" stroke-width="1.5"/>
+<path d="M11.7803 7.7937V14.2937V15.9187" stroke="#FFED00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.7803 5.7937V18.7937" stroke="#FFED00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.7803 5.7937L11.7803 7.7937" stroke="#FFED00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.7803 11.7937L17.2803 10.7937L20.0303 10.2937" stroke="#FFED00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="2.5" cy="2.5" r="2.5" transform="matrix(-1 0 0 1 22.7803 16.7937)" stroke="#FFED00" stroke-width="1.5"/>
+</svg>

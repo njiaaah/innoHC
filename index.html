@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="lib/nouislider.min.css">
     <link rel="stylesheet" href="css/sliders.css">
-    <link rel="stylesheet" href="css/timurbranch.css">
+    <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/modal.css">
     <script src="lib/horizontaldrag.js"></script>
     <script src="lib/jquery.js"></script>
@@ -397,34 +397,7 @@
                             <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
                         </div>
 
-                        <div class="section-location-map-zoom-wrap">
-
-                            <span class="cp map-zoom-out-btn"><span></span></span>
-
-                            <span class="cp map-zoom-in-btn">
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </div>
-
-                        <div class="section-location-map-wrap dragscroll hsb">
-
-
-
-
-                            <div class="section-location-map" data-scale="1" id="section-location-map-01">
-                                
-                                <span class="section-location-map-con"><img src="icons/map/Shop.svg" alt=""></span>
-                                <span class="section-location-map-con"><img src="icons/map/Culture.svg" alt=""></span>
-                                <span class="section-location-map-con"><img src="icons/map/Sport.svg" alt=""></span>
-                                <span class="section-location-map-con"><img src="icons/map/Park.svg" alt=""></span>
-                                <span class="section-location-map-con"><img src="icons/map/Cafe.svg" alt=""></span>
-                                <span class="section-location-map-con"><img src="icons/map/Spa.svg" alt=""></span>
-                                <span class="section-location-map-con"><img src="icons/map/Education.svg" alt=""></span>
-                                <span class="section-location-map-con"><img src="icons/map/Supermarket.svg" alt=""></span>
-                                
-                            </div>
-    
+                        <div class="section-location-map-wrap" id="map">
                         </div>
 
                     </div>
@@ -2068,5 +2041,7 @@
     <script src="script/timurbranch.js"></script>
     <script src="script/sliders.js"></script>
     <script src="script/modal.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="script/map.js"></script>
 </body>
 </html>

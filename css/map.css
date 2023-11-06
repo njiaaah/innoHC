@@ -1,0 +1,41 @@
+[class*="ground-pane"] {
+	filter: grayscale(1);
+}
+
+[class*="zoom__scale"] {
+    display: none;
+}
+
+[class*="controls__control"] > ymaps > [class*="zoom"] {
+    height: 7vw !important;
+    display: grid;
+    gap: 0.5rem;
+}
+
+[class*="zoom__plus"] {
+    order: 2;
+    background-color: #D51317 !important;
+    width: 64px !important;
+    height: 64px !important;
+    background-image: url(/icons/map/plus.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+[class*="zoom__minus"] {
+    order: 1;
+    background-color: #D51317 !important;
+    width: 64px !important;
+    height: 64px !important;
+    background-image: url(/icons/map/minus.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+[class*="zoom__icon"] {
+    background-image: none !important;
+}
+
+[class*="zoom"] > [class*="zoom__button"] {
+    position: relative !important;
+}
