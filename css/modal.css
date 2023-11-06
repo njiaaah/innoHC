@@ -51,13 +51,12 @@ dialog::backdrop {
     font-weight: 400;
     line-height: 0.8125rem;
     text-align: start;
-
 }
 
 .modal form {
-    width: 215px;
+    width: 13.4375rem;
     height: fit-content;
-    margin-top: .5rem;
+    margin-top: 0.875rem;
 }
 
 .modal form .btn {
@@ -71,7 +70,7 @@ dialog::backdrop {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-    padding: 7px 0;
+    padding: 0px 0 7px 0;
     border: none;
     outline: none;
     border-bottom: 1px solid var(--clr-greyscale-6);
@@ -118,6 +117,10 @@ dialog::backdrop {
     margin-top: 56px;
     margin-top: 31px;
     margin-top: clamp(1.9375rem, -0.0714rem + 4.4643vw, 3.5rem);
+}
+
+.modal input[type="text"] {
+    margin-bottom: 1.15rem;
 }
 
 .modal-success-content span {
