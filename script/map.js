@@ -172,3 +172,6 @@ function init() {
 }
 
 ymaps.ready(init);
+
+const cat_education = document.querySelector('#category_education')
+

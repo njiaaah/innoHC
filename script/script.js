@@ -36,11 +36,13 @@ document.addEventListener('DOMContentLoaded',function(){
     // section location tabs
 
     const sectionLocTabsBtns = document.querySelector('.section-location-tab-wrap').children
-    const sectionLocTabs = document.querySelectorAll('.section-location-content-item')
+    const sectionLocAdress = document.querySelectorAll('.seciton-location-item-adress')
+    const sectionLocText = document.querySelectorAll('.section-location-item-text')
+    const sectionLocAround = document.querySelectorAll('.seciton-location-item-around-wrap')
 
-    for (let i = 0; i < sectionLocTabs.length; i++) {
+    for (let i = 0; i < sectionLocAdress.length; i++) {
         sectionLocTabsBtns[i].addEventListener('click',()=>{
-            for (let x = 0; x < sectionLocTabs.length; x++) {
+            for (let x = 0; x < sectionLocAdress.length; x++) {
 
                 // hide and apply bottom border to selected tab btn
                 // do not change *location* when copying
@@ -48,8 +50,12 @@ document.addEventListener('DOMContentLoaded',function(){
                 sectionLocTabsBtns[i].classList.add('section-location-tab-selected')
 
                 // hide and show needed tab
-                sectionLocTabs[x].style.display = 'none'
-                sectionLocTabs[i].style.display = 'grid'
+                sectionLocAdress[x].style.display = 'none'
+                sectionLocText[x].style.display = 'none'
+                sectionLocAround[x].style.display = 'none'
+                sectionLocAdress[i].style.display = 'flex'
+                sectionLocText[i].style.display = 'flex'
+                sectionLocAround[i].style.display = 'flex'
             }
         })
         
