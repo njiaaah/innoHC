@@ -140,7 +140,10 @@ dialog::backdrop {
 
 @media only screen and (max-width: 560px) {
     .modal .modal-towers-img {
-        display: none;
+       width: 8.0625rem;
+       height: 6.25rem;
+       bottom: 100%;
+       right: 1.125rem;
     }
 
     .modal {
