@@ -27,7 +27,7 @@ function init() {
 
   let placemark_shop1 = new ymaps.Placemark(mark_shop1, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Shop_map.svg',
+    iconImageHref: 'img/icons/map/Shop_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-15, 0]
 
@@ -35,7 +35,7 @@ function init() {
 
   let placemark_supermarket1 = new ymaps.Placemark(mark_supermarket1, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Supermarket_map.svg',
+    iconImageHref: 'img/icons/map/Supermarket_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-15, -10]
 
@@ -43,7 +43,7 @@ function init() {
 
   let placemark_supermarket2 = new ymaps.Placemark(mark_supermarket2, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Supermarket_map.svg',
+    iconImageHref: 'img/icons/map/Supermarket_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-15, -10]
 
@@ -51,7 +51,7 @@ function init() {
 
   let placemark_park1 = new ymaps.Placemark(mark_park1, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Park_map.svg',
+    iconImageHref: 'img/icons/map/Park_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-15, -10]
 
@@ -59,7 +59,7 @@ function init() {
 
   let placemark_park2 = new ymaps.Placemark(mark_park2, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Park_map.svg',
+    iconImageHref: 'img/icons/map/Park_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -10]
 
@@ -67,7 +67,7 @@ function init() {
 
   let placemark_park4 = new ymaps.Placemark(mark_park4, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Park_map.svg',
+    iconImageHref: 'img/icons/map/Park_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -10]
 
@@ -75,7 +75,7 @@ function init() {
 
   let placemark_education1 = new ymaps.Placemark(mark_education1, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Education_map.svg',
+    iconImageHref: 'img/icons/map/Education_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -10]
 
@@ -83,7 +83,7 @@ function init() {
 
   let placemark_sport1 = new ymaps.Placemark(mark_sport1, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Sport_map.svg',
+    iconImageHref: 'img/icons/map/Sport_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -10]
 
@@ -91,7 +91,7 @@ function init() {
 
   let placemark_cafe1 = new ymaps.Placemark(mark_cafe1, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Cafe_map.svg',
+    iconImageHref: 'img/icons/map/Cafe_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -10]
 
@@ -99,7 +99,7 @@ function init() {
 
   let placemark_sport2 = new ymaps.Placemark(mark_sport2, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Sport_map.svg',
+    iconImageHref: 'img/icons/map/Sport_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -10]
 
@@ -107,7 +107,7 @@ function init() {
 
   let placemark_sport3 = new ymaps.Placemark(mark_sport3, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Sport_map.svg',
+    iconImageHref: 'img/icons/map/Sport_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -10]
 
@@ -115,7 +115,7 @@ function init() {
 
   let placemark_park3 = new ymaps.Placemark(mark_park3, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Park_map.svg',
+    iconImageHref: 'img/icons/map/Park_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -10]
 
@@ -123,7 +123,7 @@ function init() {
 
   let placemark_culture1 = new ymaps.Placemark(mark_culture1, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Culture_map.svg',
+    iconImageHref: 'img/icons/map/Culture_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -10]
 
@@ -131,7 +131,7 @@ function init() {
 
   let placemark_medicine1 = new ymaps.Placemark(mark_medicine1, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Medicine_map.svg',
+    iconImageHref: 'img/icons/map/Medicine_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -15]
 
@@ -139,7 +139,7 @@ function init() {
 
   let placemark_spa1 = new ymaps.Placemark(mark_spa1, {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'icons/map/Spa_map.svg',
+    iconImageHref: 'img/icons/map/Spa_map.svg',
     iconImageSize: [28, 28],
     iconImageOffset: [-10, -15]
 

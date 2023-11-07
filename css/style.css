@@ -2278,7 +2278,7 @@ section {
     #header-menu-checkbox-label {
         position: unset;
         z-index: 2;
-        background-image: url('../icons/header_burger.svg');
+        background-image: url('../img/icons/header_burger.svg');
         background-repeat: no-repeat;
         background-position: 50% 50%;
     } 
@@ -2294,7 +2294,7 @@ section {
     }
 
     header:has(#header-menu-checkbox:checked) #header-menu-checkbox-label {
-        background-image: url('../icons/header_close.svg');
+        background-image: url('../img/icons/header_close.svg');
         transform: translateX(1.5rem);
     }
 

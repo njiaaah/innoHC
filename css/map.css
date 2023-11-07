@@ -17,7 +17,7 @@
     background-color: #D51317 !important;
     width: 64px !important;
     height: 64px !important;
-    background-image: url('../icons/map/plus.svg') !important;
+    background-image: url('../img/icons/map/plus.svg') !important;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -27,7 +27,7 @@
     background-color: #D51317 !important;
     width: 64px !important;
     height: 64px !important;
-    background-image: url('../icons/map/minus.svg') !important;
+    background-image: url('../img/icons/map/minus.svg') !important;
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -179,7 +179,7 @@ html, body {
 }
 
 .section-filter-results-sort > input:checked + label img {
-    content:url("../icons/sort-amount-down.svg");
+    content:url("../img/icons/sort-amount-down.svg");
 }
 
 .section-filter-results-sort > label {
@@ -564,7 +564,7 @@ html, body {
 }
 
 .filterSortListHeadingDesktop > label:first-of-type {
-    background-image: url('../icons/sort-circle-arrows.svg');
+    background-image: url('../img/icons/sort-circle-arrows.svg');
     width: 42px;
     aspect-ratio: 1;
     background-position: center center;
@@ -573,7 +573,7 @@ html, body {
 
 #filterSortListHeadingCkb:checked + label {
     width: 42px;
-    background-image: url('../icons/sort-circle-arrows-filled.svg');
+    background-image: url('../img/icons/sort-circle-arrows-filled.svg');
 }
 
 
