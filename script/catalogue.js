@@ -72,14 +72,20 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < modalDropdownOptions.length; i++) {
             modalDropdownOptions[i].addEventListener('click', () => {
 
-                $('.filter-sort-dropdown').delay(150).animate({ 'opacity': '0' }, 150)
-                // $('.filter-sort-dropdown').delay(0).transition({ y: '500px' }, 300)
-                $('.filter-sort-dropdown').delay(150).hide(150)
+                if (window.innerWidth < 561) {
+
+                    $('.filter-sort-dropdown').delay(150).animate({ 'opacity': '0' }, 150)
+                    $('.filter-sort-dropdown').delay(150).hide(150)
+                    setTimeout(() => {
+                        $('#filter-sort-dropdown-toggle').prop('checked', false)
+                    }, 300)
+                } else {
+                    setTimeout(() => {
+                        $('#filter-sort-dropdown-toggle').prop('checked', false)
+                    }, 150)
+                }
 
 
-                setTimeout(() => {
-                    $('#filter-sort-dropdown-toggle').prop('checked', false)
-                }, 300)
             })
         }
     }
