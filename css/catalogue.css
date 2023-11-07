@@ -1135,9 +1135,9 @@ html, body {
 
 .section-callback-menu-label-wrap {
     display: grid;
+    display: none;
     width: var(--content-width);
     height: fit-content;
-    display: grid;
     place-items: center;
     overflow: visible;
     position: sticky;
@@ -1165,7 +1165,7 @@ html, body {
 #callBackSearchIconChbLabel img {
     filter: brightness(0) invert(1);
 }
-}
+
 
 #callBackSearchIconChb:checked + div > label {
     background-color: var(--clr-primary-darkgreen);
@@ -1174,12 +1174,6 @@ html, body {
 #callBackSearchIconChb:checked + div > label img{
     filter: brightness(0) invert(1);
 }
-
-#callBackSearchIconChbLabel img {
-    /* filter: brightness(0) invert(1); */
-}
-
-
 
  
 }
