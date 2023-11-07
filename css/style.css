@@ -1274,7 +1274,7 @@ section {
 
 @media only screen and (max-width: 756px) {
     #section-hero-promo-banner {
-       width: 30vw;
+       width: 13rem;
     }
 
     #section-hero-promo-banner > div span {

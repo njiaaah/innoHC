@@ -1142,7 +1142,6 @@ html, body {
     overflow: visible;
     position: sticky;
     top: 93.75%;
-    /* outline: 1px solid red; */
     z-index: 25;
     transform: translateY(-50%);
 }
