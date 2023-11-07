@@ -358,6 +358,10 @@ section {
     color: var(--clr-greyscale-0);
 }
 
+#section-hero-info-wrap a {
+    padding-inline: clamp(1rem, 0.3571rem + 1.4286vw, 1.5rem);
+}   
+
 #section-hero-info-wrap > span:first-child {
     font-size: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
     display: block;
@@ -756,7 +760,7 @@ section {
 .section-heading-tabs {
     display: flex;
     gap: 1rem;
-    padding-right: 725px;   
+    padding-right: 600px;   
 }
 
 
@@ -3739,6 +3743,12 @@ body {
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
+}
+
+.section-construction-progress-card > div > div > *,
+.section-construction-progress-card > 
+ {
+    color: var(--clr-greyscale-8);
 }
 
 .section-construction-progress-card h5 {

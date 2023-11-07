@@ -4,19 +4,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const openModalButton = document.querySelector('#header-call')
     const openModalButton2 = document.querySelector('#header-comment')
+    const openModalButton3 = document.querySelector('#callback-form-submit-button')
+
+
+
     const openModalSuccessBtn = document.querySelector('.modal-open-success')
 
     const modals = document.querySelectorAll('.modal')
 
-    openModalButton.addEventListener('click', () => {
-        openModal(0)
-    })
-    openModalButton2.addEventListener('click', () => {
-        openModal(0)
-    })
-    openModalSuccessBtn.addEventListener('click', () => {
-        openModal(1)
-    })
+
+
+    if (openModalButton) {
+        openModalButton.addEventListener('click', () => {
+            openModal(0)
+        })
+    }
+
+    if (openModalButton2) {
+        openModalButton2.addEventListener('click', () => {
+            openModal(0)
+        })
+    }
+
+    if (openModalButton3) {
+        openModalButton3.addEventListener('click', () => {
+            openModal(0)
+        })
+    }
+
+    if (openModalSuccessBtn) {
+        openModalSuccessBtn.addEventListener('click', () => {
+            openModal(1)
+        })
+    }
+
 
 
 
