@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
             $('.filter-sort-dropdown').animate({ 'opacity': '1' }, 1)
             $('.filter-sort-dropdown').transition({ y: '0px' }, 1);
         } else {
-            // console.log('mobile')
 
             $('.filter-sort-dropdown').css({ 'opacity': '0' }, 1)
             $('.filter-sort-dropdown').transition({ y: '500px' }, 1);
@@ -69,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (document.querySelector('.mobile-dropdown-list-modal')) {
         var modalDropdownOptions = document.querySelector('.mobile-dropdown-list-modal').children
-        console.log(modalDropdownOptions.length)
 
         for (let i = 0; i < modalDropdownOptions.length; i++) {
             modalDropdownOptions[i].addEventListener('click', () => {
@@ -86,7 +84,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // sticky filter btn
 
+    const stickyBack2FilterBtn = document.querySelector('#callBackSearchIconChbLabel')
+
+    if (stickyBack2FilterBtn) {
+        stickyBack2FilterBtn.addEventListener('click', () => {
+
+            if (!toggleFilter.checked) {
+                toggleFilter.checked = true
+            }
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            })
+        })
+
+    }
 
 
 })

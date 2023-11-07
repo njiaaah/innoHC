@@ -15,6 +15,10 @@ input[type="checkbox"],
     transform:  translate(-10px, 0px) rotate(45deg);
 }
 
+html, body {
+    overflow: visible;
+}
+
 
 
 /* HEADER */
@@ -1135,6 +1139,11 @@ input[type="checkbox"],
     height: fit-content;
     display: grid;
     place-items: center;
+    overflow: visible;
+    position: sticky;
+    top: 93.75%;
+    /* outline: 1px solid red; */
+    z-index: 25;
     transform: translateY(-50%);
 }
 
@@ -1150,6 +1159,12 @@ input[type="checkbox"],
     place-items: center;
     border-radius: 50%;
     background-color: var(--clr-greyscale-0);
+    background-color: var(--clr-primary-darkgreen);
+}
+
+#callBackSearchIconChbLabel img {
+    filter: brightness(0) invert(1);
+}
 }
 
 #callBackSearchIconChb:checked + div > label {
