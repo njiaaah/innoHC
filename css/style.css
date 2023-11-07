@@ -3705,6 +3705,7 @@ body {
 
 .section-construction-progress-card  button span {
     text-wrap: nowrap;
+    white-space: nowrap;
     font-size: 0.8rem;
     font-family: Geologica;
 }
