@@ -377,7 +377,7 @@
 
                     </div>
 
-                    <!--tab 2 test-->
+                    <!--tab 2 hidden-->
                     <div class="seciton-location-item-adress" style="display: none;">
                         <img class="section-loc-map-point" src="icons/loc_map_point.svg" alt="">
                         <div><span>МОСКВА, <br>МИЧУРИНСКИЙ <br>ПРОСПЕКТ,45</span></div>
@@ -412,7 +412,7 @@
 
                     </div>
 
-                    <!--tab 3 test-->
+                    <!--tab 3 hidden-->
 
                     <div class="seciton-location-item-adress" style="display: none;">
                         <img class="section-loc-map-point" src="icons/loc_map_point.svg" alt="">
@@ -452,17 +452,26 @@
 
                         <div class="section-location-legend-wrap">
 
-                            <ul class="section-location-map-legend">
-                                <li id="category_education"><img src="icons/map/Education.svg" alt=""><span>Образование</span></li>
-                                <li><img src="icons/map/Medicine.svg" alt=""><span>Медицина</span></li>
-                                <li><img src="icons/map/Sport.svg" alt=""><span>Спорт</span></li>
-                                <li><img src="icons/map/Supermarket.svg" alt=""><span>Торговые центры</span></li>
-                                <li><img src="icons/map/Park.svg" alt=""><span>Парки</span></li>
-                                <li><img src="icons/map/Culture.svg" alt=""><span>Культура</span></li>
-                                <li><img src="icons/map/Shop.svg" alt=""><span>Магазины</span></li>
-                                <li><img src="icons/map/Cafe.svg" alt=""><span>Кафе и рестораны</span></li>
-                                <li><img src="icons/map/Spa.svg" alt=""><span>Салоны красоты</span></li>
-                            </ul>
+                            <div class="section-location-map-legend">
+                                <input type="checkbox" id="education" class="dn">
+                                <input type="checkbox" id="medicine" class="dn">
+                                <input type="checkbox" id="sport" class="dn">
+                                <input type="checkbox" id="supermarket" class="dn">
+                                <input type="checkbox" id="park" class="dn">
+                                <input type="checkbox" id="culture" class="dn">
+                                <input type="checkbox" id="shop" class="dn">
+                                <input type="checkbox" id="cafe" class="dn">
+                                <input type="checkbox" id="spa" class="dn">
+                                <label for="education"><img src="icons/map/Education.svg" id="education_img" style="opacity: 1;" alt=""><span>Образование</span></label>
+                                <label for="medicine"><img src="icons/map/Medicine.svg" id="medicine_img" style="opacity: 1;" alt=""><span>Медицина</span></label>
+                                <label for="sport"><img src="icons/map/Sport.svg" id="sport_img" style="opacity: 1;" alt=""><span>Спорт</span></label>
+                                <label for="supermarket"><img src="icons/map/Supermarket.svg" id="supermarket_img" style="opacity: 1;" alt=""><span>Торговые центры</span></label>
+                                <label for="park"><img src="icons/map/Park.svg" id="park_img" style="opacity: 1;" alt=""><span>Парки</span></label>
+                                <label for="culture"><img src="icons/map/Culture.svg" id="culture_img" style="opacity: 1;" alt=""><span>Культура</span></label>
+                                <label for="shop"><img src="icons/map/Shop.svg" id="shop_img" style="opacity: 1;" alt=""><span>Магазины</span></label>
+                                <label for="cafe"><img src="icons/map/Cafe.svg" id="cafe_img" style="opacity: 1;" alt=""><span>Кафе и рестораны</span></label>
+                                <label for="spa"><img src="icons/map/Spa.svg" id="spa_img" style="opacity: 1;" alt=""><span>Салоны красоты</span></label>
+                            </div>
 
                             <a href="#" class="btn uc">ПОДРОБНЕЕ</a>
                         </div>

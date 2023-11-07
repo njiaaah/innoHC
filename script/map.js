@@ -169,9 +169,157 @@ function init() {
   map.geoObjects.add(placemark_culture1);
   map.geoObjects.add(placemark_medicine1);
   map.geoObjects.add(placemark_spa1);
+
+var education_check;
+education_check = document.querySelector('#education');   
+const edcucation_img = document.getElementById('education_img');
+
+var medicine_check;
+medicine_check = document.querySelector('#medicine');
+const medicine_img = document.getElementById('medicine_img'); 
+
+var sport_check;
+sport_check = document.querySelector('#sport');
+const sport_img = document.getElementById('sport_img'); 
+
+var supermarket_check;
+supermarket_check = document.querySelector('#supermarket');
+const supermarket_img = document.getElementById('supermarket_img'); 
+
+var park_check;
+park_check = document.querySelector('#park'); 
+const park_img = document.getElementById('park_img');
+
+var culture_check;
+culture_check = document.querySelector('#culture'); 
+const culture_img = document.getElementById('culture_img');
+
+var shop_check;
+shop_check = document.querySelector('#shop');
+const shop_img = document.getElementById('shop_img');
+
+var cafe_check;
+cafe_check = document.querySelector('#cafe');
+const cafe_img = document.getElementById('cafe_img');
+
+var spa_check;
+spa_check = document.querySelector('#spa');
+const spa_img = document.getElementById('spa_img'); 
+
+education_check.addEventListener('click',()=>{
+     if (education_check.checked) {
+        map.geoObjects.remove(placemark_education1);
+        edcucation_img.style.opacity = "0";
+    }
+    else {
+        map.geoObjects.add(placemark_education1);
+        edcucation_img.style.opacity = "1";
+    }
+})
+
+medicine_check.addEventListener('click',()=>{
+     if (medicine_check.checked) {
+        map.geoObjects.remove(placemark_medicine1);
+        medicine_img.style.opacity = "0";
+    }
+    else {
+        map.geoObjects.add(placemark_medicine1);
+        medicine_img.style.opacity = "1";
+    }
+})
+
+sport_check.addEventListener('click',()=>{
+     if (sport_check.checked) {
+        map.geoObjects.remove(placemark_sport1);
+        map.geoObjects.remove(placemark_sport2);
+        map.geoObjects.remove(placemark_sport3);
+        sport_img.style.opacity = "0";
+    }
+    else {
+        map.geoObjects.add(placemark_sport1);
+        map.geoObjects.add(placemark_sport2);
+        map.geoObjects.add(placemark_sport3);
+        sport_img.style.opacity = "1";
+    }
+})
+
+supermarket_check.addEventListener('click',()=>{
+     if (supermarket_check.checked) {
+        map.geoObjects.remove(placemark_supermarket1);
+        map.geoObjects.remove(placemark_supermarket2);
+        supermarket_img.style.opacity = "0";
+    }
+    else {
+        map.geoObjects.add(placemark_supermarket1);
+        map.geoObjects.add(placemark_supermarket2);
+        supermarket_img.style.opacity = "1";
+    }
+})
+
+park_check.addEventListener('click',()=>{
+     if (park_check.checked) {
+        map.geoObjects.remove(placemark_park1);
+        map.geoObjects.remove(placemark_park2);
+        map.geoObjects.remove(placemark_park3);
+        map.geoObjects.remove(placemark_park4);
+        park_img.style.opacity = "0";
+    }
+    else {
+        map.geoObjects.add(placemark_park1);
+        map.geoObjects.add(placemark_park2);
+        map.geoObjects.add(placemark_park3);
+        map.geoObjects.add(placemark_park4);
+        park_img.style.opacity = "1";
+    }
+})
+
+culture_check.addEventListener('click',()=>{
+     if (culture_check.checked) {
+        map.geoObjects.remove(placemark_culture1);
+        culture_img.style.opacity = "0";
+    }
+    else {
+        map.geoObjects.add(placemark_culture1);
+        culture_img.style.opacity = "1";
+    }
+})
+
+shop_check.addEventListener('click',()=>{
+     if (shop_check.checked) {
+        map.geoObjects.remove(placemark_shop1);
+        shop_img.style.opacity = "0";
+    }
+    else {
+        map.geoObjects.add(placemark_shop1);
+        shop_img.style.opacity = "1";
+    }
+})
+
+cafe_check.addEventListener('click',()=>{
+     if (cafe_check.checked) {
+        map.geoObjects.remove(placemark_cafe1);
+        cafe_img.style.opacity = "0";
+    }
+    else {
+        map.geoObjects.add(placemark_cafe1);
+        cafe_img.style.opacity = "1";
+    }
+})
+
+spa_check.addEventListener('click',()=>{
+     if (spa_check.checked) {
+        map.geoObjects.remove(placemark_spa1);
+        spa_img.style.opacity = "0";
+    }
+    else {
+        map.geoObjects.add(placemark_spa1);
+        spa_img.style.opacity = "1";
+    }
+})
+
+
+
 }
 
 ymaps.ready(init);
-
-const cat_education = document.querySelector('#category_education')
 

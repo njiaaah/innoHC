@@ -914,9 +914,11 @@ section {
     top: 0;
     left: 0;
     z-index: 2;
+    display: grid;
 }
 .section-location-map-legend {
     margin-bottom: 1rem;
+    display: grid;
 }
 
 .section-location-legend-wrap .btn {
@@ -929,15 +931,16 @@ section {
     color: var(--clr-greyscale-0);
 }
 
-.section-location-map-legend li {
+.section-location-map-legend label {
     display: flex;
     place-items: center;
     gap: .75rem;
     color: yellow;
+    cursor: pointer;
 }
 
 .section-location-legend-wrap .btn,
-.section-location-map-legend li span {
+.section-location-map-legend label span {
     font-size: clamp(0.5rem, 0.375rem + 0.625vw, 0.875rem);
 }
 
