@@ -87,4 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    // close mobile sort modal if resized
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 559) {
+            console.log('cock')
+            document.querySelector('#modalMobileSort').close()
+        }
+    })
+
 })
