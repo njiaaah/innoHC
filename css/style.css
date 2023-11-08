@@ -229,15 +229,15 @@ header {
 
 
 
-.header-logo {
-    height: 60px;
+.header-logo  {
+    height: fit-content;
     display: flex;
     place-items: center;
 }
 
 .header-logo img {
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    aspect-ratio: 1;
 }
  
 #header-wrap input {
@@ -1616,7 +1616,7 @@ section {
 
 .section-filter {
     background-color: var(--clr-greyscale-2);
-    padding: 2rem 0;
+    padding: 6rem 0 3rem 0;
 }
 
 .section-filter-heading-wrap {
@@ -1626,11 +1626,10 @@ section {
 }
 
 .section-filter-heading-wrap h2 {
-    max-width: 15ch;
+    max-width: fit-content;
     margin-right: 1rem;
     color: var(--clr-darkgreygreen);
     padding-bottom: .5rem;
-    border-bottom: 3px solid var(--clr-primary-darkgreen);
 }
 
 .section-filter-heading-wrap .section-heading-tabs span{
@@ -1667,6 +1666,7 @@ section {
     grid-column-end: 5;
     grid-row-start: 1;
     height: 100%;
+    filter: invert(65%) sepia(0%) saturate(35%) hue-rotate(274deg) brightness(99%) contrast(82%);
 }
 
 .filter-show-more > span:last-of-type {
@@ -1778,7 +1778,6 @@ section {
 .secion-filter-results-card > span:nth-of-type(2),
 .secion-filter-results-card > span:nth-of-type(2) span {
     color: var(--clr-darkgreygreen);
-    color: #124147;
     font-weight: 700;
 }
 
@@ -2236,7 +2235,11 @@ section {
 /* 720px */
 
 @media only screen and (max-width: 720px) {
-
+    
+    .header-logo img {
+        width: 40px;
+        aspect-ratio: 1;
+    }
 
     /* delete after */
     body::after {

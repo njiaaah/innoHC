@@ -6,7 +6,9 @@
     <title>Тайтл</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/catalogue.css"> -->
     <link rel="stylesheet" href="lib/nouislider.min.css">
+    <link rel="stylesheet" href="css/style-filter.css">
     <link rel="stylesheet" href="css/sliders.css">
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -31,7 +33,7 @@
 
         <span class="modal-towers-img"></span>
 
-        <form action="" method="dialog">
+        <form action="action" method="dialog">
 
             <input type="text" placeholder="Представьтесь, пожалуйста">
 
@@ -47,7 +49,7 @@
 
     <!-- modal2 - success  -->
 
-    <dialog close class="modal" id="modalSuccess">
+    <dialog class="modal" id="modalSuccess">
 
         <span class="modal-close-btn"><img src="img/icons/modal-close.svg" alt=""></span>
 
@@ -56,6 +58,34 @@
         <span class="modal-towers-img"></span>
 
         <span class="modal-success-content"> <img src="img/icons/modal-success-check.svg" alt=""><br><span>Заявка успешно <br> отправлена!</span> </span>
+
+    </dialog>
+
+    <!-- modal3 mobile sort -->
+
+    <dialog class="" id="modalMobileSort">
+
+        <label for="filter-sort-checkbox"><img src="img/icons/arrow-left-grey-circle.svg" alt=""> <span>СОРТИРОВАТЬ</span></label>
+
+        <div class="mobile-sort-modal-radio-wrap">
+            <input type="radio" name="modal3sort" id="modal3sort-1" checked>
+
+            <label for="modal3sort-1" class="modal-mobile-sort-label">Сначала дешевле <span><span></span></span></label>
+    
+            <input type="radio" name="modal3sort" id="modal3sort-2">
+    
+            <label for="modal3sort-2" class="modal-mobile-sort-label">Сначала дороже <span><span></span></span></label>
+            
+            <input type="radio" name="modal3sort" id="modal3sort-3">
+    
+            <label for="modal3sort-3" class="modal-mobile-sort-label">Сначала с большей площадью <span><span></span></span></label>
+    
+            <input type="radio" name="modal3sort" id="modal3sort-4">
+    
+            <label for="modal3sort-4" class="modal-mobile-sort-label">Сначала с меньшей площадью <span><span></span></span></label>
+        </div>
+
+        <div id="closeModal3Area">123</div>
 
     </dialog>
 
@@ -688,9 +718,9 @@
 
                     <label for="cb-phone" class="form-label">Телефон</label>
 
-                    <label for="^cb-submit" class="btn uc cp btn-green" id="callback-form-submit-button">Перезвоните мне <img src="img/icons/arrow-right.svg" alt=""></label>
+                    <label for="cb-submit" class="btn uc cp btn-green" id="callback-form-submit-button">Перезвоните мне <img src="img/icons/arrow-right.svg" alt=""></label>
     
-                    <input style="display: none;" type="submit" class="" id="cb-submit">
+                    <input style="display: none;" type="checkbox" class="" id="cb-submit">
 
                 </form>
 
@@ -805,11 +835,23 @@
 
     <section class="section-filter" id="filter">
 
+
+        
         <div class="section-filter-wrap section-wrap">
+
+            <input type="checkbox" name="catalogue" id="cataloguePlanSwitch">
+
+            <label id="catalogue-switch-label" for="cataloguePlanSwitch"> На плане башни <span><span></span></span> </label>
+
 
             <div class="section-filter-heading-wrap">
 
-                <h2>Выбрать квартиру</h2>
+                <input type="checkbox" id="section-filter-hide-menu">
+
+                <label for="section-filter-hide-menu" class="section-filter-hide-menu-label"><img src="img/icons/square-down.svg" alt=""></label>
+
+
+                <h2>КВАРТИРЫ</h2> 
 
                 <div class="horizontalscroll dragscroll hsb">
 
@@ -829,9 +871,24 @@
 
             </div>
 
-            <label for="toggleFilter" class="dn btn-green section-filter-toggle-label cp"><img src="img/icons/Filter.svg" alt="">ФИЛЬТР</label>
+            <input id="filter-four-piece-checkbox" type="checkbox">
+
+            <label for="filter-four-piece-checkbox" class="filter-four-piece-checkbox-label"> <img src="img/icons/sort-circle-4piece.svg" alt=""> </label>
+
+            <input type="checkbox" name="" id="filter-sort-checkbox">
+
+            <label for="filter-sort-checkbox" class="filter-sort-checkbox-label"> <img src="img/icons/sort-circle-arrows.svg" alt=""> </label>
 
             <input type="checkbox" name="toggleFilter" class="dn" id="toggleFilter">
+
+            <label for="toggleFilter" class="dn btn-green-brdr section-filter-toggle-label cp"><img src="img/icons/filter-menu.svg" alt="">ФИЛЬТР</label>
+
+            
+
+            <div class="section-filter-mobile-only-controls">
+
+
+            </div>
 
             <div class="section-filter-params-wrap">
 
@@ -1118,14 +1175,11 @@
             <div class="filter-button-wrap">
                     
                 <button class="btn uc btn-green-brdr filter-show-more">
-                    <span>Показать&nbsp<span id="somePlaceholderId"> 141 </span>&nbspквартиру</span>
+                    <span>Показать&nbsp;<span id="somePlaceholderId"> 141 </span>&nbsp;квартиру</span>
                     <span>Показать Еще</span>
                      <img src="img/icons/arrow-right-green.svg" alt="">
                     </button>
-
-            </div>
-
-            
+             </div>          
 
 
         </div>

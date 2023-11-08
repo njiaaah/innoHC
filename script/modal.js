@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (openModalButton3) {
         openModalButton3.addEventListener('click', () => {
-            openModal(0)
+            openModal(1)
         })
     }
 
@@ -58,5 +58,33 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
     });
+
+    // 3 - mobile sort modal
+
+    const mobileSortChb = document.querySelector('#filter-sort-checkbox')
+    const mobileSortModal = document.querySelector('#modalMobileSort')
+    const mobileSortModalClose = document.querySelector('#closeModal3Area')
+
+
+
+    if (mobileSortChb) {
+
+        mobileSortModalClose.addEventListener('click', () => {
+            mobileSortModal.close()
+            mobileSortChb.checked = false
+        })
+
+        mobileSortChb.addEventListener('change', () => {
+            if (mobileSortChb.checked) {
+                mobileSortModal.showModal()
+            }
+
+            if (!mobileSortChb.checked) {
+                mobileSortModal.close()
+            }
+
+
+        })
+    }
 
 })
