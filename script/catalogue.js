@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // переход с главной по клику на свич "на плане башни" с параметром #plan
+
+    var getUrl = window.location.href
+    var substring = 'plan'
+
+    if (getUrl.includes(substring)) {
+        document.querySelector('#cataloguePlanSwitch').checked = true
+    }
+
     // apparts heading on mobile z-index fix
 
     const appartHeading = document.querySelector('.section-filter-heading-wrap')

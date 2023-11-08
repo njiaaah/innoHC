@@ -21,7 +21,7 @@ label {
 #catalogue-switch-label {
     white-space: nowrap;
     width: 300px;
-    right: 20px;
+    right: 0;
     gap: 0.875rem;
     display: flex;
     place-items: center;
