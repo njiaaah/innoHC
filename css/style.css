@@ -40,6 +40,10 @@ body {
 }
 
  /* button up */
+
+ button, button a {
+    font-family: Geologica;
+ }
  
  #topbutton {
     display: none;
@@ -1617,6 +1621,10 @@ section {
 
 
 /* section filter */
+
+.section-filter-toggle-label {
+    display: none;
+}
 
 .section-filter {
     background-color: var(--clr-greyscale-2);
