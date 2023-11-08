@@ -15,12 +15,20 @@
     display: grid;
 }
 
+.section-filter-params-wrap {
+    box-shadow: 0 -200px 0 75px var(--clr-greyscale-0) !important;
+}
+
+.filter-sort-result-head-wrap {
+    display: none;
+}
+
 #toggleFilter ~ .section-filter-results-container {
     transform: translateY(-50px);
 }
 
 .section-filter-catalogue {
-    height: 100px;
+    height: fit-content;
 }
 
 .section-filter-heading-wrap {
