@@ -39,3 +39,87 @@
 [class*="zoom"] > [class*="zoom__button"] {
     position: relative !important;
 }
+
+[class*="listbox__panel"] {
+    background-color: var(--clr-primary-green) !important;
+    margin-top: 0 !important;
+    left: -11px !important;
+    top: -11px !important;
+    padding-left: 1.2vw !important;
+    padding-right: 1vw !important;
+    padding-top: 1.5vw !important;
+    min-width: 14vw !important;
+    height: 24vw;
+}
+
+[class*="listbox__list"] > ymaps:first-of-type > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(/img/icons/map/Education.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(2) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(/img/icons/map/Medicine.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(3) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(/img/icons/map/Sport.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(4) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(/img/icons/map/Supermarket.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(5) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(/img/icons/map/Park.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(6) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(/img/icons/map/Culture.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(7) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(/img/icons/map/Shop.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(8) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(/img/icons/map/Cafe.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(9) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(/img/icons/map/Spa.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps  ymaps  ymaps  ymaps  ymaps  ymaps {
+    padding-left: 3vmax !important;
+}
+
+[class*="listbox__list"] > ymaps:hover {
+    background-color: none !important;
+}
+
+[class*="listbox__button"] {
+    display: none !important;
+}
+
+[class*="listbox__list"] {
+    font-size: clamp(0.5rem, 0.375rem + 0.625vw, 0.875rem);
+    color: yellow;
+    font-family: 'Geologica', sans-serif;
+}
