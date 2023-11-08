@@ -605,7 +605,11 @@ $('#togg-infban').click(function () {
 
 const mybutton = document.getElementById("topbutton");
 
-window.onscroll = function () { scrollFunction() };
+if (mybutton) {
+    window.onscroll = function () { scrollFunction() };
+}
+
+
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 && window.innerWidth > 200) {
