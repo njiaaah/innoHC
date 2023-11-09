@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', () => {
         if (window.innerWidth >= 561) {
-            // console.log('desktop')
             $('#filter-sort-dropdown-toggle').prop('checked', false)
             $('.filter-sort-dropdown').show(1)
             $('.filter-sort-dropdown').animate({ 'opacity': '1' }, 1)
