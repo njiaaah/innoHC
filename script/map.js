@@ -92,7 +92,7 @@ function init() {
 	
 
     $.ajax({
-        url: "/script/data.json"
+        url: "./script/data.json"
     }).done(function (data) {
         objectManager.add(data);
     });

@@ -51,55 +51,55 @@
 }
 
 [class*="listbox__list"] > ymaps:first-of-type > ymaps > ymaps > ymaps > ymaps > ymaps::before {
-    background: url(/img/icons/map/Education.svg) 50% 50% !important;
+    background: url(../img/icons/map/Education.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
 }
 
 [class*="listbox__list"] > ymaps:nth-of-type(2) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
-    background: url(/img/icons/map/Medicine.svg) 50% 50% !important;
+    background: url(../img/icons/map/Medicine.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
 }
 
 [class*="listbox__list"] > ymaps:nth-of-type(3) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
-    background: url(/img/icons/map/Sport.svg) 50% 50% !important;
+    background: url(../img/icons/map/Sport.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
 }
 
 [class*="listbox__list"] > ymaps:nth-of-type(4) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
-    background: url(/img/icons/map/Supermarket.svg) 50% 50% !important;
+    background: url(../img/icons/map/Supermarket.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
 }
 
 [class*="listbox__list"] > ymaps:nth-of-type(5) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
-    background: url(/img/icons/map/Park.svg) 50% 50% !important;
+    background: url(../img/icons/map/Park.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
 }
 
 [class*="listbox__list"] > ymaps:nth-of-type(6) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
-    background: url(/img/icons/map/Culture.svg) 50% 50% !important;
+    background: url(../img/icons/map/Culture.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
 }
 
 [class*="listbox__list"] > ymaps:nth-of-type(7) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
-    background: url(/img/icons/map/Shop.svg) 50% 50% !important;
+    background: url(../img/icons/map/Shop.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
 }
 
 [class*="listbox__list"] > ymaps:nth-of-type(8) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
-    background: url(/img/icons/map/Cafe.svg) 50% 50% !important;
+    background: url(../img/icons/map/Cafe.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
 }
 
 [class*="listbox__list"] > ymaps:nth-of-type(9) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
-    background: url(/img/icons/map/Spa.svg) 50% 50% !important;
+    background: url(../img/icons/map/Spa.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
 }
