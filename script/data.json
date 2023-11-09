@@ -38,7 +38,11 @@
 		
 		
 		
-		{"type": "Feature", "id": 34, "geometry": {"type": "Point", "coordinates": [55.692749, 37.473901]}, "properties": {"balloonContent": "Образование", "clusterCaption": "Образование", "hintContent": "Образование", "iconCaption": "Образование"}, "options": {"iconLayout": "default#image", "iconImageHref": "img/icons/map/Education_map.svg"}}
+		{"type": "Feature", "id": 34, "geometry": {"type": "Point", "coordinates": [55.692749, 37.473901]}, "properties": {"balloonContent": "Образование", "clusterCaption": "Образование", "hintContent": "Образование", "iconCaption": "Образование"}, "options": {"iconLayout": "default#image", "iconImageHref": "img/icons/map/Education_map.svg"}},
+
+
+
+		{"type": "Feature", "id": 54, "geometry": {"type": "Point", "coordinates": []}, "properties": {"balloonContent": "ПОДРОБНЕЕ", "clusterCaption": "ПОДРОБНЕЕ", "hintContent": "ПОДРОБНЕЕ", "iconCaption": "ПОДРОБНЕЕ", "link": "https://yandex.ru"}, "options": {"iconLayout": "default#image", "iconImageHref": "img/icons/map/Education_map.svg"}}
 
 
 

@@ -11,52 +11,6 @@ function init() {
     zoomControlSize: 'auto'
   });
 
-
-
-  var education_check;
-  education_check = document.querySelector('#education');
-  const edcucation_img = document.getElementById('education_img');
-
-  var medicine_check;
-  medicine_check = document.querySelector('#medicine');
-  const medicine_img = document.getElementById('medicine_img');
-
-  var sport_check;
-  sport_check = document.querySelector('#sport');
-  const sport_img = document.getElementById('sport_img');
-
-  var supermarket_check;
-  supermarket_check = document.querySelector('#supermarket');
-  const supermarket_img = document.getElementById('supermarket_img');
-
-  var park_check;
-  park_check = document.querySelector('#park');
-  const park_img = document.getElementById('park_img');
-
-  var culture_check;
-  culture_check = document.querySelector('#culture');
-  const culture_img = document.getElementById('culture_img');
-
-  var shop_check;
-  shop_check = document.querySelector('#shop');
-  const shop_img = document.getElementById('shop_img');
-
-  var cafe_check;
-  cafe_check = document.querySelector('#cafe');
-  const cafe_img = document.getElementById('cafe_img');
-
-  var spa_check;
-  spa_check = document.querySelector('#spa');
-  const spa_img = document.getElementById('spa_img');
-
-
-
-
-
-
-
-
-
         objectManager = new ymaps.ObjectManager({
             // Чтобы метки начали кластеризоваться, выставляем опцию.
            clusterize: true,
@@ -81,7 +35,7 @@ function init() {
 		
 
     // Создадим 5 пунктов выпадающего списка.
-    var listBoxItems = ['Образование', 'Медицина', 'Спорт', 'Торговые центры', 'Парки', 'Культура', 'Магазины', 'Кафе и рестораны', 'Салоны красоты']
+    var listBoxItems = ['Образование', 'Медицина', 'Спорт', 'Торговые центры', 'Парки', 'Культура', 'Магазины', 'Кафе и рестораны', 'Салоны красоты', 'ПОДРОБНЕЕ']
             .map(function (title) {
                 return new ymaps.control.ListBoxItem({
                     data: {
@@ -143,6 +97,14 @@ function init() {
         objectManager.add(data);
     });
 
+    //Кнопка подробнее
+    listBoxControl.get(9).events.add('click', function (e) {
+        var geoObject = objectManager.objects.getById('54');
+        window.open(geoObject.properties.link);       
+    });
+
+    map.behaviors.disable(['scrollZoom']); // отключаем скролл карты
 }
+
 
 ymaps.ready(init);
