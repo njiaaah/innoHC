@@ -919,10 +919,10 @@ section {
     left: 0;
     z-index: 2;
     display: grid;
-    top: 23.2vw;
+    top: 15.2vw;
     min-width: 21.6vmin;
     box-shadow: 0 10px 20px -5px rgba(0,0,0,.2);
-    display: grid;
+    display: none;
 }
 .section-location-map-legend {
     margin-bottom: 1rem;
