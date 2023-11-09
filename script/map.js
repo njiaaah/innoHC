@@ -30,7 +30,7 @@ function init() {
     }, {
       iconLayout: "default#image",
       iconImageHref: "./img/icons/map/Home_marker.svg",
-      iconImageSize: [28, 28],
+      iconImageSize: [30, 21],
       iconImageOffset: [0, -35]
     });
 		
