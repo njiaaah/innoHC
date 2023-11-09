@@ -28,9 +28,10 @@ function init() {
       hintContent: 'ЖК ИННОВАТОР',
       balloonContent: 'ЖК ИННОВАТОР'
     }, {
-      type: 'point',
+      iconLayout: "default#image",
+      iconImageHref: "./img/icons/map/Home_marker.svg",
       iconImageSize: [28, 28],
-      iconImageOffset: [-15, 0]
+      iconImageOffset: [0, -35]
     });
 		
 
