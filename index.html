@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/sliders.css">
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/plan.css">
     <script src="lib/horizontaldrag.js"></script>
     <script src="lib/jquery.js"></script>
     <script src="lib/nouislider.min.js"></script>
@@ -1168,8 +1169,112 @@
                     </button>
              </div>          
 
+               <!-- apartament plan and etc-->
+            <div class="apartament-wrap">     
+
+                <div>
+                    <div>
+                        <img src="img/icons/arrow-left-1.svg" alt="">
+                        <span>&nbspВернуться к выбору квартир</span>
+                    </div>
+                </div>
+
+                <div class="apartament-container">
+
+                    <div class="apartament-left-item">
+                        <div>
+                            <h3>№121</h3>
+                            <h5>5 комн. квартира,  150 м</h5>
+                            <h2>6 500 600 ₽</h2>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="apartament-but-first-toggle">
+                            <label for="apartament-but-first-toggle" id="ap-but-fir">Без отделки</label>
+                            <input type="checkbox" id="apartament-but-second-toggle">
+                            <label for="apartament-but-second-toggle" id="ap-but-sec">Евроформат</label>
+                        </div>
+                        <div>
+                            <h5>Корпус 3</h5>
+                            <h5>18 / 20 этаж</h5>
+                        </div>
+                        <div>    
+                            <button>ЗАПИСАТЬСЯ НА ВСТРЕЧУ</button>
+                            <button>РАССЧИТАТЬ ИПОТЕКУ</button>
+                        </div>
+                        <div>
+                            <a href="#">
+                            <span>Похожие квартиры</span>
+                            <img src="img/icons/arrow-right-1-gray.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                            <span>Кладовые и машиноместа</span>
+                            <img src="img/icons/arrow-right-1-gray.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="img/icons/share.svg" alt=""></a>
+                            <a href="#"><img src="img/icons/print.svg" alt=""></a>
+                            <a href="#"><img src="img/icons/favorite.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="apartament-right-item">
+                        <div>
+                            <div class="section-heading-tabs section-apartament-tabs">
+                                <span class="uc cp section-location-tab-selected">Планировка</span>
+                                <span class="uc cp">План этажа</span>
+                                <span class="uc cp">Генплан</span>
+                            </div>
+      
+                            <div class="apartament-img" style="display: block;">
+                                <img src="img/apartaments/shablon_1_bashnya_2.svg" alt="">
+                            </div>
+                            <div class="apartament-img" style="display: none;">
+                                <img src="img/apartaments/floorplan_1.svg" alt="">
+                            </div>
+                            <div class="apartament-img" style="display: none;">
+                                <img src="img/apartaments/plan.svg" alt="">
+                            </div>
+                        </div>
+                                <div>
+                              
+                                    <div>
+                                        <img src="img/icons/apartament-card-item-1.svg" alt="">
+                                        <span>Эркерное остекление</span>
+                                    </div>
+            
+            
+                                    <div>
+                                        <img src="img/icons/apartament-card-item-1.svg" alt="">
+                                        <span>Эркерное остекление</span>
+                                    </div>
+            
+            
+                                    <div>
+                                        <img src="img/icons/apartament-card-item-1.svg" alt="">
+                                        <span>Эркерное остекление</span>
+                                    </div>
+            
+                                    <div>
+                                        <img src="img/icons/apartament-card-item-1.svg" alt="">
+                                        <span>Эркерное остекление</span>
+                                    </div>
+            
+                                    <div>
+                                        <img src="img/apartaments/plan.svg" alt="">
+                                    </div>
+                               
+                                </div>
+                    </div>
+                </div>
+                
+
+            </div>   
 
         </div>
+
 
 
     </section>
@@ -1977,5 +2082,6 @@
     <script src="script/modal.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
     <script src="script/map.js"></script>
+    <script src="script/plan.js"></script>
 </body>
 </html>
