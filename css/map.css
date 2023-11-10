@@ -143,3 +143,9 @@
 [class*="listbox__list"]:hover {
     background: none !important;
 }
+
+/* no scroll bar on firefox */
+
+#map{
+    scrollbar-width: none;
+}
