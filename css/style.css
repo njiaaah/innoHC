@@ -706,20 +706,31 @@ section {
     margin-top: 2.5rem;
     width: var(--content-width);
     display: flex;
-    justify-content: space-between;
 }
 
 .section-housing-complex-table-item:first-of-type {
     margin-right: calc(-4rem + 9vw);
 }
 
-.section-housing-complex-table-item div {
+.section-housing-complex-table > div:nth-of-type(2) > div {
+    display: flex;
+    gap: 1vw;
+}
 
+.section-housing-complex-table > div:first-of-type > div > div:first-of-type {
+    margin-top: 1vw;
+}
+
+.section-housing-complex-table > div:nth-of-type(2) > div {
+    margin-top: 1vw;
+}
+
+.section-housing-complex-table-item div {
     font-size: clamp(1.0125rem, 0.8679rem + 0.3214vw, 1.125rem);
     color: var(--clr-primary-red);
 }
 
-.section-housing-complex-table-item span {
+.section-housing-complex-table span {
     font-size: clamp(0.7875rem, 0.675rem + 0.25vw, 0.875rem);
     color: var(--clr-greyscale-6);
 }
@@ -2436,6 +2447,24 @@ section {
         width: 100%;
     }
 
+    .section-housing-complex-table > div:first-of-type > div > span:last-of-type {
+        text-wrap: nowrap;
+    }
+
+    .section-housing-complex-table > div:nth-of-type(2) > div > div:first-of-type {
+        margin-right: 0 !important;
+        width: auto;
+    }
+
+    .section-housing-complex-table > div:nth-of-type(2) > div span {
+        text-wrap: nowrap;
+    }
+
+    .section-housing-complex-table > div:nth-of-type(2) > div {
+        width: 88vw;
+        justify-content: space-between;
+    }
+
     /* section location grid */
     
     .section-location-content-item {
@@ -2809,10 +2838,26 @@ section {
 
     /* seciton hc table */
 
-    .section-housing-complex-table {
+    .section-housing-complex-table > div:nth-of-type(2) > div:first-of-type {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 1rem;
+    }
+
+    .section-housing-complex-table > div:nth-of-type(2) > div:first-of-type> div:first-of-type {
+        display: block;
+    }
+
+    .section-housing-complex-table > div:first-of-type {
+        display: none;
+    }
+
+    .section-housing-complex-table > div:nth-of-type(2) > span {
+        display: none;
+    }
+
+    .section-housing-complex-table span {
+        text-wrap: wrap !important;
     }
 
     /* grid area */
