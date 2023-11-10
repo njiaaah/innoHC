@@ -714,7 +714,7 @@ section {
 
 .section-housing-complex-table > div:nth-of-type(2) > div {
     display: flex;
-    gap: 1vw;
+    gap: 2.5vw;
 }
 
 .section-housing-complex-table > div:first-of-type > div > div:first-of-type {
@@ -2445,6 +2445,10 @@ section {
     .section-housing-complex-table-item:first-of-type {
         margin-bottom: 2.5rem;
         width: 100%;
+    }
+
+    .section-housing-complex-table > div:nth-of-type(2) > div {
+        gap: 1vw;
     }
 
     .section-housing-complex-table > div:first-of-type > div > span:last-of-type {
