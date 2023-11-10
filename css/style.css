@@ -519,6 +519,7 @@ section {
     justify-content: space-around;
     margin-right: max(10px, 20px);
     width: 80%;
+    gap: clamp(0.25rem, -0.3929rem + 1.4286vw, 0.75rem);;
 }
 
 #section-hero-additional-menu-wrap li {
@@ -528,9 +529,9 @@ section {
 }
 
 #section-hero-additional-menu-wrap li a {
-    font-size: 12px;
     white-space: nowrap;
-    font-size: clamp(0.57rem, -0.1529rem + 1.35vw, .85rem);
+    font-size: clamp(0.57rem, -0.1529rem + 1.35vw, 1rem);
+    
 }
 
 #section-hero-additional-menu-wrap .btn {
