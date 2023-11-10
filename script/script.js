@@ -438,6 +438,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // scroller12 - lot at 370-something pixel
+
+    const scroller12 = document.querySelector('#scroller12')
+
+    if (document.querySelector('.section-lot-card-controls')) {
+
+        var scroller12controls = document.querySelector('.section-lot-card-controls').children
+
+        console.log(scroller12)
+
+        scroller12.addEventListener('scroll', () => {
+            updateScrollerControls(scroller12, scroller12controls)
+        })
+
+        for (let i = 0; i < scroller11controls.length; i++) {
+            scroller11controls[i].addEventListener('click', () => {
+                clickScrollerControls(scroller12, scroller12controls, i)
+            })
+        }
+    }
+
 
 
 

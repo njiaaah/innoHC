@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:ital,wght@0,700;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
 /* defaults */
 
 html {
@@ -28,6 +30,7 @@ body {
     --clr-primary-btn-hover: #FFA564;
     --clr-primary-btn-focus: #AD8E62;
     --clr-news-p: #1D1D1B;
+    --clr-lot-handle: #124147;
     --content-1280: 70rem;
     --content-720: 40rem;
     --content-320: 17rem;
