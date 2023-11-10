@@ -714,11 +714,15 @@ section {
 
 .section-housing-complex-table > div:nth-of-type(2) > div {
     display: flex;
-    gap: 2.5vw;
+    gap: 2vw;
 }
 
 .section-housing-complex-table > div:first-of-type > div > div:first-of-type {
     margin-top: 1vw;
+}
+
+.section-housing-complex-table > div:first-of-type > div > span:first-of-type {
+    text-wrap: nowrap;
 }
 
 .section-housing-complex-table > div:nth-of-type(2) > div {
