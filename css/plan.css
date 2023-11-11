@@ -685,6 +685,10 @@ body {
 
 /* so called LEMON */
 
+.section-htb-lemon {
+   transform: translateX(-50%);
+}
+
 .section-htb-lemon,.line-overflow-stopm {
     position: absolute;
     width: 400px;
@@ -705,7 +709,7 @@ body {
     height: 3000px;
     background-color: var(--clr-greyscale-4);
     width: 2px;
-    transform: rotate(17.5deg) translate(clamp(-3.75rem, 2.0357rem + -12.8571vw, -8.25rem),-100px) ;
+    transform: rotate(17.5deg) translate(-60px,-100px) ;
     transform-origin: center center;
 }
 
@@ -722,7 +726,11 @@ body {
     height: 36.125rem;
 }
 
-
+@media only screen and (max-width: 1100px) {
+    .section-htb-lemon {
+        transform: translateX(-100px);
+     }
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -745,6 +753,10 @@ body {
 
 
     /* so called LEMON */
+
+    .section-htb-lemon {
+    transform: translateX(00px);
+}
     
     .lemon-itself img {
         transform: translate(145px,5px);
