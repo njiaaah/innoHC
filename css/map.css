@@ -123,7 +123,7 @@
 }
 
 [class*="listbox__list"] > ymaps  ymaps  ymaps  ymaps  ymaps  ymaps {
-    padding-left: 5.2vmin !important;
+    padding-left: 3rem !important;
 }
 
 [class*="listbox__button"] {
