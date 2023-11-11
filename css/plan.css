@@ -35,17 +35,17 @@ body {
     display: grid;
     grid-template-columns: 1fr 1.9fr;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .apartament-left-item {
     background-color: white;
     display: grid;
-    padding: 1.5vw 1.5vw 1.5vw 2vw;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
 }
 
 .apartament-left-item  h3 {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0.02em;
@@ -55,7 +55,7 @@ body {
 }
 
 .apartament-left-item h5 {
-    font-size: 2vmin;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.02em;
@@ -64,13 +64,13 @@ body {
 }
 
 .apartament-left-item h2 {
-    font-size: 4vmin;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 46px;
     letter-spacing: 0.05em;
     text-align: left;
     color: var(--clr-greyscale-9);
-    margin: 2vw 0 1vw 0;
+    margin: 2rem 0 1rem 0;
     text-transform: uppercase;
     text-wrap: nowrap;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 .apartament-left-item > div:nth-of-type(2) label, .apartament-left-item-720-chexbox label {
-    font-size: 1.1vmin;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0em;
@@ -89,8 +89,8 @@ body {
     border-radius: 16px;
     border: none;
     background-color: var(--clr-greyscale-2);
-    width: 8.5vmin;
-    height: 3vmin;
+    width: 6rem;
+    height: 2rem;
     display: grid;
     text-align: center;
     place-items: center;
@@ -115,41 +115,41 @@ body {
 .apartament-left-item > div:nth-of-type(3) {
     display: flex;
     justify-content: space-between;
-    max-width: 27vw;
+    max-width: 27rem;
     border-bottom: 1px solid var(--clr-greyscale-4);
-    margin: 1vw 1vw 1vw 0;
-    padding-bottom: 0.2vmin;
+    margin: 1rem 1rem 1rem 0;
+    padding-bottom: 0.2rem;
 }
 
 .apartament-left-item > div:nth-of-type(3) h5 {
-    font-size: 2vmin;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.02em;
     text-align: left;
     color: var(--clr-darkgreygreen);
-    padding-bottom: 0.3vw;
-    max-height: 2vw;
+    padding-bottom: 0.3rem;
+    max-height: 2rem;
 }
 
 .apartament-left-item > div:nth-of-type(5) {
     display: grid;
     gap: 0.5rem;
-    margin-top: 1vw;
-    max-width: 30vw;
+    margin-top: 1rem;
+    max-width: 30rem;
 }
 
 .apartament-left-item > div:nth-of-type(5) button:first-of-type {
     background-color: var(--clr-primary-green);
     border: none;
-    font-size: 0.8vw;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
     color: var(--clr-greyscale-0);
     text-transform: uppercase;
-    max-width: 25vmin;
-    height: 2.5vmax;
+    max-width: 25rem;
+    height: 2.5rem;
     text-wrap: nowrap;
 }
 
@@ -164,15 +164,15 @@ body {
 }
 
 .apartament-left-item > div:nth-of-type(5) button:last-of-type {
-    font-size: 0.8vw;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
     color: var(--clr-primary-green);
     background-color: white;
     border: 2px solid var(--clr-primary-green);
-    width: 20vmin;
-    height: 2.5vmax;
+    max-width: 20rem;
+    height: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -198,11 +198,11 @@ body {
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0em;
-    font-size: 1.5vmin;
+    font-size: 1rem;
 }
 
 .apartament-left-item > div:nth-of-type(5) img, .apartament-left-item > div:nth-of-type(6) img {
-    max-width: 2vw;
+    max-width: 2rem;
 }
 
 .apartament-left-item > div:last-of-type {
@@ -214,18 +214,18 @@ body {
 }
 
 .apartament-left-item > div:last-of-type img {
-    width: 3vmin;
-    height: 3vw;
+    width: 2rem;
+    height: 2rem;
 }
 
 .section-apartament-tabs {
     padding-right: 0;
-    margin-bottom: 2vw;
+    margin-bottom: 2rem;
     place-content: center;
 }
 
 .section-apartament-tabs span {
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .apartament-right-item {
@@ -245,7 +245,7 @@ body {
 
 
 .apartament-right-item > div:first-of-type > div > span {
-    font-size: 1vw;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 20px;
     letter-spacing: 0em;
@@ -253,13 +253,13 @@ body {
 }
 
 .apartament-right-item-first div img {
-    width: 4vw;
+    width: 4rem;
 }
 
 .apartament-right-item-first div {
     display: flex;
     place-items: end;
-    gap: 0.5vw;
+    gap: 0.5rem;
 }
 
 .apartament-right-item-first div:last-of-type img {
@@ -279,7 +279,7 @@ body {
 
 .apartament-right-item-second {
     background-color: white;
-    margin-top: 4vmax;
+    margin-top: 4rem;
     display: grid;
     height: 65%;
     width: 100%;
@@ -287,7 +287,7 @@ body {
 
 .apartament-right-item-second > div:first-of-type > ul h4 {
     display: inline-block;
-    font-size: 1.3vmin;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0.02em;
@@ -299,35 +299,35 @@ body {
 .apartament-right-item-second > div:first-of-type span {
     background-color: var(--clr-greyscale-6);
     color: white;
-    font-size: 1vmin;
+    font-size: 0.7rem;
     font-weight: 400;
     align-self: center;
     text-wrap: nowrap;
-    padding: 0.3vw;
+    padding: 0.3rem;
 }
 
 .apartament-right-item-second > div:first-of-type li {
     display: flex;
     justify-content: space-between;
     place-items: center;
-    padding: 2vw 1vmax 0 1vmax;
+    padding: 2rem 1rem 0 1rem;
 }
 
 .apartament-right-item-second > div:nth-of-type(2) > div {
     background-color: var(--clr-primary-red);
-    width: 4vmax;
+    width: 4rem;
     border-radius: 50%;
     aspect-ratio: 1;
     position: absolute;
-    left: -2vmax;
-    top: -2vmax;
+    left: -2rem;
+    top: -2rem;
     display: grid;
     place-content: center;
     color: white;
 }
 
 .apartament-right-item-second > div:nth-of-type(2) > div span {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 100;
 }
 
@@ -339,21 +339,21 @@ body {
 
 .apartament-right-item-second > div:nth-of-type(2) ul {
     display: grid;
-    gap: 0.5vw;
-    padding: 2vw 1vmax 0 1vmax;
+    gap: 0.5rem;
+    padding: 2rem 1rem 0 1rem;
 }
 
 .apartament-right-item-second > div:nth-of-type(2) li span:nth-of-type(1) {
     color: var(--clr-primary-red);
     font-weight: 400;
-    font-size: 1.2vmin;
+    font-size: 0.8rem;
     text-wrap: nowrap;
 }
 
 .apartament-right-item-second > div:nth-of-type(2) li span:nth-of-type(2) {
     color: var(--clr-greyscale-6);
     font-weight: 400;
-    font-size: 1.2vmin;
+    font-size: 0.8rem;
     text-wrap: nowrap;
 }
 
@@ -365,10 +365,10 @@ body {
 .apartament-right-item-second a {
     background-color: var(--clr-primary-red);
     color: white !important;
-    font-size: 1vmin;
+    font-size: 0.7rem;
     text-wrap: nowrap;
     place-content: center;
-    margin: 0 2vmax 1vw 1vmax;
+    margin: 0 2rem 1rem 1rem;
     place-content: center;
     display: grid;
 }
@@ -751,6 +751,90 @@ body {
         width: 9rem;
     }
 
+    .apartament-left-item h3 {
+        font-size: 1rem;
+    }
+
+    .apartament-left-item h5 {
+        font-size: 0.6rem;
+    }
+
+    .apartament-left-item h2 {
+        font-size: 1rem;
+        margin: 0 !important;
+    }
+
+    .apartament-left-item > div:last-of-type img  {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .apartament-left-item > div:nth-of-type(3) h5 {
+        font-size: 0.6rem;
+    }
+
+    .apartament-left-item > div:nth-of-type(5) button:first-of-type, .apartament-left-item > div:nth-of-type(5) button:last-of-type {
+        font-size: 0.5rem;
+        height: 2rem;
+    }
+
+    .apartament-left-item > div:nth-of-type(5) span, .apartament-left-item > div:nth-of-type(6) span {
+        font-size: 0.4rem;
+    }
+
+    .apartament-left-item > div:nth-of-type(5) img, .apartament-left-item > div:nth-of-type(6) img {
+        max-width: 0.6rem;
+    }
+
+    .apartament-left-item > div:nth-of-type(2) label {
+        font-size: 0.5rem;
+        width: 3.5rem;
+        height: 1rem;
+    }
+
+    .apartament-left-item {
+        padding: 1rem 1rem 1rem 1.5rem;
+    }
+
+    .apartament-right-item-second > div:first-of-type > ul h4  {
+        font-size: 0.6rem;
+    }
+
+    .apartament-right-item-second > div:first-of-type span  {
+        font-size: 0.5rem;
+        padding: 0.1rem;
+    }
+
+    .apartament-right-item-second > div:nth-of-type(2) li span:nth-of-type(2) {
+        font-size: 0.5rem;
+    }
+
+    .apartament-right-item-second > div:nth-of-type(2) li span:nth-of-type(1) {
+        font-size: 0.5rem;
+    }
+
+    .apartament-right-item-second > div:nth-of-type(2) > div {
+        width: 1.5rem;
+        left: -0.7rem;
+        top: -0.7rem;
+    }
+
+    .apartament-right-item-second > div:nth-of-type(2) > div span {
+        font-size: 0.6rem;
+    }
+
+    .apartament-left-item > div:nth-of-type(3)_ {
+        margin-bottom: 0;
+    }
+
+    .apartament-left-item > div:last-of-type {
+        margin-top: 1rem;
+    }
+
+    .apartament-right-item-first div img {
+        width: 2rem;
+    }
+
 
     /* so called LEMON */
 
@@ -778,7 +862,13 @@ body {
         grid-template-columns: 1fr;
     }
 
-    
+    .apartament-left-item > div:nth-of-type(5) span, .apartament-left-item > div:nth-of-type(6) span {
+        font-size: 0.6rem;
+    }
+
+    .apartament-left-item-720-chexbox label {
+        font-size: 0.5rem;
+    } 
 
     .apartament-left-item {
         padding: 4vw 4vw 3vw 4vw;
@@ -1231,7 +1321,7 @@ body {
 
     
 
-    .apartament-left-item > div:nth-of-type(5) span, div:nth-of-type(6) span {
+    .apartament-left-item > div:nth-of-type(5) span, .apartament-left-item > div:nth-of-type(6) span {
         font-size: 12px;
         font-weight: 600;
         line-height: 17px;
@@ -1239,11 +1329,11 @@ body {
         text-align: center;
     }
 
-    .apartament-left-item > div:nth-of-type(5) span, div:nth-of-type(6) div:last-of-type span {
+    .apartament-left-item > div:nth-of-type(5) span, .apartament-left-item >  div:nth-of-type(6) div:last-of-type span {
         display: none;
     }
 
-    .apartament-left-item > div:nth-of-type(5) span, div:nth-of-type(6) div:last-of-type .dn {
+    .apartament-left-item > div:nth-of-type(5) span, .apartament-left-item >  div:nth-of-type(6) div:last-of-type .dn {
         display: block;
     }
 

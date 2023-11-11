@@ -708,16 +708,18 @@ section {
 .section-housing-complex-table {
     margin-top: 2.5rem;
     width: var(--content-width);
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap:0.5rem;
 }
 
 .section-housing-complex-table-item:first-of-type {
-    margin-right: calc(-4rem + 9vw);
+
 }
 
 .section-housing-complex-table > div:nth-of-type(2) > div {
     display: flex;
-    gap: 2vw;
+    justify-content: space-between;
 }
 
 .section-housing-complex-table > div:first-of-type > div > div:first-of-type {
@@ -2454,8 +2456,16 @@ section {
         width: 100%;
     }
 
+    .section-housing-complex-table-item div {
+        font-size: 0.8rem;
+    }
+
+    .section-housing-complex-table span {
+        font-size: 0.5rem;
+    }
+
     .section-housing-complex-table > div:nth-of-type(2) > div {
-        gap: 1vw;
+        gap: 0.5rem;
     }
 
     .section-housing-complex-table > div:first-of-type > div > span:last-of-type {
@@ -2472,7 +2482,6 @@ section {
     }
 
     .section-housing-complex-table > div:nth-of-type(2) > div {
-        width: 88vw;
         justify-content: space-between;
     }
 
@@ -2869,6 +2878,18 @@ section {
 
     .section-housing-complex-table span {
         text-wrap: wrap !important;
+    }
+
+    .section-housing-complex-table {
+        display: block;
+    }
+
+    .section-housing-complex-table-item div {
+        font-size: clamp(1.0125rem, 0.8679rem + 0.3214vw, 1.125rem);
+    }
+
+    .section-housing-complex-table span {
+        font-size: clamp(0.7875rem, 0.675rem + 0.25vw, 0.875rem);
     }
 
     /* grid area */
