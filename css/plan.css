@@ -194,7 +194,7 @@ body {
     color: var(--clr-greyscale-6);
 }
 
-.apartament-left-item > div:nth-of-type(5) span, div:nth-of-type(6) span {
+.apartament-left-item > div:nth-of-type(5) span, .apartament-left-item > div:nth-of-type(6) span {
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0em;
