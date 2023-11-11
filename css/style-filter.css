@@ -198,26 +198,37 @@ label {
     /* modal sort */
 
     #modalMobileSort {
-        padding: 1rem 1.5rem 2.375rem 1.5rem;
-        position: sticky;
-        margin: auto;
-        overflow: visible;
+
+        position: fixed;
+        /* overflow: visible; */
         z-index: 6;
-        height: 266px;
+        border: none;
+        background-color: transparent;
         width: 100%;
         max-width: 100%;
-        top: 0;
+        height: 150vh;
+        transform: translateY(5rem);
+        padding-top: 5rem;
+        outline: none;
         border: none;
+    }
+
+    .modal-wrap {
+        padding: 1rem 1.5rem 2.375rem 1.5rem;
         background-color: var(--clr-mobile-menu-bg);
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding-bottom: 6rem;
     }
 
     #modalMobileSort::backdrop {
         background-color: black;
     }
 
-    #modalMobileSort > label:first-of-type {
+    #modalMobileSort .modal-wrap > label:first-of-type {
         position: relative;
         width: 100%;
         display: block;
@@ -226,11 +237,11 @@ label {
 
     }
 
-    #modalMobileSort > label img {
+    #modalMobileSort .modal-wrap > label img {
         position: absolute;
     }
 
-    #modalMobileSort > label span {
+    #modalMobileSort  .modal-wrap > label span {
         font-size: 16px;
         margin-top: 4px;
         font-weight: 400;
@@ -245,7 +256,6 @@ label {
     }
 
     .mobile-sort-modal-radio-wrap {
-
         width: 100%;
         display: flex;
         flex-direction: column;
