@@ -7,7 +7,7 @@
 }
 
 [class*="controls__control"] > ymaps > [class*="zoom"] {
-    height: 7vw !important;
+    height: 7rem !important;
     display: grid;
     gap: 0.5rem;
 }
@@ -45,9 +45,9 @@
     margin-top: 0 !important;
     left: -11px !important;
     top: -11px !important;
-    padding-left: 0.7vw !important;
-    padding-right: 1vw !important;
-    padding-top: 1vw !important;
+    padding-left: 0.7rem !important;
+    padding-right: 1rem !important;
+    padding-top: 1rem !important;
 }
 
 [class*="listbox__list"] > ymaps:first-of-type > ymaps > ymaps > ymaps > ymaps > ymaps::before {
@@ -112,14 +112,14 @@
 [class*="listbox__list"] > ymaps:nth-of-type(10) > ymaps > ymaps > ymaps > ymaps > ymaps {
     color: white;
     border: 1px solid white;
-    padding: 0.2vw 1.3vw !important;
+    padding: 0.2rem 1.3rem !important;
     margin-left: 0.5rem !important;
     font-weight: 200 !important;
 }
 
 [class*="listbox__list"] > ymaps:nth-of-type(10) > ymaps > ymaps > ymaps > ymaps {
-    margin-top: 1vw !important;
-    margin-bottom: 1.5vw !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 [class*="listbox__list"] > ymaps  ymaps  ymaps  ymaps  ymaps  ymaps {
