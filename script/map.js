@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', ()=>{
+    if (document.querySelector('#map')) {
+
 let center = [55.6901834133405, 37.48737408782326];
 let mark_home = [55.687791,37.482797];
 
@@ -109,3 +112,6 @@ function init() {
 
 
 ymaps.ready(init);
+
+    }
+})

@@ -144,8 +144,8 @@
     background: none !important;
 }
 
-/* no scroll bar on firefox */
+/* firefox scrollbar be gone */
 
-#map{
+#map {
     scrollbar-width: none;
 }

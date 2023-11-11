@@ -99,4 +99,70 @@ document.addEventListener('DOMContentLoaded', ()=>{
       })
     }
 
+    // 4 lot - первый взнос
+
+    var sectionFilterFloorSlider04 = document.getElementById('sectionFilterFirstPaySlider04')
+    var sectionFilterFloorSlider04Values = [
+      document.getElementById('sectionFilterFirstPaySlider04-lower'),
+      document.getElementById('sectionFilterFirstPaySlider04-upper')
+    ]
+
+    if(sectionFilterFloorSlider04) {
+      noUiSlider.create(sectionFilterFloorSlider04, {
+        start: [1000000, 10000000],
+        connect: true,
+        behaviour: "drag",
+        step: 10000,
+        range: {
+          min: 500000,
+          max: 15000000
+        },
+        format: {
+          from: function (value) {
+            return parseInt(value);
+          },
+          to: function (value) {
+            return parseInt(value)
+          }
+        }
+      })
+  
+      sectionFilterFloorSlider04.noUiSlider.on('update', function(values, handle){
+        sectionFilterFloorSlider04Values[handle].innerHTML = values[handle].toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+      })
+    }
+
+    // 5 lot - платеж в месяц
+
+    var sectionFilterFloorSlider05 = document.getElementById('sectionFilterMonthPaySlider05')
+    var sectionFilterFloorSlider05Values = [
+      document.getElementById('sectionFilterMonthPaySlider05-lower'),
+      document.getElementById('sectionFilterMonthPaySlider05-upper')
+    ]
+
+    if(sectionFilterFloorSlider05) {
+      noUiSlider.create(sectionFilterFloorSlider05, {
+        start: [2, 36],
+        connect: true,
+        behaviour: "drag",
+        step: 1,
+        range: {
+          min: 1,
+          max: 50
+        },
+        format: {
+          from: function (value) {
+            return parseInt(value);
+          },
+          to: function (value) {
+            return parseInt(value)
+          }
+        }
+      })
+  
+      sectionFilterFloorSlider05.noUiSlider.on('update', function(values, handle){
+        sectionFilterFloorSlider05Values[handle].innerHTML = values[handle].toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+      })
+    }
+
 })
