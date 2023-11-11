@@ -181,12 +181,12 @@ body {
     margin-bottom: 1rem;
 }
 
-.apartament-left-item > div:nth-of-type(4) button:last-of-type:hover {
+.apartament-left-item > div:nth-of-type(5) button:last-of-type:hover {
     border-color: var(--clr-primary-btn-hover);
     cursor: pointer;
 }
 
-.apartament-left-item > div:nth-of-type(4) button:last-of-type:focus {
+.apartament-left-item > div:nth-of-type(5) button:last-of-type:focus {
     border-radius: 14px;
     border-color: var(--clr-primary-green);
     outline: 2px solid var(--clr-primary-btn-hover);
