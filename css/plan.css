@@ -1079,6 +1079,8 @@ body {
         margin: 2vw 3vw 4vw 3vw;
         padding: 1vw 0 1vw 0;
         place-content: center;
+        display: grid;
+        place-items: center;
     }
 
     .apartaments-right-720 > div:nth-of-type(2) > div:first-of-type {
