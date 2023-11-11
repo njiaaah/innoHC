@@ -10,6 +10,10 @@ body {
     width: var(--content-width);
 }
 
+.apartament-right-item-first, .apartament-right-item-second {
+    min-width: 12rem;
+}
+
 .section-lot-card-controls {
     display: none;
 }
@@ -151,7 +155,7 @@ body {
     text-transform: uppercase;
     max-width: 25rem;
     height: 2.5rem;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .apartament-left-item > div:nth-of-type(5) button:first-of-type:hover {
@@ -298,7 +302,7 @@ body {
     letter-spacing: 0.02em;
     text-align: right;
     color: var(--clr-primary-red);
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .apartament-right-item-second > div:first-of-type span {
@@ -307,7 +311,7 @@ body {
     font-size: 0.7rem;
     font-weight: 400;
     align-self: center;
-    text-wrap: nowrap;
+    white-space: nowrap;
     padding: 0.3rem;
 }
 
@@ -352,14 +356,14 @@ body {
     color: var(--clr-primary-red);
     font-weight: 400;
     font-size: 0.8rem;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .apartament-right-item-second > div:nth-of-type(2) li span:nth-of-type(2) {
     color: var(--clr-greyscale-6);
     font-weight: 400;
     font-size: 0.8rem;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .apartament-right-item-second > div:nth-of-type(2) li {
@@ -371,7 +375,7 @@ body {
     background-color: var(--clr-primary-red);
     color: white !important;
     font-size: 0.7rem;
-    text-wrap: nowrap;
+    white-space: nowrap;
     place-content: center;
     margin: 0 2rem 1rem 1rem;
     place-content: center;
@@ -514,7 +518,7 @@ body {
     font-weight: 700;
     line-height: 17px;
     color: var(--clr-primary-green);
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 /* bank table */
@@ -742,6 +746,10 @@ body {
     .apartament-right-item-second > div:first-of-type li {
         padding-left: 0.5vw;
         padding-right: 0.5vw;
+    }
+
+    .apartament-right-item-first, .apartament-right-item-second {
+        min-width: 8rem;
     }
 
     .apartament-right-item-second > div:nth-of-type(2) ul {
@@ -1049,7 +1057,7 @@ body {
     }
     .apartaments-right-720 > div:nth-of-type(2) > ul li {
         display: flex;
-        text-wrap: nowrap;
+        white-space: nowrap;
         gap: 1rem;
         justify-content: space-between;
     }
@@ -1450,7 +1458,7 @@ body {
 
     .htb-table-head div {
         font-size: 3vw;
-        text-wrap: nowrap;
+        white-space: nowrap;
         gap: 1vw;
         font-weight: 400;
     }
