@@ -143,3 +143,9 @@
 [class*="listbox__list"]:hover {
     background: none !important;
 }
+
+/* firefox scrollbar be gone */
+
+#map {
+    scrollbar-width: none;
+}

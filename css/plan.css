@@ -61,7 +61,7 @@ body {
     line-height: 21px;
     letter-spacing: 0.02em;
     text-align: left;
-    color: var(--clr-greyscale-9);
+    color: var(--clr-lot-handle);
 }
 
 .apartament-left-item h2 {
@@ -70,7 +70,7 @@ body {
     line-height: 46px;
     letter-spacing: 0.05em;
     text-align: left;
-    color: var(--clr-greyscale-9);
+    color: var(--clr-lot-handle);
     margin: 2rem 0 1rem 0;
     text-transform: uppercase;
     text-wrap: nowrap;
@@ -200,6 +200,10 @@ body {
     line-height: 16px;
     letter-spacing: 0em;
     font-size: 1rem;
+}
+
+.apartament-left-item > div:nth-of-type(6) span {
+    font-size: clamp(0.875rem, 0.7143rem + 0.3571vw, 1rem);
 }
 
 .apartament-left-item > div:nth-of-type(5) img, .apartament-left-item > div:nth-of-type(6) img {
