@@ -505,6 +505,7 @@ body {
     font-weight: 700;
     line-height: 17px;
     color: var(--clr-primary-green);
+    text-wrap: nowrap;
 }
 
 /* bank table */
@@ -1010,6 +1011,14 @@ body {
         display: none;
     }
 
+    .programmsFound {
+        margin: 6vw 0;
+    }
+
+    .section-htb-sliders {
+        margin-bottom: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -1295,9 +1304,10 @@ body {
     }
 
     .htb-table-head div {
-        font-size: 1vmax;
+        font-size: 3vw;
         text-wrap: nowrap;
         gap: 1vw;
+        font-weight: 400;
     }
 
     .htb-table-item span:first-of-type, .htb-table-head > div:first-of-type {
@@ -1310,9 +1320,16 @@ body {
     }
 
     .htb-table-item span, .htb-table-body div:nth-of-type(6) span {
-        font-size: 1.4vmax;
+        font-size: 3vw;
     }
 
+    .programmsFound, #programmsFound {
+        font-size: 1.6vmax;
+        font-weight: 400;
+        font-family: Geologica;
+        margin: 4vw 0;
+        place-items: center;
+    }
 
 }
 
