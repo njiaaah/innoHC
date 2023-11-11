@@ -365,10 +365,12 @@ body {
 .apartament-right-item-second a {
     background-color: var(--clr-primary-red);
     color: white !important;
-    font-size: 0.8vmin;
+    font-size: 1vmin;
     text-wrap: nowrap;
     place-content: center;
     margin: 0 2vmax 1vw 1vmax;
+    place-content: center;
+    display: grid;
 }
 
 .apartament-left-item-720-chexbox {
@@ -405,6 +407,7 @@ color: var(--clr-primary-green);
 .section-htb {
     overflow: visible;
 }
+
 .section-how-to-buy-wrap {
     padding-top: 6rem;
     overflow: visible;
@@ -560,7 +563,13 @@ width: 600px;
     letter-spacing: 0em;
     text-align: left;
     color: var(--clr-greyscale-8);
+    place-items: center;
 }
+
+.htb-table-head div img {
+    max-width: 2vw;
+}
+
 .section-htb-table-thingy {
     overflow-y: scroll;
     height: 265px;
@@ -689,6 +698,14 @@ width: 600px;
 
     .apartament-right-item-second > div:nth-of-type(2) ul {
         padding: 4vw 0.5vw 0 0.5vw
+    }
+
+    .apartament-right-item-second a {
+        font-size: 0.8vmin;
+    }
+
+    .section-filter-params-item > div:nth-of-type(2)  {
+        gap: 1vw;
     }
 }
 
@@ -1067,6 +1084,10 @@ width: 600px;
     .apartament-left-item > div:nth-of-type(3) {
         /* border: none; */
         margin-top: 2.375rem;
+    }
+
+    .apartament-left-item > div:nth-of-type(6) img {
+        max-width: 5vw;
     }
 
     .apartament-left-item > div:nth-of-type(5) {
