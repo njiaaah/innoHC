@@ -1,0 +1,105 @@
+
+footer {
+    margin-top: 0;
+}
+
+nav .btn-red {
+    background-color: green;
+}
+
+.section-404-wrap {
+    position: relative;
+}
+
+.message-404 h1 {
+    font-size: 2.625rem;
+    font-weight: 400;
+    line-height: 2.875rem;
+    letter-spacing: 0.05em;
+    color: var(--clr-primary-green);
+    margin-bottom: 0.625rem;
+}
+
+.message-404 h2 {
+font-size: 1.125rem;
+font-weight: 400;
+line-height: 1.4375rem;
+letter-spacing: 0em;
+color: var(--clr-greyscale-8);
+margin-bottom: 4.0625rem;
+}
+
+.message-404 a {
+    gap: .5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.0625rem;
+    letter-spacing: 0em;
+    color: var(--clr-primary-green);
+}
+
+.message-404 a img {
+    scale: -1;
+}
+
+.message-404 {
+    position: absolute;
+    left: clamp(8.4375rem, -2.0893rem + 23.3929vw, 16.625rem);
+    top: clamp(7.75rem, 1.6429rem + 13.5714vw, 12.5rem);
+}
+
+.lemon-404 {
+    margin-left: 50%;
+    height: 609px;
+}
+
+.lemon-404 img {
+    height: 100%;
+    display: block;
+}
+
+@media only screen and (max-width: 900px) {
+    .lemon-404 {
+        margin-left: 45%;
+        height: 609px;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    .message-404 {
+        position: absolute;
+        left: 6.4375rem;
+        top: 7.75rem;
+    }
+
+
+
+@media only screen and (max-width: 560px) {
+
+    .message-404 {
+        position: absolute;
+        left: .25rem;
+        top: 3.375rem;
+    }
+
+    .lemon-404 {
+        margin-left: 45vw;
+        height: 320px;
+    }
+
+    .message-404 h1 {
+        font-size: 1.9688rem;
+        margin-bottom: 0.4375rem;
+    }
+    
+    .message-404 h2 {
+        font-size: 0.8438rem;
+        margin-bottom: 3.0625rem;
+    }
+    
+    .message-404 a {
+        font-size: 0.6563rem;
+    }
+}
+}
