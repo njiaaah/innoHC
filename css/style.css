@@ -25,6 +25,7 @@ body {
     --clr-greyscale-4: #cecece;
     --clr-greyscale-6: #9d9d9d;
     --clr-greyscale-8: #353535;
+    --clr-greyscale-9: #cccccc;
     --clr-section-bg: rgb(255, 255, 255);
     --clr-mobile-menu-bg: #F2F4F8;
     --clr-primary-btn-hover: #FFA564;
@@ -3831,7 +3832,7 @@ body {
     overflow: hidden;
 }
 
-.section-construction-progress-card p, span {
+.section-construction-progress-card p, .section-construction-progress-card span {
     font-size: var(--fs-12-14);
     font-weight: 400;
     line-height: 17px;
