@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const openModalButton = document.querySelector('#header-call')
     const openModalButton2 = document.querySelector('#header-comment')
     const openModalButton3 = document.querySelector('#callback-form-submit-button')
+    const openModalButton4 = document.querySelector('#contacts-button')
 
 
 
@@ -29,6 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (openModalButton3) {
         openModalButton3.addEventListener('click', () => {
             openModal(1)
+        })
+    }
+
+    if (openModalButton4) {
+        openModalButton4.addEventListener('click', () => {
+            openModal(0)
         })
     }
 

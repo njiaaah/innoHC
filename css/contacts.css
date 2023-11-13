@@ -1,0 +1,170 @@
+.section-contacts {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    padding-bottom: 5rem;
+    overflow: visible;
+}
+
+#contacts-map {
+    scrollbar-width: none;
+    width: 100%;
+    height: 40rem;
+}
+
+.section-contacts-tab span {
+    font-size: var(--fs-12-14);
+}
+
+#contacts-map  [class*="zoom__minus"] {
+    background-color: var(--clr-primary-darkgreen) !important;
+}
+
+#contacts-map  [class*="zoom__plus"] {
+    background-color: var(--clr-primary-darkgreen) !important;
+}
+
+.section-contacts-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    box-shadow: 5px 6px 9px 5px #D2D2D226;
+    position: absolute;
+    z-index: 2;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(26.625rem, -13.6564rem + 89.5143vw, 60rem);
+}
+
+.section-contacts-card > div:first-of-type {
+    padding: 2rem 0 2rem 3rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.section-contacts-card > div:first-of-type > div:last-of-type {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section-contacts-card > div:first-of-type a, .section-contacts-card > div:first-of-type p {
+    font-family: Geologica;
+    font-size: calc(--fs-12-14);
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-darkblue);
+}
+
+.section-contacts-card > div:first-of-type > div:last-of-type > div:last-of-type a {
+    background-color: var(--clr-primary-green);
+    color: white;
+    text-transform: uppercase;
+    max-width: max-content;
+    padding: 0.5rem;
+}
+
+.section-contacts-card a {
+    display: block;
+}
+
+.contacts-img-1 {
+    background: url(/img/contacts/con_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacts-img-2 {
+    background: url(/img/contacts/con_2.webp) !important;
+}
+
+.section-contacts-tab {
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 910px) {
+    
+    .section-contacts-card > div:first-of-type a, .section-contacts-card > div:first-of-type p {
+        font-size: 0.7rem;
+
+    }
+
+    .section-contacts-tab span {
+        font-size: 0.55rem;
+    }
+
+    .section-contacts-tab {
+        gap: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    .section-contacts-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        bottom: -40%;
+    }
+
+    .section-contacts-card > div:first-of-type {
+        order: 2;
+    }
+
+    .section-contacts {
+        margin-bottom: 20rem;
+    }
+
+    .section-contacts-card > div:first-of-type a, .section-contacts-card > div:first-of-type p {
+        font-size: 1rem;
+
+    }
+
+    .section-contacts-tab span {
+        font-size: 1rem;
+    }
+
+    .section-contacts-tab {
+        gap: 1rem;
+    }
+
+    #contacts-map [class*="controls__control"] {
+        inset: 300px auto auto 40px !important;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    
+    .section-contacts-card {
+        width: var(--content-width);
+    }
+
+    #contacts-map [class*="controls__control"] {
+        display: none !important;
+    }
+
+    .section-contacts-card > div:first-of-type {
+        padding: 1rem 0 2rem 1rem;
+        display: grid;
+        gap: 1rem;
+    }
+
+    .section-contacts-tab span {
+        font-size: 0.8rem;
+    }
+
+    .section-contacts-tab {
+        gap: 0.5rem;
+    }
+
+    #contacts-map {
+        height: 30rem;
+    }
+
+    .section-contacts-card > div:first-of-type a, .section-contacts-card > div:first-of-type p {
+        font-size: 0.8rem;
+    }
+
+}
