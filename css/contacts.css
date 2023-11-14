@@ -38,7 +38,7 @@
     width: clamp(26.625rem, -13.6564rem + 89.5143vw, 60rem);
 }
 
-.section-contacts > div:first-of-type {
+.section-contacts-head {
     padding: 2.5rem 0;
     background: var(--clr-greyscale-2);
     width: 100%;
