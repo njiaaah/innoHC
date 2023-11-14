@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайтл</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/news.css">
+    <script src="lib/horizontaldrag.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/nouislider.min.js"></script>
+
+</head>
+<body style="overflow-x: hidden;">
+
+    <!-- pop-ups -->
+
+    <!-- modal with form -->
+
+    <dialog class="modal" id="modalForm">
+
+        <span class="modal-close-btn"><img src="img/icons/modal-close.svg" alt=""></span>
+
+        <span class="modal-outer-text">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</span>
+
+        <span class="modal-heading">Запись на встречу</span>
+
+        <span class="modal-towers-img"></span>
+
+        <form action="action" method="dialog">
+
+            <input type="text" placeholder="Представьтесь, пожалуйста">
+
+            <input type="tel" placeholder="Ваш телефон">
+
+            <input type="submit" class="dn" id="modal-form-submit">
+
+            <label for="modal-form-submit" class="modal-open-success btn btn-green uc cp">перезвоните мне <img src="img/icons/arrow-right.svg" alt=""></label>
+
+        </form>
+
+    </dialog>
+
+    <!-- modal2 - success  -->
+
+    <dialog class="modal" id="modalSuccess">
+
+        <span class="modal-close-btn"><img src="img/icons/modal-close.svg" alt=""></span>
+
+        <span class="modal-outer-text">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</span>
+
+        <span class="modal-towers-img"></span>
+
+        <span class="modal-success-content"> <img src="img/icons/modal-success-check.svg" alt=""><br><span>Заявка успешно <br> отправлена!</span> </span>
+
+    </dialog>
+
+    <!--button up-->
+    
+    <button onclick="topscroll()" id="topbutton" title="В начало!"><img src="img/icons/button_up.svg" alt="" style="transform: translateY(-6px);"></button>
+
+    <header>
+
+        <div id="header-wrap">
+
+            <a href="" class="header-logo">
+                <img src="img/icons/header_logo.svg" alt="">
+            </a>
+
+            <nav id="nav-desktop">
+                <ul>
+                    <li><a href="#promo" class="nav-contrast">АКЦИИ</a></li>
+                    <li><a href="#">КОМАНДА ПРОЕКТА</a></li>
+                    <li><a href="#">ГЕНПЛАН</a></li>
+                    <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <input type="checkbox" name="menu-toggle" id="header-menu-checkbox">
+
+            <nav id="nav-mobile" class="full-bleed">
+                <ul class="nav-mobile-list">
+                    <li><a href="#" class="nav-menu-a">О ПРОЕКТЕ</a></li>
+                    <li><a href="#lovation" class="nav-menu-a">РАСПОЛОЖЕНИЕ</a></li>
+                    <li>
+                        <a href="#" class="nav-menu-a">КУПИТЬ</a>
+                        <ul>
+                            <li><a href="#filter">> КВАРТИРУ</a></li>
+                            <li><a href="" class="nav-soon">> МАШИНОМЕСТО</a><span>скоро</span></li>
+                            <li><a href="" class="nav-soon">> КЛАДОВКУ</a><span>скоро</span></li>
+                            <li><a href="" class="nav-soon">> КОММЕРЧЕСКОЕ ПОМЕЩЕНИЕ</a><span>скоро</span></li>
+                        </ul>
+                    </li>
+                    <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icon-wrap">
+
+                <a href="#" id="header-star">
+                    <img src="img/icons/header_star.svg" alt="">
+                </a>
+        
+                <!-- <a id="header-phone" href="tel:+74954897748">+7 495 489-77-48</a> -->
+
+                <a href="#" id="header-call" class="header-icon">
+                    <img src="img/icons/header_call.svg" alt="">
+                </a>
+        
+                <a href="#"  id="header-comment" class="header-icon">
+                    <img src="img/icons/header_comment.svg" alt="">
+                </a>
+                
+                <label for="header-menu-checkbox" class="cp" id="header-menu-checkbox-label"> 
+
+                </label>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav id="section-hero-additional-menu">
+
+        <div id="section-hero-additional-menu-wrap">
+
+            <ul>
+                <li class="tab-underline"><a href="#location">РАСПОЛОЖЕНИЕ</a></li>
+                <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#landscaping">БЛАГОУСТРОЙСТВО</a></li>
+                <li><a href="#filter">КВАРТИРЫ</a></li>
+                <li><a href="#rare-formats">РЕДКИЕ ФОРМАТЫ</a></li>
+                <li><a href="#how-to-buy">КАК КУПИТЬ</a></li>
+            </ul>
+
+            <a href="#" class="uc btn btn-red">Выбрать квартиру</a>
+
+        </div>
+        
+    </nav>
+
+    <!-- SECTION FEATURED ARTICLE -->
+
+    <div class="h1wrap fc">
+        <h1 class="uc">Новости проекта</h1>
+    </div>
+
+    <section class="section-news-main">
+
+        <div class="section-wrap">
+
+
+
+            <div class="section-news-featured-article">
+
+                <span class="section-news-article-date">2 февраля 2023</span>
+
+                <h3>будущим жителям будет доступен ещё один мост</h3>
+
+                <div class="featured-article-content">
+
+                    <img src="img/news/article.webp" alt="">
+
+                    <div class="featured-article-text">
+
+                        <p>
+                            ​Велопешеходный мост через Яузу рядом с МГТУ им. Баумана введут в следующем году, сообщил руководитель Департамента строительства Москвы Рафик Загрутдинов. Он отметил, что мэр столицы Сергей Собянин поставил задачу синхронизировать сроки сдачи в эксплуатацию здания общежития университета и велопешеходного моста.
+                        </p><br>
+                        <p>
+                            ​Велопешеходный мост через Яузу рядом с МГТУ им. Баумана введут в следующем году, сообщил руководитель Департамента строительства Москвы Рафик Загрутдинов. Он отметил, что мэр столицы Сергей Собянин поставил задачу синхронизировать сроки сдачи в эксплуатацию здания общежития университета и велопешеходного моста.
+                        </p><br>
+                            <p>
+                            ​Велопешеходный мост через Яузу рядом с МГТУ им. Баумана введут в следующем году, сообщил руководитель Департамента строительства Москвы Рафик Загрутдинов. Он отметил, что мэр столицы Сергей Собянин поставил задачу синхронизировать сроки сдачи в эксплуатацию здания общежития университета и велопешеходного моста.
+                        </p><br>
+                            <p>
+                            ​Велопешеходный мост через Яузу рядом с МГТУ им. Баумана введут в следующем году, сообщил руководитель Департамента строительства Москвы Рафик Загрутдинов. Он отметил, что мэр столицы Сергей Собянин поставил задачу синхронизировать сроки сдачи в эксплуатацию здания общежития университета и велопешеходного моста.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- SECTION OTHER NEWS -->
+
+    <section class="section-other-news">
+
+        <div class="section-wrap">
+
+            <div class="section-other-news-scroller horizontal-scroller dragscroll snaps-inline snaps-inline-wh hsb" id="scrollerNews01">
+
+                <div class="section-other-news-item">
+
+                    <img src="img/news/other-news.webp" alt="">
+
+                    <span class="other-news-date">2 февраля 2023</span>
+
+                    <h4 class="uc">Первый бетон</h4>
+
+                    <p>Район знаменит своим уникальным природно-историческим ландшафтом и благоприятной экологией. Рядом с жилым комплексом находится памятник архитектуры XVII века в архитектурном стиле «Нарышкинского барокко» – храм Покрова в Филях.
+                    </p>
+
+                    <a href="#">Подробнее <img src="img/icons/arrow-right-green.svg" alt=""></a>
+
+                </div>
+                <div class="section-other-news-item">
+
+                    <img src="img/news/other-news.webp" alt="">
+
+                    <span class="other-news-date">2 февраля 2023</span>
+
+                    <h4 class="uc">Первый бетон</h4>
+
+                    <p>Район знаменит своим уникальным природно-историческим ландшафтом и благоприятной экологией. Рядом с жилым комплексом находится памятник архитектуры XVII века в архитектурном стиле «Нарышкинского барокко» – храм Покрова в Филях.
+                    </p>
+
+                    <a href="#">Подробнее <img src="img/icons/arrow-right-green.svg" alt=""></a>
+
+                </div>
+                <div class="section-other-news-item">
+
+                    <img src="img/news/other-news.webp" alt="">
+
+                    <span class="other-news-date">2 февраля 2023</span>
+
+                    <h4 class="uc">Первый бетон</h4>
+
+                    <p>Район знаменит своим уникальным природно-историческим ландшафтом и благоприятной экологией. Рядом с жилым комплексом находится памятник архитектуры XVII века в архитектурном стиле «Нарышкинского барокко» – храм Покрова в Филях.
+                    </p>
+
+                    <a href="#">Подробнее <img src="img/icons/arrow-right-green.svg" alt=""></a>
+
+                </div>
+                <div class="section-other-news-item">
+
+                    <img src="img/news/other-news.webp" alt="">
+
+                    <span class="other-news-date">2 февраля 2023</span>
+
+                    <h4 class="uc">Первый бетон</h4>
+
+                    <p>Район знаменит своим уникальным природно-историческим ландшафтом и благоприятной экологией. Рядом с жилым комплексом находится памятник архитектуры XVII века в архитектурном стиле «Нарышкинского барокко» – храм Покрова в Филях.
+                    </p>
+
+                    <a href="#">Подробнее <img src="img/icons/arrow-right-green.svg" alt=""></a>
+
+                </div>
+                <div class="section-other-news-item">
+
+                    <img src="img/news/other-news.webp" alt="">
+
+                    <span class="other-news-date">2 февраля 2023</span>
+
+                    <h4 class="uc">Первый бетон</h4>
+
+                    <p>Район знаменит своим уникальным природно-историческим ландшафтом и благоприятной экологией. Рядом с жилым комплексом находится памятник архитектуры XVII века в архитектурном стиле «Нарышкинского барокко» – храм Покрова в Филях.
+                    </p>
+
+                    <a href="#">Подробнее <img src="img/icons/arrow-right-green.svg" alt=""></a>
+
+                </div>
+                <div class="section-other-news-item">
+
+                    <img src="img/news/other-news.webp" alt="">
+
+                    <span class="other-news-date">2 февраля 2023</span>
+
+                    <h4 class="uc">Первый бетон</h4>
+
+                    <p>Район знаменит своим уникальным природно-историческим ландшафтом и благоприятной экологией. Рядом с жилым комплексом находится памятник архитектуры XVII века в архитектурном стиле «Нарышкинского барокко» – храм Покрова в Филях.
+                    </p>
+
+                    <a href="#">Подробнее <img src="img/icons/arrow-right-green.svg" alt=""></a>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="section-other-news-contols horizontal-scroller-contols">
+                <span class="current-scroll cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+                <span class="cp"></span>
+            </div>
+
+            <div class="full-wrap"><a href="btn-green" class="btn-green-brdr fc">ВСЕ НОВОСТИ <img src="img/icons/arrow-right-green.svg" alt=""></a></div>
+            
+        </div>
+
+    </section>
+
+
+
+   <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-mobile-logo">
+            <img src="img/icons/logo_mobile.svg" alt="">
+        </div>
+        <div class="footer-top-menu">
+            <div class="footer-top-contacts">
+                <div>
+                    <a href="tel:+74951048648"> 7 495 104 86 48</a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/icons/vk.svg" alt=""></a>
+                    <a href="#"><img src="img/icons/telegram.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-top-menu-list-items">
+                <div>
+                    <ul>
+                        <li><a href="#">О ПРОЕКТЕ</a></li>
+                        <li><a href="#location">РАСПОЛОЖЕНИЕ</a></li>
+                        <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+                        <li><a href="#progress">ХОД СТРОИТЕЛЬСТВА</a></li>
+                        <li><a href="#news">ВСЕ  НОВОСТИ ПРОЕКТА</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                        <li><a href="#">ДОКУМЕНТЫ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#filter"><img src="img/icons/right.svg" alt=""><span>ВЫБРАТЬ КВАРТИРУ</span></a></li>
+                        <li><a href="#"><img src="img/icons/right.svg" alt=""><span class="footer-incoming">ВЫБРАТЬ МАШИНОМЕСТО</span><span class="footer-incoming-soon"> СКОРО</span></a></li>
+                        <li><a href="#"><img src="img/icons/right.svg" alt=""><span class="footer-incoming">ВЫБРАТЬ КЛАДОВУЮ</span><span class="footer-incoming-soon"> СКОРО</span></a></li>
+                        <li><a href="#"><img src="img/icons/document-download.svg" alt=""><span>ПРЕЗЕНТАЦИЯ О ПРОЕКТЕ</span></a></li>
+                    </ul>
+                    <span><a href="#">> КВАРТИРЫ НА ГЕНПЛАНЕ</a></span>
+                    <span><a href="#">> КВАРТИРЫ ПО ПАРАМЕТРАМ</a></span>
+                    <div>
+                        <input type="text">
+                        <img src="img/icons/zoom_in.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-log-info">
+            <div>
+                <img src="img/icons/logo_foot.svg" alt="">
+            </div>
+            <div>
+                <span>Информация на данном сайте носит исключительно информационный характер и ни при каких обстоятельствах не является публичной офертой, определяемой положениями статьи 437 Гражданского Кодекса Российской Федерации. Раскрытие Застройщиком информации, предусмотренной Федеральным законом от 30.12.2004 №214-ФЗ, осуществляется на сайте Наш.ДОМ.РФ.</span>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div>
+            <div>
+                    <a href="#"><img src="img/icons/right.svg" alt=""><span>ВСЕ ПРОЕКТЫ</span></a>
+                </div>
+            </div>
+            <div>
+                <span>Copyright © 2023</span>
+                <span><a href="privacy.html">Политика конфиденциальности</a></span>
+            </div>    
+        </div>
+
+    </footer>
+
+    
+
+
+
+    <script src="script/script.js"></script>
+    <script src="script/modal.js"></script>
+    <script src="script/news.js"></script>
+
+</body>
+</html>
