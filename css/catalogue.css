@@ -1069,7 +1069,7 @@ html, body {
     justify-content: center;
 }
 
-.section-filter-param-item-button-wrap button {
+.section-filter-param-item-button-wrap a {
     padding: 0.875rem 1.5rem;
     font-size: 1rem;
     font-weight: 400;

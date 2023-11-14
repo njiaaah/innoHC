@@ -117,6 +117,8 @@ h1 {
 
 .section-other-news-item img {
     margin-bottom: 1.5rem;
+    object-fit: cover;
+    width: 100%;
 }
 
 .section-other-news-item .other-news-date {
@@ -343,6 +345,8 @@ h1 {
     .section-other-news-item p {
         font-size: 0.875rem;
         margin-bottom: 1.5rem;
+        width: 100%;
+        max-width: 100%;
     }
 
     .section-other-news-contols {
