@@ -23,6 +23,7 @@ footer {
 
 .h1wrap h1 {
     width: var(--content-width);
+    white-space: nowrap;
 }
 
 .section-news-main {
@@ -120,6 +121,7 @@ h1 {
 
 .section-other-news-item .other-news-date {
     font-size: 0.875rem;
+    white-space: nowrap;
     font-weight: 400;
     line-height: 1.0625rem;
     color: var(--clr-greyscale-6);
