@@ -1,35 +1,5 @@
 
 body {
-    font-family: 'Geologica', sans-serif;
-    --clr-primary-red: #d51317;
-    --clr-primary-darkred: #AC0F12;
-    --clr-primary-green: #009640;
-    --clr-primary-darkgreen: #00652b;
-    --clr-darkgreygreen:#124147;
-    --clr-greygreen: #5F797A;
-    --clr-primary-yellow: #ffed00;
-    --clr-darkblue: #3D4452;
-    --clr-greyscale-0: #ffffff;
-    --clr-greyscale-1: #202020;
-    --clr-greyscale-2: #eaeaea;
-    --clr-greyscale-4: #cecece;
-    --clr-greyscale-6: #9d9d9d;
-    --clr-greyscale-8: #353535;
-    --clr-section-bg: rgb(255, 255, 255);
-    --clr-mobile-menu-bg: #F2F4F8;
-    --clr-primary-btn-hover: #FFA564;
-    --clr-primary-btn-focus: #AD8E62;
-    --clr-news-p: #1D1D1B;
-    --clr-lot-handle: #124147;
-    --content-1280: 70rem;
-    --content-720: 40rem;
-    --content-320: 17rem;
-    --fs-12-14: clamp(0.75rem, 0.5893rem + 0.3571vw, 0.875rem);
-    --fs-16-18: clamp(1rem, 0.8393rem + 0.3571vw, 1.125rem);
-    display: grid;
-    place-items: center;
-    /* for fixed header */
-    padding-top: 60px;
     color: var(--clr-greyscale-8);
     background-color: #fcfcfd;
     background-color:   var(--clr-greyscale-2);
@@ -93,6 +63,10 @@ body {
     margin-top: 3rem;
 }
 
+.section-contacts > div:first-of-type {
+    padding-top: 0 !important;
+}
+
 .msr-about-bottom-item {
     width: 450px;
 }
@@ -139,6 +113,7 @@ body {
 
 .section-parners-scroller {
     margin-top: 2rem;
+    gap: 2rem;
     margin-bottom: calc(2rem - 1.0625rem);
     width: var(--content-width);
 }
@@ -284,6 +259,10 @@ footer {
 
     .section-parners-scroller-item {
         width: 19.5625rem;
+    }
+
+    .section-parners-scroller {
+        gap: 1.5rem;
     }
 
     .section-about-company,
