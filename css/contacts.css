@@ -38,6 +38,18 @@
     width: clamp(26.625rem, -13.6564rem + 89.5143vw, 60rem);
 }
 
+.section-contacts > div:first-of-type {
+    padding: 2.5rem 0;
+    background: var(--clr-greyscale-2);
+    width: 100%;
+    place-items: center;
+    display: grid;
+}
+
+.section-contacts > div:first-of-type > div {
+    width: var(--content-width);
+}
+
 .section-contacts-card > div:first-of-type {
     padding: 2rem 0 2rem 3rem;
     display: grid;
@@ -83,6 +95,12 @@
 
 .section-contacts-tab {
     padding-right: 0;
+}
+
+.contacts-img-3 {
+    background-color: #00468F;
+    display: grid;
+    place-content: center;
 }
 
 @media only screen and (max-width: 910px) {
@@ -155,7 +173,7 @@
         font-size: 0.7rem;
     }
 
-    .section-contacts-tab {
+    .contacts-card-item-company {
         gap: 0.5rem;
     }
 
