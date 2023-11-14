@@ -84,13 +84,13 @@
 }
 
 .contacts-img-1 {
-    background: url(/img/contacts/con_1.webp);
+    background: url('../img/contacts/con_1.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .contacts-img-2 {
-    background: url(/img/contacts/con_2.webp) !important;
+    background: url('../img/contacts/con_2.webp') !important;
 }
 
 .section-contacts-tab {
