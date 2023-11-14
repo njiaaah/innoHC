@@ -1,0 +1,10 @@
+.cp-card-heading,
+.section-construction-progress-card > span:last-child {
+    color: var(--clr-greyscale-8);
+}
+
+@media only screen and (max-width: 560px) {
+    .section-construction-progress-card button {
+        padding-inline: 10px ;
+    }
+}
