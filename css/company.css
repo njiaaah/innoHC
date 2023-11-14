@@ -1,0 +1,350 @@
+
+body {
+    font-family: 'Geologica', sans-serif;
+    --clr-primary-red: #d51317;
+    --clr-primary-darkred: #AC0F12;
+    --clr-primary-green: #009640;
+    --clr-primary-darkgreen: #00652b;
+    --clr-darkgreygreen:#124147;
+    --clr-greygreen: #5F797A;
+    --clr-primary-yellow: #ffed00;
+    --clr-darkblue: #3D4452;
+    --clr-greyscale-0: #ffffff;
+    --clr-greyscale-1: #202020;
+    --clr-greyscale-2: #eaeaea;
+    --clr-greyscale-4: #cecece;
+    --clr-greyscale-6: #9d9d9d;
+    --clr-greyscale-8: #353535;
+    --clr-section-bg: rgb(255, 255, 255);
+    --clr-mobile-menu-bg: #F2F4F8;
+    --clr-primary-btn-hover: #FFA564;
+    --clr-primary-btn-focus: #AD8E62;
+    --clr-news-p: #1D1D1B;
+    --clr-lot-handle: #124147;
+    --content-1280: 70rem;
+    --content-720: 40rem;
+    --content-320: 17rem;
+    --fs-12-14: clamp(0.75rem, 0.5893rem + 0.3571vw, 0.875rem);
+    --fs-16-18: clamp(1rem, 0.8393rem + 0.3571vw, 1.125rem);
+    display: grid;
+    place-items: center;
+    /* for fixed header */
+    padding-top: 60px;
+    color: var(--clr-greyscale-8);
+    background-color: #fcfcfd;
+    background-color:   var(--clr-greyscale-2);
+}
+
+
+.go-back-a {
+    gap: .5rem;
+    color: var(--clr-primary-green);
+    margin-top: 1.5rem;
+}
+
+.go-back-a img{
+    transform: scaleX(-1);
+}
+
+.section-about-company,
+.section-partners {
+    background-color: #fcfcfd;
+ }
+
+.section-about-company-wrap > h1{
+    font-size: 2.625rem;
+    font-weight: 400;
+    line-height: 2.875rem;
+    letter-spacing: 0.05em;
+    margin-top: 3.625rem;
+}
+
+.section-about-company-wrap > p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.0625rem;
+    letter-spacing: 0em;
+    margin-top: 1.5rem;
+    max-width: 86ch;
+}
+
+.mrs-about-top-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    margin-top: 3.125rem;
+}
+
+.mrs-about-top-wrap p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+}
+
+.mrs-logo-wrap img {
+    width: 15.125rem;
+    height: 2.9375rem;
+}
+
+
+.mrs-about-bottom-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.msr-about-bottom-item {
+    width: 450px;
+}
+
+.msr-about-bottom-item h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.1875rem;
+    letter-spacing: 0.02em;
+}
+
+.msr-about-bottom-item p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+    margin-top: 0.75rem;
+}
+
+/* SECTION PARTNERS */
+
+.section-partners {
+    padding-top: 5rem;
+}
+
+.section-partners-wrap>h2 {
+    max-width: 20ch;
+}
+
+.section-partners-wrap>h2,
+.section-achievements-wrap>h2 {
+    font-size: 2.625rem;
+    font-weight: 400;
+    line-height: 2.875rem;
+    letter-spacing: 0.05em;
+}
+
+.section-partners-wrap>p,
+.section-achievements-wrap>p {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.0625rem;     
+}
+
+.section-parners-scroller {
+    margin-top: 2rem;
+    margin-bottom: calc(2rem - 1.0625rem);
+    width: var(--content-width);
+}
+
+.section-parners-scroller-item {
+    width: 22rem;
+    padding: 2rem;
+    border: 1px solid var(--clr-greyscale-4);
+}
+
+.section-parners-scroller-item > a:first-child {
+    height: 4.75rem;
+    display: block;
+}
+
+.section-parners-scroller-item h5 {
+    display: block;
+    height: 4.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.0625rem;
+}
+
+.section-parners-scroller-item p {
+    display: block;
+    height: 9.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+    color: var(--clr-greyscale-6);
+}
+
+.section-parners-scroller-item > a:last-child {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.125rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-greyscale-6);
+    text-decoration: underline;
+}
+
+.section-parners-contols {
+    float: left;
+    width: var(--content-width);
+    margin-bottom: 3.1875rem;
+}
+
+/* SECTION ACHIVEMENTS */
+
+.section-achievements {
+    padding-top: 5rem;
+    background-color: var(--clr-greyscale-2);
+}
+
+.section-achievements-contols {
+    display: none;
+}
+
+.section-achievements-scroller {
+    margin-top: 2.5rem;
+    width: var(--content-width);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: unset;
+    gap: 2rem;
+    row-gap: 3.5625rem;
+    margin-bottom: 5rem;
+}
+
+.section-achievements-scroller > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-achievements-scroller > div > img {
+    width: 24px;
+    aspect-ratio: 1;
+}
+
+.section-achievements-scroller > div > span {
+    margin-top: .5rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.3125rem;
+    letter-spacing: 0.02em;
+    color: var(--clr-primary-green);
+}
+
+.section-achievements-scroller > div > p {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #666666;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .mrs-about-top-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mrs-about-top-wrap p {
+        margin-top: 2.25rem;
+    }
+
+    .msr-about-bottom-item h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.4375rem;
+    letter-spacing: 0.02em;
+
+    }
+
+    .section-partners-wrap>h2 {
+    font-size: 2.625rem;
+    font-size: clamp(2.4375rem, 1.7813rem + 1.875vw, 2.625rem);
+    font-weight: 400;
+    line-height: 2.875rem;
+    letter-spacing: 0.05em;
+}
+
+    .section-parners-scroller-item {
+        width: 19.5625rem;
+    }
+
+    .section-about-company,
+    .section-partners {
+        background-color: var(--clr-greyscale-0);
+     }
+
+    .section-achievements-scroller {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+
+
+@media only screen and (max-width: 560px) {
+    .section-about-company-wrap > h1,
+    .section-partners-wrap>h2,
+    .section-achievements-wrap>h2 {
+    font-size: 1.625rem;
+    line-height: 1.8125rem;
+    letter-spacing: 0.01em;
+    }
+
+    .mrs-about-bottom-wrap {
+        flex-direction: column;
+    }
+
+    .mrs-about-bottom-wrap p {
+        width: var(--content-width);
+    }
+
+    .section-parners-scroller-item {
+        width: 16rem;
+        height: 24.125rem;
+    }
+
+    .section-parners-scroller-item h5,
+    .section-parners-scroller-item p {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+
+    .section-parners-scroller-item p {
+        margin-bottom: 1rem;
+    }
+
+    .section-achievements-scroller {
+        display: flex;
+        margin-bottom: 2.6875rem;
+    }
+
+    .section-achievements-scroller > div {
+        min-width: 200px;
+        gap: 1.5rem;
+    }
+
+    .section-achievements-contols {
+        display: flex;
+        width: var(--content-width);
+        margin-bottom: 52px;
+    }
+
+}

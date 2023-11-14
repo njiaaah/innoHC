@@ -90,7 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // close mobile sort modal if resized
     window.addEventListener('resize', () => {
         if (window.innerWidth > 559) {
-            document.querySelector('#modalMobileSort').close()
+            if (document.querySelector('#modalMobileSort')) {
+                document.querySelector('#modalMobileSort').close()
+            }
         }
     })
 
