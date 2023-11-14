@@ -85,6 +85,12 @@
     padding-right: 0;
 }
 
+.contacts-img-3 {
+    background-color: #00468F;
+    display: grid;
+    place-content: center;
+}
+
 @media only screen and (max-width: 910px) {
     
     .section-contacts-card > div:first-of-type a, .section-contacts-card > div:first-of-type p {
@@ -152,10 +158,10 @@
     }
 
     .section-contacts-tab span {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
-    .section-contacts-tab {
+    .contacts-card-item-company {
         gap: 0.5rem;
     }
 

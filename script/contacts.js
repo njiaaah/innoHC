@@ -17,7 +17,19 @@ for (let i = 0; i < sectionContactTabs.length; i++) {
             sectionContactTabs[i].style.display = 'grid'
         }
 
-        if (sectionContactTabs[0].style.display == 'none') {
+        if (document.querySelector('.contacts-img-3') && sectionContactTabs[0].style.display == 'none') {
+            var sectionContactsImg3 = document.querySelector('.contacts-img-3')
+            sectionContactsImg3.style.display = 'grid'
+            sectionContactsImg.style.display = 'none'
+        }
+
+        else if (document.querySelector('.contacts-img-3')) {
+            var sectionContactsImg3 = document.querySelector('.contacts-img-3')
+            sectionContactsImg3.style.display = 'none'
+            sectionContactsImg.style.display = 'block'
+        }
+
+        else if (sectionContactTabs[0].style.display == 'none') {
             sectionContactsImg.classList.add('contacts-img-2')
         }
 
