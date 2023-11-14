@@ -47,7 +47,7 @@
 }
 
 .section-contacts > div:first-of-type > div {
-    width: var(--content-width);
+    width: clamp(26.625rem, -13.6564rem + 89.5143vw, 60rem);
 }
 
 .section-contacts-card > div:first-of-type {
@@ -124,7 +124,11 @@
     .section-contacts-card {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        bottom: -40%;
+        bottom: -42%;
+    }
+
+    .section-contacts-company .section-contacts-card {
+        margin-bottom: 3rem;
     }
 
     .section-contacts-card > div:first-of-type {
@@ -156,6 +160,10 @@
 @media only screen and (max-width: 560px) {
     
     .section-contacts-card {
+        width: var(--content-width);
+    }
+
+    .section-contacts > div:first-of-type > div {
         width: var(--content-width);
     }
 
