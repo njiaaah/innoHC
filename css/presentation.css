@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap');
+
+
+body {
+    --clr-pres-red: #D51317;
+    --clr-pres-green: rgb(41, 145, 22);
+    
+}
+
+.section-presentation h2 {
+    color: var(--clr-pres-red);
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.section-presentation-link-wrap {
+    margin-top: 1.5rem;
+}
+
+.section-presentation-link-wrap a {
+    color: var(--clr-pres-green);
+    border-bottom: 1px dotted;
+    font-size: 22px;
+    font-family: 'Jost', sans-serif;
+    margin-right: 2rem;
+}
+
+.section-presentation {
+    overflow: hidden;
+}
+
+.s-p-slider-wrap {
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+    height: 523px;
+    /* scrollbar-width: none;
+    scrollbar-width: 0px;
+    scrollbar-width: 20px; */
+}
+
+.section-presentation-link-wrap + span {
+    width: 100%;
+    height: 1px;
+    margin-top: 4.0625rem;
+    display: block;
+    background-color: var(--clr-greyscale-4);
+}
+
+.s-p-slider-controls-wrap {
+    position: relative;
+    width: 100%;
+    margin-top: 3.75rem;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.slider-control-btn {
+    position: absolute;
+    width: 56px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fb2b25;
+    border-radius: 100%;
+    cursor: pointer;
+    top: 50%;
+    z-index: 1;
+
+    &#slider-prev-btn {
+        transform: translateY(-50%);
+        left: 5rem;
+    }
+
+    &#slider-next-btn {
+        right: 5rem;
+        transform: translateY(-50%);
+    }
+}
+
+.slider-control-btn span {
+    font-size: 32px;
+    user-select: none;
+}
+
+.s-p-slider-container {
+    display: flex;
+    height: 523px !important;
+    overflow-y: hidden;
+    overflow: hidden;
+    /* scroll-snap-type: x mandatory; */
+    /* scroll-behavior: smooth; */
+    cursor: grab;
+}
+
+.s-p-slider-container .img-wrap {
+    height: 100%;
+    width: 370px !important;
+    margin-inline: 15px; 
+    scroll-snap-align: start;
+}
+
+.img-wrap img {
+    height: 100%;
+    display: block;
+}
+
+.horizontal-scroller {
+    gap: 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .s-p-slider-container .img-wrap {
+        margin-inline: 0; 
+    }
+
+    .slider-control-btn {
+        display: none;
+    }
+}
