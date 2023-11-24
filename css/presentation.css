@@ -99,17 +99,24 @@ body {
     transition: color 250ms ;
     font-size: 32px;
     user-select: none;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .s-p-slider-container {
     display: flex;
     height: 523px !important;
     overflow-y: hidden;
-    overflow: hidden;
+    overflow-x: auto;
     /* scroll-snap-type: x mandatory; */
     /* scroll-behavior: smooth; */
     cursor: grab;
+    scrollbar-width: 0;
+    user-select: none;
+}
+
+.no-sclr-bar::-webkit-scrollbar {
+    display: none;
+    width: 0;
 }
 
 .s-p-slider-container .img-wrap {

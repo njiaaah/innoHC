@@ -80,8 +80,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         sliderPres.addEventListener('scroll', function(){
             // start
-            if(sliderPres.scrollLeft === 0) {
-                sliderPres.scrollLeft = sliderWidth - (itemWidth * 6)
+            if(sliderPres.scrollLeft < (itemWidth * 3)) {
+                sliderPres.scrollLeft = scrollerStartPos + (itemWidth * 6)
+                sliderPres.scrollTo({
+                    left: scrollerStartPos + (itemWidth * 5),
+                    behavior: 'smooth'
+                })
             }
             // end
             if(sliderPres.scrollLeft > (sliderWidth - sliderPres.clientWidth) - 1) {
@@ -91,13 +95,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
             let activeStick = Math.floor(sliderPres.scrollLeft / itemWidth)
             
-            console.log(activeStick)
-            if(activeStick <= 3) {
+            if(activeStick < 3) {
                 activeStick = 3
             } 
 
-            if (activeStick >= 9) {
-                activeStick = 9
+            if (activeStick > 9) {
+                activeStick = 3
             }
 
             for (let i = 0; i < statusBar.children.length; i++) {
@@ -112,7 +115,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
 
     const preList = document.querySelectorAll('.presentListItem')
-    console.log(preList)
     if(preList) {
         for (let i = 0; i < preList.length; i++) {
             preList[i].addEventListener('click', ()=>{
