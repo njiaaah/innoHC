@@ -4,7 +4,12 @@
 body {
     --clr-pres-red: #D51317;
     --clr-pres-green: rgb(41, 145, 22);
+    --clr-lightgrey: ;
     
+}
+
+#presentListChb {
+    display: none;
 }
 
 .section-presentation h2 {
@@ -54,7 +59,7 @@ body {
     width: 100%;
     margin-top: 3.75rem;
     overflow: hidden;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .slider-control-btn {
@@ -69,7 +74,7 @@ body {
     cursor: pointer;
     top: 50%;
     z-index: 1;
-
+    transition: filter 250ms ;
     &#slider-prev-btn {
         transform: translateY(-50%);
         left: 5rem;
@@ -79,11 +84,22 @@ body {
         right: 5rem;
         transform: translateY(-50%);
     }
+   
+}
+
+.slider-control-btn:hover {
+    filter: brightness(.85);
+}
+
+.slider-control-btn:hover span {
+    color: var(--clr-greyscale-0);
 }
 
 .slider-control-btn span {
+    transition: color 250ms ;
     font-size: 32px;
     user-select: none;
+    transform: translateY(-1px);
 }
 
 .s-p-slider-container {
@@ -112,6 +128,34 @@ body {
     gap: 0;
 }
 
+.s-p-slider-status-bar {
+    display: flex;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    height: 8px;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.s-p-slider-status-bar > span {
+    display: block;
+    height: 8px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: 1px solid var(--clr-greyscale-6);
+    cursor: pointer;
+    transition: transform 250ms, background-color 250ms;
+}
+
+.s-p-slider-status-bar > .stick-active {
+    background-color: #D51317;
+    border: none;
+    transform: scale(1.75);
+}
+
+.s-p-presentation-list {
+    display: none;
+}
 
 @media only screen and (max-width: 1024px) {
     .s-p-slider-container .img-wrap {
@@ -120,5 +164,105 @@ body {
 
     .slider-control-btn {
         display: none;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    .section-presentation h2 {
+        font-size: 2rem;
+    }
+
+    .section-presentation-link-wrap + span {
+        display: none;
+    }
+    
+
+    .s-p-presentation-list {
+        --_height: 45px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4.0625rem;
+        /* outline: 1px solid red; */
+        position: relative;
+        z-index: 2;
+        opacity: .5;
+        height: var(--_height);
+        width: var(--content-width);
+    }
+
+    .s-p-presentation-list li {
+        cursor: pointer;
+        /* position: absolute; */
+        color:#b0b0b0 ;
+        background-color: #f9f9f9;
+        padding: .75rem 1rem;
+        position: relative;
+        height: var(--_height);
+        width: var(--content-width);
+        
+    }
+
+    .s-p-presentation-list li:hover {
+        background-color: var(--clr-greyscale-2);
+    }
+
+    .s-p-presentation-list li:nth-child(1) {
+        z-index: 10;
+    }
+
+    .s-p-presentation-list li:nth-child(1)::after {
+        content: '';
+        display: block;
+        width: 20px;
+        aspect-ratio: 1;
+        right: 10px;
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%) scaleY(-1);
+        transform-origin: center;
+        background-image: url('../img/icons/arrow-down.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: transform 300ms ease;
+        filter: brightness(0);
+    }
+
+    .s-p-presentation-list li:nth-child(n+2) {
+        border-top: 1px solid var(--clr-greyscale-2);
+        transform: scaleY(0);
+        transition: transform 300ms ease;
+        transform-origin: 0% 0%;
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+    }
+
+    #presentListChb:checked + label > ul {
+        opacity: 1;
+    }
+
+    #presentListChb:checked + label > ul > li::after {
+        transform: translateY(-50%) scaleY(-1) rotate(180deg);
+    }
+    
+    /* kek */
+    #presentListChb:checked + label > ul > li:nth-child(2) {
+        transform: scaleY(1) translateY( calc(var(--_height)*1) );
+    }
+    #presentListChb:checked + label > ul > li:nth-child(3) {
+        transform: scaleY(1) translateY( calc(var(--_height)*2) );
+    }
+    #presentListChb:checked + label > ul > li:nth-child(4) {
+        transform: scaleY(1) translateY( calc(var(--_height)*3) );
+    }
+    #presentListChb:checked + label > ul > li:nth-child(5) {
+        transform: scaleY(1) translateY( calc(var(--_height)*4) );
+    }
+    #presentListChb:checked + label > ul > li:nth-child(6) {
+        transform: scaleY(1) translateY( calc(var(--_height)*5) );
+    }
+    #presentListChb:checked + label > ul > li:nth-child(7) {
+        transform: scaleY(1) translateY( calc(var(--_height)*6) );
     }
 }

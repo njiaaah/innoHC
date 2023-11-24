@@ -1,44 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=>{
 
-       // SCROLLERS
-
-    // scroller - элемент который скролится с классами horizontal-scroller, snaps-inline
-    // controls - массив с кнопками для управления данного скрола
-
-    function updateScrollerControls(scroller, controls) {
-        currentScroll = parseInt((scroller.scrollLeft / (scroller.scrollWidth - scroller.clientWidth) - 0.01) * controls.length)
-        for (let i = 0; i < controls.length; i++) {
-            // controls[i].classList.remove('current-scroll')
-        }
-        // controls[currentScroll].classList.add('current-scroll')
-    }
-
-    // btnIndex - порядковый номер кнопки по которой было кликнуто
-    function clickScrollerControls(scroller, controls, btnIndex) {
-        let offsetLeft = (btnIndex / (controls.length - 1)) * (scroller.scrollWidth - scroller.clientWidth)
-        scroller.scrollTo({
-            left: offsetLeft,
-            behavior: 'smooth'
-        })
-    }
-
-    // section ADVANTAGES - scroller 1
-
-    var scroller01 = document.querySelector('#scroller01')
-
-    if (document.querySelector('.section-advantages-contols')) {
-        var scroller01controls = document.querySelector('.section-advantages-contols').children
-        scroller01.addEventListener('scroll', () => {
-            updateScrollerControls(scroller01, scroller01controls)
-        })
-
-        for (let i = 0; i < scroller01controls.length; i++) {
-            scroller01controls[i].addEventListener('click', () => {
-                clickScrollerControls(scroller01, scroller01controls, i)
-            })
-        }
-    }
-
     const sliderPres = document.querySelector('#sliderPresentation')
     var marginRight = parseInt(window.getComputedStyle(sliderPres.children[0]).marginRight)
     var itemWidth = parseInt(sliderPres.children[0].clientWidth) + (parseInt(marginRight)*2)
@@ -56,25 +17,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         console.log()
     }
 
-    
 
-    if(sliderPres) {
-        // scroll 3 img at page
-        sliderPres.scrollLeft += scrollerStartPos 
-        // listen for viewport to remove margin at 1024px
-        window.addEventListener('resize', handleResize)
-        //  scroll opposite side on reaching start/end
-        sliderPres.addEventListener('scroll', function(){
-            if(sliderPres.scrollLeft === 0) {
-                sliderPres.scrollLeft = sliderWidth - (itemWidth * 6)
-            }
-            if(sliderPres.scrollLeft > (sliderWidth - sliderPres.clientWidth) - 1) {
-                // sliderPres.scrollLeft = scrollerStartPos
-                sliderPres.scrollLeft = sliderPres.scrollLeft - (itemWidth * 6)
-            }
-        })
- 
-    }
 
     // controls 
 
@@ -109,27 +52,77 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
     })
 
-    // inline snapping
+    // status bar beneath slider
 
-    // let isGrabbing = false
+    const statusBar = document.querySelector('#sliderStatusBar')
+    const statusStick = statusBar.children
 
-    // sliderPres.addEventListener('mousedown', function(){
-    //     sliderPres.style.cursor = 'grabbing'
-    //     isGrabbing = true
-    // })
+    if(statusBar) {
+        for (let i = 0; i < statusStick.length; i++) {
+            statusStick[i].addEventListener('click', ()=>{
+                sliderPres.scrollTo({
+                    left: (itemWidth * (3 + i) + marginRight),
+                    behavior: 'smooth'
+                })
+            })
+        }
+    }
 
-    // window.addEventListener('mouseup', function(){
-    //     if(isGrabbing) {
-    //         isGrabbing = false
-    //         sliderPres.style.scrollSnapType = 'x mandatory'
-    //         sliderPres.style.scrollBehavior = 'smooth'
-    //         sliderPres.style.cursor = 'grab'
-    //         this.setTimeout(()=>{
-    //             sliderPres.style.scrollSnapType = 'none'
-    //             sliderPres.style.scrollBehavior = 'auto'
-    //             console.log('250')
-    //         },500)
-    //     }
-        
-    // })
+
+    if(sliderPres) {
+        // scroll 3 img at page
+        sliderPres.scrollLeft += scrollerStartPos 
+        // listen for viewport to remove margin at 1024px
+        window.addEventListener('resize', handleResize)
+
+        //  scroll opposite side on reaching start/end
+        //  update status bar beneath
+
+        sliderPres.addEventListener('scroll', function(){
+            // start
+            if(sliderPres.scrollLeft === 0) {
+                sliderPres.scrollLeft = sliderWidth - (itemWidth * 6)
+            }
+            // end
+            if(sliderPres.scrollLeft > (sliderWidth - sliderPres.clientWidth) - 1) {
+                sliderPres.scrollLeft = sliderPres.scrollLeft - (itemWidth * 6)
+            }
+            // update active stick
+
+            let activeStick = Math.floor(sliderPres.scrollLeft / itemWidth)
+            
+            console.log(activeStick)
+            if(activeStick <= 3) {
+                activeStick = 3
+            } 
+
+            if (activeStick >= 9) {
+                activeStick = 9
+            }
+
+            for (let i = 0; i < statusBar.children.length; i++) {
+                statusBar.children[i].classList.remove('stick-active')
+            }
+            if(statusBar.children[activeStick - 3]) {
+                statusBar.children[activeStick - 3].classList.add('stick-active')
+            }
+            
+        })
+ 
+    }
+
+    const preList = document.querySelectorAll('.presentListItem')
+    console.log(preList)
+    if(preList) {
+        for (let i = 0; i < preList.length; i++) {
+            preList[i].addEventListener('click', ()=>{
+                    preList[0].innerText = preList[i].innerText
+            })
+          
+        }
+    }
+    
+
 })
+
+
