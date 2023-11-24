@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 activeStick = 3
             } 
 
-            if (activeStick > 9) {
+            if (activeStick >= 9) {
                 activeStick = 3
             }
 
