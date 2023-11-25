@@ -78,7 +78,7 @@ body {
 }
 
 #slider-prev-btn {
-    transform: translateY(-50%);
+    transform: translateY(-50%) scaleX(-1);
     left: 5rem;
 }
 
@@ -92,14 +92,21 @@ body {
 }
 
 .slider-control-btn:hover span {
-    color: var(--clr-greyscale-0);
+    filter:invert(0);
 }
 
 .slider-control-btn span {
-    transition: color 250ms ;
-    font-size: 32px;
-    user-select: none;
-    transform: translateY(-2px);
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/icons/arrow-left.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: translateY(1px);
+    filter:invert(1);
+    transition: filter 150ms;
+    z-index: 5;
 }
 
 .s-p-slider-container {
