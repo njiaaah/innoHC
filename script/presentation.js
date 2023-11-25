@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 })
             }
             // end
-            if(sliderPres.scrollLeft > (sliderWidth - sliderPres.clientWidth) - 1) {
+            if(sliderPres.scrollLeft > (sliderWidth - sliderPres.clientWidth) - 3) {
                 sliderPres.scrollLeft = sliderPres.scrollLeft - (itemWidth * 6)
             }
             // update active stick
@@ -123,6 +123,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
           
         }
     }
+
+    // cursor grab
+
+    var isGrabbin = false
+
+    sliderPres.addEventListener('mousedown', ()=>{
+        isGrabbin = true
+        sliderPres.style.cursor = 'grabbing'
+        
+    })
+
+    window.addEventListener('mouseup', ()=>{
+        if(isGrabbin) {
+            sliderPres.style.cursor = 'grab'
+            isGrabbin = false
+        }
+        
+    })
     
 
 })
