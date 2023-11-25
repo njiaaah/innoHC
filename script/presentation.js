@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
     if(sliderPres) {
-        // scroll 3 img at page
+        // scroll 3 img at page load
         sliderPres.scrollLeft += scrollerStartPos 
         // listen for viewport to remove margin at 1024px
         window.addEventListener('resize', handleResize)
