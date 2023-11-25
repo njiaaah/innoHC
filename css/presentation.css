@@ -75,16 +75,16 @@ body {
     top: 50%;
     z-index: 1;
     transition: filter 250ms ;
-    &#slider-prev-btn {
-        transform: translateY(-50%);
-        left: 5rem;
-    }
+}
 
-    &#slider-next-btn {
-        right: 5rem;
-        transform: translateY(-50%);
-    }
-   
+#slider-prev-btn {
+    transform: translateY(-50%);
+    left: 5rem;
+}
+
+#slider-next-btn {
+    right: 5rem;
+    transform: translateY(-50%);
 }
 
 .slider-control-btn:hover {
