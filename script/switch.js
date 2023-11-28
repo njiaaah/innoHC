@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     switchChb.addEventListener('click',()=>{
         if(switchChb.checked) {
-            console.log('yes')
+            console.log('on')
         } else {
-            console.log('no')
+            console.log('off')
         }
     })
 })
