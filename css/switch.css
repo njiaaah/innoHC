@@ -1,0 +1,70 @@
+#catalog-switch-label {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+#catalog-switch-label p {
+    color: var(--clr-greyscale-6);
+}
+
+#catalog-switch-label p:first-of-type {
+    color: var(--clr-primary-green);
+}
+
+#catalog-switch-label p::first-letter {
+    text-transform: capitalize;
+}
+
+#catalog-switch-label span {
+    --_width: 5rem;
+    width: var(--_width);
+    height: 2rem;
+    display: block;
+    background-color: var(--clr-greyscale-0);
+    border: 1px solid var(--clr-primary-green);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+#catalog-switch-label span::after {
+    --_margin: 2px;
+    --_point-width: 1.75rem;
+    content: '';
+    display: block;
+    width: var(--_point-width);
+    aspect-ratio: 1;
+    background-color: var(--clr-primary-green);
+    position: absolute;
+    border-radius: 20px;
+    left: var(--_margin);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 350ms ease;
+}
+
+
+
+
+
+
+
+#catalog-switch-chb {
+    display: none;
+}
+
+#catalog-switch-chb:checked+label p:first-of-type {
+    color: var(--clr-greyscale-6);
+}
+
+#catalog-switch-chb:checked+label p {
+    color: var(--clr-primary-green);
+}
+
+#catalog-switch-chb:checked+label span::after {
+    transform: translateY(-50%) translateX(calc(var(--_width) - var(--_point-width) - var(--_margin)*2 ));
+}
+
+/* --clr-primary-green */
+/* --clr-greyscale-6 */
