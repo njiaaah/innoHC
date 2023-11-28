@@ -6,6 +6,7 @@
 
 #catalog-switch-label p {
     color: var(--clr-greyscale-6);
+    transition: color 350ms ease;
 }
 
 #catalog-switch-label p:first-of-type {
